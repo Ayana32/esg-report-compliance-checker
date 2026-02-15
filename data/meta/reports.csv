@@ -1,0 +1,18 @@
+report_id,company_id,company_name,sector,country,report_year,report_type,language,file_path,used_in_mvp,notes
+2024_KR_IBKBank_Sustainability_KO,IBKBank,IBK Bank,Finance,KR,2024,standalone,KO,data/raw/reports/2024_KR_IBKBank_Sustainability_KO.pdf,1,reference
+2024_KR_Shinhan_Sustainability_KO,Shinhan,Shinhan Bank,Finance,KR,2024,standalone,KO,data/raw/reports/2024_KR_Shinhan_Sustainability_KO.pdf,1,
+2024_UK_HSBC_Sustainability_EN,HSBC,HSBC,Finance,UK,2024,integrated,EN,data/raw/reports/2024_UK_HSBC_Sustainability_EN.pdf,1,main
+2024_UK_HSBC_Strategy_EN,HSBC,HSBC,Finance,UK,2024,strategic,EN,data/raw/reports/2024_UK_HSBC_Strategy_EN.pdf,0,narrative_backup
+2024_UK_HSBC_Datapack_EN,HSBC,HSBC,Finance,UK,2024,datapack,EN,data/raw/reports/2024_UK_HSBC_Datapack_EN.pdf,0,phase2_structured_data
+2025_UK_HSBC_Target_EN,HSBC,HSBC,Finance,UK,2025,targets,EN,data/raw/reports/2025_UK_HSBC_Target_EN.pdf,0,policy_reference
+2024_UK_SC_Sustainability_EN,StandardChartered,Standard Chartered,Finance,UK,2024,integrated,EN,data/raw/reports/2024_UK_SC_Sustainability_EN.pdf,1,main
+2024_UK_SC_Index_EN,StandardChartered,Standard Chartered,Finance,UK,2024,index,EN,data/raw/reports/2024_UK_SC_Index_EN.pdf,1,ground_truth
+2024_UK_SC_Annual_EN,StandardChartered,Standard Chartered,Finance,UK,2024,integrated,EN,data/raw/reports/2024_UK_SC_Annual_EN.pdf,0,backup
+2024_UK_SC_Datapack_EN,StandardChartered,Standard Chartered,Finance,UK,2024,datapack,EN,data/raw/reports/2024_UK_SC_Datapack_EN.pdf,0,phase2_structured_data
+2025_KR_HyundaiMotor_Sustainability_KO,HyundaiMotor,Hyundai Motor Company,Manufacturing,KR,2025,standalone,KO,data/raw/reports/2025_KR_HyundaiMotor_Sustainability_KO.pdf,1,earliest_2025
+2024_KR_SamsungElectronics_Sustainability_KO,SamsungElectronics,Samsung Electronics,Manufacturing,KR,2024,standalone,KO,data/raw/reports/2024_KR_SamsungElectronics_Sustainability_KO.pdf,1,
+2025_DE_Siemens_Sustainability_EN,Siemens,Siemens,Manufacturing,DE,2025,sustainability_statement,EN,data/raw/reports/2025_DE_Siemens_Sustainability_EN.pdf,1,eu_best_practice
+2024_FR_SchneiderElectric_Sustainability_EN,SchneiderElectric,Schneider Electric,Manufacturing,FR,2024,standalone,EN,data/raw/reports/2024_FR_SchneiderElectric_Sustainability_EN.pdf,1,eu_best_practice
+2024_KR_IncheonAirport_Sustainability_KO,IncheonAirport,Incheon International Airport,Infrastructure,KR,2024,standalone,KO,data/raw/reports/2024_KR_IncheonAirport_Sustainability_KO.pdf,1,reference
+2024_KR_KEPCO_Sustainability_KO,KEPCO,Korea Electric Power Corporation,Infrastructure,KR,2024,standalone,KO,data/raw/reports/2024_KR_KEPCO_Sustainability_KO.pdf,1,
+2024_UK_HeathrowAirport_Sustainability_EN,HeathrowAirport,Heathrow Airport Holdings,Infrastructure,UK,2024,standalone,EN,data/raw/reports/2024_UK_HeathrowAirport_Sustainability_EN.pdf,1,

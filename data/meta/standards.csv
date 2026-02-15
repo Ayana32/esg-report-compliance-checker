@@ -1,0 +1,13 @@
+standard_id,standard_name,issuer,version,language,scope,file_path,priority,notes
+TCFD_Recommendations_2017,TCFD Recommendations,FSB,2017,EN,all,data/raw/standards/TCFD_Recommendations_2017_EN.pdf,high,core_framework
+TCFD_Annex_2017,TCFD Annex,FSB,2017,EN,all,data/raw/standards/TCFD_Annex_2017_EN.pdf,medium,implementation_guide
+GRI_1_2021,GRI 1 Foundation,GRI,2021,EN,all,data/raw/standards/GRI_1_Foundation_2021_EN.pdf,high,core_framework
+GRI_2_2021,GRI 2 General Disclosures,GRI,2021,EN,all,data/raw/standards/GRI_2_GeneralDisclosures_2021_EN.pdf,high,core_framework
+GRI_3_2021,GRI 3 Material Topics,GRI,2021,EN,all,data/raw/standards/GRI_3_MaterialTopics_2021_EN.pdf,high,core_framework
+GRI_305_2016,GRI 305 Emissions,GRI,2016,EN,manufacturing,data/raw/standards/GRI_305_Emissions_2016_EN.pdf,high,manufacturing_target
+GRI_201_2016,GRI 201 Economic Performance,GRI,2016,EN,finance,data/raw/standards/GRI_201_EconomicPerformance_2016_EN.pdf,medium,finance_target
+SASB_CommercialBanks,SASB Commercial Banks,SASB,2023,EN,finance,data/raw/standards/SASB_CommercialBanks_EN.pdf,high,finance_target
+SASB_Automobiles,SASB Automobiles,SASB,2023,EN,manufacturing,data/raw/standards/SASB_Automobiles_EN.pdf,high,manufacturing_target
+SASB_ElectronicManufacturing,SASB Electronic Manufacturing,SASB,2023,EN,manufacturing,data/raw/standards/SASB_ElectronicManufacturing_EN.pdf,high,manufacturing_target
+SASB_ElectricUtilities,SASB Electric Utilities,SASB,2023,EN,infrastructure,data/raw/standards/SASB_ElectricUtilities_EN.pdf,high,infrastructure_target
+KESG_2021,K-ESG Guideline,MOTIE,2021,KO,all,data/raw/standards/KESG_Guideline_2021_KO.pdf,medium,korean_reference

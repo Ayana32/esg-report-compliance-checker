@@ -1,0 +1,12 @@
+company_id,company_name,sector,country,language,report_year,report_type,group,notes
+IBKBank,IBK Bank,Finance,KR,KO+EN,2024,standalone,reference,
+Shinhan,Shinhan Bank,Finance,KR,KO+EN,2024,standalone,ko_core,
+HSBC,HSBC,Finance,UK,EN,2024,integrated,en_core,
+StandardChartered,Standard Chartered,Finance,UK,EN,2024,integrated,en_core,
+HyundaiMotor,Hyundai Motor Company,Manufacturing,KR,KO,2025,standalone,ko_core,earliest_2025
+SamsungElectronics,Samsung Electronics,Manufacturing,KR,KO,2024,standalone,ko_core,
+Siemens,Siemens,Manufacturing,DE,EN,2025,sustainability_statement,en_core,eu_best_practice
+SchneiderElectric,Schneider Electric,Manufacturing,FR,EN,2024,standalone,en_core,eu_best_practice
+IncheonAirport,Incheon International Airport,Infrastructure,KR,KO,2024,standalone,reference,
+KEPCO,Korea Electric Power Corporation,Infrastructure,KR,KO,2024,standalone,ko_core,
+HeathrowAirport,Heathrow Airport Holdings,Infrastructure,UK,EN,2024,standalone,en_core,

@@ -1,0 +1,241 @@
+{
+    "305-1": {
+        "name": "Direct (Scope 1) GHG emissions",
+        "description": "Report total direct GHG emissions in metric tons of CO2 equivalent",
+        "source_chunks": [
+            "GRI_305_Emissions_2016_EN_p0009_c0001",
+            "GRI_305_Emissions_2016_EN_p0010_c0001"
+        ],
+        "source_pages": [
+            9,
+            10,
+            11
+        ],
+        "required_elements": [
+            {
+                "element": "Total Scope 1 emissions in tCO2e",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0002",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Biogenic CO2 emissions (reported separately)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0010_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Base year for calculation",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0002",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Consolidation approach (equity share, financial control, operational control)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Standards and methodologies used (e.g. GHG Protocol, third-party verification)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0009_c0002",
+                "verification_status": "verified"
+            }
+        ],
+        "keywords": [
+            "scope 1",
+            "direct emissions",
+            "ghg",
+            "greenhouse gas",
+            "co2",
+            "emissions",
+            "emission factors",
+            "GWP",
+            "IPCC",
+            "GHG protocol",
+            "verification",
+            "methodology",
+            "standards"
+        ]
+    },
+    "305-2": {
+        "name": "Energy indirect (Scope 2) GHG emissions",
+        "description": "Report gross location-based and market-based Scope 2 emissions",
+        "source_chunks": [
+            "GRI_305_Emissions_2016_EN_p0011_c0001",
+            "GRI_305_Emissions_2016_EN_p0011_c0002"
+        ],
+        "source_pages": [
+            11,
+            12
+        ],
+        "required_elements": [
+            {
+                "element": "Total Scope 2 emissions (location-based) in tCO2e",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0011_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Total Scope 2 emissions (market-based) in tCO2e",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0011_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Gases included in calculation",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0011_c0002",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Base year for calculation",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0011_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Source of emission factors",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0011_c0002",
+                "verification_status": "verified"
+            }
+        ],
+        "keywords": [
+            "scope 2",
+            "indirect emissions",
+            "energy",
+            "electricity",
+            "purchased"
+        ]
+    },
+    "305-3": {
+        "name": "Other indirect (Scope 3) GHG emissions",
+        "description": "Report gross other indirect (Scope 3) GHG emissions",
+        "source_chunks": [
+            "GRI_305_Emissions_2016_EN_p0012_c0001"
+        ],
+        "source_pages": [
+            12,
+            13
+        ],
+        "required_elements": [
+            {
+                "element": "Total Scope 3 emissions in tCO2e",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0012_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Categories included (business travel, employee commuting, etc.)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0012_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Gases included in calculation",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0012_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Base year for calculation",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0012_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Source of emission factors",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0012_c0001",
+                "verification_status": "verified"
+            }
+        ],
+        "keywords": [
+            "scope 3",
+            "indirect emissions",
+            "value chain",
+            "supply chain"
+        ]
+    },
+    "305-4": {
+        "name": "GHG emissions intensity",
+        "description": "Report GHG emissions intensity ratio",
+        "source_chunks": [
+            "GRI_305_Emissions_2016_EN_p0013_c0001"
+        ],
+        "source_pages": [
+            13,
+            14
+        ],
+        "required_elements": [
+            {
+                "element": "Emissions intensity ratio",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0013_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Organization-specific metric (denominator)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0013_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Types of emissions included (Scope 1, 2, 3)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0013_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Gases included",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0013_c0001",
+                "verification_status": "verified"
+            }
+        ],
+        "keywords": [
+            "intensity",
+            "emissions per",
+            "ratio",
+            "normalized"
+        ]
+    },
+    "305-5": {
+        "name": "Reduction of GHG emissions",
+        "description": "Report reductions in GHG emissions achieved",
+        "source_chunks": [
+            "GRI_305_Emissions_2016_EN_p0014_c0001"
+        ],
+        "source_pages": [
+            14,
+            15
+        ],
+        "required_elements": [
+            {
+                "element": "Emissions reduced in tCO2e",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0014_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Gases included",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0014_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Base year or baseline",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0014_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Scopes included (Scope 1, 2, 3)",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0014_c0001",
+                "verification_status": "verified"
+            },
+            {
+                "element": "Standards/methodologies used",
+                "source_chunk": "GRI_305_Emissions_2016_EN_p0014_c0001",
+                "verification_status": "verified"
+            }
+        ],
+        "keywords": [
+            "reduction",
+            "decreased",
+            "reduced emissions",
+            "targets",
+            "goals"
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+{
+  "test1_gri": {
+    "question": "What are the requirements for GRI 305-1?",
+    "answer": "The provided context does not include specific details about the requirements for GRI 305-1. However, it mentions that GRI 305: Emissions 2016, which includes Disclosures 305-1 to 305-5, has been superseded by GRI 102: Climate Change 2025, with an effective date of 1 January 2027, and earlier adoption is encouraged [GRI_305_Emissions_2016_EN_p0001_c0001]. For the specific requirements of GRI 305-1, one would need to refer to the GRI 305: Emissions 2016 standard documentation or the updated GRI 102: Climate Change 2025 standard once it becomes effective.",
+    "citations": [
+      {
+        "chunk_id": "GRI_305_Emissions_2016_EN_p0001_c0001",
+        "text": "GRI 305: Emissions 2016 Please note: Requirement 1.2 and Disclosures 305-1 to 305-5 in GRI 305: Emissions 2016 have been revised and will be superseded by GRI 102: Climate Change 2025 with the effecti...",
+        "metadata": {
+          "page_num": 1,
+          "char_count": 316,
+          "chunk_num": 1,
+          "gri_codes": [
+            "102",
+            "305",
+            "305-1",
+            "305-5"
+          ],
+          "language": "EN",
+          "standard_id": "GRI_305_Emissions_2016_EN",
+          "token_count": 98,
+          "standard_type": "GRI"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "task_type": "qa_assistant",
+    "metadata_filter": {
+      "standard_type": "GRI"
+    }
+  },
+  "test2_tcfd": {
+    "question": "Summarize TCFD governance recommendations",
+    "answer": "The Task Force on Climate-related Financial Disclosures (TCFD) emphasizes the importance of governance in managing climate-related risks and opportunities. Key governance recommendations from the TCFD include:\n\n- **Organizational Ownership and Responsibility**: The TCFD highlights the need for organizations to formalize responsibility for climate-related risk assessment and management. It notes that in many organizations, the assignment of responsibility for climate-related issues is not clear, which can hinder the effective implementation of the TCFD recommendations. The relationship between those responsible for climate-related risk (such as ESG experts or chief investment officers) and those in the finance function varies significantly across organizations, from regular interactions to minimal or no interaction. This lack of clarity and integration can adversely affect the implementation of the TCFD recommendations. The TCFD believes that encouraging the disclosure of climate-related financial information in public financial filings will improve coordination between an organization's climate-related risk experts and its finance function, similar to how organizations have evolved to include cybersecurity issues in their strategic and financial planning efforts [TCFD_Recommendations_2017_EN_p0047_c0001].\n\n- **Disclosure Principles**: The TCFD sets out fundamental principles for effective disclosure, emphasizing that disclosures should be reliable, verifiable, and objective. This includes providing high-quality, reliable information that is accurate, neutral, and free from bias. Disclosures should be based on objective data and use best-in-class measurement methodologies. While future-oriented disclosures will inherently involve judgment, the TCFD recommends that these judgments be adequately explained and based on verifiable assumptions. Disclosures should also be subject to internal governance processes similar to those used for financial reporting, even though independent external assurance is not explicitly required [TCFD_Annex_2021_EN_p0073_c0001].\n\n- **Timeliness of Disclosures**: The TCFD recommends that information be delivered to users or updated in a timely manner, at least on an annual basis within the mainstream financial report. It also advises that in the case of disruptive events with a material financial impact, organizations should provide timely updates of climate-related disclosures as appropriate. This recommendation acknowledges the potential tension between maintaining consistent methodologies and the need to update disclosures in response to evolving best practices or significant events [TCFD_Annex_2021_EN_p0073_c0001].\n\nThese governance recommendations are part of the TCFD's broader framework aimed at improving the reporting of climate-related financial information, thereby enabling stakeholders to make more informed decisions.",
+    "citations": [
+      {
+        "chunk_id": "TCFD_Annex_2021_EN_p0073_c0001",
+        "text": "Implementing the Recommendations of the Task Force on Climate-related Financial Disclosures 72 A. Introduction B. Recommendations C. Guidance for All Sectors D. Supplemental Guidance for the Financial...",
+        "metadata": {
+          "chunk_num": 1,
+          "page_num": 73,
+          "language": "EN",
+          "tcfd_pillar": "Governance",
+          "token_count": 444,
+          "char_count": 2557,
+          "standard_type": "TCFD",
+          "standard_id": "TCFD_Annex_2021_EN"
+        }
+      },
+      {
+        "chunk_id": "TCFD_Recommendations_2017_EN_p0047_c0001",
+        "text": "Recommendations of the Task Force on Climate-related Financial Disclosures 39 A Introduction B Climate-Related Risks, Opportunities, and Financial Impacts C Recommendations and Guidance D Scenario Ana...",
+        "metadata": {
+          "page_num": 47,
+          "tcfd_pillar": "Governance",
+          "chunk_num": 1,
+          "char_count": 1795,
+          "token_count": 288,
+          "standard_type": "TCFD",
+          "language": "EN",
+          "standard_id": "TCFD_Recommendations_2017_EN"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "task_type": "summarizer",
+    "metadata_filter": {
+      "$and": [
+        {
+          "standard_type": "TCFD"
+        },
+        {
+          "tcfd_pillar": "Governance"
+        }
+      ]
+    }
+  },
+  "test3_ibk": {
+    "question": "What are IBK Bank's Scope 1 emissions in 2023?",
+    "answer": "IBK Bank's Scope 1 emissions in 2023 are 6,242 tCO2eq [2024_KR_IBKBank_Sustainability_KO_p0064_c0003].",
+    "citations": [
+      {
+        "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
+        "text": "출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지속가능성기준위원회(ISSB, International Sustainability Standards Board)의 IFRS S2 기후 공시에 선제적으로 대응하고자, 2023년부터 IBK기업은행과 자회사(IBK캐피탈, IBK투자증권, IBK연금보험, IBK자산운용, I...",
+        "metadata": {
+          "report_id": "2024_KR_IBKBank_Sustainability_KO",
+          "chunk_num": 3,
+          "page_num": 64,
+          "token_count": 500,
+          "char_count": 657,
+          "sector": "Finance",
+          "language": "KO",
+          "company_id": "IBK"
+        }
+      }
+    ],
+    "retrieved_chunks": 5,
+    "task_type": "qa_assistant",
+    "metadata_filter": {
+      "company_id": "IBK"
+    }
+  }
+}

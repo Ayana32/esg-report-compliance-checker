@@ -1,0 +1,59 @@
+version: "2016"
+standard_id: "GRI_305_Emissions_2016_EN"
+last_verified: "2026-03-10"
+source_url: "https://www.globalreporting.org/standards/media/1012/gri-305-emissions-2016.pdf"
+
+requirements:
+  305-1:
+    name: "Direct (Scope 1) GHG emissions"
+    description: "Report total direct GHG emissions in metric tons of CO2 equivalent"
+    source_chunks:
+      - "GRI_305_Emissions_2016_EN_p0009_c0001"
+      - "GRI_305_Emissions_2016_EN_p0010_c0001"
+    source_pages: [9, 10, 11]
+
+    required_elements:
+      - element: "Total Scope 1 emissions in tCO2e"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
+        verification_status: "verified"
+        critical: true
+
+      - element: "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0002"
+        verification_status: "verified"
+        critical: true
+
+      - element: "Base year for calculation"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
+        verification_status: "verified"
+        critical: false
+
+      - element: "Consolidation approach (equity share, financial control, operational control)"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
+        verification_status: "verified"
+        critical: true
+
+      - element: "Biogenic CO2 emissions (reported separately)"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0010_c0001"
+        verification_status: "verified"
+        critical: false
+
+      - element: "Emission factors and GWP source (e.g. IPCC AR5/AR6)"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
+        verification_status: "verified"
+        critical: false
+
+      - element: "Standards and methodologies used (e.g. GHG Protocol, third-party verification)"
+        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0002"
+        verification_status: "verified"
+        critical: false
+
+    keywords:
+      - "scope 1"
+      - "direct emissions"
+      - "ghg"
+      - "greenhouse gas"
+      - "co2"
+      - "emissions"
+      - "tco2e"
+      - "tco2eq"

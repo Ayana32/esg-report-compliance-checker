@@ -1,0 +1,460 @@
+{
+  "summary": {
+    "total_tests": 10,
+    "passed": 10,
+    "pass_rate": 1.0,
+    "avg_precision": 0.9400000000000001
+  },
+  "results": [
+    {
+      "name": "GRI 305-1 Exact Code",
+      "query": "GRI 305-1 scope 1 emissions requirements",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "GRI_305_Emissions_2016_EN_p0011_c0003",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": ".5.4 gri 305: emissions 2016 note: requirement 1.2 and disclosures 305-1 to 305-5 have been supersed"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "GRI_305_Emissions_2016_EN_p0004_c0001",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "introduction gri 305: emissions 2016 contains disclosures for organizations to report information ab"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "GRI_305_Emissions_2016_EN_p0014_c0003",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": ". - 2 gri 305: emissions 2016 note: requirement 1.2 and disclosures 305-1 to 305-5 have been superse"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "GRI_305_Emissions_2016_EN_p0012_c0002",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "used for disclosing ghg emissions where it does not conflict with national or regional reporting req"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "GRI_305_Emissions_2016_EN_p0009_c0003",
+          "relevant": true,
+          "score": 0.015873015873015872,
+          "preview": "guidance 2 gri 305: emissions 2016 note: requirement 1.2 and disclosures 305-1 to 305-5 have been su"
+        }
+      ]
+    },
+    {
+      "name": "GRI 201 Economic",
+      "query": "GRI 201 economic performance disclosure",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0007_c0002",
+          "relevant": true,
+          "score": 0.03252247488101534,
+          "preview": "- disclosure 3-3 in gri 3. gri 201: economic performance 2016 note: disclosure 201-2 has been revise"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0001_c0001",
+          "relevant": true,
+          "score": 0.03252247488101534,
+          "preview": "gri 201: economic performance 2016 please note: disclosure 201-2 in gri 201: economic performance 20"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0005_c0003",
+          "relevant": true,
+          "score": 0.031746031746031744,
+          "preview": "201-1 through disclosure 201-4). - gri 201: economic performance 2016 note: disclosure 201-2 has bee"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0005_c0002",
+          "relevant": true,
+          "score": 0.031009615384615385,
+          "preview": "-3 in gri 3: material topics 2021 (see clause 1.1 in this standard); - any disclosures from this top"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0003_c0002",
+          "relevant": true,
+          "score": 0.030776515151515152,
+          "preview": "from government 14 glossary 15 bibliography 18 gri 201: economic performance 2016 note: disclosure 2"
+        }
+      ]
+    },
+    {
+      "name": "TCFD Governance",
+      "query": "TCFD governance board oversight climate",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "TCFD_Annex_2021_EN_p0087_c0001",
+          "relevant": true,
+          "score": 0.032018442622950824,
+          "preview": "appendices 86 a. introduction b. recommendations c. guidance for all sectors d. supplemental guidanc"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0027_c0001",
+          "relevant": true,
+          "score": 0.03149801587301587,
+          "preview": "recommendations of the task force on climate-related financial disclosures 19 a introduction b clima"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "TCFD_Annex_2021_EN_p0018_c0001",
+          "relevant": true,
+          "score": 0.03125763125763126,
+          "preview": "implementing the recommendations of the task force on climate-related financial disclosures 17 a. in"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "TCFD_Annex_2021_EN_p0007_c0002",
+          "relevant": true,
+          "score": 0.029850746268656716,
+          "preview": "asset owner disclosure project, cdp, climate disclosure standards board, climatewise, enhanced discl"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0053_c0001",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "recommendations of the task force on climate-related financial disclosures 45 a introduction b clima"
+        }
+      ]
+    },
+    {
+      "name": "TCFD Strategy",
+      "query": "TCFD strategy climate scenarios resilience",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0006_c0001",
+          "relevant": true,
+          "score": 0.031746031746031744,
+          "preview": "recommendations of the task force on climate-related financial disclosures v climate-related scenari"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "TCFD_Annex_2021_EN_p0060_c0001",
+          "relevant": true,
+          "score": 0.031544957774465976,
+          "preview": "implementing the recommendations of the task force on climate-related financial disclosures 59 a. in"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0035_c0002",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "organizations typically focus on the consequences of physical risk scenarios over shorter time frame"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0035_c0001",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "recommendations of the task force on climate-related financial disclosures 27 a introduction b clima"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "TCFD_Annex_2021_EN_p0034_c0001",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "implementing the recommendations of the task force on climate-related financial disclosures 33 a. in"
+        }
+      ]
+    },
+    {
+      "name": "SASB Commercial Banks",
+      "query": "SASB commercial banks climate risk",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "SASB_CommercialBanks_EN_p0003_c0001",
+          "relevant": true,
+          "score": 0.03252247488101534,
+          "preview": "table of contents introduction......................................................................"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "SASB_CommercialBanks_EN_p0005_c0001",
+          "relevant": true,
+          "score": 0.03200204813108039,
+          "preview": "use of the standards sasb standards are intended to aid entities in disclosing information about sus"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "SASB_CommercialBanks_EN_p0003_c0002",
+          "relevant": true,
+          "score": 0.03055037313432836,
+          "preview": "of environmental, social, and governance factors in credit analysis ................................"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "TCFD_Annex_2021_EN_p0069_c0002",
+          "relevant": true,
+          "score": 0.03036576949620428,
+          "preview": "for more sector-specific information, see sasb, “climate risk technical bulletin,” april 12, 2021 an"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "SASB_CommercialBanks_EN_p0004_c0002",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "the industry standards. historically, the sasb conceptual framework set out the basic concepts, prin"
+        }
+      ]
+    },
+    {
+      "name": "K-ESG Korean",
+      "query": "K-ESG 지배구조 이사회",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "KESG_Guideline_2021_KO_p0028_c0001",
+          "relevant": true,
+          "score": 0.03252247488101534,
+          "preview": "28 esg 이해 k-esg 가이드라인 개요 k-esg 가이드라인 주요 내용 부록 3. k-esg 가이드라인 기본 진단항목 정의서 4. k-esg 가이드라인 추가 진단항목 정의서 "
+        },
+        {
+          "rank": 2,
+          "chunk_id": "KESG_Guideline_2021_KO_p0132_c0001",
+          "relevant": true,
+          "score": 0.03128054740957967,
+          "preview": "132 3. k-esg 가이드라인 기본 진단항목 정의서 4. k-esg 가이드라인 추가 진단항목 정의서 esg 이해 k-esg 가이드라인 개요 k-esg 가이드라인 주요 내용 부록"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "KESG_Guideline_2021_KO_p0128_c0001",
+          "relevant": true,
+          "score": 0.03076923076923077,
+          "preview": "128 3. k-esg 가이드라인 기본 진단항목 정의서 4. k-esg 가이드라인 추가 진단항목 정의서 esg 이해 k-esg 가이드라인 개요 k-esg 가이드라인 주요 내용 부록"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "KESG_Guideline_2021_KO_p0122_c0001",
+          "relevant": true,
+          "score": 0.029910714285714284,
+          "preview": "122 3. k-esg 가이드라인 기본 진단항목 정의서 4. k-esg 가이드라인 추가 진단항목 정의서 esg 이해 k-esg 가이드라인 개요 k-esg 가이드라인 주요 내용 부록"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "KESG_Guideline_2021_KO_p0138_c0001",
+          "relevant": true,
+          "score": 0.029850746268656716,
+          "preview": "138 3. k-esg 가이드라인 기본 진단항목 정의서 4. k-esg 가이드라인 추가 진단항목 정의서 esg 이해 k-esg 가이드라인 개요 k-esg 가이드라인 주요 내용 부록"
+        }
+      ]
+    },
+    {
+      "name": "IBK Emissions",
+      "query": "IBK Bank carbon emissions reduction target",
+      "collection": "reports",
+      "precision": 0.8,
+      "relevant_count": 4,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0062_c0002",
+          "relevant": false,
+          "score": 0.01639344262295082,
+          "preview": "ibk sbti target 현재 ibk portfolio 발전 여신 발전 pf 2021 2022 2030 2050 0.04 0.12 0.01 target … … 2021 2022"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0039_c0004",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "29% as compared to 2023, and the overall reduction since 2021 are largely due to energy efficiency i"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "년까지 13,406tco2eq로 감축하고 2040년까지 탄소중립을 달성하고자 합니다. approach 60,000 40,000 20,000 50,000 30,000 10,000 0"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0005",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "and sbti, emphasize the importance of carbon removals in achieving net-zero emissions by 2050. carbo"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
+          "relevant": true,
+          "score": 0.015873015873015872,
+          "preview": "출량) 4.0026 tco2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지속가능성기준위원회(issb, international sustainability sta"
+        }
+      ]
+    },
+    {
+      "name": "Schneider Renewable",
+      "query": "Schneider Electric renewable energy usage",
+      "collection": "reports",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0002",
+          "relevant": true,
+          "score": 0.03278688524590164,
+          "preview": ", steam, and cooling from fossil sources (mwh) 87,850 (6) total fossil energy consumption (mwh) 531,"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0004",
+          "relevant": true,
+          "score": 0.030117753623188408,
+          "preview": "(mwh/millions of euros)(1) 39.87 2021 2020 2023 2022 2025 2 2030 2 2024 0% 20% 40% 80% 60% 100% 80% "
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0001",
+          "relevant": true,
+          "score": 0.029631255487269532,
+          "preview": "4 methodology, external assurance and indicators sustainable development report 2024 280 schneider e"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0001",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "80 se.com 2 sustainability statements sustainable development report 2024 schneider electric has a c"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "the combustion or bio-degradation of biomass not included in scope 1 ghg emissions are then 0. simil"
+        }
+      ]
+    },
+    {
+      "name": "Korean Query on Reports",
+      "query": "재생에너지 사용량",
+      "collection": "reports",
+      "precision": 0.6,
+      "relevant_count": 3,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0065_c0003",
+          "relevant": true,
+          "score": 0.03252247488101534,
+          "preview": "로 소수점단위 이하 절사 후 합산 기준을 적용한 값으로 에너지원별 사용량 합계와 차이 발생 ** 재생에너지(태양광) 사용량 측정 범위: ift, 충주연수원, 기흥연수원 * 보유 비"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0065_c0002",
+          "relevant": true,
+          "score": 0.032266458495966696,
+          "preview": "자 노력하고 있습니다. performance 연도별 전기차 보유 및 교체 비율 2021 2022 2023 보유 비율 17% (1,292대 중 216대) 52% (1,295대 중 6"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0066_c0003",
+          "relevant": false,
+          "score": 0.03200204813108039,
+          "preview": "인증을 완료할 계획입니다. ibk 탄소중립 이슈: 하남데이터센터, 친환경 건축물로 신축 단위 2020 2021 2022 2023 상수도 ton 78,148 74,555 80,652"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0066_c0004",
+          "relevant": false,
+          "score": 0.015625,
+          "preview": "71.9 62.5 56.5 신문 ton 73.3 66.3 70.8 65.4 파지 ton 93.7 94.6 84.1 66.7 캔 ton 3.7 2.6 1.5 0.8 플라스틱 ton "
+        },
+        {
+          "rank": 5,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0032_c0003",
+          "relevant": true,
+          "score": 0.015625,
+          "preview": "� 인증, gresb(global real estate sustainability benchmark) 최고등급인 5 star 등급 획득 - \u00071,020억 원 참여 로지스코 양지 물"
+        }
+      ]
+    },
+    {
+      "name": "Climate Risk General",
+      "query": "climate risk disclosure requirements",
+      "collection": "standards",
+      "precision": 1.0,
+      "relevant_count": 5,
+      "pass": true,
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "TCFD_Annex_2021_EN_p0034_c0002",
+          "relevant": true,
+          "score": 0.029211087420042643,
+          "preview": ". risk management disclose how the organization identifies, assesses, and manages climate-related ri"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0060_c0003",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "or formats (e.g., due to shifting climaterelated issues and evolution of risk practices, governance,"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "GRI_201_EconomicPerformance_2016_EN_p0011_c0001",
+          "relevant": true,
+          "score": 0.01639344262295082,
+          "preview": "disclosure 201-2 financial implications and other risks and opportunities due to climate change the "
+        },
+        {
+          "rank": 4,
+          "chunk_id": "TCFD_Recommendations_2017_EN_p0009_c0001",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "recommendations of the task force on climate-related financial disclosures 1 a introduction b climat"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "TCFD_Annex_2021_EN_p0021_c0001",
+          "relevant": true,
+          "score": 0.016129032258064516,
+          "preview": "implementing the recommendations of the task force on climate-related financial disclosures 20 a. in"
+        }
+      ]
+    }
+  ]
+}

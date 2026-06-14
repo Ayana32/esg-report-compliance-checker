@@ -1,215 +1,185 @@
-# esg-report-compliance-checker
-ESG Compliance Checker - Chunks Dataset
-Generated: 2026-02-21
-Version: v3 (Final - Front matter skip, GRI extraction, TCFD tagging)
+# ESG Report Compliance Checker
 
-📊 Dataset Overview
-Summary Statistics
-MetricValueTotal Chunks3,140Total Tokens1,056,722Avg Tokens/Chunk336.5Reports1,499 chunks (3 PDFs)Standards1,641 chunks (12 PDFs)
-Language Distribution
-LanguageChunksPercentageEnglish (EN)1,98463.2%Korean (KO)1,15636.8%
+> Automated GRI 305 emissions disclosure verification using hybrid RAG + LLM verification
 
-📄 Reports Dataset
-Location: data/chunks/reports/
-Sector Balance
-SectorChunksPercentageManufacturing72148.1%Finance55437.0%Infrastructure22414.9%
-Report Details
-ReportCompanySectorLanguageChunksAvg TokensSchneider ElectricSchneiderManufacturingEN721443IBK BankIBKFinanceKO554429Heathrow AirportHeathrowInfrastructureEN224354
-Files: 3 JSONL files (1 per report)
+A production-ready NLP pipeline that checks whether corporate ESG reports comply with GRI 305 (Scope 1, 2, 3 emissions) disclosure requirements. Built with domain-specific slot design, hybrid retrieval, and a three-way coverage classification system grounded in GRI "shall" requirements.
 
-📚 Standards Dataset
-Location: data/chunks/standards/
-Standard Type Distribution
-TypeChunksPercentageK-ESG60236.7%GRI42525.9%TCFD40824.9%SASB20612.6%
-Standard Details
-GRI (Global Reporting Initiative) - 5 files
-StandardChunksAvg TokensGRI 2 General Disclosures141192GRI 1 Foundation95228GRI 3 Material Topics78239GRI 305 Emissions66218GRI 201 Economic Performance45177
-Special Features:
+---
 
-GRI disclosure codes extracted (e.g., "GRI 305-1")
-12 unique codes identified
+## System Architecture
 
-TCFD (Task Force on Climate-related Financial Disclosures) - 2 files
-StandardChunksAvg TokensTCFD Annex228253TCFD Recommendations180235
-Special Features:
-
-TCFD pillar tagging (Governance, Strategy, Risk Management, Metrics & Targets)
-Front matter skip (pages 1-3)
-
-SASB (Sustainability Accounting Standards Board) - 4 files
-StandardChunksAvg TokensElectric Utilities77223Commercial Banks45206Electronic Manufacturing43196Automobiles41193
-Special Features:
-
-Sector-specific tagging
-Cover page skip (page 1)
-
-K-ESG (Korean ESG Guidelines) - 1 file
-StandardChunksAvg TokensK-ESG Guideline 2021602312
-Special Features:
-
-Korean language processing
-UI navigation text removal
-Guide page skip (page 2)
-
-Files: 12 JSONL files (1 per standard)
-
-Chunk Structure
-Each chunk is stored as a JSON object with the following structure:
-Reports Chunk Schema
-json{
-  "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0012_c0003",
-  "text": "chunk content...",
-  "metadata": {
-    "report_id": "2024_KR_IBKBank_Sustainability_KO",
-    "company_id": "IBK",
-    "sector": "Finance",
-    "language": "KO",
-    "page_num": 12,
-    "chunk_num": 3,
-    "token_count": 450,
-    "char_count": 523
-  }
-}
-Standards Chunk Schema
-json{
-  "chunk_id": "GRI_305_Emissions_2016_EN_p0005_c0002",
-  "text": "chunk content...",
-  "metadata": {
-    "standard_id": "GRI_305_Emissions_2016_EN",
-    "standard_type": "GRI",
-    "language": "EN",
-    "page_num": 5,
-    "chunk_num": 2,
-    "token_count": 480,
-    "char_count": 567,
-    "gri_codes": ["305-1", "305-2"]
-  }
-}
-
-✅ Quality Metrics
-Validation Results
-CheckStatusDetailsEmpty chunks✅ Pass0 empty chunksDuplicate IDs✅ Pass0 duplicatesMissing metadata✅ PassAll required fields presentVery short chunks✅ Pass23 chunks (<20 tokens, 0.73%)
-Token Distribution
-MetricValueMinimum2 tokensMaximum502 tokensMean336.5 tokensMedian488 tokens
-Note: Very short chunks (<20 tokens) are intentionally kept for important GRI disclosures and section headers.
-
-🛠️ Processing Pipeline
-Version History
-v3 (Final) - Current
-
-Front matter page skip (TCFD pages 1-3, SASB page 1, K-ESG page 2)
-Enhanced GRI code extraction (3-digit only)
-Improved TCFD pillar detection
-K-ESG UI navigation removal
-SASB header boilerplate removal
-Empty chunk removal
-
-v2
-
-Copyright/boilerplate removal
-GRI code extraction (initial)
-TCFD pillar tagging
-K-ESG UI text removal (partial)
-
-v1
-
-Basic fixed-size chunking (500 tokens, 50 overlap)
-Page-level text extraction
-Language detection
-
-Chunking Strategy
-
-Method: Fixed-size token chunking
-Size: 500 tokens per chunk
-Overlap: 50 tokens between chunks
-Tokenizer: tiktoken (gpt-3.5-turbo)
-
-Text Cleaning
-Applied to all chunks:
-
-Whitespace normalization
-Special character standardization (smart quotes, dashes)
-Bullet point normalization
-Language-specific fixes:
-
-Korean: Zero-width space removal
-English: Hyphenation fix
-
-
-
-
-Usage
-Load Chunks (Python)
-pythonimport json
-from pathlib import Path
-
-# Load a single report
-chunks = []
-with open('data/chunks/reports/2024_KR_IBKBank_Sustainability_KO.jsonl', 'r', encoding='utf-8') as f:
-    for line in f:
-        chunks.append(json.loads(line))
-
-# Load all reports
-for jsonl_file in Path('data/chunks/reports').glob('*.jsonl'):
-    # process...
-
-# Load all standards
-for jsonl_file in Path('data/chunks/standards').glob('*.jsonl'):
-    # process...
-Filter by Metadata
-python# Get all GRI chunks
-gri_chunks = [c for c in chunks if c['metadata'].get('standard_type') == 'GRI']
-
-# Get chunks with GRI 305 code
-emissions_chunks = [c for c in chunks 
-                   if 'gri_codes' in c['metadata'] 
-                   and '305' in str(c['metadata']['gri_codes'])]
-
-# Get Korean chunks
-korean_chunks = [c for c in chunks if c['metadata']['language'] == 'KO']
+```
+ESG Report (PDF)
+      │
+      ▼
+┌─────────────────────┐
+│   PDF Chunking      │  PyMuPDF → 500-token chunks with page metadata
+│   + Embedding       │  OpenAI text-embedding-3-small → ChromaDB
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Hybrid Retrieval  │  Semantic search (ChromaDB) + BM25 keyword search
+│   (RRF Fusion)      │  Reciprocal Rank Fusion → top-25 chunks per slot
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Slot Verifier     │  Slot-specific rules injected into GPT-4o-mini prompt
+│   (GPT-4 + Rules)   │  Per-slot verdict: covered / partial / missing
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│   Overall Judgment  │  Critical slot logic → company-level verdict
+│   + Evidence        │  Page-level evidence attribution
+└─────────────────────┘
 ```
 
 ---
 
-## File Structure
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| PDF Extraction | PyMuPDF |
+| Vector Store | ChromaDB (persistent) |
+| Embedding | OpenAI text-embedding-3-small |
+| Keyword Search | BM25 (rank-bm25) |
+| LLM Verifier | GPT-4o-mini via OpenAI API |
+| Frontend | Streamlit |
+| Containerization | Docker + docker-compose |
+| Language | Python 3.11 |
+
+---
+
+## Key Results
+
+Evaluated on 11 company ESG reports across 3 sectors (Finance, Manufacturing, Infrastructure) and 4 countries (KR, UK, FR, DE).
+
+| Standard | Companies | Slots | Slot Accuracy | FN Rate | FC Rate | Company Accuracy |
+|----------|-----------|-------|--------------|---------|---------|-----------------|
+| GRI 305-1 (Scope 1) | 11 | 7 | 74.0% | 23.4% | **2.6%** | 4/11 (36.4%) |
+| GRI 305-2 (Scope 2) | 11 | 5 | 81.8% | 14.5% | **3.6%** | 8/11 (72.7%) |
+| GRI 305-3 (Scope 3) | 11 | 5 | 83.6% | 10.9% | **5.5%** | 8/11 (72.7%) |
+
+**FN = False Negative** (system under-predicts disclosure level)  
+**FC = False Covered** (system over-predicts — more critical error; kept low across all standards)
+
+The higher FN rate on 305-1 is attributable to Korean financial/public sector companies (IBK, Shinhan, Kepco, Incheon) that publish detailed GHG methodology in separate data packs not indexed by the current single-document pipeline — documented as a known limitation.
+
+---
+
+## Evaluation Design
+
+### Why three labels?
+
+GRI 305 uses "shall" language for required disclosures but also acknowledges that some information may be genuinely unavailable or not applicable (e.g., biogenic CO2 for financial companies). A binary covered/missing system would force ambiguous cases into one extreme. The three-label system (`covered / partial / missing`) enables:
+
+- **covered**: all "shall" requirements for a slot are met
+- **partial**: partial evidence found — requires expert review
+- **missing**: no relevant disclosure detected
+
+### Critical slot logic
+
+Not all slots are equal. Slots grounded in GRI "shall" requirements (e.g., total Scope 1 figure, consolidation approach) are marked as **critical**. A company-level verdict of `covered` requires all critical slots to be satisfied, regardless of non-critical slot status.
+
+### GRI 305 Coverage
+
+| Standard | Slots Evaluated | Critical Slots |
+|----------|----------------|----------------|
+| GRI 305-1 | slot_a (total tCO2e), slot_b (gases), slot_c (biogenic), slot_d (base year), slot_e (emission factors/GWP), slot_f (consolidation), slot_g (standards) | slot_a, slot_b, slot_f |
+| GRI 305-2 | slot_a (location-based), slot_b (market-based), slot_c (emission factor source), slot_d (contractual instruments), slot_e (standards) | slot_a, slot_b, slot_c, slot_e |
+| GRI 305-3 | slot_a (total tCO2e), slot_b (categories), slot_c (standards), slot_d (base year), slot_e (biogenic) | slot_a, slot_b, slot_c |
+
+---
+
+## Dataset
+
+- **11 companies** across Finance (IBK, Shinhan, HSBC, Standard Chartered), Manufacturing (Hyundai, Samsung, Siemens, Schneider Electric), and Infrastructure (KEPCO, Incheon Airport, Heathrow Airport)
+- **7,713 chunks** indexed in ChromaDB
+- **4 countries**, **2 languages** (EN, KO)
+- Manual ground truth labels constructed per slot per company, grounded in GRI original text
+
+---
+
+## Example Output
+
 ```
-data/chunks/
-├── README.md                     (this file)
-├── reports/
-│   ├── 2024_UK_HeathrowAirport_Sustainablity_EN.jsonl
-│   ├── 2024_FR_SchneiderElectric_Sustainability_EN.jsonl
-│   └── 2024_KR_IBKBank_Sustainability_KO.jsonl
-└── standards/
-    ├── GRI_1_Foundation_2021_EN.jsonl
-    ├── GRI_2_GeneralDisclosures_2021_EN.jsonl
-    ├── GRI_3_MaterialTopics_2021_EN.jsonl
-    ├── GRI_201_EconomicPerformance_2016_EN.jsonl
-    ├── GRI_305_Emissions_2016_EN.jsonl
-    ├── TCFD_Recommendations_2017_EN.jsonl
-    ├── TCFD_Annex_2021_EN.jsonl
-    ├── SASB_CommercialBanks_EN.jsonl
-    ├── SASB_Automobiles_EN.jsonl
-    ├── SASB_ElectricUtilities_EN.jsonl
-    ├── SASB_ElectronicManufacturing_EN.jsonl
-    └── KESG_Guideline_2021_KO.jsonl
+ESG Compliance Checker — Schneider Electric
+Standard: GRI 305-1
 
-🔮 Next Steps
+Overall Status: ✅ COVERED
 
-Week 3: Parse remaining 8 reports (expand to 11 total)
-RAG System: Build retrieval-augmented generation pipeline
-Embeddings: Generate vector embeddings for semantic search
-Compliance Checker: Implement GRI/TCFD compliance validation
+slot_a  Total Scope 1 (tCO2e)          COVERED    (conf: 0.90)  📄 p.43, p.44
+slot_b  Gases included                  COVERED    (conf: 0.90)  📄 p.39, p.42
+slot_c  Biogenic CO2                    COVERED    (conf: 0.75)  📄 p.44
+slot_d  Base year                       COVERED    (conf: 0.90)  📄 p.41
+slot_e  Emission factors & GWP          COVERED    (conf: 0.90)  📄 p.142
+slot_f  Consolidation approach          COVERED    (conf: 0.90)  📄 p.42
+slot_g  Standards & methodologies       COVERED    (conf: 0.90)  📄 p.44
+```
 
+---
 
-📝 Notes
+## Quick Start
 
-All chunks validated for quality (no empty chunks, no duplicates)
-Metadata fields vary by type (reports vs standards)
-GRI codes only available in GRI standard chunks
-TCFD pillar tags only in TCFD chunks
-Korean text properly encoded (UTF-8)
-URLs preserved in text (useful for references)
+### Docker (recommended)
 
+```bash
+git clone https://github.com/Ayana32/esg-report-compliance-checker.git
+cd esg-report-compliance-checker
+cp .env.example .env          # add your OPENAI_API_KEY
+docker-compose up --build
+# → open http://localhost:8501
+```
 
-Created by: ESG Compliance Checker Pipeline v3
-Last Updated: 2026-02-21
+### Local
+
+```bash
+pip install -r requirements.txt
+export OPENAI_API_KEY=your_key
+streamlit run streamlit_app.py
+```
+
+---
+
+## Known Limitations & Future Work
+
+**Current limitations:**
+- Single-document indexing only — companies that publish methodology in separate data packs (Shinhan ESG Data Pack, SC Annual Report) show higher FN rates
+- Korean financial/public sector reporting pattern differs from Western ESG disclosure norms, causing retrieval gaps on consolidation and GWP slots
+- LLM verifier temperature=0 reduces but does not eliminate output variance on borderline slots
+
+**Future work:**
+- Multi-document RAG pipeline (index all disclosure-related documents per company)
+- Cross-framework tagging (TCFD Metrics & Targets, ISSB S2 alignment)
+- Multi-company comparison dashboard
+- Ablation study: chunk size, retrieval method, verifier model comparison
+
+---
+
+## Project Structure
+
+```
+esg_compliance_checker/
+├── streamlit_app.py              # Streamlit UI
+├── compliance_checker_v2_hybrid.py  # Core pipeline
+├── llm_verifier.py               # GPT-4 slot verifier
+├── hybrid_search.py              # BM25 + ChromaDB fusion
+├── element_query_generator.py    # Per-slot query generation
+├── ground_truth.py               # Manual labels (305-1/2/3)
+├── evaluate.py                   # Evaluation script
+├── generate_embeddings.py        # ChromaDB indexing
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── data/
+    ├── reports/                  # 11 company PDFs
+    ├── chunks/                   # JSONL chunks
+    └── evaluation/               # Evaluation reports
+```
+
+---
+
+*Built as an NLP portfolio project — RAG pipeline for automated ESG disclosure verification across GRI 305 standards.*

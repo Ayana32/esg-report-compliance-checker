@@ -1,5 +1,5 @@
 {
-  "top_k": 5,
+  "top_k": 10,
   "query_count": 9,
   "modes": [
     "bm25",
@@ -10,9 +10,9 @@
   "summary": {
     "bm25": {
       "total_queries": 9,
-      "hits": 8,
-      "hit_rate": 0.8888888888888888,
-      "mrr": 0.7037037037037037
+      "hits": 9,
+      "hit_rate": 1.0,
+      "mrr": 0.7222222222222222
     },
     "hybrid": {
       "total_queries": 9,
@@ -40,7 +40,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
@@ -50,12 +50,19 @@
         "2024_KR_IBKBank_Sustainability_KO_p0134_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
         "2024_KR_IBKBank_Sustainability_KO_p0062_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0022_c0001"
+        "2024_KR_IBKBank_Sustainability_KO_p0022_c0001",
+        "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0134_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0021_c0001"
       ],
-      "relevant_ranks": [],
-      "first_relevant_rank": null,
-      "hit_at_k": false,
-      "reciprocal_rank": 0.0
+      "relevant_ranks": [
+        6
+      ],
+      "first_relevant_rank": 6,
+      "hit_at_k": true,
+      "reciprocal_rank": 0.16666666666666666
     },
     {
       "query_id": "IBK_305-1_slot_a",
@@ -63,7 +70,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
@@ -73,7 +80,12 @@
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0004",
         "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+        "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
+        "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0146_c0006",
+        "2024_KR_IBKBank_Sustainability_KO_p0135_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0064_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0052_c0002"
       ],
       "relevant_ranks": [
         2
@@ -88,7 +100,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
@@ -98,7 +110,12 @@
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
         "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
         "2024_KR_IBKBank_Sustainability_KO_p0146_c0005",
-        "2024_KR_IBKBank_Sustainability_KO_p0141_c0003"
+        "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0064_c0004",
+        "2024_KR_IBKBank_Sustainability_KO_p0021_c0001",
+        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0007_c0003"
       ],
       "relevant_ranks": [
         2
@@ -113,7 +130,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
@@ -123,7 +140,12 @@
         "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0002",
         "2024_KR_IBKBank_Sustainability_KO_p0022_c0001",
-        "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+        "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
+        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
+        "2024_KR_IBKBank_Sustainability_KO_p0064_c0004",
+        "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+        "2024_KR_IBKBank_Sustainability_KO_p0134_c0001",
+        "2024_KR_IBKBank_Sustainability_KO_p0147_c0002"
       ],
       "relevant_ranks": [
         1
@@ -138,7 +160,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_b",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -147,7 +169,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0110_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
         "2025_KR_Hundai_Sustainability_KO_p0113_c0004",
-        "2025_KR_Hundai_Sustainability_KO_p0061_c0008"
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0008",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0007",
+        "2025_KR_Hundai_Sustainability_KO_p0067_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0090_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0059_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0109_c0006"
       ],
       "relevant_ranks": [
         1
@@ -162,7 +189,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_b",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -171,7 +198,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0141_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0110_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0033_c0001",
-        "2025_KR_Hundai_Sustainability_KO_p0039_c0005"
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0034_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0140_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0046_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0041_c0001"
       ],
       "relevant_ranks": [
         1
@@ -186,7 +218,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_b",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -195,7 +227,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0110_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
         "2025_KR_Hundai_Sustainability_KO_p0141_c0001",
-        "2025_KR_Hundai_Sustainability_KO_p0033_c0001"
+        "2025_KR_Hundai_Sustainability_KO_p0033_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0113_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0008",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0007",
+        "2025_KR_Hundai_Sustainability_KO_p0034_c0002"
       ],
       "relevant_ranks": [
         1
@@ -210,7 +247,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_b",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -219,7 +256,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0034_c0002",
         "2025_KR_Hundai_Sustainability_KO_p0017_c0002",
         "2025_KR_Hundai_Sustainability_KO_p0143_c0001",
-        "2025_KR_Hundai_Sustainability_KO_p0140_c0001"
+        "2025_KR_Hundai_Sustainability_KO_p0140_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0034_c0003",
+        "2025_KR_Hundai_Sustainability_KO_p0041_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0141_c0001"
       ],
       "relevant_ranks": [
         1
@@ -234,7 +276,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003"
@@ -244,7 +286,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0088_c0006",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0005",
-        "2025_KR_Hundai_Sustainability_KO_p0113_c0004"
+        "2025_KR_Hundai_Sustainability_KO_p0113_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0008",
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0007",
+        "2025_KR_Hundai_Sustainability_KO_p0030_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0067_c0002"
       ],
       "relevant_ranks": [
         1,
@@ -260,7 +307,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003"
@@ -270,10 +317,16 @@
         "2025_KR_Hundai_Sustainability_KO_p0039_c0005",
         "2025_KR_Hundai_Sustainability_KO_p0039_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003",
-        "2025_KR_Hundai_Sustainability_KO_p0140_c0001"
+        "2025_KR_Hundai_Sustainability_KO_p0140_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0135_c0003",
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0143_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0115_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0142_c0001"
       ],
       "relevant_ranks": [
-        4
+        4,
+        7
       ],
       "first_relevant_rank": 4,
       "hit_at_k": true,
@@ -285,7 +338,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003"
@@ -295,7 +348,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0030_c0005",
         "2025_KR_Hundai_Sustainability_KO_p0030_c0003",
-        "2025_KR_Hundai_Sustainability_KO_p0141_c0001"
+        "2025_KR_Hundai_Sustainability_KO_p0141_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0088_c0006",
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0140_c0001"
       ],
       "relevant_ranks": [
         1,
@@ -311,7 +369,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0003"
@@ -321,7 +379,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0002",
         "2025_KR_Hundai_Sustainability_KO_p0140_c0001",
-        "2025_KR_Hundai_Sustainability_KO_p0141_c0001"
+        "2025_KR_Hundai_Sustainability_KO_p0141_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0034_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0090_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0143_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0039_c0003"
       ],
       "relevant_ranks": [
         1,
@@ -337,7 +400,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -346,7 +409,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0088_c0006",
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0113_c0004",
-        "2025_KR_Hundai_Sustainability_KO_p0061_c0008"
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0008",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0007",
+        "2025_KR_Hundai_Sustainability_KO_p0067_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
+        "2025_KR_Hundai_Sustainability_KO_p0090_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0110_c0004"
       ],
       "relevant_ranks": [
         3
@@ -361,7 +429,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -370,7 +438,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0110_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0041_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
-        "2025_KR_Hundai_Sustainability_KO_p0046_c0004"
+        "2025_KR_Hundai_Sustainability_KO_p0046_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0126_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0045_c0003",
+        "2025_KR_Hundai_Sustainability_KO_p0020_c0006",
+        "2025_KR_Hundai_Sustainability_KO_p0033_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0018_c0005"
       ],
       "relevant_ranks": [
         1
@@ -385,7 +458,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -394,7 +467,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0110_c0004",
         "2025_KR_Hundai_Sustainability_KO_p0110_c0005",
         "2025_KR_Hundai_Sustainability_KO_p0045_c0003",
-        "2025_KR_Hundai_Sustainability_KO_p0040_c0002"
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0088_c0006",
+        "2025_KR_Hundai_Sustainability_KO_p0041_c0001",
+        "2025_KR_Hundai_Sustainability_KO_p0113_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0046_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0061_c0008"
       ],
       "relevant_ranks": [
         1
@@ -409,7 +487,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
       ],
@@ -418,7 +496,12 @@
         "2025_KR_Hundai_Sustainability_KO_p0041_c0001",
         "2025_KR_Hundai_Sustainability_KO_p0034_c0002",
         "2025_KR_Hundai_Sustainability_KO_p0018_c0005",
-        "2025_KR_Hundai_Sustainability_KO_p0041_c0002"
+        "2025_KR_Hundai_Sustainability_KO_p0041_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0040_c0002",
+        "2025_KR_Hundai_Sustainability_KO_p0082_c0008",
+        "2025_KR_Hundai_Sustainability_KO_p0020_c0006",
+        "2025_KR_Hundai_Sustainability_KO_p0021_c0004",
+        "2025_KR_Hundai_Sustainability_KO_p0142_c0001"
       ],
       "relevant_ranks": [
         1
@@ -433,7 +516,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
@@ -443,10 +526,16 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0109_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0095_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0004_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0001"
       ],
       "relevant_ranks": [
-        1
+        1,
+        6
       ],
       "first_relevant_rank": 1,
       "hit_at_k": true,
@@ -458,7 +547,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
@@ -468,6 +557,42 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0094_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0109_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0095_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0118_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0006_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0013_c0002"
+      ],
+      "relevant_ranks": [
+        2,
+        4
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_k": true,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query_id": "Heathrow_305-1_slot_f",
+      "company_id": "Heathrow",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "mode": "hybrid",
+      "top_k": 10,
+      "gold_chunk_ids": [
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
+      ],
+      "retrieved_chunk_ids": [
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0109_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0095_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0004_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0106_c0003",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0094_c0001"
       ],
       "relevant_ranks": [
@@ -483,34 +608,8 @@
       "company_id": "Heathrow",
       "requirement_id": "305-1",
       "slot_id": "slot_f",
-      "mode": "hybrid",
-      "top_k": 5,
-      "gold_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
-      ],
-      "retrieved_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0109_c0001"
-      ],
-      "relevant_ranks": [
-        2,
-        4
-      ],
-      "first_relevant_rank": 2,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.5
-    },
-    {
-      "query_id": "Heathrow_305-1_slot_f",
-      "company_id": "Heathrow",
-      "requirement_id": "305-1",
-      "slot_id": "slot_f",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
@@ -520,7 +619,12 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0094_c0001",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0021_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0021_c0002",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0112_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0109_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0095_c0001",
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0079_c0001"
       ],
       "relevant_ranks": [
         1,
@@ -536,7 +640,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
@@ -547,7 +651,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0035_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0028_c0002"
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0004",
+        "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0025_c0002"
       ],
       "relevant_ranks": [
         1,
@@ -563,7 +672,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
@@ -574,7 +683,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0035_c0004",
-        "2025_DE_Siemens_Sustainability_EN_p0035_c0002"
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0036_c0002"
       ],
       "relevant_ranks": [
         1,
@@ -590,7 +704,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
@@ -601,7 +715,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0035_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
-        "2025_DE_Siemens_Sustainability_EN_p0035_c0004"
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0004",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001"
       ],
       "relevant_ranks": [
         1,
@@ -617,7 +736,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_e",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
@@ -628,7 +747,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0035_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0023_c0003"
+        "2025_DE_Siemens_Sustainability_EN_p0023_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0004",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0035_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0002"
       ],
       "relevant_ranks": [
         1,
@@ -644,7 +768,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
@@ -654,10 +778,16 @@
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003",
         "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0110_c0003"
+        "2025_DE_Siemens_Sustainability_EN_p0110_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0022_c0001"
       ],
       "relevant_ranks": [
-        2
+        2,
+        9
       ],
       "first_relevant_rank": 2,
       "hit_at_k": true,
@@ -669,7 +799,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
@@ -679,7 +809,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0028_c0002"
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0036_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0025_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0025_c0002"
       ],
       "relevant_ranks": [],
       "first_relevant_rank": null,
@@ -692,7 +827,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
@@ -702,7 +837,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
-        "2025_DE_Siemens_Sustainability_EN_p0027_c0001"
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0022_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0038_c0001"
       ],
       "relevant_ranks": [],
       "first_relevant_rank": null,
@@ -715,7 +855,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_a",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
@@ -725,7 +865,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0003",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0028_c0003"
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0037_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0031_c0002"
       ],
       "relevant_ranks": [
         3,
@@ -741,7 +886,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_d",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
@@ -752,7 +897,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0033_c0001"
+        "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0036_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0008_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0022_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0034_c0001"
       ],
       "relevant_ranks": [
         2,
@@ -769,7 +919,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_d",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
@@ -780,11 +930,17 @@
         "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
         "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0002",
-        "2025_DE_Siemens_Sustainability_EN_p0027_c0001"
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0036_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0026_c0001"
       ],
       "relevant_ranks": [
         4,
-        5
+        5,
+        10
       ],
       "first_relevant_rank": 4,
       "hit_at_k": true,
@@ -796,7 +952,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_d",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
@@ -807,11 +963,17 @@
         "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
-        "2025_DE_Siemens_Sustainability_EN_p0027_c0003"
+        "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0036_c0003",
+        "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0029_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0022_c0001"
       ],
       "relevant_ranks": [
         1,
-        3
+        3,
+        6
       ],
       "first_relevant_rank": 1,
       "hit_at_k": true,
@@ -823,7 +985,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_d",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
@@ -834,7 +996,12 @@
         "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
         "2025_DE_Siemens_Sustainability_EN_p0028_c0002",
-        "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+        "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0028_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0025_c0002",
+        "2025_DE_Siemens_Sustainability_EN_p0007_c0001",
+        "2025_DE_Siemens_Sustainability_EN_p0033_c0001"
       ],
       "relevant_ranks": [
         2,
@@ -850,7 +1017,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "bm25",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
@@ -860,7 +1027,12 @@
         "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0123_c0004",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0004",
-        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0003"
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0003",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0001",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0123_c0005",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0136_c0002",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0004",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0028_c0002"
       ],
       "relevant_ranks": [
         1
@@ -875,7 +1047,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "semantic",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
@@ -885,7 +1057,12 @@
         "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0125_c0001",
-        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0005"
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0005",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0004",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0006",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0004",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0003",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0133_c0004"
       ],
       "relevant_ranks": [
         3
@@ -900,7 +1077,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "hybrid",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
@@ -910,10 +1087,16 @@
         "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0125_c0001",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002",
-        "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0007"
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0007",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0002",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0002",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0123_c0004",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0004"
       ],
       "relevant_ranks": [
-        2
+        2,
+        8
       ],
       "first_relevant_rank": 2,
       "hit_at_k": true,
@@ -925,7 +1108,7 @@
       "requirement_id": "305-1",
       "slot_id": "slot_f",
       "mode": "hybrid_rerank",
-      "top_k": 5,
+      "top_k": 10,
       "gold_chunk_ids": [
         "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
@@ -935,10 +1118,16 @@
         "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0002",
         "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0001",
-        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0006"
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0006",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0123_c0005",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0003",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0136_c0002",
+        "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0004"
       ],
       "relevant_ranks": [
-        2
+        2,
+        6
       ],
       "first_relevant_rank": 2,
       "hit_at_k": true,

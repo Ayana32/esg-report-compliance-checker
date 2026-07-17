@@ -155,8 +155,18 @@ def main() -> None:
     parser.add_argument(
         "--modes",
         nargs="+",
-        default=["bm25", "semantic", "hybrid"],
-        choices=["bm25", "semantic", "hybrid"],
+        default=[
+            "bm25",
+            "semantic",
+            "hybrid",
+            "hybrid_rerank",
+        ],
+        choices=[
+            "bm25",
+            "semantic",
+            "hybrid",
+            "hybrid_rerank",
+        ],
     )
 
     args = parser.parse_args()

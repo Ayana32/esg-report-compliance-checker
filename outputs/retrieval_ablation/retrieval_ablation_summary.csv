@@ -1,0 +1,9 @@
+top_k,mode,query_count,hits,hit_rate,mrr
+5,bm25,9,8,0.889,0.704
+5,hybrid,9,8,0.889,0.722
+5,hybrid_rerank,9,9,1.0,0.815
+5,semantic,9,8,0.889,0.537
+10,bm25,9,9,1.0,0.722
+10,hybrid,9,8,0.889,0.722
+10,hybrid_rerank,9,9,1.0,0.815
+10,semantic,9,8,0.889,0.537

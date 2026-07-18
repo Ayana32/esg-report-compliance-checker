@@ -20,3 +20,10 @@ evaluation_report*.txt
 _local_backup/
 _archive/
 test_stack.py
+
+# Python cache
+*.py[cod]
+.pytest_cache/
+
+# Virtual environment
+.venv/

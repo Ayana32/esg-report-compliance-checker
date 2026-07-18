@@ -15,14 +15,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Download NLTK data
 RUN python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab'); nltk.download('stopwords')"
 
-# Copy source code and GRI checklists
-COPY *.py .
-COPY data/checklists/ data/checklists/
+# Copy application source, data, and vector store
+COPY app/ app/
+COPY *.py ./
+COPY data/ data/
+COPY chroma_db/ chroma_db/
 
-# API key injected at runtime via .env or docker run -e
-ENV OPENAI_API_KEY=""
+# FastAPI default port
+EXPOSE 8000
 
-# Streamlit default port
-EXPOSE 8501
-
-CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

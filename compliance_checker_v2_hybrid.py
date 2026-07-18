@@ -89,14 +89,39 @@ class ComplianceCheckerV2:
             else:
                 raise ValueError(f"Unknown mode: {verification_mode}")
 
+            # Convert selected chunk IDs into readable evidence text
+            selected_chunk_ids = set(covered.get('chunks', []))
+
+            selected_evidence = [
+                chunk for chunk in evidence
+                if chunk.get('chunk_id') in selected_chunk_ids
+            ]
+
+            evidence_text = "\n\n".join(
+                chunk.get('text', '').strip()
+                for chunk in selected_evidence
+                if chunk.get('text', '').strip()
+            )
+
+            structured_evidence = [
+                {
+                    'chunk_id': chunk.get('chunk_id', ''),
+                    'text': chunk.get('text', ''),
+                    'page_number': chunk.get('metadata', {}).get('page_num')
+                }
+                for chunk in selected_evidence
+            ]
+
             element_coverage.append({
                 'element'            : element,
                 'status'             : covered['status'],
                 'evidence_chunks'    : covered.get('chunks', []),
+                'evidence_text'      : evidence_text,
                 'page_numbers'       : covered.get('page_numbers', []),
                 'confidence'         : covered['confidence'],
                 'reasoning'          : covered.get('reasoning', ''),
-                'verification_method': covered.get('method', verification_mode)
+                'verification_method': covered.get('method', verification_mode),
+                'evidence'           : structured_evidence
             })
 
         overall_status = self._determine_overall_status(element_coverage)
@@ -107,7 +132,7 @@ class ComplianceCheckerV2:
             'requirement_name'  : req['name'],
             'overall_status'    : overall_status,
             'element_coverage'  : element_coverage,
-            'evidence'          : evidence[:3],
+            'evidence'          : global_evidence[:3],
             'verification_mode' : verification_mode
         }
 
@@ -165,12 +190,24 @@ class ComplianceCheckerV2:
             final_status = kw_status
             final_conf   = max(keyword_result['confidence'], llm_result['confidence'])
             print(f"    → AGREE: {final_status} (conf: {final_conf:.2f})")
+
+            selected_chunks = (
+                llm_result.get('chunks', [])
+                or keyword_result.get('chunks', [])
+            )
+
+            selected_pages = (
+                llm_result.get('page_numbers', [])
+                if llm_result.get('chunks')
+                else []
+            )
+
             return {
                 'status'      : final_status,
                 'confidence'  : final_conf,
                 'reasoning'   : llm_result.get('reasoning', 'Both methods agree'),
-                'chunks'      : keyword_result.get('chunks', []),
-                'page_numbers': llm_result.get('page_numbers', []),
+                'chunks'      : selected_chunks,
+                'page_numbers': selected_pages,
                 'method'      : 'hybrid-agree'
             }
 
@@ -194,8 +231,8 @@ class ComplianceCheckerV2:
                 'status'      : 'partial',
                 'confidence'  : 0.7,
                 'reasoning'   : f"Keyword found evidence ({kw_status}), but LLM verification inconclusive ({llm_status}). Needs review.",
-                'chunks'      : keyword_result.get('chunks', []),
-                'page_numbers': llm_result.get('page_numbers', []),
+                'chunks'      : (llm_result.get('chunks', []) or keyword_result.get('chunks', [])),
+                'page_numbers': (llm_result.get('page_numbers', []) if llm_result.get('chunks') else []),
                 'method'      : 'hybrid-downgrade'
             }
         else:
@@ -226,14 +263,21 @@ class ComplianceCheckerV2:
         # Read status directly from v3 verifier (covered / partial / missing)
         status = result.get('status', 'missing')
 
-        chunks = [e.get('chunk_id', '') for e in evidence[:10]]
+        selected_evidence = result.get('selected_evidence', [])
+
+        selected_chunk_ids = [
+            item.get('chunk_id', '')
+            for item in selected_evidence
+            if item.get('chunk_id')
+        ]
 
         return {
-            'status'      : status,
-            'confidence'  : result['confidence'],
-            'reasoning'   : result['reasoning'],
+            'status': status,
+            'confidence': result['confidence'],
+            'reasoning': result['reasoning'],
             'page_numbers': result.get('page_numbers', []),
-            'chunks'      : chunks if status != 'missing' else []
+            'chunks': selected_chunk_ids if status != 'missing' else [],
+            'selected_evidence': selected_evidence if status != 'missing' else []
         }
 
     def _check_element_with_keywords(

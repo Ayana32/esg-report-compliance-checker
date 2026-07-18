@@ -1,18 +1,17 @@
 """
-llm_verifier.py (v3)
+llm_verifier.py
 Slot-aware LLM verifier with conservative bias and Korean language support.
- 
+
 Changes from v2:
 - Slot-specific checklist injected into prompt
 - Conservative bias: when in doubt → partial, not covered
 - Korean language support
 - Explicit distinction rules (base year vs data table, intensity vs consolidation)
 """
- 
 from llm_setup import LLMProvider
 from typing import Dict, List
 import json
- 
+
 # ── Slot-specific verification rules ──────────────────────────────────────────
 # Injected into LLM prompt per slot to prevent common false covered errors.
 SLOT_RULES = {
@@ -21,7 +20,7 @@ COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 
 PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
 MISSING if: No numeric Scope 1 emissions value is present.
 NOTE: A percentage or reduction target is NOT a total emissions figure.""",
- 
+
     "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)": """
 COVERED if: At least 3 specific gas types are explicitly named (e.g. CO2, CH4, N2O, SF6, HFCs).
 PARTIAL if ANY of the following:
@@ -32,7 +31,7 @@ PARTIAL if ANY of the following:
 MISSING if: No gas types AND no fuel types AND no combustion sources are mentioned at all.
 Korean equivalents: 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O), 육불화황(SF6)
 Korean fuel terms that indicate PARTIAL: 휘발유, 경유, LPG, LNG, 고정연소, 이동연소""",
- 
+
     "Base year for calculation": """
 COVERED if ANY of the following:
   - A specific year is explicitly declared as the BASE YEAR for GHG calculations
@@ -44,7 +43,7 @@ MISSING if: No base year declaration or pattern is present.
 NOTE: A table showing multiple years of data alone is NOT a base year declaration.
       BUT if one year is labeled (기준) or (Base) in that table → COVERED.
 Korean equivalents: 기준연도, 기준 연도, 기준년도""",
- 
+
     "Consolidation approach (equity share, financial control, operational control)": """
 COVERED if ANY of the following:
   - equity share, financial control, or operational control is explicitly stated
@@ -56,7 +55,7 @@ MISSING if: No consolidation approach or boundary information present at all.
 NOTE: Describing WHAT is included is not the same as stating the APPROACH.
       BUT ownership percentage basis → equity share → COVERED.
 Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위""",
- 
+
     "Biogenic CO2 emissions (reported separately)": """
 COVERED if: Biogenic CO2 emissions are explicitly reported as a SEPARATE numeric figure (e.g. "X tCO2e biogenic").
 PARTIAL if: A specific biogenic source is quantified but not clearly labeled as biogenic CO2
@@ -68,7 +67,7 @@ MISSING if ANY of the following:
   - The word "biogenic" appears only in passing without a separate disclosure
   → IMPORTANT: A mention or methodology note alone is NOT enough for partial. A numeric value must be present.
 Korean equivalents: 바이오제닉, 생물성 탄소, 바이오매스""",
- 
+
     "Emission factors and GWP source (e.g. IPCC AR5/AR6)": """
 COVERED if ANY of the following:
   - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
@@ -101,20 +100,20 @@ MISSING if: No intensity ratio is present.
 NOTE: Reporting absolute emissions is NOT an intensity ratio.
       Consolidation approach text is NOT an intensity ratio.""",
 }
- 
+
 # Default rules for any slot not in the above dict
 DEFAULT_SLOT_RULES = """
 COVERED if: The specific information is clearly and explicitly present in the evidence.
 PARTIAL if: The information is mentioned but incomplete, ambiguous, or requires inference.
 MISSING if: The information is absent from the evidence."""
- 
- 
+
+
 class LLMVerifier:
     """Slot-aware LLM verifier with conservative bias"""
- 
+
     def __init__(self):
         self.llm = LLMProvider()
- 
+
     def verify_element(
         self,
         element: str,
@@ -124,81 +123,96 @@ class LLMVerifier:
     ) -> Dict:
         """
         Verify if evidence chunks cover a specific GRI 305-1 slot.
- 
+
         Args:
             element: Slot description (must match a key in SLOT_RULES for best results)
             evidence_chunks: List of retrieved chunks
             requirement_name: Requirement name for context
             max_chunks: Maximum chunks to analyze (default: 10)
- 
+
         Returns:
             {
+                'status': str,
                 'covered': bool,
+                'partial': bool,
                 'confidence': float,
                 'reasoning': str,
-                'evidence_text': str
+                'evidence_chunk_indices': List[int],
+                'selected_evidence': List[Dict],
+                'page_numbers': List[int]
             }
         """
- 
+
         # Prepare evidence text (with page numbers)
+        analyzed_chunks = evidence_chunks[:max_chunks]
+
         evidence_text = "\n\n---\n\n".join([
-            f"[Chunk {i+1} | Page {chunk.get('metadata', {}).get('page_num', '?')}]\n{chunk.get('text', '')}"
-            for i, chunk in enumerate(evidence_chunks[:max_chunks])
+            (
+                f"[Chunk {i + 1} | "
+                f"Page {chunk.get('metadata', {}).get('page_num', '?')}]\n"
+                f"{chunk.get('text', '')}"
+            )
+            for i, chunk in enumerate(analyzed_chunks)
         ])
- 
-        # Extract page numbers for downstream use
-        page_numbers = [
-            chunk.get('metadata', {}).get('page_num')
-            for chunk in evidence_chunks[:max_chunks]
-            if chunk.get('metadata', {}).get('page_num') is not None
-        ]
- 
+
         # Get slot-specific rules
         slot_rules = SLOT_RULES.get(element, DEFAULT_SLOT_RULES)
- 
+
         # ── System prompt ──────────────────────────────────────────────────────
         system_prompt = """You are a strict ESG compliance auditor verifying GRI 305-1 disclosures.
- 
+
 IMPORTANT PRINCIPLES:
 1. Be conservative. When in doubt, return "partial" — never "covered".
 2. Evidence may be in Korean, English, or mixed. Extract information regardless of language.
 3. Follow the slot-specific rules exactly. Do not infer or assume information that is not explicit.
 4. "partial" is not a failure — it means the item needs expert review.
 5. Use exactly three status values: "covered", "partial", or "missing".
- 
-Respond ONLY in JSON format:
+
+Respond ONLY in valid JSON format:
 {
   "status": "covered" or "partial" or "missing",
   "confidence": 0.0-1.0,
-  "reasoning": "brief explanation citing specific chunk number",
-  "evidence_text": "relevant excerpt if found, else empty string"
+  "reasoning": "brief explanation citing the supporting chunk numbers",
+  "evidence_chunk_indices": [1, 2]
 }
- 
+
+Evidence citation rules:
+- "evidence_chunk_indices" must contain only the 1-based chunk numbers
+  that directly support your decision.
+- Do not include chunks that are merely related but do not support the conclusion.
+- For "covered", include only chunks containing explicit and sufficient evidence.
+- For "partial", include only chunks containing the incomplete or ambiguous evidence.
+- For "missing", always return an empty list: [].
+- Every index must correspond to a chunk shown in the evidence input.
+- Never invent a chunk number.
+
 Status definitions:
 - "covered"  : Information is explicit, complete, and unambiguous
 - "partial"  : Some evidence exists but incomplete, ambiguous, or only fuel types listed without gas names
 - "missing"  : No relevant information found
- 
+
 Confidence scale:
 - 0.9–1.0: Explicit, clear, unambiguous
 - 0.6–0.8: Present but incomplete or requires minor inference
 - 0.3–0.5: Tangentially related, does not directly satisfy requirement
 - 0.0–0.2: Not present"""
- 
+
         # ── User prompt ────────────────────────────────────────────────────────
         user_prompt = f"""Requirement: {requirement_name}
 Slot to verify: {element}
- 
+
 Slot-specific verification rules:
 {slot_rules}
- 
+
 Evidence chunks (check all carefully — evidence may be in Korean or English):
 {evidence_text}
- 
+
 Apply the slot-specific rules above strictly.
 If in doubt between "covered" and "partial", choose "partial".
-Respond in JSON format."""
- 
+Return only the chunk numbers that directly support the selected status.
+If status is "missing", return "evidence_chunk_indices": [].
+Respond in JSON format only."""
+
         # Get LLM response
         response = self.llm.generate(
             system_prompt=system_prompt,
@@ -206,7 +220,7 @@ Respond in JSON format."""
             max_tokens=300,
             temperature=0.0
         )
- 
+
         # Parse JSON response
         try:
             response = response.strip()
@@ -216,7 +230,7 @@ Respond in JSON format."""
                     response = response[4:]
             response = response.strip()
             result = json.loads(response)
- 
+
             # Normalize: ensure 'status' field exists
             if 'status' not in result:
                 # Backward compat: convert old covered:bool to status
@@ -224,33 +238,91 @@ Respond in JSON format."""
                     result['status'] = 'covered'
                 else:
                     result['status'] = 'missing'
- 
-            # Add covered/partial bools for downstream compatibility
-            result['covered']      = result['status'] == 'covered'
-            result['partial']      = result['status'] == 'partial'
-            result['page_numbers'] = page_numbers
- 
+
+            # Normalize status
+            valid_statuses = {'covered', 'partial', 'missing'}
+            status = str(result.get('status', 'missing')).lower().strip()
+
+            if status not in valid_statuses:
+                status = 'missing'
+
+            result['status'] = status
+            result['covered'] = status == 'covered'
+            result['partial'] = status == 'partial'
+
+            # Normalize and validate 1-based evidence chunk indices
+            raw_indices = result.get('evidence_chunk_indices', [])
+
+            if not isinstance(raw_indices, list):
+                raw_indices = []
+
+            validated_indices = []
+            seen_indices = set()
+
+            for index in raw_indices:
+                try:
+                    normalized_index = int(index)
+                except (TypeError, ValueError):
+                    continue
+
+                if not 1 <= normalized_index <= len(analyzed_chunks):
+                    continue
+
+                if normalized_index in seen_indices:
+                    continue
+
+                validated_indices.append(normalized_index)
+                seen_indices.add(normalized_index)
+
+            # Missing decisions must never expose supporting evidence
+            if status == 'missing':
+                validated_indices = []
+
+            result['evidence_chunk_indices'] = validated_indices
+
+            selected_evidence = []
+
+            for index in validated_indices:
+                chunk = analyzed_chunks[index - 1]
+                metadata = chunk.get('metadata', {})
+
+                selected_evidence.append({
+                    'chunk_index': index,
+                    'chunk_id': chunk.get('chunk_id', ''),
+                    'text': chunk.get('text', ''),
+                    'page_number': metadata.get('page_num')
+                })
+
+            result['selected_evidence'] = selected_evidence
+
+            result['page_numbers'] = [
+                item['page_number']
+                for item in selected_evidence
+                if item.get('page_number') is not None
+            ]
+
         except Exception as e:
             result = {
                 'status'       : 'missing',
                 'covered'      : False,
                 'partial'      : False,
-                'confidence'   : 0.5,
-                'reasoning'    : f'Failed to parse LLM response: {str(e)}',
-                'evidence_text': '',
-                'page_numbers' : page_numbers
+                'confidence': 0.0,
+                'reasoning': f'Failed to parse LLM response: {str(e)}',
+                'evidence_chunk_indices': [],
+                'selected_evidence': [],
+                'page_numbers': []
             }
- 
+
         return result
- 
- 
+
+
 if __name__ == "__main__":
     print("=" * 80)
     print("LLM VERIFIER V3 TEST (Slot-Aware + Conservative)")
     print("=" * 80)
- 
+
     verifier = LLMVerifier()
- 
+
     # Test: base year (common false covered in Heathrow)
     print("\nTest 1: Base year — multi-year table (should be MISSING, not covered)")
     print("-" * 80)
@@ -268,7 +340,7 @@ if __name__ == "__main__":
     print(f"Covered : {r1['covered']} | Partial: {r1['partial']}")
     print(f"Confidence: {r1['confidence']:.2f}")
     print(f"Reasoning : {r1['reasoning']}")
- 
+
     # Test: Korean gases (common false negative in IBK)
     print("\nTest 2: Gases — Korean text (should be PARTIAL, not missing)")
     print("-" * 80)
@@ -285,7 +357,7 @@ if __name__ == "__main__":
     print(f"Covered : {r2['covered']} | Partial: {r2['partial']}")
     print(f"Confidence: {r2['confidence']:.2f}")
     print(f"Reasoning : {r2['reasoning']}")
- 
+
     # Test: consolidation approach Korean
     print("\nTest 3: Consolidation — Korean boundary text (should be PARTIAL)")
     print("-" * 80)
@@ -301,7 +373,7 @@ if __name__ == "__main__":
     print(f"Covered : {r3['covered']} | Partial: {r3['partial']}")
     print(f"Confidence: {r3['confidence']:.2f}")
     print(f"Reasoning : {r3['reasoning']}")
- 
+
     print("\n" + "=" * 80)
     print("Expected: Test1=missing, Test2=partial, Test3=partial")
     print("=" * 80)

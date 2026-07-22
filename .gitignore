@@ -27,3 +27,8 @@ test_stack.py
 
 # Virtual environment
 .venv/
+
+# Local evaluation review artifacts
+data/evaluation/backups/
+outputs/retrieval_ablation/gold_records_before_review.txt
+outputs/retrieval_ablation/gold_review_12.txt

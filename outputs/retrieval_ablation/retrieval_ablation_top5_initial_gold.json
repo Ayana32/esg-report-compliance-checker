@@ -12,7 +12,7 @@
       "total_queries": 12,
       "hits": 10,
       "hit_rate": 0.8333333333333334,
-      "mrr": 0.6277777777777778
+      "mrr": 0.5722222222222222
     },
     "hybrid": {
       "total_queries": 12,
@@ -22,9 +22,9 @@
     },
     "hybrid_rerank": {
       "total_queries": 12,
-      "hits": 12,
-      "hit_rate": 1.0,
-      "mrr": 0.8194444444444445
+      "hits": 11,
+      "hit_rate": 0.9166666666666666,
+      "mrr": 0.7361111111111112
     },
     "semantic": {
       "total_queries": 12,
@@ -1151,8 +1151,7 @@
       "mode": "bm25",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
-        "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        "2025_KR_Samsung_Sustainability_KO_p0011_c0004"
       ],
       "retrieved_chunk_ids": [
         "2025_KR_Samsung_Sustainability_KO_p0024_c0003",
@@ -1162,12 +1161,11 @@
         "2025_KR_Samsung_Sustainability_KO_p0035_c0001"
       ],
       "relevant_ranks": [
-        1,
         3
       ],
-      "first_relevant_rank": 1,
+      "first_relevant_rank": 3,
       "hit_at_k": true,
-      "reciprocal_rank": 1.0
+      "reciprocal_rank": 0.3333333333333333
     },
     {
       "query_id": "Samsung_305-1_slot_e",
@@ -1177,8 +1175,7 @@
       "mode": "semantic",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
-        "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        "2025_KR_Samsung_Sustainability_KO_p0011_c0004"
       ],
       "retrieved_chunk_ids": [
         "2025_KR_Samsung_Sustainability_KO_p0077_c0001",
@@ -1200,8 +1197,7 @@
       "mode": "hybrid",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
-        "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        "2025_KR_Samsung_Sustainability_KO_p0011_c0004"
       ],
       "retrieved_chunk_ids": [
         "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
@@ -1211,8 +1207,7 @@
         "2025_KR_Samsung_Sustainability_KO_p0021_c0003"
       ],
       "relevant_ranks": [
-        1,
-        3
+        1
       ],
       "first_relevant_rank": 1,
       "hit_at_k": true,
@@ -1226,8 +1221,7 @@
       "mode": "hybrid_rerank",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
-        "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        "2025_KR_Samsung_Sustainability_KO_p0011_c0004"
       ],
       "retrieved_chunk_ids": [
         "2025_KR_Samsung_Sustainability_KO_p0024_c0003",
@@ -1236,12 +1230,10 @@
         "2025_KR_Samsung_Sustainability_KO_p0068_c0001",
         "2025_KR_Samsung_Sustainability_KO_p0085_c0001"
       ],
-      "relevant_ranks": [
-        1
-      ],
-      "first_relevant_rank": 1,
-      "hit_at_k": true,
-      "reciprocal_rank": 1.0
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     }
   ]
 }

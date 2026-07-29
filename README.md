@@ -211,16 +211,20 @@ False Covered is treated as the more serious error because it incorrectly claims
 
 ### Retrieval Ablation
 
-A preliminary manually verified evaluation set contains nine GRI 305-1 evidence queries across five companies.
+The retrieval pipeline was evaluated on a manually verified gold set of 12 GRI 305-1 evidence queries. The evaluation set was expanded and audited using documented annotation guidelines, including review of ambiguous and missing evidence labels.
 
-| Retrieval Mode | Hit@5 | Hit@10 | MRR |
-|---|---:|---:|---:|
-| BM25 | 0.889 | 1.000 | 0.722 |
-| Semantic | 0.889 | 0.889 | 0.537 |
-| Hybrid RRF | 0.889 | 0.889 | 0.722 |
-| Hybrid + multilingual reranker | **1.000** | **1.000** | **0.815** |
+| Retrieval Mode                 |      Hit@5 |       MRR |
+| ------------------------------ | ---------: | --------: |
+| BM25                           |      83.3% |     0.628 |
+| Semantic                       |      83.3% |     0.528 |
+| Hybrid RRF                     |      91.7% |     0.792 |
+| Hybrid + multilingual reranker | **100.0%** | **0.819** |
 
-The multilingual cross-encoder reranker achieved the strongest ranking performance. Detailed methodology, error analysis, and limitations are documented in [`docs/retrieval-evaluation.md`](docs/retrieval-evaluation.md).
+Hybrid retrieval improved both recall and ranking quality over individual retrieval methods, while multilingual cross-encoder reranking achieved the strongest overall performance.
+
+The gold set is still relatively small and these results should therefore be treated as preliminary. Ongoing evaluation focuses on expanding the benchmark, analysing retrieval failures, and testing retrieval-design trade-offs.
+
+Detailed annotation guidance, review decisions, ablation outputs, and error analysis are included in the repository documentation.
 
 ## Evaluation Design
 
@@ -403,40 +407,42 @@ esg_compliance_checker/
 
 ## Known Limitations
 
-- The retrieval evaluation currently contains only nine manually verified queries and should be treated as preliminary.
-- Some companies distribute emissions methodology across multiple ESG data packs or annual reports that are not yet included in the same retrieval collection.
-- Korean financial and public-sector reports use disclosure structures that differ from many European reports, contributing to retrieval gaps.
-- Tables and disclosure values may span adjacent chunks.
-- Presence of an IPCC or ISO reference does not always guarantee that the precise GWP version required by an element is stated.
-- LLM verification can still vary for borderline or semantically ambiguous evidence.
-- The current system evaluates a limited set of GRI emissions requirements.
-- The current deployment is portfolio-scale and has not been tested under production traffic.
+* The retrieval evaluation currently contains 12 manually verified queries and should still be treated as preliminary; a larger evaluation set is needed for more reliable comparison.
+* Some companies distribute emissions methodology across multiple ESG data packs or annual reports that are not yet included in the same retrieval collection.
+* Korean financial and public-sector reports use disclosure structures that differ from many European reports, contributing to retrieval gaps.
+* Tables and disclosure values may span adjacent chunks.
+* Presence of an IPCC or ISO reference does not always guarantee that the precise GWP version required by an element is stated.
+* LLM verification can still vary for borderline or semantically ambiguous evidence.
+* The current system evaluates a limited set of GRI emissions requirements.
+* The current deployment is portfolio-scale and has not been tested under production traffic.
 
 ## Planned Improvements
 
 ### Evaluation
 
-- Expand the manually verified retrieval set from 9 to at least 30 queries
-- Add annotation guidelines and verification status
-- Compare chunking strategies and adjacent-chunk expansion
-- Measure reranker latency and candidate-pool trade-offs
-- Add oracle-evidence and end-to-end compliance evaluation
+* Expand the manually verified retrieval gold set from 12 to 25–30+ queries
+* Conduct systematic retrieval failure and error analysis on the expanded benchmark
+* Compare chunking strategies and adjacent-chunk expansion
+* Measure reranker latency and candidate-pool trade-offs
+* Add oracle-evidence evaluation to separate retrieval errors from verifier errors
+* Extend end-to-end compliance evaluation across retrieval and verification stages
 
 ### Engineering
 
-- Add CI checks for pytest and Docker builds
-- Introduce structured logging and request IDs
-- Add model lazy loading and caching
-- Deploy the FastAPI backend and Streamlit frontend
-- Add public demo links and automated deployment checks
+* Add CI checks for pytest and Docker builds
+* Add request IDs for improved request-level tracing
+* Add model lazy loading and caching
+* Deploy the FastAPI backend and Streamlit frontend
+* Add public demo links and automated deployment checks
+* Extend structured logging toward production monitoring and observability
 
 ### Longer-Term Extensions
 
-- Multi-document retrieval per company
-- Cross-lingual report consistency analysis
-- TCFD and ISSB framework support
-- Cross-company comparison dashboard
-- Monitoring and structured observability
+* Multi-document retrieval per company
+* Cross-lingual report consistency analysis
+* TCFD and ISSB framework support
+* Cross-company comparison dashboard
+* Production monitoring and structured observability
 
 ## Engineering Highlights
 
@@ -461,7 +467,5 @@ This project demonstrates:
 MSc Speech and Natural Language Processing
 
 University of Sheffield
-
-GitHub: [Ayana32](https://github.com/Ayana32)
 
 Built as an applied NLP portfolio project for evidence-grounded ESG disclosure verification.

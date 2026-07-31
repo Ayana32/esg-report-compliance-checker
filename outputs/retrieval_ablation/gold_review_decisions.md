@@ -132,3 +132,28 @@ Proposed notes:
 Proposed notes:
 
 > Page 11 states that Samsung updated its GHG calculation methodology using IPCC 2019 and AR6. Page 24 provides direct supporting evidence by reporting specific IPCC AR6 GWP values for gases including C4F8 and CF4.
+
+## HSBC 305-1 slot_d — Base year and base-year emissions
+
+**Decision:** Expand gold evidence after retrieval-error audit.
+
+Initial gold contained:
+
+- `2024_UK_HSBC_Annual_EN_p0061_c0001`
+
+This chunk establishes HSBC's 2019 baseline in the context of own operational emissions and reports reductions in operational and Scope 1 and 2 emissions relative to that baseline.
+
+Inspection of an apparent Hybrid+Rerank Top-5 miss identified an additional valid evidence chunk:
+
+- `2024_UK_HSBC_Annual_EN_p0061_c0003`
+
+The second chunk explicitly reports the 2019 baseline emissions table, including:
+
+- Scope 1: 22,066 tCO2e
+- Scope 2 (market-based): 392,270 tCO2e
+
+The chunk therefore satisfies the predefined relevance criterion for `slot_d` independently of its retrieval rank. It was added as complementary gold evidence.
+
+Other highly ranked chunks concerned financed emissions, sector portfolios, or asset-management emissions and were not added because they do not describe HSBC's own operational Scope 1 disclosure.
+
+**Evaluation integrity:** The pre-audit retrieval result was inspected first and the annotation was updated only after evidence-level review. The change corrects incomplete gold coverage rather than altering labels to favour a retrieval method.

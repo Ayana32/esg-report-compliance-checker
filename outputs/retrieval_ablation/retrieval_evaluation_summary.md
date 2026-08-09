@@ -87,27 +87,48 @@ After this audit, Hybrid + Rerank increased from 0.944 to 1.000 Hit@5 on the 18-
 
 ## Failure Analysis
 
-Several recurring retrieval challenges have emerged.
+A formal retrieval error analysis was conducted on the reviewed 27-query GRI 305-1 benchmark.
 
-### Scope ambiguity
+Several recurring retrieval challenges were identified.
 
-Terms such as `baseline`, `Scope 1 and 2`, and `financial control` occur in multiple ESG contexts. Retrieval may return financed-emissions or financial-reporting evidence when the query targets operational GHG disclosures.
+### Evidence representation
 
-### Lexical ambiguity
+Numeric and tabular disclosures were not handled consistently by any single first-stage retriever. Some Scope 1 totals were retrieved more effectively by BM25, while others were recovered by semantic retrieval. Hybrid retrieval was more robust across these cases.
 
-Generic terms such as `financial control` can retrieve governance, audit, and internal-control passages instead of the GHG consolidation approach.
+Fixed-size chunking can also separate tables, footnotes, and methodological statements across adjacent chunks. This is treated as a plausible contributor rather than an established cause and will be tested through chunking ablation.
 
-### Numerical and tabular evidence
+### Retrieval ambiguity
 
-BM25 remains competitive for queries whose correct evidence is expressed through explicit numerical values, table labels, years, or disclosure terminology.
+Terms such as `baseline`, `base year`, `control`, and `emissions` occur across multiple ESG contexts. This can surface passages about financed emissions, portfolio targets, governance, or other climate disclosures when the query targets operational Scope 1 evidence.
 
-### Dense retrieval limitations
+Dense retrieval also returned semantically related but evidentially insufficient passages for several slot-specific queries. This pattern was observed on the benchmark but is not treated as evidence of a general causal limitation of dense retrieval.
 
-Dense semantic retrieval currently performs below BM25 and hybrid retrieval on this benchmark. Semantically related sustainability passages can outrank the precise evidence required by the disclosure slot.
+### Reranking behaviour
 
-### Reranking
+Hybrid + reranking achieved the strongest aggregate performance:
 
-Cross-encoder reranking improves the hybrid candidate set substantially, producing the best Hit@5 and MRR of the evaluated configurations.
+- Hit@5: **0.963**
+- MRR: **0.773**
+- Relevant evidence retrieved for **26 of 27** queries.
+
+Relative to hybrid retrieval, reranking:
+
+- improved the first relevant rank for **9** queries;
+- degraded it for **5** queries;
+- left it unchanged for **13** queries;
+- recovered **1** Hybrid Top-5 miss;
+- caused **0** successful Hybrid queries to become Top-5 misses.
+
+Reranking therefore improved aggregate performance without improving every individual query.
+
+### Genuine unresolved failure
+
+After manual relevance auditing, `Schneider_305-1_slot_d` remained the only Hybrid + rerank Top-5 miss.
+
+Retrieved passages reached the surrounding Schneider Electric climate and base-year context but did not contain the required direct Scope 1 base-year evidence. Because the existing gold chunk remained valid under the predefined annotation criteria, this case was retained as a genuine retrieval failure.
+
+Detailed case-level analysis is documented in
+[`retrieval_failure_cases.md`](retrieval_failure_cases.md).
 
 ## Evaluation Integrity
 
@@ -121,16 +142,18 @@ For each annotation change:
 4. Previous evaluation results are preserved.
 5. Annotation decisions are documented.
 
-This distinction is important because incomplete gold sets can incorrectly classify valid retrievals as model failures.
+This process identified several cases of incomplete relevance annotation during benchmark development. These were classified as evaluation artefacts rather than model failures when the retrieved chunks independently satisfied the existing relevance criteria.
+
+The final reviewed benchmark contains **27 manually audited queries** covering all seven GRI 305-1 disclosure slots across **11 ESG reports**.
 
 ## Next Steps
 
-The benchmark will be expanded further before final conclusions are drawn.
+The retrieval benchmark is now sufficiently developed for the planned ablation and end-to-end evaluation work.
 
-Planned evaluation work includes:
+Remaining experiments include:
 
-- additional company and disclosure-slot coverage
-- retrieval failure taxonomy
-- chunk-size and overlap ablation
-- reranker candidate-set and latency analysis
-- end-to-end compliance verification evaluation
+- chunk-size and overlap ablation;
+- reranker candidate-set and latency analysis;
+- verifier evaluation for `covered`, `partial`, and `missing` decisions;
+- small cross-requirement regression checks for GRI 305-2 and GRI 305-3;
+- end-to-end retrieval-to-verification evaluation and error analysis.

@@ -10,27 +10,27 @@
   "summary": {
     "bm25": {
       "total_queries": 27,
-      "hits": 23,
-      "hit_rate": 0.8518518518518519,
-      "mrr": 0.7049382716049384
+      "hits": 22,
+      "hit_rate": 0.8148148148148148,
+      "mrr": 0.6864197530864198
     },
     "hybrid": {
       "total_queries": 27,
-      "hits": 25,
-      "hit_rate": 0.9259259259259259,
-      "mrr": 0.6802469135802469
+      "hits": 23,
+      "hit_rate": 0.8518518518518519,
+      "mrr": 0.658641975308642
     },
     "hybrid_rerank": {
       "total_queries": 27,
-      "hits": 26,
-      "hit_rate": 0.9629629629629629,
-      "mrr": 0.7728395061728395
+      "hits": 24,
+      "hit_rate": 0.8888888888888888,
+      "mrr": 0.717283950617284
     },
     "semantic": {
       "total_queries": 27,
-      "hits": 19,
-      "hit_rate": 0.7037037037037037,
-      "mrr": 0.5061728395061729
+      "hits": 18,
+      "hit_rate": 0.6666666666666666,
+      "mrr": 0.4938271604938272
     }
   },
   "results": [
@@ -2034,9 +2034,7 @@
       "mode": "bm25",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0002"
+        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001"
       ],
       "retrieved_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
@@ -2045,13 +2043,10 @@
         "2024_KR_IBKBank_Sustainability_KO_p0062_c0002",
         "2024_KR_IBKBank_Sustainability_KO_p0065_c0003"
       ],
-      "relevant_ranks": [
-        2,
-        3
-      ],
-      "first_relevant_rank": 2,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.5
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     },
     {
       "query_id": "IBK_305-1_slot_d",
@@ -2061,9 +2056,7 @@
       "mode": "semantic",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0002"
+        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001"
       ],
       "retrieved_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0062_c0002",
@@ -2072,12 +2065,10 @@
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0004",
         "2024_KR_IBKBank_Sustainability_KO_p0141_c0003"
       ],
-      "relevant_ranks": [
-        3
-      ],
-      "first_relevant_rank": 3,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.3333333333333333
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     },
     {
       "query_id": "IBK_305-1_slot_d",
@@ -2087,9 +2078,7 @@
       "mode": "hybrid",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0002"
+        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001"
       ],
       "retrieved_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
@@ -2098,12 +2087,10 @@
         "2024_KR_IBKBank_Sustainability_KO_p0065_c0003",
         "2024_KR_IBKBank_Sustainability_KO_p0141_c0003"
       ],
-      "relevant_ranks": [
-        3
-      ],
-      "first_relevant_rank": 3,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.3333333333333333
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     },
     {
       "query_id": "IBK_305-1_slot_d",
@@ -2113,9 +2100,7 @@
       "mode": "hybrid_rerank",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
-        "2024_KR_IBKBank_Sustainability_KO_p0060_c0002"
+        "2024_KR_IBKBank_Sustainability_KO_p0060_c0001"
       ],
       "retrieved_chunk_ids": [
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0003",
@@ -2124,13 +2109,10 @@
         "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
         "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
       ],
-      "relevant_ranks": [
-        2,
-        3
-      ],
-      "first_relevant_rank": 2,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.5
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     },
     {
       "query_id": "Samsung_305-1_slot_b",
@@ -2612,8 +2594,7 @@
       "mode": "bm25",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002"
       ],
       "retrieved_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
@@ -2623,8 +2604,7 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0004"
       ],
       "relevant_ranks": [
-        1,
-        2
+        1
       ],
       "first_relevant_rank": 1,
       "hit_at_k": true,
@@ -2638,8 +2618,7 @@
       "mode": "semantic",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002"
       ],
       "retrieved_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
@@ -2661,8 +2640,7 @@
       "mode": "hybrid",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002"
       ],
       "retrieved_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002",
@@ -2671,12 +2649,10 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003"
       ],
-      "relevant_ranks": [
-        4
-      ],
-      "first_relevant_rank": 4,
-      "hit_at_k": true,
-      "reciprocal_rank": 0.25
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     },
     {
       "query_id": "Heathrow_305-1_slot_a",
@@ -2686,8 +2662,7 @@
       "mode": "hybrid_rerank",
       "top_k": 5,
       "gold_chunk_ids": [
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
-        "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002"
       ],
       "retrieved_chunk_ids": [
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002",
@@ -2696,12 +2671,10 @@
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0110_c0002",
         "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002"
       ],
-      "relevant_ranks": [
-        1
-      ],
-      "first_relevant_rank": 1,
-      "hit_at_k": true,
-      "reciprocal_rank": 1.0
+      "relevant_ranks": [],
+      "first_relevant_rank": null,
+      "hit_at_k": false,
+      "reciprocal_rank": 0.0
     }
   ]
 }

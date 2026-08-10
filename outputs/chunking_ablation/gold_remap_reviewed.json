@@ -1,0 +1,1071 @@
+{
+  "schema_version": 1,
+  "benchmark": "GRI 305-1",
+  "query_count": 27,
+  "baseline_config": "500_50",
+  "configs": [
+    "250_25",
+    "500_50",
+    "750_75",
+    "1000_100"
+  ],
+  "annotation_policy": {
+    "single_chunk_gold": "A single chunk materially and independently supports the query.",
+    "split_evidence": "No single chunk independently supports the full query; multiple complementary chunks jointly provide the evidence.",
+    "completeness_qa": "Top-2 candidates were manually audited first. Additional candidates were reviewed when candidate_coverage >= 0.5, gold_region_coverage >= 0.20, or overlap_with_gold_tokens >= 100."
+  },
+  "results": [
+    {
+      "query_id": "IBK_305-1_slot_a",
+      "company_id": "IBK",
+      "slot_id": "slot_a",
+      "query": "IBK Scope 1 direct greenhouse gas emissions total tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0002",
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0006"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Hyundai_305-1_slot_b",
+      "company_id": "Hyundai",
+      "slot_id": "slot_b",
+      "query": "Hyundai greenhouse gases included CO2 CH4 N2O HFCs PFCs SF6",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Hyundai_305-1_slot_e",
+      "company_id": "Hyundai",
+      "slot_id": "slot_e",
+      "query": "Hyundai Scope 1 emission factors GWP IPCC source",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Hyundai_305-1_slot_f",
+      "company_id": "Hyundai",
+      "slot_id": "slot_f",
+      "query": "Hyundai greenhouse gas consolidation operational control approach",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Heathrow_305-1_slot_f",
+      "company_id": "Heathrow",
+      "slot_id": "slot_f",
+      "query": "Heathrow greenhouse gas organisational boundary operational control",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Siemens_305-1_slot_e",
+      "company_id": "Siemens",
+      "slot_id": "slot_e",
+      "query": "Siemens Scope 1 emission factors GWP IPCC source",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0038_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+            "2025_DE_Siemens_Sustainability_EN_p0038_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+            "2025_DE_Siemens_Sustainability_EN_p0038_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0038_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Siemens_305-1_slot_a",
+      "company_id": "Siemens",
+      "slot_id": "slot_a",
+      "query": "Siemens total gross Scope 1 greenhouse gas emissions 2025 ktCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Siemens_305-1_slot_d",
+      "company_id": "Siemens",
+      "slot_id": "slot_d",
+      "query": "Siemens greenhouse gas emissions base year 2019 Scope 1 and 2",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0027_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0027_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0027_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0026_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0027_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Schneider_305-1_slot_f",
+      "company_id": "Schneider",
+      "slot_id": "slot_f",
+      "query": "Schneider Electric greenhouse gas reporting operational control consolidation approach",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0003",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0004",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0010"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0004",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0003",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Kepco_305-1_slot_a",
+      "company_id": "Kepco",
+      "slot_id": "slot_a",
+      "query": "KEPCO total Scope 1 direct greenhouse gas emissions 2023 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0002",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0001",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0001",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0001",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Shinhan_305-1_slot_a",
+      "company_id": "Shinhan",
+      "slot_id": "slot_a",
+      "query": "Shinhan Financial Group total Scope 1 direct greenhouse gas emissions 2024 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0005",
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0006",
+            "2024_KR_Shinhan_Sustainability_KO_p0022_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0003",
+            "2024_KR_Shinhan_Sustainability_KO_p0022_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0002",
+            "2024_KR_Shinhan_Sustainability_KO_p0022_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0001",
+            "2024_KR_Shinhan_Sustainability_KO_p0106_c0002",
+            "2024_KR_Shinhan_Sustainability_KO_p0022_c0001",
+            "2024_KR_Shinhan_Sustainability_KO_p0022_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Samsung_305-1_slot_e",
+      "company_id": "Samsung",
+      "slot_id": "slot_e",
+      "query": "Samsung Electronics Scope 1 emission factors GWP IPCC AR6 source",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0011_c0008",
+            "2025_KR_Samsung_Sustainability_KO_p0024_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0011_c0004",
+            "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0011_c0003",
+            "2025_KR_Samsung_Sustainability_KO_p0024_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0011_c0002",
+            "2025_KR_Samsung_Sustainability_KO_p0024_c0001",
+            "2025_KR_Samsung_Sustainability_KO_p0024_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Schneider_305-1_slot_c",
+      "company_id": "Schneider",
+      "slot_id": "slot_c",
+      "query": "Schneider Electric biogenic CO2 emissions biomass Scope 1",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0013"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0005"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0004"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Siemens_305-1_slot_c",
+      "company_id": "Siemens",
+      "slot_id": "slot_c",
+      "query": "Siemens biogenic Scope 1 CO2 emissions biomass biogas bioethanol",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0004",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0003",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0002",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_DE_Siemens_Sustainability_EN_p0033_c0001",
+            "2025_DE_Siemens_Sustainability_EN_p0034_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "HSBC_305-1_slot_d",
+      "company_id": "HSBC",
+      "slot_id": "slot_d",
+      "query": "HSBC own operations Scope 1 and 2 emissions 2019 baseline",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0006"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0001",
+            "2024_UK_HSBC_Annual_EN_p0061_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "HSBC_305-1_slot_f",
+      "company_id": "HSBC",
+      "slot_id": "slot_f",
+      "query": "HSBC greenhouse gas operational control boundary",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0003",
+            "2024_UK_HSBC_Annual_EN_p0061_c0004"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0001",
+            "2024_UK_HSBC_Annual_EN_p0061_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "HSBC_305-1_slot_b",
+      "company_id": "HSBC",
+      "slot_id": "slot_b",
+      "query": "HSBC greenhouse gases CO2 methane nitrous oxide operations",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HSBC_Annual_EN_p0061_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Incheon_305-1_slot_a",
+      "company_id": "Incheon",
+      "slot_id": "slot_a",
+      "query": "Incheon International Airport total Scope 1 direct greenhouse gas emissions 2024 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001",
+            "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0004"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001",
+            "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001",
+            "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001",
+            "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "IBK_305-1_slot_g",
+      "company_id": "IBK",
+      "slot_id": "slot_g",
+      "query": "IBK Scope 1 greenhouse gas calculation standards methodology GHG Protocol ISO 14064 IPCC",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0008"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0002",
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0003"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Samsung_305-1_slot_g",
+      "company_id": "Samsung",
+      "slot_id": "slot_g",
+      "query": "Samsung Electronics Scope 1 greenhouse gas calculation standards methodology IPCC ISO 14064",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0004"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0001",
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "IBK_305-1_slot_d",
+      "company_id": "IBK",
+      "slot_id": "slot_d",
+      "query": "IBK Scope 1 base year baseline emissions 2020 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0021_c0003",
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
+            "2024_KR_IBKBank_Sustainability_KO_p0021_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0021_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_KR_IBKBank_Sustainability_KO_p0060_c0001",
+            "2024_KR_IBKBank_Sustainability_KO_p0021_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Samsung_305-1_slot_b",
+      "company_id": "Samsung",
+      "slot_id": "slot_b",
+      "query": "Samsung Electronics greenhouse gases included CO2 CH4 N2O HFCs PFCs SF6 NF3",
+      "configs": {
+        "250_25": {
+          "status": "split_evidence",
+          "gold_chunk_ids": [],
+          "complementary_groups": [
+            [
+              "2025_KR_Samsung_Sustainability_KO_p0068_c0002",
+              "2025_KR_Samsung_Sustainability_KO_p0068_c0003"
+            ]
+          ]
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2025_KR_Samsung_Sustainability_KO_p0068_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "SC_305-1_slot_g",
+      "company_id": "SC",
+      "slot_id": "slot_g",
+      "query": "Standard Chartered Scope 1 greenhouse gas reporting standards methodology reporting criteria",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Index_EN_p0012_c0001",
+            "2024_UK_SC_Index_EN_p0012_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Index_EN_p0012_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Index_EN_p0012_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Index_EN_p0012_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Schneider_305-1_slot_d",
+      "company_id": "Schneider",
+      "slot_id": "slot_d",
+      "query": "Schneider Electric Scope 1 base year baseline emissions 2021 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "split_evidence",
+          "gold_chunk_ids": [],
+          "complementary_groups": [
+            [
+              "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004",
+              "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0005"
+            ]
+          ]
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0001",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0002"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Schneider_305-1_slot_e",
+      "company_id": "Schneider",
+      "slot_id": "slot_e",
+      "query": "Schneider Electric Scope 1 emission factors GWP IPCC AR6 source",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0012"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0003"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "SC_305-1_slot_a",
+      "company_id": "SC",
+      "slot_id": "slot_a",
+      "query": "Standard Chartered total Scope 1 greenhouse gas emissions 2024 tCO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Annual_EN_p0078_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Annual_EN_p0078_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Annual_EN_p0078_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_SC_Annual_EN_p0078_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    },
+    {
+      "query_id": "Heathrow_305-1_slot_a",
+      "company_id": "Heathrow",
+      "slot_id": "slot_a",
+      "query": "Heathrow total Scope 1 greenhouse gas emissions 2024 tonnes CO2e",
+      "configs": {
+        "250_25": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0003"
+          ],
+          "complementary_groups": []
+        },
+        "500_50": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+          ],
+          "complementary_groups": []
+        },
+        "750_75": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0001"
+          ],
+          "complementary_groups": []
+        },
+        "1000_100": {
+          "status": "single_chunk_evidence",
+          "gold_chunk_ids": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0001"
+          ],
+          "complementary_groups": []
+        }
+      }
+    }
+  ]
+}

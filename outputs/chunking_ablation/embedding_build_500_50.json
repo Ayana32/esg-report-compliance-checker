@@ -1,0 +1,8 @@
+{
+  "config": "500_50",
+  "chunks": 7703,
+  "stored": 7703,
+  "db_path": "data/chromadb_ablation/500_50",
+  "model": "text-embedding-3-small",
+  "batch_size": 100
+}

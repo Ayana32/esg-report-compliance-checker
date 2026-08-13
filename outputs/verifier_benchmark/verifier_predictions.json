@@ -1,0 +1,1319 @@
+{
+  "metadata": {
+    "benchmark": "GRI 305-1 fixed-evidence verifier benchmark",
+    "gold_freeze_commit": "66a6977",
+    "runner_commit": "66a69777f4d0cb61a0aaee85f6a4d22596600bde",
+    "slot_rules_sha256": "691092bd02e6ade9d1d16eb9468ce419ee5f403b06e504c01c4ae4c304fce472",
+    "inference_timestamp_utc": "2026-08-13T11:28:22.460003+00:00",
+    "inference_policy": "Frozen Top-5 evidence packets passed directly to LLMVerifier.verify_element; no retrieval performed during verifier evaluation; gold labels not passed to verifier.",
+    "max_chunks": 5,
+    "temperature": 0.0,
+    "completed_cases": 39,
+    "total_cases": 39,
+    "gold_distribution": {
+      "covered": 28,
+      "partial": 4,
+      "missing": 7
+    },
+    "prediction_distribution": {
+      "covered": 24,
+      "partial": 5,
+      "missing": 10
+    },
+    "parse_fallback_count": 0,
+    "call_error_count": 0
+  },
+  "predictions": [
+    {
+      "split": "positive",
+      "case_id": "IBK_305-1_slot_a",
+      "company_id": "IBK",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 provides a specific numeric value for Scope 1 emissions in tCO2eq, which is 6,242 for the main entity and 740 for subsidiaries, totaling 6,982 tCO2eq.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
+        ],
+        "page_numbers": [
+          64
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 3395.4592919908464,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0064_c0003"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Hyundai_305-1_slot_b",
+      "company_id": "Hyundai",
+      "requirement_id": "305-1",
+      "slot_id": "slot_b",
+      "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly lists six specific gas types (CO2, CH4, N2O, HFCs, PFCs, SF6) used in the GHG emissions calculation, which satisfies the requirement for 'covered'.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+        ],
+        "page_numbers": [
+          40
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1837.8664997871965,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Hyundai_305-1_slot_e",
+      "company_id": "Hyundai",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly mentions the use of the 2006 IPCC 국가 인벤토리 가이드라인, and Chunk 2 mentions the use of IPCC guidelines and GWP values based on the 2nd IPCC assessment. These references satisfy the requirement for citing a specific GWP source or IPCC guidelines.",
+        "evidence_chunk_indices": [
+          1,
+          2
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0003",
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+        ],
+        "page_numbers": [
+          40,
+          40
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1370.7157080061734,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0003",
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001",
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Hyundai_305-1_slot_f",
+      "company_id": "Hyundai",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly states that the operational control approach is used for measuring GHG emissions, which directly satisfies the requirement for stating a consolidation approach.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+        ],
+        "page_numbers": [
+          40
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1392.2240000683814,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Hundai_Sustainability_KO_p0040_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Heathrow_305-1_slot_f",
+      "company_id": "Heathrow",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly states that HAL applies an 'operational control' approach in determining its organisational boundary for reporting GHG emissions, which directly satisfies the requirement for the consolidation approach.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001"
+        ],
+        "page_numbers": [
+          115
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1276.387750171125,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001",
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Siemens_305-1_slot_e",
+      "company_id": "Siemens",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "partial",
+        "confidence": 0.7,
+        "reasoning": "The evidence mentions the use of emission factors published by the IPCC or DESNZ/DEFRA, but does not specify the GWP version or explicitly cite IPCC guidelines or ISO 14064. This satisfies the criteria for 'partial' as emission factors are mentioned but the GWP version is not specified.",
+        "evidence_chunk_indices": [
+          1,
+          4
+        ],
+        "selected_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+          "2025_DE_Siemens_Sustainability_EN_p0034_c0001"
+        ],
+        "page_numbers": [
+          34,
+          34
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1707.1311250329018,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0034_c0002",
+          "2025_DE_Siemens_Sustainability_EN_p0034_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Siemens_305-1_slot_a",
+      "company_id": "Siemens",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 3 explicitly reports the total gross Scope 1 GHG emissions as 288.3 ktCO2e, which satisfies the requirement for a specific numeric value in tCO2e.",
+        "evidence_chunk_indices": [
+          3
+        ],
+        "selected_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0003"
+        ],
+        "page_numbers": [
+          33
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1175.415667006746,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0003",
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Siemens_305-1_slot_d",
+      "company_id": "Siemens",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "partial",
+        "confidence": 0.7,
+        "reasoning": "Chunk 1 mentions fiscal 2019 as the baseline year for Scope 2 emissions, but it does not explicitly declare it as the base year for Scope 1 GHG calculations. Chunk 4 also refers to fiscal 2019 as a base year for comparison, but it is not explicitly labeled as the base year for Scope 1 GHG emissions.",
+        "evidence_chunk_indices": [
+          1,
+          4
+        ],
+        "selected_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
+          "2025_DE_Siemens_Sustainability_EN_p0028_c0002"
+        ],
+        "page_numbers": [
+          27,
+          28
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1711.3527089823037,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0027_c0003",
+          "2025_DE_Siemens_Sustainability_EN_p0027_c0001",
+          "2025_DE_Siemens_Sustainability_EN_p0026_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Schneider_305-1_slot_f",
+      "company_id": "Schneider",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "The consolidation approach is explicitly stated as 'operational control' in chunk 1, which satisfies the requirement for the slot.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
+        ],
+        "page_numbers": [
+          42
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1801.8724999856204,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0002",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Kepco_305-1_slot_a",
+      "company_id": "Kepco",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 1.0,
+        "reasoning": "Specific numeric values for Scope 1 emissions in tCO2eq are reported for multiple companies, including 한국전력, 한국수력원자력, 한국중부발전, 한국동서발전, and 한국서부발전, across the years 2021, 2022, and 2023.",
+        "evidence_chunk_indices": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_Kepco_Sustainability_KO_p0149_c0001",
+          "2024_KR_Kepco_Sustainability_KO_p0149_c0003",
+          "2024_KR_Kepco_Sustainability_KO_p0150_c0002",
+          "2024_KR_Kepco_Sustainability_KO_p0149_c0004"
+        ],
+        "page_numbers": [
+          149,
+          149,
+          150,
+          149
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1839.6582079585642,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_KR_Kepco_Sustainability_KO_p0149_c0001",
+          "2024_KR_Kepco_Sustainability_KO_p0059_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Shinhan_305-1_slot_a",
+      "company_id": "Shinhan",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 2 provides specific numeric values for Scope 1 emissions in tCO2eq for multiple years, including 2023 and 2024, which satisfies the requirement for a specific numeric value reported in tCO2e or tCO2eq for Scope 1 direct emissions.",
+        "evidence_chunk_indices": [
+          2
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_Shinhan_Sustainability_KO_p0022_c0003"
+        ],
+        "page_numbers": [
+          22
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1616.2342908792198,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_KR_Shinhan_Sustainability_KO_p0022_c0003"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Samsung_305-1_slot_e",
+      "company_id": "Samsung",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly mentions the use of IPCC AR6 as the GWP source for specific gases, which directly satisfies the requirement for citing a specific GWP source.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        ],
+        "page_numbers": [
+          24
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1232.0370830129832,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0024_c0003"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Schneider_305-1_slot_c",
+      "company_id": "Schneider",
+      "requirement_id": "305-1",
+      "slot_id": "slot_c",
+      "element": "Biogenic CO2 emissions (reported separately)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.2,
+        "reasoning": "There is no explicit numeric figure for biogenic CO2 emissions reported separately. The chunks mention biogenic emissions but only state that they are 0 due to lack of biomass combustion, which does not satisfy the requirement for a separate numeric figure.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 2122.2116670105606,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0006"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Siemens_305-1_slot_c",
+      "company_id": "Siemens",
+      "requirement_id": "305-1",
+      "slot_id": "slot_c",
+      "element": "Biogenic CO2 emissions (reported separately)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Biogenic CO2 emissions are explicitly reported as a separate numeric figure in Chunk 1, with 14.8 ktCO2e for Scope 1 emissions.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+        ],
+        "page_numbers": [
+          33
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1781.5185829531401,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "HSBC_305-1_slot_d",
+      "company_id": "HSBC",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 5 explicitly mentions '2019 baseline' for emissions calculations, which aligns with the requirement for a base year declaration.",
+        "evidence_chunk_indices": [
+          5
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0001"
+        ],
+        "page_numbers": [
+          61
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1535.0518748164177,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0003",
+          "2024_UK_HSBC_Annual_EN_p0061_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "HSBC_305-1_slot_f",
+      "company_id": "HSBC",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly states that the emissions calculations are based on an 'operational control boundary', which directly satisfies the requirement for stating the consolidation approach.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0002"
+        ],
+        "page_numbers": [
+          61
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 4736.831124871969,
+        "parse_fallback": false,
+        "call_error": null
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "HSBC_305-1_slot_b",
+      "company_id": "HSBC",
+      "requirement_id": "305-1",
+      "slot_id": "slot_b",
+      "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 2 explicitly mentions the inclusion of carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O) in the GHG emissions calculations, which satisfies the requirement of naming at least three specific gas types.",
+        "evidence_chunk_indices": [
+          2
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0002"
+        ],
+        "page_numbers": [
+          61
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 3825.9870000183582,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_HSBC_Annual_EN_p0061_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Incheon_305-1_slot_a",
+      "company_id": "Incheon",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 and Chunk 2 both provide explicit numeric values for Scope 1 emissions in tCO2eq for the years 2022, 2023, and 2024. The unit is clearly stated as tCO2eq, satisfying the requirement for a specific numeric value reported in tCO2e or tCO2eq for Scope 1 direct emissions.",
+        "evidence_chunk_indices": [
+          1,
+          2
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002",
+          "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001"
+        ],
+        "page_numbers": [
+          40,
+          126
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1669.9526670854539,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002",
+          "2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "IBK_305-1_slot_g",
+      "company_id": "IBK",
+      "requirement_id": "305-1",
+      "slot_id": "slot_g",
+      "element": "Standards and methodologies used (e.g. GHG Protocol, third-party verification)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "The evidence explicitly mentions the use of KS I ISO 14064-1:2018, KS I ISO 14064-3:2019, and the WRI Greenhouse Gas Protocol, which are recognized standards and methodologies for GHG emissions reporting and verification.",
+        "evidence_chunk_indices": [
+          1,
+          2
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0001"
+        ],
+        "page_numbers": [
+          146,
+          146
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1534.2709589749575,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0001",
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0005",
+          "2024_KR_IBKBank_Sustainability_KO_p0134_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Samsung_305-1_slot_g",
+      "company_id": "Samsung",
+      "requirement_id": "305-1",
+      "slot_id": "slot_g",
+      "element": "Standards and methodologies used (e.g. GHG Protocol, third-party verification)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 explicitly mentions the use of ISO 14064 standard for calculating GHG emissions, which satisfies the requirement for naming a specific standard or methodology.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0068_c0002"
+        ],
+        "page_numbers": [
+          68
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1533.2639580592513,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0068_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "IBK_305-1_slot_d",
+      "company_id": "IBK",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 2 explicitly mentions '2020(기준연도)' which directly indicates that 2020 is the base year for GHG calculations.",
+        "evidence_chunk_indices": [
+          2
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0060_c0002"
+        ],
+        "page_numbers": [
+          60
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1664.6397919394076,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0060_c0002",
+          "2024_KR_IBKBank_Sustainability_KO_p0021_c0002",
+          "2024_KR_IBKBank_Sustainability_KO_p0141_c0003"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Samsung_305-1_slot_b",
+      "company_id": "Samsung",
+      "requirement_id": "305-1",
+      "slot_id": "slot_b",
+      "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunks 1 and 2 explicitly list multiple specific gas types including CO2, CH4, N2O, HFCs, PFCs, and SF6, which satisfies the requirement of naming at least three specific gas types.",
+        "evidence_chunk_indices": [
+          1,
+          2
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0072_c0001",
+          "2025_KR_Samsung_Sustainability_KO_p0068_c0001"
+        ],
+        "page_numbers": [
+          72,
+          68
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1685.7019998133183,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_KR_Samsung_Sustainability_KO_p0072_c0001",
+          "2025_KR_Samsung_Sustainability_KO_p0068_c0001",
+          "2025_KR_Samsung_Sustainability_KO_p0068_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "SC_305-1_slot_g",
+      "company_id": "SC",
+      "requirement_id": "305-1",
+      "slot_id": "slot_g",
+      "element": "Standards and methodologies used (e.g. GHG Protocol, third-party verification)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 3 explicitly mentions that Scope 1 and 2 emissions are assured by an independent company, Global Documentation, against the requirements of ISO 14064, which is a specific standard.",
+        "evidence_chunk_indices": [
+          3
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_SC_Annual_EN_p0186_c0001"
+        ],
+        "page_numbers": [
+          186
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1416.9549578800797,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_SC_Index_EN_p0012_c0001",
+          "2024_UK_SC_Annual_EN_p0186_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Schneider_305-1_slot_d",
+      "company_id": "Schneider",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "The base year for GHG calculations is explicitly declared as 2021 in multiple chunks. Chunk 2 mentions 'Absolute variation vs base year (2021)', and Chunk 4 explicitly labels 2021 as '(Base year)'.",
+        "evidence_chunk_indices": [
+          2,
+          4
+        ],
+        "selected_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002"
+        ],
+        "page_numbers": [
+          142,
+          41
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 4398.782667005435,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0004",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0001",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Schneider_305-1_slot_e",
+      "company_id": "Schneider",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 5 explicitly mentions the use of the IPCC 6th Assessment Report (AR6) for GWP values, which directly satisfies the requirement for a specific GWP source citation.",
+        "evidence_chunk_indices": [
+          5
+        ],
+        "selected_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006"
+        ],
+        "page_numbers": [
+          142
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 2802.5177910458297,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0002",
+          "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "SC_305-1_slot_a",
+      "company_id": "SC",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 0.9,
+        "reasoning": "Chunk 1 provides explicit numeric values for Scope 1 emissions in tCO2e for the years 2024, 2023, and 2022, satisfying the requirement for a specific numeric value reported in tCO2e.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_SC_Annual_EN_p0078_c0001"
+        ],
+        "page_numbers": [
+          78
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 2029.4842089060694,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_SC_Annual_EN_p0078_c0001"
+        ]
+      }
+    },
+    {
+      "split": "positive",
+      "case_id": "Heathrow_305-1_slot_a",
+      "company_id": "Heathrow",
+      "requirement_id": "305-1",
+      "slot_id": "slot_a",
+      "element": "Total Scope 1 emissions in tCO2e",
+      "prediction": {
+        "status": "covered",
+        "confidence": 1.0,
+        "reasoning": "Chunk 1 explicitly reports the total Scope 1 greenhouse gas emissions as 28,054 tonnes CO2e, which satisfies the requirement for a specific numeric value in tCO2e.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        ],
+        "page_numbers": [
+          113
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1307.6602078508586,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+        ]
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "IBK_305-1_slot_b_challenge",
+      "company_id": "IBK",
+      "requirement_id": "305-1",
+      "slot_id": "slot_b",
+      "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+      "prediction": {
+        "status": "partial",
+        "confidence": 0.8,
+        "reasoning": "Chunk 2 mentions fuel types such as LNG, 휘발유, 경유, and LPG, which indicates combustion sources but does not specify any gas types. This satisfies the criteria for 'partial' as per the slot-specific rules.",
+        "evidence_chunk_indices": [
+          2
+        ],
+        "selected_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+        ],
+        "page_numbers": [
+          146
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1931.8001249339432,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "partial",
+        "supporting_chunk_ids": [
+          "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+        ]
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Kepco_305-1_slot_d_challenge",
+      "company_id": "Kepco",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "No explicit base year declaration or pattern is present in any of the chunks. Multiple years of data are shown, but none are labeled as the base year.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1198.280290933326,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Heathrow_305-1_slot_e_challenge",
+      "company_id": "Heathrow",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "There is no mention of emission factors, GWP values, or calculation methodology sources such as IPCC, ISO 14064, or national emission factor databases in the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1732.2684170212597,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "partial",
+        "supporting_chunk_ids": [
+          "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001"
+        ]
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Siemens_305-1_slot_f_challenge",
+      "company_id": "Siemens",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "partial",
+        "confidence": 0.6,
+        "reasoning": "The evidence mentions that Siemens had no unconsolidated but operationally controlled investees or joint arrangements, which implies some form of operational control. However, the explicit consolidation approach (equity share, financial control, or operational control) is not directly stated. The reporting boundary is described, but the approach name is not explicitly mentioned.",
+        "evidence_chunk_indices": [
+          1
+        ],
+        "selected_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+        ],
+        "page_numbers": [
+          33
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1924.4718328118324,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "covered",
+        "supporting_chunk_ids": [
+          "2025_DE_Siemens_Sustainability_EN_p0033_c0002"
+        ]
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Samsung_305-1_slot_f_challenge",
+      "company_id": "Samsung",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "None of the chunks explicitly mention the consolidation approach (equity share, financial control, operational control) or provide ownership percentage information that would indicate the approach used.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1803.3334580250084,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Kepco_305-1_slot_g_challenge",
+      "company_id": "Kepco",
+      "requirement_id": "305-1",
+      "slot_id": "slot_g",
+      "element": "Standards and methodologies used (e.g. GHG Protocol, third-party verification)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "No mention of any specific standard, methodology, or third-party verification related to Scope 1 GHG emissions was found in the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1804.2656669858843,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Incheon_305-1_slot_b_challenge",
+      "company_id": "Incheon",
+      "requirement_id": "305-1",
+      "slot_id": "slot_b",
+      "element": "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)",
+      "prediction": {
+        "status": "partial",
+        "confidence": 0.7,
+        "reasoning": "Chunk 5 mentions '이동배출 차량' and '고정배출 보일러', which are Korean terms for combustion sources. However, no specific gas types are mentioned.",
+        "evidence_chunk_indices": [
+          5
+        ],
+        "selected_chunk_ids": [
+          "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002"
+        ],
+        "page_numbers": [
+          40
+        ]
+      },
+      "diagnostics": {
+        "latency_ms": 1804.1960000991821,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "partial",
+        "supporting_chunk_ids": [
+          "2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002"
+        ]
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "IBK_305-1_slot_c_challenge",
+      "company_id": "IBK",
+      "requirement_id": "305-1",
+      "slot_id": "slot_c",
+      "element": "Biogenic CO2 emissions (reported separately)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "There is no explicit mention or numeric figure for biogenic CO2 emissions reported separately in any of the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1286.2051660194993,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Kepco_305-1_slot_e_challenge",
+      "company_id": "Kepco",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "There is no mention of emission factors, GWP values, or calculation methodology sources such as IPCC, ISO 14064, or national emission factor databases in any of the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1465.2671250514686,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Kepco_305-1_slot_f_challenge",
+      "company_id": "Kepco",
+      "requirement_id": "305-1",
+      "slot_id": "slot_f",
+      "element": "Consolidation approach (equity share, financial control, operational control)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "No explicit mention of consolidation approach (equity share, financial control, operational control) or ownership percentage basis found in the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1490.0809999089688,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Incheon_305-1_slot_d_challenge",
+      "company_id": "Incheon",
+      "requirement_id": "305-1",
+      "slot_id": "slot_d",
+      "element": "Base year for calculation",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "No explicit base year declaration or pattern such as 기준연도, 기준 연도, 기준년도, or a year marked as (기준) or (Base) was found in the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1562.0187500026077,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "missing",
+        "supporting_chunk_ids": []
+      }
+    },
+    {
+      "split": "challenge",
+      "case_id": "Incheon_305-1_slot_e_challenge",
+      "company_id": "Incheon",
+      "requirement_id": "305-1",
+      "slot_id": "slot_e",
+      "element": "Emission factors and GWP source (e.g. IPCC AR5/AR6)",
+      "prediction": {
+        "status": "missing",
+        "confidence": 0.1,
+        "reasoning": "There is no mention of emission factors, GWP values, or calculation methodology sources such as IPCC, ISO 14064, or national emission factor databases in any of the provided chunks.",
+        "evidence_chunk_indices": [],
+        "selected_chunk_ids": [],
+        "page_numbers": []
+      },
+      "diagnostics": {
+        "latency_ms": 1180.6709170341492,
+        "parse_fallback": false,
+        "call_error": null,
+        "retry_attempt": 1
+      },
+      "gold": {
+        "status": "partial",
+        "supporting_chunk_ids": [
+          "2025_KR_IncheonAirport_Sustainability_KO_p0038_c0002"
+        ]
+      }
+    }
+  ]
+}

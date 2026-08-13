@@ -1,0 +1,356 @@
+==============================================================================================================
+VERIFIER GOLD REVIEW — BATCH 3
+==============================================================================================================
+
+IMPORTANT:
+- Assign gold_status ONLY from the frozen evidence packet below.
+- Use the current SLOT_RULES exactly.
+- Do not use prior verifier predictions.
+- reviewed retrieval gold is annotation aid only.
+- Supporting chunks must directly justify the selected status.
+
+
+##############################################################################################################
+CASE 15 / 27
+##############################################################################################################
+case_id: HSBC_305-1_slot_d
+company: HSBC
+slot: slot_d
+element: Base year for calculation
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific year is explicitly declared as the BASE YEAR for GHG calculations
+  - Korean patterns: 기준연도: YYYY, YYYY년을 기준연도로, 기준년도, 기준 년도
+  - A year marked as (기준) or (Base) in a data table
+  - Text says e.g. 2021 (기준연도) or 2021 (Base year)
+PARTIAL if: A year is mentioned in passing but not declared as base year.
+MISSING if: No base year declaration or pattern is present.
+NOTE: A table showing multiple years of data alone is NOT a base year declaration.
+      BUT if one year is labeled (기준) or (Base) in that table → COVERED.
+Korean equivalents: 기준연도, 기준 연도, 기준년도
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=59
+chunk_id: 2024_UK_HSBC_Annual_EN_p0059_c0001
+Financed emissions continued Reducing emissions in our assets under management HSBC Asset Management continues to work towards its interim target1 of reducing scope 1 and 2 financed emissions intensity by 58% between 2019 and 2030 for its in scope assets under management (AUM), consisting of listed equities and corporate fixed income managed within its major investment hubs. As of 31 December 2019, in scope assets amounted to $193.9bn, equating to 38% of global AUM. 2019 re-baselined metrics In 2024, we improved our methodology for calculating financed emissions intensity, including a revised mapping logic for issuers’ carbon intensity and EVIC (enterprise value including cash) data. We have re-baselined our 2019 intensity figure due to an error in the data mapping and it is now 124 tCO2e/M$ invested versus 131 tCO2e/M$ invested reported in the Annual Report and Accounts 2022, representing a decrease of 5.6%. The Partnership for Carbon Accounting Financials (PCAF)2 recommends that financial institutions should, in line with the Greenhouse Gas Protocol Corporate Value Chain (Scope 3) Accounting and Reporting Standard requirement, establish a restatement policy to ensure consistency, comparability and relevance of the reported greenhouse gas emissions data over time. HSBC Asset Management has defined an internal financed emissions re-baseline and restatement framework which adapts HSBC Group’s approach and defines relevant circumstances for HSBC Asset Management. Our financed emissions metrics As at 31 December 2023, the scope 1 and 2 financed emissions intensity of HSBC Asset Management’s in scope assets stood at 69.8 tCO2e/M$ invested. The PCAF data quality score for our 31 December 2023 financed emissions intensity was 2.63. Reported metrics 3 2019 2023 Unit Scope 1 and 2 financed emissions intensity 124.0* 69.8 tCO2e/M$ invested AUM in scope 193.9 223.0 Billions $ PCAF Data Quality Score 2.63 2.63
+
+[Chunk 2] page=61 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HSBC_Annual_EN_p0061_c0003
+For further details, see our GHG Reporting Guidance at www.hsbc.com/esg In 2024 we conducted a materiality assessment on upstream scope 3 categories, and we have identified categories 1 (purchased goods and services), 2 (capital goods), and 6 (business travel) as material. Our approach to re-baselines and restatements We re-baselined our 2019 and restated our 2023 supply chain metrics in line with our emissions re-baseline and restatement policy (see page 51). As referenced above, in 2024, we made the decision to amend the methodology. We also identified an error in the mapping of industry averages. In addition, we have identified an error in our 2019 metric disclosed in our ARA 2023 for total energy consumption, which we have now restated. We are conducting a review of our controls related to these items and aim to enhance them accordingly. HSBC Holdings plc Annual Report and Accounts 2024 59 Energy and travel greenhouse gas emissions in tonnes CO2e 3 2024 2023 2019 baseline Scope 1 1 Ä 15,025 16,918 22,066 Scope 2 (market-based) 1 Ä 83,760 167,174 392,270 Scope 3 ~ 1,127,909 1,113,498 1,356,631 Category 1: Purchased goods and services 1,2 Ä 866,873 880,494 1,033,972 Category 2: Capital goods 1,2 ~ 127,158 123,763 50,651 Category 6: Business travel 1 ~ 133,878 109,241 272,008 Total Ä 1,226,693 1,297,590 1,770,967 Included Scope 1 and 2 of UK Ä 5,887 5,909 10,432 1 Data in 2024 is subject to an independent third-party limited assurance in accordance with the International Standard on Assurance engagements 3410 (Assurance Engagements on Greenhouse Gas Statements). For further details, see GHG Reporting Guidance 2024 and third-party limited
+
+[Chunk 3] page=57
+chunk_id: 2024_UK_HSBC_Annual_EN_p0057_c0002
+79.6 tCO2e/million rpk relative to the 2019 baseline and was down by 12% from the 2022 restated emissions intensity. This decline was largely driven by improved data quality, higher exposure to lower emissions-intensive airlines compared with the sector average, and improved operational efficiency with the return to preCovid air traffic activity levels. Aviation tCO2e/million rpk 2023 progress from baseline (5) % tCO2e/million rpk HSBC sector portfolio emissions Existing HSBC sector target based on IEA NZE 2021 IEA NZE 2024 2019 2020 2021 2022 2023 2030 0 20 40 60 80 100 120 140 Automotive For the automotive sector, we looked at scopes 1 and 2 for midstream manufacturing of vehicles, and scope 3 for tank-to-wheel exhaust pipe emissions for light-duty vehicles. We excluded heavy-duty vehicles from our analysis as the target pathway derived from the IEA excludes them, as they have a different decarbonisation pathway relative to light-duty vehicles. This approach reflects a change from previous disclosures to only include tailpipe emissions instead of all scope 3 categories, in order to be consistent with the target scenario reference pathway and industry practice. We will consider including heavy-duty vehicle manufacturers as well as heavy-duty vehicle production at a later stage of our analysis, as data and methodologies develop. We target an on-balance sheet financed emissions intensity of 66 tonnes of carbon dioxide equivalent per million vehicle kilometres (‘tCO2e/million vkm’) by 2030 using 2019 as our baseline. This is in line with a global 1.5°C-aligned pathway, as defined by the IEA NZE 2021 scenario, modified to match the share of new in-year vehicle sales for light-duty vehicles. We show in the chart our progress to date against our 2030 target. We also indicate the 2030 figure of 66.2 tCO2e/million vkm derived from the updated IEA NZE 2024 scenario, which remains
+
+[Chunk 4] page=11
+chunk_id: 2024_UK_HSBC_Datapack_EN_p0011_c0001
+HSBC HSBC Holdings plc Financed emissions Scope 1 and 2 Scope 3 Oil and gas 2022 1.3 16.2 N/A 3.2 3.2 2023† 1.6 15.2 N/A 2.4 2.7 Power and utilities 2022 7.6 N/A 401.7 3.3 N/A 2023† 7.3 N/A 349.6 3.1 N/A Cement 2022 4.5 N/A 0.71 2.9 N/A 2023† 6.3 N/A 0.59 2.3 N/A Iron, steel and aluminium 2022 2.7 N/A 2.5 3.0 N/A 2023† 1.8 N/A 2.1 2.9 N/A Aviation 2022 3.3 0.15 90.2 3.2 2.4 2023† 2.6 0.21 79.6 3.1 2.6 Automotive 2022 0.11 4.0 170.1 2.7 3.4 2023† 0.12 6.0 152.4 2.2 3.2 Thermal Coal Mining 2021† 0.05 1.33 N/A 3.1 3.1 2022† 0.07 1.37 N/A 3.1 3.1 Facilitated emissions (33% weighting) For details, please refer to the 'Targets and progress' section on page 56 of the Annual Report and Accounts 2024. Year Scope 1 and 2 Scope 3 Oil and gas 2022 0.36 4.7 N/A 3.3 3.3 2023† 0.27 2.7 N/A 2.1 2.
+
+[Chunk 5] page=61 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HSBC_Annual_EN_p0061_c0001
+Net zero in our own operations continued 2024 Emissions performance We are making progress towards our updated 2050 net zero ambition. In 2024 we achieved a reduction in absolute operational greenhouse gas emissions (energy and business travel) of 66.1% from our 2019 baseline. Overall, including supply chain emissions, we achieved a 30.7% reduction against 2019 and 5.5% compared with 2023. Emissions from our energy We are currently on track to reduce our scope 1 and 2 emissions by more than 90% by 2030 compared with our 2019 baseline. In 2024, we reduced these emissions (including energy and road fleet) to 98,785 tonnes CO2e, representing a 76.2% reduction from our 2019 baseline and a 46.3% reduction from 2023, helped by further efficiency measures and portfolio reductions, and an increase in renewable electricity procurement to 75.4%, up from 58.4% in 2023. Emissions from travel We reduced our emissions from scope 3 business travel by 50.8% compared with 2019 with travel volumes remaining well below pre-pandemic levels, although emissions increased by 22.6% compared with 2023 as travel behaviours normalise gradually across the bank. Emissions from our supply chain In 2024, we reduced our supply chain emissions by 8.4% against the restated 2019 baseline emissions, while compared with 2023, they remained relatively stable, with a small reduction of 1.0%. This was mainly driven by suppliers providing real estate-related services and financial services, while emissions from suppliers of technology-related goods and services have increased, due to an increase in their investments (e.g. data centres), growth of new services (e.g. cloud and AI) and increase in our spend. In 2024 we also expanded the calculation scope by including two additional markets with third party spend. We continue to widen our reporting as more emissions and spend data are added to the procurement scope. Emissions calculations approach Our emissions report adheres to the Greenhouse Gas (‘GHG’)
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 16 / 27
+##############################################################################################################
+case_id: HSBC_305-1_slot_f
+company: HSBC
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=61 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HSBC_Annual_EN_p0061_c0002
+markets with third party spend. We continue to widen our reporting as more emissions and spend data are added to the procurement scope. Emissions calculations approach Our emissions report adheres to the Greenhouse Gas (‘GHG’) Protocol, which incorporates the scope 2 market-based emissions methodology. We report GHG emissions associated with the energy used in our premises and employees’ business travel and our supply chain in tonnes of CO2 equivalent. As a financial services organisation, carbon dioxide is the main type of GHG applicable to our operations, however, our current reporting also incorporates methane and nitrous oxide for completeness, although deemed immaterial. Based on our operational control boundary, in 2024 we collected data on energy use and business travel for our operations in 34 countries and territories out of the 58 markets we operate in, which accounted for approximately 97.7% of our full-time equivalent staff (‘FTEs’). To estimate the emissions of our operations in entities where we have operational control and a small presence, we scale up the emissions to 100%. We apply reviewed and updated emission uplift rates to reflect uncertainty concerning the quality and coverage of emission measurement and estimation. This approach is consistent with both the Intergovernmental Panel on Climate Change’s Good Practice Guidance and Uncertainty Management in National Greenhouse Gas Inventories and our internal analysis. Our calculation methodology for supply chain emissions follows the spend-based method under the GHG protocol; a combination of supplier emissions data and industry averages. We source actual data via CDP, or direct engagement with suppliers, and in the absence of this we use estimations from a new data provider and then industry average carbon intensities from CDP to estimate supply chain emissions. As more of our suppliers report their emissions, we should be able to include more accurate data and fewer industry averages in the calculation. We have applied a data quality score to the sources of data we used to determine counterparty emissions. For further details, see our GHG Reporting Guidance at www.hsbc.com/esg In 2024 we conducted a materiality assessment on upstream scope 3 categories, and we have identified categories 1 (purchased goods
+
+[Chunk 2] page=452
+chunk_id: 2024_UK_HSBC_Annual_EN_p0452_c0001
+Task Force on Climate-related Financial Disclosures (‘TCFD’) continued Recommendation Response Disclosure location b) Disclose scope 1, scope 2 and, if appropriate, scope 3 greenhouse gas emissions and the related risks (Companies Act 2006 - Sections 414CA and 414CB 2A (h)) Our own operations - Our supply chain contributes c.81% of our operational emissions and is the area in which we face the most significant decarbonisation challenge. Many suppliers are still in the early phase of their decarbonisation journey. We have stepped up targeted efforts to support decarbonisation across our supply chain. Page 58 - We report GHG emissions associated with the energy used in our premises and employees’ business travel and our supply chain in tonnes of CO2 equivalent. As more of our suppliers report their emissions, we should be able to include more accurate data and fewer industry averages in the calculation. We have applied a data quality score to the sources of data we used to determine counterparty emissions. Page 59 Greenhouse gas emissions for lending and financial intermediary business (supplemental guidance for banks) - Our analysis of financed emissions comprises ‘on-balance sheet financed emissions’ and ‘facilitated emissions’, which we distinguish where necessary in our reporting. Our on-balance sheet financed emissions include emissions related to on-balance sheet lending, such as project finance and direct lending. Our facilitated emissions include emissions related to financing we help clients to raise through capital markets activities. Our analysis covers financing from Global Banking and Markets, and Commercial Banking. Page 48 - HSBC Asset Management recognises that climate-related risks may impact the operational and financial performance of investee companies. The impact of these risks will vary depending on characteristics such as asset class, sector, business model and geography. HSBC Asset Management continues to integrate climate analysis into its actively managed product offerings and seeks to assess climate-related risks that could impact investment performance, where applicable and relevant. Page 60 - We currently disclose partial scope 3 greenhouse gas emissions. We currently focus on disclosing only four out of fifteen categories of scope 3 greenhouse gas emissions, including business travel, supply chain and financed emissions, following our internal materiality assessment. In relation to financed emissions, we publish on
+
+[Chunk 3] page=61
+chunk_id: 2024_UK_HSBC_Annual_EN_p0061_c0003
+For further details, see our GHG Reporting Guidance at www.hsbc.com/esg In 2024 we conducted a materiality assessment on upstream scope 3 categories, and we have identified categories 1 (purchased goods and services), 2 (capital goods), and 6 (business travel) as material. Our approach to re-baselines and restatements We re-baselined our 2019 and restated our 2023 supply chain metrics in line with our emissions re-baseline and restatement policy (see page 51). As referenced above, in 2024, we made the decision to amend the methodology. We also identified an error in the mapping of industry averages. In addition, we have identified an error in our 2019 metric disclosed in our ARA 2023 for total energy consumption, which we have now restated. We are conducting a review of our controls related to these items and aim to enhance them accordingly. HSBC Holdings plc Annual Report and Accounts 2024 59 Energy and travel greenhouse gas emissions in tonnes CO2e 3 2024 2023 2019 baseline Scope 1 1 Ä 15,025 16,918 22,066 Scope 2 (market-based) 1 Ä 83,760 167,174 392,270 Scope 3 ~ 1,127,909 1,113,498 1,356,631 Category 1: Purchased goods and services 1,2 Ä 866,873 880,494 1,033,972 Category 2: Capital goods 1,2 ~ 127,158 123,763 50,651 Category 6: Business travel 1 ~ 133,878 109,241 272,008 Total Ä 1,226,693 1,297,590 1,770,967 Included Scope 1 and 2 of UK Ä 5,887 5,909 10,432 1 Data in 2024 is subject to an independent third-party limited assurance in accordance with the International Standard on Assurance engagements 3410 (Assurance Engagements on Greenhouse Gas Statements). For further details, see GHG Reporting Guidance 2024 and third-party limited
+
+[Chunk 4] page=53
+chunk_id: 2024_UK_HSBC_Annual_EN_p0053_c0001
+Financed emissions continued Our approach to emissions re-baselines and restatements The PCAF recommends that financial institutions should, in line with the Greenhouse Gas Protocol Corporate Value Chain (scope 3) Accounting and Reporting Standard requirement, establish a recalculation policy to ensure consistency, comparability and relevance of the reported greenhouse gas emissions data over time. Our emissions re-baseline and restatement policy defines the circumstances for a restatement of previously reported emissions data and targets, including a re-baseline. In 2024, we reviewed and enhanced our policy by extending the scope to cover additional emissions categories, including scope 1 and 2 emissions in our own operations. We also now include scope or boundary changes as a key driver of change. HSBC Asset Management is covered by a different emissions re-baseline and restatement framework as per page 57. Emissions data and related processes are continually evolving. Therefore, we do not consider data and process enhancements to be a key driver of change. This may change over time as data and processes mature. When key drivers, in aggregate, breach our defined significance thresholds, a restatement of previously reported emissions data and targets, including where necessary a re-baseline, is required. We expect our policy to evolve with further industry guidance. The table below outlines the key drivers of change and what we expect to disclose when thresholds are breached. For further details of our emissions re-baseline and restatement policy, see our Financed Emissions and Thermal Coal Exposures Methodology at www.hsbc.com/who-we-are/ esg-and-responsible-business/esg-reportingcentre. Key drivers of change What we expect to disclose Changes to the emissions methodology including those driven by changes in industry guidance/regulations - A revised comparative amount for the restatement period that reflects the new information - The difference between the amount disclosed in the previous period and the revised comparative amount - The reasons for revising the comparative amount and why the new information provides reliable and more relevant information - The actions being taken to remediate same or similar errors in the future Errors, such as those in the internal application or interpretation of methodology, or errors in internal data Scope or
+
+[Chunk 5] page=59
+chunk_id: 2024_UK_HSBC_Annual_EN_p0059_c0001
+Financed emissions continued Reducing emissions in our assets under management HSBC Asset Management continues to work towards its interim target1 of reducing scope 1 and 2 financed emissions intensity by 58% between 2019 and 2030 for its in scope assets under management (AUM), consisting of listed equities and corporate fixed income managed within its major investment hubs. As of 31 December 2019, in scope assets amounted to $193.9bn, equating to 38% of global AUM. 2019 re-baselined metrics In 2024, we improved our methodology for calculating financed emissions intensity, including a revised mapping logic for issuers’ carbon intensity and EVIC (enterprise value including cash) data. We have re-baselined our 2019 intensity figure due to an error in the data mapping and it is now 124 tCO2e/M$ invested versus 131 tCO2e/M$ invested reported in the Annual Report and Accounts 2022, representing a decrease of 5.6%. The Partnership for Carbon Accounting Financials (PCAF)2 recommends that financial institutions should, in line with the Greenhouse Gas Protocol Corporate Value Chain (Scope 3) Accounting and Reporting Standard requirement, establish a restatement policy to ensure consistency, comparability and relevance of the reported greenhouse gas emissions data over time. HSBC Asset Management has defined an internal financed emissions re-baseline and restatement framework which adapts HSBC Group’s approach and defines relevant circumstances for HSBC Asset Management. Our financed emissions metrics As at 31 December 2023, the scope 1 and 2 financed emissions intensity of HSBC Asset Management’s in scope assets stood at 69.8 tCO2e/M$ invested. The PCAF data quality score for our 31 December 2023 financed emissions intensity was 2.63. Reported metrics 3 2019 2023 Unit Scope 1 and 2 financed emissions intensity 124.0* 69.8 tCO2e/M$ invested AUM in scope 193.9 223.0 Billions $ PCAF Data Quality Score 2.63 2.63
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 17 / 27
+##############################################################################################################
+case_id: HSBC_305-1_slot_b
+company: HSBC
+slot: slot_b
+element: Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: At least 3 specific gas types are explicitly named (e.g. CO2, CH4, N2O, SF6, HFCs).
+PARTIAL if ANY of the following:
+  - Fuel types or combustion sources are listed (e.g. LNG, diesel, gasoline, petrol, 휘발유, 경유, LPG)
+  - Korean combustion terms appear: 고정연소, 이동연소
+  - Only CO2 is mentioned without other gases
+  → IMPORTANT: If you see LNG, diesel, gasoline, 휘발유, 경유, LPG, 고정연소, or 이동연소 → always return "partial", never "missing"
+MISSING if: No gas types AND no fuel types AND no combustion sources are mentioned at all.
+Korean equivalents: 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O), 육불화황(SF6)
+Korean fuel terms that indicate PARTIAL: 휘발유, 경유, LPG, LNG, 고정연소, 이동연소
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=452
+chunk_id: 2024_UK_HSBC_Annual_EN_p0452_c0001
+Task Force on Climate-related Financial Disclosures (‘TCFD’) continued Recommendation Response Disclosure location b) Disclose scope 1, scope 2 and, if appropriate, scope 3 greenhouse gas emissions and the related risks (Companies Act 2006 - Sections 414CA and 414CB 2A (h)) Our own operations - Our supply chain contributes c.81% of our operational emissions and is the area in which we face the most significant decarbonisation challenge. Many suppliers are still in the early phase of their decarbonisation journey. We have stepped up targeted efforts to support decarbonisation across our supply chain. Page 58 - We report GHG emissions associated with the energy used in our premises and employees’ business travel and our supply chain in tonnes of CO2 equivalent. As more of our suppliers report their emissions, we should be able to include more accurate data and fewer industry averages in the calculation. We have applied a data quality score to the sources of data we used to determine counterparty emissions. Page 59 Greenhouse gas emissions for lending and financial intermediary business (supplemental guidance for banks) - Our analysis of financed emissions comprises ‘on-balance sheet financed emissions’ and ‘facilitated emissions’, which we distinguish where necessary in our reporting. Our on-balance sheet financed emissions include emissions related to on-balance sheet lending, such as project finance and direct lending. Our facilitated emissions include emissions related to financing we help clients to raise through capital markets activities. Our analysis covers financing from Global Banking and Markets, and Commercial Banking. Page 48 - HSBC Asset Management recognises that climate-related risks may impact the operational and financial performance of investee companies. The impact of these risks will vary depending on characteristics such as asset class, sector, business model and geography. HSBC Asset Management continues to integrate climate analysis into its actively managed product offerings and seeks to assess climate-related risks that could impact investment performance, where applicable and relevant. Page 60 - We currently disclose partial scope 3 greenhouse gas emissions. We currently focus on disclosing only four out of fifteen categories of scope 3 greenhouse gas emissions, including business travel, supply chain and financed emissions, following our internal materiality assessment. In relation to financed emissions, we publish on
+
+[Chunk 2] page=61 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HSBC_Annual_EN_p0061_c0002
+markets with third party spend. We continue to widen our reporting as more emissions and spend data are added to the procurement scope. Emissions calculations approach Our emissions report adheres to the Greenhouse Gas (‘GHG’) Protocol, which incorporates the scope 2 market-based emissions methodology. We report GHG emissions associated with the energy used in our premises and employees’ business travel and our supply chain in tonnes of CO2 equivalent. As a financial services organisation, carbon dioxide is the main type of GHG applicable to our operations, however, our current reporting also incorporates methane and nitrous oxide for completeness, although deemed immaterial. Based on our operational control boundary, in 2024 we collected data on energy use and business travel for our operations in 34 countries and territories out of the 58 markets we operate in, which accounted for approximately 97.7% of our full-time equivalent staff (‘FTEs’). To estimate the emissions of our operations in entities where we have operational control and a small presence, we scale up the emissions to 100%. We apply reviewed and updated emission uplift rates to reflect uncertainty concerning the quality and coverage of emission measurement and estimation. This approach is consistent with both the Intergovernmental Panel on Climate Change’s Good Practice Guidance and Uncertainty Management in National Greenhouse Gas Inventories and our internal analysis. Our calculation methodology for supply chain emissions follows the spend-based method under the GHG protocol; a combination of supplier emissions data and industry averages. We source actual data via CDP, or direct engagement with suppliers, and in the absence of this we use estimations from a new data provider and then industry average carbon intensities from CDP to estimate supply chain emissions. As more of our suppliers report their emissions, we should be able to include more accurate data and fewer industry averages in the calculation. We have applied a data quality score to the sources of data we used to determine counterparty emissions. For further details, see our GHG Reporting Guidance at www.hsbc.com/esg In 2024 we conducted a materiality assessment on upstream scope 3 categories, and we have identified categories 1 (purchased goods
+
+[Chunk 3] page=40
+chunk_id: 2024_UK_HSBC_Datapack_EN_p0040_c0005
+c Annual Report and Accounts 2024 ‐‐‐> ESG review ‐‐‐> Environmental ‐‐‐> Task Force on Climate‐related Financial Disclosures (‘TCFD’); P.444 HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐> ESG review ‐‐‐> Governance ‐‐‐>Data Privacy; P.83 HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐> ESG review ‐‐‐> Governance ‐‐‐> Cybersecurity; P.84 HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐> Risk Review ‐‐‐> Environmental, social and governance ('ESG') risk; P.133 HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐> Risk review ‐‐‐> Data risk; P.135 HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐> Risk Review ‐‐‐> Climate risk; P.219 7 Planet Climate Change Greenhouse Gas (GHG) emissions For all relevant greenhouse gases (e.g. carbon dioxide, methane, nitrous oxide, F-gases etc.), report in metric tonnes of carbon dioxide equivalent (tCO2e) GHG Protocol Scope 1 and Scope 2 emissions. Estimate and report material upstream and downstream (GHG Protocol Scope 3) emissions where appropriate. Scope 1‐3 definitions: HSBC Holdings plc Annual Report and Accounts 2024 ‐‐‐>ESG Review ‐‐‐> Environmental ‐‐‐>Understanding our climate reporting
+
+[Chunk 4] page=14
+chunk_id: 2024_UK_HSBC_Datapack_EN_p0014_c0001
+HSBC HSBC Holdings plc Environmental key facts 2024 2023 2022 Units Reporting Coverage as % of Group FTE 97.7 % 96.0 % 92.4 % Energy and travel greenhouse gas emissions1,2 Scope 1 tonnes CO2e 15,025 16,918 19,329 Scope 2 (market‐based) tonnes CO2e 83,760 167,174 223,334 Scope 3 emissions Category 1: Purchased Goods and Services 4 tonnes CO2e 866,873 880,494 865,747 Category 2: Capital Goods 4 tonnes CO2e 127,158 123,763 144,232 Category 6: Business Travel tonnes CO2e 133,878 109,241 42,285 Total tonnes CO2e 1,226,693 1,297,590 1,294,927 Supply chain greenhouse gas emissions 2024 2023 2022 Purchased Goods & Services2 Scope 1 & 24 tonnes CO2e 202,127 194,880 218,152 Data quality score3 3.0 3.0 3.1 Scope 34 tonnes CO2e 664,746 685,614 647,595 Data quality score3 3.3 3.1 3.3 Total purchased goods & services (Scope 1,2 &3)4 tonnes CO2e 866,873 880,494 865,747 Capital Goods2 Scope 1 & 24 tonnes CO2e 33,266 30,906 29,801 Data quality score3 3.1 2.9 3.1 Scope 34 tonnes CO2e 93,892 92,857 114,431 Data
+
+[Chunk 5] page=15
+chunk_id: 2024_UK_HSBC_Datapack_EN_p0015_c0001
+HSBC HSBC Holdings plc Our financed emissions5 Scope 3 ‐ indirect (Downstream activities ‐ investments and financed emissions) Unit6 2024 2023 2022 Combined on‐balance sheet financed and facilitated emissions Oil and gas Mt CO2e N/A 23.2 31.9 Power and utilities tCO2e/GWh N/A 349.0 396.8 On‐balance sheet financed emissions Cement tCO2e/t cement N/A 0.59 0.71 Iron, steel and aluminium tCO2e/t metal N/A 2.1 2.5 Aviation tCO2e/million rpk N/A 79.6 90.2 Automotive tCO2e/million vkm N/A 152.4 170.1 Thermal coal mining Mt CO2e N/A 1.44 GHG emissions intensity ratio1 By Scope Scope 1 ‐ direct tonnes CO2e/FTE 0.07 0.08 0.09 Scope 2 ‐ indirect tonnes CO2e/FTE 0.39 0.76 1.02 Scope 3 ‐ indirect (Category 1: Purchased Goods and Services)4 tonnes CO2e/FTE 4.03 3.98 3.94 Scope 3 ‐ indirect (Category 2: Capital Goods)4 tonnes CO2e/FTE 0.59 0.56 0.66 Scope 3 ‐ indirect (Category 6: Business Travel) tonnes CO2e/FTE 0.62 0.49 0.19 Total GHG emissions per FTE ‐ Scope
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 18 / 27
+##############################################################################################################
+case_id: Incheon_305-1_slot_a
+company: Incheon
+slot: slot_a
+element: Total Scope 1 emissions in tCO2e
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 direct emissions.
+PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
+MISSING if: No numeric Scope 1 emissions value is present.
+NOTE: A percentage or reduction target is NOT a total emissions figure.
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=40 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002
+할 계획입니다. 연도별 온실가스 배출량을 Scope별로 관리하고 있으며, 탄소중립 목표 달성을 위해 주요 배출원을 체계적으로 모니터링하고 있습니다. 2040 RE100 달성 지표 및 목표 온실가스 배출 관리 지표 2040 RE100 이행 목표 중장기(~2030) 추진 계획 구분 2024 2025 2030 2035 2040 RE100 달성률 10% 15% 60% 80% 100% 전력사용량 470 501 490 596 599 재생에너지 공급량 47 75 294 477 599 단위 : GWh 2030년까지 재생에너지 발전 및 외부구매 확대로 RE60 달성 목표 2024 예상전력 사용량 지역 발전량 태양광 발전량 외부구매 2026 2029 2025 2028 2027 2030 RE60 단위 : 천tCO2eq 인천국제공항공사 온실가스 배출 관리 지표 구분 2022 2023 2024 합계(Scope 1+Scope 2+Scope 3) 11,401,821 15,609,988 17,692,201 Scope 1(소계) 22,351 38,725 22,672 이동배출 차량 3,288 2,827 2,817 고정배출 보일러 2,253 3
+
+[Chunk 2] page=126 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001
+125 Appendix Introduction ESG Report Appendix 2024/2025 인천국제공항공사 지속가능경영보고서 Sustainability Management Fact Book 수상 및 단체 가입 현황 재무데이터 공시 기준 및 이니셔티브 ISO 26000 제3자 검증의견서 Fact Book 환경 구분 단위 2022 2023 2024 온실가스 합계(Scope 1+Scope 2+Scope 3) tCO2eq 11,401,821 15,609,988 17,692,201 Scope 1(소계) tCO2eq 22,351 38,725 22,672 고정배출 차량 tCO2eq 3,288 2,827 2,817 보일러 tCO2eq 2,253 3,728 207 버너 tCO2eq 76 55 63 소방훈련 tCO2eq 61 23 25 프로세스 배출 비상발전기 tCO2eq 11 25 12 폐기물처리(소각) tCO2eq 15,385 19,172 17,291 하·폐수처리 tCO2eq 644 1,530 1,813 냉매손실 tCO2eq 634 11,365 446 Scope 2(소계) tCO2eq 183,098 184,464 183,678 전력 tCO2eq 159,049 165,169 179,962 열(스팀) tCO2eq 24,049 19,295 3,716 Scope 3(소계)
+
+[Chunk 3] page=34
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0034_c0001
+33 Sustainability Management Introduction Sustainability Management ESG Report Appendix 2024/2025 인천국제공항공사 지속가능경영보고서 2024 Highlights Value Chain & Sustainability ESG 전략체계 ESG 거버넌스 이해관계자 소통 이중 중대성 평가 Topic 1. 탄소중립 이행 인천공항의 탈탄소 전환을 위해서는 인천국제공항공사의 온실가스 감축뿐만 아니라, 전체 온실가스 배출량의 약 98%를 차지하는 항공사, 조업사 등 이해관계자의 배출 저감이 필수적입니다. 2045년 기준 공항 온실가스 배출량은 약 2,667만tCO2eq에 이를 것으로 전망되며, 이 중 대부분이 이해관계자 활동에서 발생합니다. 이에 따라 공사는 친환경 기술 도입, 녹색 인프라 전환, 운영 효율화 등 적극적인 감축 전략을 통해 2045년까지 이해관계자 배출량의 36.6%인 약 1,000만 톤CO2eq 감축을 목표로 하고 있습니다. 공사는 공항 운영 주체로서 이러한 사업을 직접 기획하고 집행함으로써, 단순 지원을 넘어 공항 생태계의 배출구조 전반을 적극적으로 전환하고, 미래 친환경 넷제로 공항의
+
+[Chunk 4] page=33
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0033_c0002
+고됩니다. 각 조직의 역할과 책임은 내부 규정· 지침으로 명문화되어 현장에서의 실행력을 뒷받침하고 있습니다. 제2여객터미널 확장과 항공 수요 회복에 따라 2045년 인천국제공항공사의 온실가스 배출량은 약 367,108 tCO2eq에 이를 것으로 전망됩니다. 공사는 2045년 탄소중립 달성을 목표로 전기, 차량, 중온수, 폐기물 등 주요 분야별로 재생에너지 확대를 핵심 이행 수단으로 선정하였습니다. 전기 분야에서는 RE100 목표에 따라 공항 운영 전력의 100%를 재생에너지로 전환하고, 차량 분야에서는 노후 CNG버스를 수소버스로 교체하는 등 에너지 전환을 추진할 계획입니다. 중온수와 폐기물 분야에서도 친환경 기술 도입과 자원순환 생태계 구축을 통해 배출 감축을 도모할 예정입니다. 2045년까지 총 431만 톤의 이산화탄소 감축을 목표로 하며, 직접 감축이 어려운 배출량에 대해서는 탄소배출권 구매를 통해 대응할 계획입니다. 탄소중립 추진을 위한 관리·감독 체계 공사 탄소중립 추진 전략 공사 탄
+
+[Chunk 5] page=40
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0040_c0001
+39 Sustainability Management Introduction Sustainability Management ESG Report Appendix 2024/2025 인천국제공항공사 지속가능경영보고서 2024 Highlights Value Chain & Sustainability ESG 전략체계 ESG 거버넌스 이해관계자 소통 이중 중대성 평가 Topic 1. 탄소중립 이행 인천공항은 탄소중립 이행의 글로벌 지표인 RE100 이니셔티브에 가입하여, 국제적 기준에 부합하는 에너지 관리 체계를 구축하고 있습니다. 공사는 공항 내 자체 재생에너지 발전을 지속 확대하는 한편, 국제 인증이 부여되는 녹색프리미엄 전력 구매를 병행하여 현실적으로 달성 가능한 RE100 이행 전략을 단계적으로 수립하고 있습니다. 특히, 각 재생에너지원별 목표 발전량을 2030년까지 구체적으로 설정하고, 연차별 이행 실적을 체계적으로 관리하고 있습니다. 앞으로도 자체 재생에너지 인프라 확대와 국제 기준 연계 실적관리를 통해, 글로벌 탄소중립 경영 요구에 선제적으로 대응하는 항공산업 탄소중립 리더십을 강화할 계획입니다. 연도별 온실가스 배출량을 Scope별로 관리하고 있으며, 탄소중립 목표 달성
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 19 / 27
+##############################################################################################################
+case_id: IBK_305-1_slot_g
+company: IBK
+slot: slot_g
+element: Standards and methodologies used (e.g. GHG Protocol, third-party verification)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific standard or methodology is explicitly named (e.g. GHG Protocol, ISO 14064, WRI).
+PARTIAL if ANY of the following:
+  - Third-party verification is mentioned (e.g. DNV, SGS, Bureau Veritas) without naming the standard
+  - internationally recognised methodology or similar vague reference
+  - Assurance or verification report is referenced without specifying the standard
+  → IMPORTANT: Any mention of third-party verification or assurance → at minimum partial
+MISSING if: No mention of any standard, methodology, or verification at all.
+Korean equivalents: GHG 프로토콜, 온실가스 프로토콜, 검증, 인증, 제3자 검증, ISO 14064
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=146 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0004
+(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표
+
+[Chunk 2] page=146
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0001
+온실가스 배출량 검증 의견서 MOC-24-002 KSA-MOF-644(Rev.0,‘24.02.14) 온실가스 배출량 검증 의견서 중소기업은행 검증 범위 한국표준협회는 중소기업은행의 온실가스 배출량 명세서의 직접배출(Scope1) 및 간접배출 (Scope2)에 대한 검증을 수행하였습니다. 검증 기준 및 절차 한국표준협회는 다음의 기준 및 절차에 따라 검증을 수행하였습니다. · 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(환경부고시 제2023-221호) · 온실가스 배출권거래제 운영을 위한 검증지침(환경부고시 제2021-112호) · 기타 지침에 정해지지 않은 사항은 2006 IPCC Guidelines, KS I ISO 14064-1 : 2018 및 KS I ISO 14064-3 : 2019을 참고함 검증 수준 중소기업은행의 온실가스 배출량에 대한 중요성 평가 결과 합리적 보증수준 (총배출량의 ±5.0% 미만)을 만족하고 있습니다. 검증 결론 검증팀 검증결과 명세서에 중대한 오류, 누락 및 허위사실이 발견되지 않았으며, 온실가스 배출�
+
+[Chunk 3] page=22
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0022_c0001
+22 2024 IBK 지속가능경영보고서 탄소중립 관리의 디지털화, ‘IBK 탄소중립허브’ 신설 기업이 기후변화에 대응하기 위해서는 사업장에서 배출하는 온실가스 배출량(Scope 1 & 2) 및 영업 과정에서 배출하는 배출량(Scope 3)을 측정하고 관리하는 것이 매우 중요합니다. 이에, 기업은행은 금융기관의 기후변화 대응에 기초가 되는 데이터 관리를 디지털화하고자, 탄소배출량 측정 관리시스템인 ‘IBK 탄소중립허브’를 구축하였습니다. IBK 탄소중립허브는 클라우드 기반으로 은행 내·외부에 산재되어 있는 관련 데이터를 효율적으로 수집하고 가공하여 온실가스 배출량을 산정하는 시스템입니다. 해당 시스템은 기업은행 녹색금융 확대 목표 달성을 위한 ESG·녹색 관련 금융·비금융 실적 관리를 포함하며, 2040 탄소중립을 위한 기업은행의 직·간접배출량과 2050 금융자산 탄소중립 목표 관리를 위한 금융자산 배출량 측정을 자동화하였습니다. 또한, IBK 탄소중립허브는 클라우드 기반으로 다양한 시
+
+[Chunk 4] page=146
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0005
+�경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표준협회는 귀 사의 온실가스 배출량에 대하여 온실가스 관리 강화를 위한 “제한적 보증 수준”의 검증을 제공합니다. - 현장검증 : IBK신용정보, IBK캐피탈, IBK서비스, IBK투자증권, IBK시스템, IBK저축은행, IBK연금보험, IBK자산운용 본점 방문 - 검증방법 - 온실가스 배출량 담당자 및 현장 담당자 인터뷰 - 보고기간 중 온실가스 배출량 산정에 사용된 관리시스템과 데이터 검토 - 내부문서 및 기초자료의 추적 검토 중소기업은행은 온실가스 배출량 관련 정보 및 증빙자료에 대해 공정하게 자료를 제공해야 하며, 한국표준협회는 온실가스 배출량에 대한 보증 업무에 한정합니다. Overview ESG Management Focus Issue Sustainability Core Value ESG Fact Report Appendix ESG Documents UN SDGs, UNGC ISSB Index GRI Index SASB Report TCFD Report UN PRB Report 제3자 검증 의견서 온실가스 배출량 검증 의견서 Beyond Sustainability 2024 IBK Sustainability Report 146 2024 IBK 지속가능경영보고
+
+[Chunk 5] page=134
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0134_c0001
+구분 IFRS 기후 관련 공시(S2) 보고 페이지 지표 및 목표 1. 유의적인 기후 관련 위험 및 기회의 측정, 감독, 관리 및 기업이 설정한 목표에 대한 진척을 포함하여 기업이 성과를 평가하는 방법 a) 산업전반 지표 범주와 관련된 정보 60-62, 64-65, 138-139 b) 산업기반 지표 c) 기후 관련 위험을 완화 또는 적응하거나 기후 관련 기회를 극대화하기 위해 기업이 설정한 목표 d) c)에서 식별한 목표 달성을 위한 진척을 측정하기 위해 이사회 또는 경영진이 사용하는 그 밖의 지표 2. 산업전반 지표 범주와 관련된 정보 a) 온실가스 배출량 - 온실가스 프로토콜 기업 기준(Greenhouse Gas Protocol Corporate Standard)에 따라 측정한 보고기간에 발생한 Scope 1, Scope 2, Scope 3에 대한 온실가스 절대 총배출량과 온실가스 배출량 집약도 (톤(t), 물리적 또는 경제적 산출물 단위당 CO2_e) 64 b) Scope 1 및 Scope 2 배출량에 대해 (1) 연결기업(지배기업 및 그 종속기업)과 (2) (1)에 포함되지 않은 관계기업, 공동기업,
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 20 / 27
+##############################################################################################################
+case_id: Samsung_305-1_slot_g
+company: Samsung
+slot: slot_g
+element: Standards and methodologies used (e.g. GHG Protocol, third-party verification)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific standard or methodology is explicitly named (e.g. GHG Protocol, ISO 14064, WRI).
+PARTIAL if ANY of the following:
+  - Third-party verification is mentioned (e.g. DNV, SGS, Bureau Veritas) without naming the standard
+  - internationally recognised methodology or similar vague reference
+  - Assurance or verification report is referenced without specifying the standard
+  → IMPORTANT: Any mention of third-party verification or assurance → at minimum partial
+MISSING if: No mention of any standard, methodology, or verification at all.
+Korean equivalents: GHG 프로토콜, 온실가스 프로토콜, 검증, 인증, 제3자 검증, ISO 14064
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=68 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0068_c0002
+��CO₂e 679 314 564 PFCs 천 톤CO₂e 3,333 1,533 913 SF₆ 천 톤CO₂e 173 124 484 NF₃ 1) 천 톤CO₂e - - 1,245 1) 본사와 해외 제조사업장 대상 산정했으며 2024년부터 냉매·오수·신규가스·탈루 배출량을 추가 산정 NF3(국제 기준에 따른 온실가스 7대 배출원)배출량을 2025년 지속가능경영보고서에 신규 공개 2023년 기준으로 산정한 2024년 (시장기반) 온실가스 배출량은 13,049천 톤CO₂e로 242천 톤CO₂e 감소 2) 2024년 온실가스 배출량: 국가별 전력, 연료 배출계수, IPCC 가이드라인, ISO 14064 기준 적용하여 산정 3) 온실가스 배출량 집약도: 사업장 온실가스 배출량(Scope 1, 2) ÷ 매출액(DX부문 매출(절대값) + DS부문 매출(절대값), 억 원) 4) 시장기반 온실가스 배출량 카테고리 측정 방법 1. 구매한 제품 및 서비스 직접 수집법과 비용기반 추정법을 혼용 - 전년도 구매액 상위 90% 이상에 대
+
+[Chunk 2] page=83
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0083_c0005
+�지 사용량, 재생에너지 사용량, 온실가스 원단위 배출량, 용수 사용량 등의 지표를 관리하고 있습니다. 또한 제품 측면에서는 재생원료 사용 비율, 폐전자제품 회수량, 제품 평균 소비 전력량 등의 지표 를 선정해 관리하고 있습니다. P.11, 22, 62-68, CDP: M.07 b) 직접(Scope 1), 간접(Scope 2), 그리고 기타(Scope 3) 온실가스 배출량 및 관련 리스크 삼성전자는 온실가스 배출량을 Scope 1, 2, 3로 구분하여 산출하고 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.68, 72, CDP: M.07 c) 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과 삼성전자는 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과를 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.11, 22, CDP: M.07 TCFD(기후변화 관련 재무정보공개 협의체) 대조표 Our Company Appendix Facts & Figures Principle Planet People
+
+[Chunk 3] page=72
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0072_c0001
+삼성전자 지속가능경영보고서 2025 72 사업부문별 환경성과 2022년 2023년 2024년 온실가스 관리(Scope 1, 2) 1), 2) DX부문 DS부문 DX부문 DS부문 DX부문 DS부문 (시장기반) 온실가스 배출량 천 톤CO₂e 366 14,687 313 12,978 342 14,546 직접 배출량(Scope 1) 천 톤CO₂e 254 5,718 211 3,522 236 4,489 간접 배출량(Scope 2) 천 톤CO₂e 112 8,969 102 9,456 106 10,058 온실가스 배출원별 배출량 3) 천 톤CO₂e 366 14,687 313 12,978 342 14,546 CO₂ 천 톤CO₂e 364 9,971 311 10,467 314 11,101 CH₄ 천 톤CO₂e 1 2 0.5 2 1 3 N₂O 천 톤CO₂e 1 529 1 539 1 264 HFCs 천 톤CO₂e - 679 - 314 26 538 PFCs 천 톤CO₂e - 3,333 0.2 1,532 0.3 912 SF₆ 천 톤CO₂e - 173 - 124 - 484 NF₃ 천 톤CO₂e - - - - -
+
+[Chunk 4] page=12
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0012_c0001
+삼성전자 지속가능경영보고서 2025 12 구분 리스크·기회 물리적 리스크 급성 태풍 홍수 산불 우박/뇌우 만성 가뭄 폭염 강수 한파 전환 리스크 정책‧법률 탄소배출권 구매 비용 증가 기후변화 관련 법, 규제의 변화 시장 일반전력 가격 상승으로 인한 비용 증가 저탄소 제품에 대한 고객 선호도 대응 미흡 기술 저탄소 제품·서비스 개발 비용 증가 평판 기후변화 관련 이해관계자 우려와 부정적 언론보도 기회 시장 저탄소 제품‧서비스 수요 확대 재생에너지 전환 회복 탄력성 기후 변화에 대한 공급망 대응 역량 강화 추진방향 DX부문은 2030년 Scope 1, 2 탄소중립 달성을 목표로, 온실가스 직접 배출을 최소화하고 재생에너지 사용을 확대하고 있습니다. 또한 제품의 물류, 판매, 사용 등 밸류체인의 탄소 배출을 저감하기 위해 다양한 과제를 발굴하여 실행하고 있습니다. 리스크 관리 DX부문은 ISO 14001, ISO 50001 등 환경경영시
+
+[Chunk 5] page=72
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0072_c0004
+�목별(14개) 내부 산정 기준을 수립하였고, 전 항목에 대한 제3자 검증을 완료함. 일부 Scope 3 배출 항목의 온실가스 배출량(구매한 제품 및 서비스, 자본재)은 협력회사의 데이터 확보가 가능한 Y-1년 기준으로 산정되었음 2) Scope 3 일부 카테고리(제품사용 등)에 대해 산정방법/기준(산정 자동화, 최신 배출계수 적용 등) 및 데이터 정합성 개선하여 기존 2022년, 2023년 데이터를 수정 공시함 Our Company Appendix Facts & Figures Principle Planet People
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 21 / 27
+##############################################################################################################
+case_id: IBK_305-1_slot_d
+company: IBK
+slot: slot_d
+element: Base year for calculation
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific year is explicitly declared as the BASE YEAR for GHG calculations
+  - Korean patterns: 기준연도: YYYY, YYYY년을 기준연도로, 기준년도, 기준 년도
+  - A year marked as (기준) or (Base) in a data table
+  - Text says e.g. 2021 (기준연도) or 2021 (Base year)
+PARTIAL if: A year is mentioned in passing but not declared as base year.
+MISSING if: No base year declaration or pattern is present.
+NOTE: A table showing multiple years of data alone is NOT a base year declaration.
+      BUT if one year is labeled (기준) or (Base) in that table → COVERED.
+Korean equivalents: 기준연도, 기준 연도, 기준년도
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=64
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0064_c0003
+출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지속가능성기준위원회(ISSB, International Sustainability Standards Board)의 IFRS S2 기후 공시에 선제적으로 대응하고자, 2023년부터 IBK기업은행과 자회사(IBK캐피탈, IBK투자증권, IBK연금보험, IBK자산운용, IBK저축은행, IBK벤처투자, IBK시스템, IBK신용정보, IBK서비스)의 온실가스 배출량 공시를 시작합니다. IBK 기후변화 대응 이슈: 자회사를 포함한 공시 범위 확대 단위 기업은행 자회사 합계 Scope 1 tCO2eq 6,242 740 6,982 Scope 2 tCO2eq 48,991 1,712 50,703 Scope 3(출장, 직원통근) tCO2eq 15,259.59 3,165.85 18,425.44 (2023 기준) 2023 54,923 48,991 6,242 2022 55,536 49,242 6,596 2021 56,795 48,957 8,120 2020 59,554 50,333 9,532 단위 2020 2021 2022 2023 온실가스 배출허용량 tCO2eq 61,789 61,392 60,790 60,892 IBK 온실가스 배출 목표 tCO2eq 59,554 58,065 56,613 55,
+
+[Chunk 2] page=60 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0060_c0002
+년까지 13,406tCO2eq로 감축하고 2040년까지 탄소중립을 달성하고자 합니다. Approach 60,000 40,000 20,000 50,000 30,000 10,000 0 연도별 목표 단위 2020(기준연도) 2030 2035 2040 tCO2eq 59,554 27,203 13,406 0 2020 2040 IBK기업은행 탄소중립 로드맵 2030 녹색금융 비중 13% 확대 2040 IBK 자체 온실가스 배출량 제로화 2050 IBK 금융자산의 온실가스 배출량 제로화 2030 2035 IBK 2040 탄소중립 59,554 27,203 13,406 기준연도 (단위: tCO2eq) Overview ESG Management Focus Issue Sustainability Core Value ESG Fact Report Environmental 기후변화 대응 환경경영 Social 금융소비자 보호 디지털 경영 포용금융 사회공헌 인권경영 인재경영 안전보건 Governance 기업 지배구조 윤리경영 컴플라이언스 리스크 관리 정보보호 Appendix 60 2024 IBK 지속가능경영보고서 Beyond Sustainability 2024 IBK Sustainability Report
+
+[Chunk 3] page=21 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0021_c0002
+정하여 관리하고 있으며, 국제 표준을 준용한 환경·에너지경영시스템을 도입하고, 전기차 확대 등 다양한 방법을 활용하여 온실가스 감축을 위해 힘쓰고 있습니다. 탄소중립 달성을 위한 노력 Focus Issue 1 - Environmental | 기후변화 대응 60,000 40,000 20,000 50,000 30,000 10,000 0 연도별 목표 배출량 단위 2020(기준연도) 2030 2035 2040 tCO2eq 59,554 27,203 13,406 0 2020 2030 2040 2050 배출량 전망치(BAU) 2050 탄소중립 IBK 2040 탄소중립 IBK 2040 탄소중립 IBK 2050 금융자산 탄소중립 기업은행은 금융자산 배출량(Scope 3)에 대한 탄소중립을 달성하기 위해 2050년을 목표연도로 설정하고 관리하고 있습니다. 특히 2023년 12월, 국내 정책금융기관 최초로 글로벌 이니셔티브 SBTi(Science Based Targets Initiative)로부터 탄소배출 감축 목표를 인증받았습니다. 또한 기업은행은 온실가스 배출량을 정확하게 측정하고 관리 및 모니터링할 수 있는 탄소배출량 측정
+
+[Chunk 4] page=141
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0141_c0003
+. 또한, 탄소중립 달성을 위해 내부 탄소배출량 외에도 금융자산 배출량을 측정하여, 기후변화 관련 위험과 기회를 관리하고 있습니다. 64, 67 b) Scope 1, Scope 2 및 Scope 3 온실가스 배출량 및 관련 위험 매년 온실가스 배출량 데이터를 지속가능경영보고서와 CDP보고서를 통해 공개하고 있습니다. 64, 67 c) 기후변화와 관련된 위험과 기회를 관리하기 위해 조직에서 사용하는 목표 및 목표 대비 성과 국책은행이자 기업시민으로서의 모범적 실천을 위해 IBK 2040 탄소중립이라는 진취적인 목표를 정하고, 온실가스 배출량을 지표로 활용하여 모니터링을 실시하고 있습니다. IBK 2040 탄소중립은 기준연도를 2020년으로 하여, 2040년까지의 탄소중립 달성을 목표로 하고 있으며, 환경〮에너지경영시스템 도입 및 전기차 보급 확대 등의 노력을 기울이고 있습니다. 또한, 자체 배출량뿐만 아니라 금융자산에 대해 탄소중립 달성 목표를 2050년으로 설정하였습니다. 금융배출량 감축 목표 설정의 객�
+
+[Chunk 5] page=62
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0062_c0002
+IBK SBTi Target 현재 IBK Portfolio 발전 여신 발전 PF 2021 2022 2030 2050 0.04 0.12 0.01 Target … … 2021 2022 Temperature Score tco2e/MWh tco2e/MWh 2030 0.37 0.34 0.1 Target IBK Scope 1+2 온도점수 IBK Scope 1+2+3 온도점수 2050 Overview ESG Management Focus Issue Sustainability Core Value ESG Fact Report Environmental 기후변화 대응 환경경영 Social 금융소비자 보호 디지털 경영 포용금융 사회공헌 인권경영 인재경영 안전보건 Governance 기업 지배구조 윤리경영 컴플라이언스 리스크 관리 정보보호 Appendix 62 2024 IBK 지속가능경영보고서 Beyond Sustainability 2024 IBK Sustainability Report
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 

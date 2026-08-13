@@ -1,0 +1,360 @@
+==============================================================================================================
+VERIFIER GOLD REVIEW — BATCH 1
+==============================================================================================================
+
+IMPORTANT:
+- Assign gold_status ONLY from the frozen evidence packet below.
+- Use the current SLOT_RULES exactly.
+- Do not use prior verifier predictions.
+- reviewed retrieval gold is annotation aid only.
+- Supporting chunks must directly justify the selected status.
+
+
+##############################################################################################################
+CASE 01 / 27
+##############################################################################################################
+case_id: IBK_305-1_slot_a
+company: IBK
+slot: slot_a
+element: Total Scope 1 emissions in tCO2e
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 direct emissions.
+PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
+MISSING if: No numeric Scope 1 emissions value is present.
+NOTE: A percentage or reduction target is NOT a total emissions figure.
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=64 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0064_c0003
+출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지속가능성기준위원회(ISSB, International Sustainability Standards Board)의 IFRS S2 기후 공시에 선제적으로 대응하고자, 2023년부터 IBK기업은행과 자회사(IBK캐피탈, IBK투자증권, IBK연금보험, IBK자산운용, IBK저축은행, IBK벤처투자, IBK시스템, IBK신용정보, IBK서비스)의 온실가스 배출량 공시를 시작합니다. IBK 기후변화 대응 이슈: 자회사를 포함한 공시 범위 확대 단위 기업은행 자회사 합계 Scope 1 tCO2eq 6,242 740 6,982 Scope 2 tCO2eq 48,991 1,712 50,703 Scope 3(출장, 직원통근) tCO2eq 15,259.59 3,165.85 18,425.44 (2023 기준) 2023 54,923 48,991 6,242 2022 55,536 49,242 6,596 2021 56,795 48,957 8,120 2020 59,554 50,333 9,532 단위 2020 2021 2022 2023 온실가스 배출허용량 tCO2eq 61,789 61,392 60,790 60,892 IBK 온실가스 배출 목표 tCO2eq 59,554 58,065 56,613 55,
+
+[Chunk 2] page=64
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0064_c0002
+tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81 246.24 출장 tCO2eq 4,220.92 3,073.67 3,232.08 3,485.34 직원통근 tCO2eq 4,318.36 12,385.86 12,048.62 11,774.25 합계 tCO2eq 10,039.43 16,972.14 16,759.73 16,720.08 * 전년도까지는 Scope 1, 2를 기준으로 소수점 절사로 인한 합계 차이를 보정하였으나, 올해부터는 개별 검증서를 기준으로 수치를 명기하여 Scope 1, 2의 합계와 Scope 1 & 2 수치에 일부 차이가 발생합니다. (참고: 온실가스 배출량 검증 의견서의 온실가스 배출량은 사업장별로 소수점 단위 이하 절사 후 합산 기준을 적용한 값으로 차이 발생) ** 산정 경계 및 방식 변경에 따른 Scope 3 과거 산출 수치 조정 온실가스 배출 (전행 기준) 온실가스 배출 목표 및 실제 배출량 (단위: tCO2eq, 전행 기준) Scope 1(직접 배출량) Scope 2(간접 배출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지�
+
+[Chunk 3] page=60
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0060_c0002
+년까지 13,406tCO2eq로 감축하고 2040년까지 탄소중립을 달성하고자 합니다. Approach 60,000 40,000 20,000 50,000 30,000 10,000 0 연도별 목표 단위 2020(기준연도) 2030 2035 2040 tCO2eq 59,554 27,203 13,406 0 2020 2040 IBK기업은행 탄소중립 로드맵 2030 녹색금융 비중 13% 확대 2040 IBK 자체 온실가스 배출량 제로화 2050 IBK 금융자산의 온실가스 배출량 제로화 2030 2035 IBK 2040 탄소중립 59,554 27,203 13,406 기준연도 (단위: tCO2eq) Overview ESG Management Focus Issue Sustainability Core Value ESG Fact Report Environmental 기후변화 대응 환경경영 Social 금융소비자 보호 디지털 경영 포용금융 사회공헌 인권경영 인재경영 안전보건 Governance 기업 지배구조 윤리경영 컴플라이언스 리스크 관리 정보보호 Appendix 60 2024 IBK 지속가능경영보고서 Beyond Sustainability 2024 IBK Sustainability Report
+
+[Chunk 4] page=146
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0004
+(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표
+
+[Chunk 5] page=21
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0021_c0002
+정하여 관리하고 있으며, 국제 표준을 준용한 환경·에너지경영시스템을 도입하고, 전기차 확대 등 다양한 방법을 활용하여 온실가스 감축을 위해 힘쓰고 있습니다. 탄소중립 달성을 위한 노력 Focus Issue 1 - Environmental | 기후변화 대응 60,000 40,000 20,000 50,000 30,000 10,000 0 연도별 목표 배출량 단위 2020(기준연도) 2030 2035 2040 tCO2eq 59,554 27,203 13,406 0 2020 2030 2040 2050 배출량 전망치(BAU) 2050 탄소중립 IBK 2040 탄소중립 IBK 2040 탄소중립 IBK 2050 금융자산 탄소중립 기업은행은 금융자산 배출량(Scope 3)에 대한 탄소중립을 달성하기 위해 2050년을 목표연도로 설정하고 관리하고 있습니다. 특히 2023년 12월, 국내 정책금융기관 최초로 글로벌 이니셔티브 SBTi(Science Based Targets Initiative)로부터 탄소배출 감축 목표를 인증받았습니다. 또한 기업은행은 온실가스 배출량을 정확하게 측정하고 관리 및 모니터링할 수 있는 탄소배출량 측정
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 02 / 27
+##############################################################################################################
+case_id: Hyundai_305-1_slot_b
+company: Hyundai
+slot: slot_b
+element: Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: At least 3 specific gas types are explicitly named (e.g. CO2, CH4, N2O, SF6, HFCs).
+PARTIAL if ANY of the following:
+  - Fuel types or combustion sources are listed (e.g. LNG, diesel, gasoline, petrol, 휘발유, 경유, LPG)
+  - Korean combustion terms appear: 고정연소, 이동연소
+  - Only CO2 is mentioned without other gases
+  → IMPORTANT: If you see LNG, diesel, gasoline, 휘발유, 경유, LPG, 고정연소, or 이동연소 → always return "partial", never "missing"
+MISSING if: No gas types AND no fuel types AND no combustion sources are mentioned at all.
+Korean equivalents: 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O), 육불화황(SF6)
+Korean fuel terms that indicate PARTIAL: 휘발유, 경유, LPG, LNG, 고정연소, 이동연소
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=40 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0001
+40 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 기후변화 대응 - 배출량 측정을 위한 접근법 온실가스 배출량 측정을 위해 적용한 지침은 아래와 같으며, 통제력기준(Control Approach)의 운영통제력(Operational Control)을 사용하였습니다. * 2차 IPCC(Intergovernmental Panel on Climate Change, 기후변화에 관한 정부간 협의체) 평가의 100년을 기준으로 한 GWP(Global Warming Potential, 지구온난화지수) 값을 사용하여 6가지 온실가스 종류(CO2, CH4, N2O, HFCs, PFCs, SF6)를 이산화탄소환산량으로 변환 탄소중립 투자 현대자동차는 사업장의 탄소중립 달성을 위해 2024년부터 2035년까지 약 4조 원 규모의 투자계획을 수립했습니다. 이를 통해 태양광 자가발전, 외부 재생에너지 조달과 더불어, 수소 밸류체인 확장을 위한 활동을 전개할 예정입니다. 보상 현대자동차는 기후변화 관리 인센티브 제도를 운영하고 있습니다. CEO, 권역본부장, 공장장 (생산법인장), 직원(유관조직)의 성과평가 항목(KPIs)에 기후변화 관련 항목을 포함하고 있으며, 해당
+
+[Chunk 2] page=34
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0034_c0002
+목표를 수립하였습니다. 차량 생산 과정에서 발생하는 온실가스 배출(Scope 1,2)을 감축하기 위해 태양광 패널 등을 활용하여 재생에너지 전력을 직접 생산하고 있습니다. 이에 더하여 재생에너지 PPA(전력구매계약) 체결, REC 구매 등의 방법을 활용하여 2045년까지 RE100(Renewable Energy 100%)을 달성할 것입니다. 이를 통해 기준연도인 2023년 Scope 1+2 온실가스 배출량(2,275,751tCO2-eq) 대비 2035년까지 약 60%, 2045년까지 100%를 감축하는 목표를 수립하였습니다. 원소재 및 부품 조립 단계에서 발생하는 온실가스 배출(Scope 3 - Category 1)은 주요 협력사의 에너지 전환 지원 및 핵심 원소재 공급망 관리 등을 통해 감축할 계획입니다. 특히 차체 및 섀시 부품의 주요 원자재인 철강과 알루미늄에 대해 재활용 소재를 활용하고 탄소 배출이 적은 소재를 도입할 예정입니다. 현대자동차의 탄소중립 목표는 고객의 차량 운행과정(Tank to Wheel)에서 발생하는 온실가스 배출(Scope 3 - Category 11) 감축까지 포함하고 있습니다. 2035년까
+
+[Chunk 3] page=34
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0034_c0003
+과정(Tank to Wheel)에서 발생하는 온실가스 배출(Scope 3 - Category 11) 감축까지 포함하고 있습니다. 2035년까지 유럽 시장 내 100% 전동화, 2040년까지 주요 시장 100% 전동화를 달성하여 운행과정에서 탄소배출이 없는 전기차 판매를 확대할 것입니다. 이를 통해 기준연도인 2023년 Scope 3 - Category 11 배출량(114,132,523 tCO2-eq) 대비 2035년까지 약 40%, 2045년까지 약 90% 감축할 계획입니다. 현대자동차는 2045년 탄소중립 시점에 불가피하게 발생하는 잔여 탄소 배출을 처리하기 위해 탄소 포집과 활용 기술인 CCUS(Carbon Capture Utilization & Storage)에 투자하고, 폐배터리를 에너지저장장치로 재활용하거나 해양 생태계를 복원하는 등의 탄소 상쇄 활동을 지속적으로 추진할 것입니다. 또한 수소연료전지 시스템을 기반으로 수소발전 및 공정을 통해 수소사업과 탄소중립의 시너지를 극대화할 계획입니다. 기후 관련 목표(탄소중립 목표) 달성 계획 - 사업장 탄소중립 실현 현대자동차는 파리협정의 방향성과 목표를 적극 지지하며, 전 지구
+
+[Chunk 4] page=41
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0041_c0001
+41 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 기후변화 대응 기후 관련 목표 목표에 대한 검토 프로세스 - 설정된 목표의 제3자 검증 여부 현대자동차는 온실가스 배출 감축을 위해 글로벌 과학기반 감축 목표 이니셔티브인 SBTi(Science Based Targets Initiative) 가이드라인에 따라 중장기 감축 목표를 수립하였습니다. - 목표 검토 프로세스 현대자동차의 이사회는 탄소중립을 포함한 중장기 환경경영 전략 수립, 환경 투자 등 사업전략 추진 및 경영활동에 필수적인 안건에 대해 검토·승인합니다. CEO 및 다양한 부문의 주요 경영진이 참여하는 C-level 경영위원회(Management Committee Meeting)에서 전기차 확대 전략, 탄소중립 전략 등을 포함한 전사 주요 환경경영 추진계획 및 이행 현황 점검, 개선 성과 검토, 주요 리스크 대응방안 논의, 그 밖의 환경경영 확산·전파를 위해 필요하다고 판단되는 사항을 관리하고 있습니다. 현대자동차는 ‘2045년 탄소중립’ 달성을 위해 설정한 목표에 대한 이행 및 성과를 모니터링하고 검토하고 있습니다
+
+[Chunk 5] page=110
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0110_c0005
+및 중형 차급 중심으로 적용됐던 하이브리드 시스템을 CO2 배출이 많은 대형 및 럭셔리 차급으로 확대하여 기존 7개 차종의 하이브리드 모델을 향후 14개 차종으로 확대 제공할 계획입니다. 특히 현대자동차의 판매차량 평균 CO2 배출량 감축 폭을 둔화시키고 있는 제네시스의 경우 전기차 전용 모델을 제외한 전 차종에 하이브리드 모델을 제공할 예정입니다. HYUNDAI’S APPROACH 현대자동차는 EU, 미국, 캐나다 등으로 확산 및 강화되는 강제노동금지 규제에 대한 통합적 리스크 대응 체계를 구축하고 있습니다. 공급망 및 사업장의 인권 리스크 실사를 통해 잠재적인 위험을 사전에 식별하고 관리함으로써, 인권 존중 및 지속가능한 공급망 구축에 만전을 기하고 있습니다. 공급망 내 강제 노동 리스크를 체계적으로 관리하기 위해, 2023년부터 법무실과 구매본부가 협력하여 외부 전문 기관의 데이터베이스를 활용한 협력사 리스크 스크리닝을 시행하고 있습니다. 리스크 스크리닝을 통해 위험이 식별
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 03 / 27
+##############################################################################################################
+case_id: Hyundai_305-1_slot_e
+company: Hyundai
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=40 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0003
+및 상장 거래소에서 요구하는 온실가스 배출량 산정 기준 Scope 3 - GHG Protocol Corporate Value Chain(Scope 3) Accounting and Reporting Standard(2011) 투입변수 및 가정 구분 투입 변수 활동 데이터 배출 계수 Scope 1 고정 연소 도시가스(LNG), 경유, 등유, 프로판 사용량 2006 IPCC 국가 인벤토리 가이드라인 기본 배출계수 이동 연소 휘발유, 경유, 부탄, 제트용 등유, CNG 이동연소의 연료별, 온실가스별 기본 배출계수 탈루 냉매 N/A Scope 2 외부 전기 2024년도 전력 사용량 국가고유 전력배출계수 적용 외부 스팀 2024년도 스팀 사용량 2024년도 공급처 스팀배출계수 적용 및 국가 스팀배출계수 Scope 3 공급망(원소재 및 부품 구매) 2024년 차종별 생산량 (완성차) 제조 전단계 배출계수 자본재(비품 및 기자재 구매) 기자재 구매량 기자재 평균 배출계수(LCI DB) 기타 에너지 관련 활동(Scope 1/2 제외) 연료 사용량 생산기준 배출계수 운영 과정에서 발생한 폐기물 처리 폐기물 처리기준별 처리량 처리기�
+
+[Chunk 2] page=40 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0001
+40 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 기후변화 대응 - 배출량 측정을 위한 접근법 온실가스 배출량 측정을 위해 적용한 지침은 아래와 같으며, 통제력기준(Control Approach)의 운영통제력(Operational Control)을 사용하였습니다. * 2차 IPCC(Intergovernmental Panel on Climate Change, 기후변화에 관한 정부간 협의체) 평가의 100년을 기준으로 한 GWP(Global Warming Potential, 지구온난화지수) 값을 사용하여 6가지 온실가스 종류(CO2, CH4, N2O, HFCs, PFCs, SF6)를 이산화탄소환산량으로 변환 탄소중립 투자 현대자동차는 사업장의 탄소중립 달성을 위해 2024년부터 2035년까지 약 4조 원 규모의 투자계획을 수립했습니다. 이를 통해 태양광 자가발전, 외부 재생에너지 조달과 더불어, 수소 밸류체인 확장을 위한 활동을 전개할 예정입니다. 보상 현대자동차는 기후변화 관리 인센티브 제도를 운영하고 있습니다. CEO, 권역본부장, 공장장 (생산법인장), 직원(유관조직)의 성과평가 항목(KPIs)에 기후변화 관련 항목을 포함하고 있으며, 해당
+
+[Chunk 3] page=40
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0002
+�원(유관조직)의 성과평가 항목(KPIs)에 기후변화 관련 항목을 포함하고 있으며, 해당 성과평가 결과는 인센티브 및 연봉체계와 연동되어 있습니다. 경영진 KPI에 온실가스 감축, 재생에너지 확대 등 기후 전환 및 기후변화 관련 목표를 포함시킴으로써, 해당 목표 및 이행실적이 경영진 차원에서 관리될 수 있도록 추진하고 있습니다. 또한 유관조직의 담당 직원들 대상으로 온실가스 배출 감축 관련 달성 목표를 수립하여 개인 성과평가 항목에 반영하고 있습니다. 매년 주요 지표에 대한 달성률 및 이행평가를 통하여 연봉의 일정 비율을 해당 성과에 대한 금전적 인센티브로 제공하고 있습니다. 측정 접근법 구분 지침 Scope 1, 2 - The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard(Revised Edition) - The Greenhouse Gas Protocol: Scope 2 Guidance 탄소중립기본법(온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침) - IPCC Guidelines for National Greenhouse Gas Protocol and Accounting Tool - 기타 관할 당국 및 상장 거래소에서 요구하는 온실가스 배출량 산정 기준 Scope 3 - GHG Protocol Corporate Value Chain(Scope 3) Accounting and
+
+[Chunk 4] page=140
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0140_c0001
+140 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 현대자동차 주식회사의 2024년도 해외 사업장 Scope 1+2 온실가스 배출량 관련 이 검증의견서는 현대자동차 주식회사와의 상호계약에 따라 작성되었습니다. 검증 기준 및 범위 로이드인증원(LRQA)은 현대자동차 주식회사로부터 2024년도 온실가스 인벤토리 및 에너지 사용량(이하 “보고서”)에 대한 독립적인 검증 제공 요 청을 받았습니다. 본 검증은 아래 검증 기준에 따라 ISAE 3000 및 ISAE 3410를 활용하여 제한적 보증 수준 및 5%의 중요성 기준으로 수행되었습 니다. 검증 범위에는 현대자동차 주식회사의 해외 공장1) 운영 및 활동이 포함되었으며, 특히 다음의 요구사항이 포함되었습니다. - World Resources Institute 및 World Business Council for Sustainable Development의 GHG Protocol (revised version)2)의 준수 평가 - 해외 공장의 직접 온실가스 배출(Scope 1), 에너지 간접 온실가스 배출(Scope 2) 그리고 에너지 사용에 대한 데이터 및 정보의 정확성 및 신뢰 성 평가 1) HMGICS는 검증범위에서 제외됨. 2) https://www.ghgprotocol.org 현대자동차 주식회
+
+[Chunk 5] page=141
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0141_c0001
+141 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 표 1. 2024년도 현대자동차 주식회사 해외 공장, Scope 1 및 Scope 2 온실가스 배출 요약 표 2. 2024년도 현대자동차 주식회사 해외 공장, 에너지 사용 요약 해외 공장 tCO2e 직접 온실가스 배출량 (Scope 1) 에너지 간접 온실가스 배출량 (Scope 2, 지역 기반) 에너지 간접 온실가스 배출량 (Scope 2, 시장 기반) HMMA 34,360 126,192 162,269 BHMC 48,970 92,061 62,174 HTWO 370 1,092 1,092 HMI 29,715 236,850 56,773 HMTR 28,393 25,742 2,204 HMMC 33,434 37,352 153 HMCSA 10,030 7,503 4,778 HTBC 1,290 1,776 1,776 HTMV 6,221 17,157 17,157 HMMI 6,652 71,493 0 HYMEX 19,957 43,656 43,656 합계 219,392 660,874 352,032 해외 공장 TJ MWh 총 에너지 사용량 재생에너지 사용량 총 에너지 사용량 재생에너지 사용량 HMMA 1,784 0 495,615 0 BHMC 1,402 178 389,315 49,482 HTWO 25 7 6,959 2,067 HMI 1,736 940 482,
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 04 / 27
+##############################################################################################################
+case_id: Hyundai_305-1_slot_f
+company: Hyundai
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=40 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0001
+40 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 기후변화 대응 - 배출량 측정을 위한 접근법 온실가스 배출량 측정을 위해 적용한 지침은 아래와 같으며, 통제력기준(Control Approach)의 운영통제력(Operational Control)을 사용하였습니다. * 2차 IPCC(Intergovernmental Panel on Climate Change, 기후변화에 관한 정부간 협의체) 평가의 100년을 기준으로 한 GWP(Global Warming Potential, 지구온난화지수) 값을 사용하여 6가지 온실가스 종류(CO2, CH4, N2O, HFCs, PFCs, SF6)를 이산화탄소환산량으로 변환 탄소중립 투자 현대자동차는 사업장의 탄소중립 달성을 위해 2024년부터 2035년까지 약 4조 원 규모의 투자계획을 수립했습니다. 이를 통해 태양광 자가발전, 외부 재생에너지 조달과 더불어, 수소 밸류체인 확장을 위한 활동을 전개할 예정입니다. 보상 현대자동차는 기후변화 관리 인센티브 제도를 운영하고 있습니다. CEO, 권역본부장, 공장장 (생산법인장), 직원(유관조직)의 성과평가 항목(KPIs)에 기후변화 관련 항목을 포함하고 있으며, 해당
+
+[Chunk 2] page=41
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0041_c0001
+41 1. Introduction 2. Environmental 3. Social 4. Governance 5. Sustainability Factbook 기후변화 대응 기후 관련 목표 목표에 대한 검토 프로세스 - 설정된 목표의 제3자 검증 여부 현대자동차는 온실가스 배출 감축을 위해 글로벌 과학기반 감축 목표 이니셔티브인 SBTi(Science Based Targets Initiative) 가이드라인에 따라 중장기 감축 목표를 수립하였습니다. - 목표 검토 프로세스 현대자동차의 이사회는 탄소중립을 포함한 중장기 환경경영 전략 수립, 환경 투자 등 사업전략 추진 및 경영활동에 필수적인 안건에 대해 검토·승인합니다. CEO 및 다양한 부문의 주요 경영진이 참여하는 C-level 경영위원회(Management Committee Meeting)에서 전기차 확대 전략, 탄소중립 전략 등을 포함한 전사 주요 환경경영 추진계획 및 이행 현황 점검, 개선 성과 검토, 주요 리스크 대응방안 논의, 그 밖의 환경경영 확산·전파를 위해 필요하다고 판단되는 사항을 관리하고 있습니다. 현대자동차는 ‘2045년 탄소중립’ 달성을 위해 설정한 목표에 대한 이행 및 성과를 모니터링하고 검토하고 있습니다
+
+[Chunk 3] page=40
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0040_c0002
+�원(유관조직)의 성과평가 항목(KPIs)에 기후변화 관련 항목을 포함하고 있으며, 해당 성과평가 결과는 인센티브 및 연봉체계와 연동되어 있습니다. 경영진 KPI에 온실가스 감축, 재생에너지 확대 등 기후 전환 및 기후변화 관련 목표를 포함시킴으로써, 해당 목표 및 이행실적이 경영진 차원에서 관리될 수 있도록 추진하고 있습니다. 또한 유관조직의 담당 직원들 대상으로 온실가스 배출 감축 관련 달성 목표를 수립하여 개인 성과평가 항목에 반영하고 있습니다. 매년 주요 지표에 대한 달성률 및 이행평가를 통하여 연봉의 일정 비율을 해당 성과에 대한 금전적 인센티브로 제공하고 있습니다. 측정 접근법 구분 지침 Scope 1, 2 - The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard(Revised Edition) - The Greenhouse Gas Protocol: Scope 2 Guidance 탄소중립기본법(온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침) - IPCC Guidelines for National Greenhouse Gas Protocol and Accounting Tool - 기타 관할 당국 및 상장 거래소에서 요구하는 온실가스 배출량 산정 기준 Scope 3 - GHG Protocol Corporate Value Chain(Scope 3) Accounting and
+
+[Chunk 4] page=20
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0020_c0006
+�구개발 조직 현대자동차 R&D센터를 중심으로 전동화 차량 개발을 통한 차량의 탄소 및 유해가스 배출 저감, 재활용을 고려한 친환경 설계, 제품 환경영향평가(LCA) 수행, 지속가능한 소재 개발, 유해물질 함유 대체, CCUS(탄소 포집·활용·저장) 개발 등 제품 환경기술 관련 연구/개발 및 저탄소 제품 개발 등의 환경 개선활동을 수행하고 있습니다. 환경경영 이행 체계 현대자동차는 1) 법령 및 규제 준수, 2) 환경경영 정책 수립/개정, 3) 환경경영시스템 구축 및 관리규정 도입, 4) 환경 성과 및 데이터 점검, 5) 리스크 점검 및 개선 추진, 6) 환경성과 개선활동 등과 같은 환경경영을 ‘Plan-Do-Check-Action’ 과정으로 이행하고 있습니다. 현대자동차의 국내 모든 사업장과 해외 생산공장은 환경경영시스템 국제표준인 ISO 14001를 기반으로 환경경영시스템(EMS)을 구축하고 있으며, 신뢰성 및 공신력 확보를 위해 제3자 기관으로부터 ISO 14001 인증을 취득하고 있
+
+[Chunk 5] page=46
+chunk_id: 2025_KR_Hundai_Sustainability_KO_p0046_c0004
+는 포스터를 전시하고 물을 절약할 수 있는 실천 팁(Water Saving Tips)들을 제시하며 물 절약을 유도하였습니다. 순환경제와 자원사용 폐기물 현대자동차는 각 생산공장별로 유형별, 처리방식별 폐기물 배출량과 재활용량을 모니터링하고 관리하고 있습니다. 내부적으로는 본사 환경 총괄 조직이 자체 개발한 현대자동차 ESG 환경경영 수준 진단(HEAT, Hyundai Environmental Assessment Tool)을 기반으로 생산공장별 폐기물 관리를 점검 및 실사하고 있으며 외부적으로는 매년 ISO 14001 심사를 통해 폐기물 관리에 대한 제3자 기관 평가를 받고 있습니다. 생산공장 자체 관리 및 내외부 환경 평가결과를 기반으로 폐기물 감축 및 재활용 확대를 위한 기회요인들을 파악하여 개선하고 있습니다. 현대자동차는 특히 생산량 증가와 연동해서 폐기물 배출량이 증가하지 않도록, 생산공장 자체 관리 및 내외부 환경 평가결과를 기반으로 폐기물 감축 및 재활용 확대에 노력하고 있습니다. 자동차 생산과정에서 발생하는 다양한 폐기물 중 금속류의 폐기물은 재활용되
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 05 / 27
+##############################################################################################################
+case_id: Heathrow_305-1_slot_f
+company: Heathrow
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=115 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001
+We also agreed to report to the Directors misstatements (“reportable misstatements”) identified during our work at a level below overall materiality, as well as misstatements below that lower level that in our view warranted reporting for qualitative reasons. The Directors are responsible for deciding whether adjustments should be made to the Subject Matter Information in respect of those items. AREAS OF ASSURANCE FOCUS The Areas of Assurance Focus are those areas of our work that, in our professional judgement, require additional procedures. In the case of limited assurance, that means our procedures may be towards the upper end of those that might be expected for limited assurance. These areas were identified as part of our risk assessment and result of the assurance procedures performed, and include those areas of significant risk, areas that involved significant judgement or other areas where significant assurance effort was needed. This approach provides transparency about where we deemed it necessary to perform extra work. However, this does not imply - for limited assurance - the same level of assurance as would have been obtained under a reasonable assurance engagement. We considered the following areas to be Areas of Assurance Focus and discussed these with HAL’s management. Completeness of HAL’s organisational boundary for reported scope 1 and scope 2 greenhouse gas (‘GHG’) emissions Nature of the issue HAL applies an ‘operational control’ approach in determining its organisational boundary in line with the GHG Protocol guidance as set out in the Reporting Criteria, in order to report its GHG emissions for in scope operations. There is an increased risk that emission sources under HAL’s operational control may be omitted from reported scope 1 and scope 2 GHG emissions due to the scale of operations at Heathrow Airport and the number of external parties with operations at the site, for example airlines, handling companies and concessions, meaning there are a number of complexities involved in order for HAL to completely determine the organisational boundary for reporting purposes. As a result, we have determined this to be an Area of Assurance Focus. How our work addressed the areas of assurance focus In order to check whether the organisational boundary for reported scope 1 and scope 2 GHG emissions is complete, we: - Obtained a detailed understanding of the entity, its environment, and its organisational structure, focusing particularly on the nature, scale and
+
+[Chunk 2] page=108 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0001
+REP ORT I NG O N PERFORM A N CE (CO N T.) Carbon footprint supporting notes We continue to apply the same footprint boundaries to reflect our operational control both at the airport and offsite - including our business parking pod test track and our Business Support Centre (‘BSC’). Scope 1 - All direct GHG emissions from activities at Heathrow Airport under our direct control, such as our own vehicles, fuel required to heat our terminals and non-carbon emissions, including refrigerant gases. Scope 2 - All indirect GHG emissions from the electricity purchased for the organisation’s owned and operated activities. Scope 2 market-based emissions are zero as our electricity is sourced using a Renewable Energy Guarantee of Origin (‘REGO’) backed contract. The REGO certificate covers Heathrow Airport Limited, our business parking pod test track and the BSC in Glasgow, all of which fall under scope 2 electricity. Energy related emissions -  Market-based grid electricity and utilities consumption: market-based emissions have been used to calculate total emissions. Carbon intensity metrics, including scope 2, only include market-based scope 2 emissions. In order to ensure like-for-like comparisons in these scenarios, marketbased Scope 1 emissions have also been calculated by removing the carbon reductions generated by purchase of green gas from the market. -  Location-based grid electricity and utilities: location-based emissions are based on the emissions intensity of the grid and natural gas and do not take into account the procurement of renewable energy and green gas from the market, hence are not counted in Heathrow’s total emissions. -  All scope 1 and 2 emissions are UK based. Scope 3 - All other indirect GHG emissions from activities in relation to Heathrow Airport, occurring from sources that we do not own or control. We know that getting our own house in order is only the first step and that we must support decarbonisation across the whole industry, including flights. Well-to-tank and Transmission & Distribution Well-to-tank (‘WTT’) emissions are “upstream” emissions related to the production and transportation of fuel to where it
+
+[Chunk 3] page=115
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002
+for reported scope 1 and scope 2 GHG emissions is complete, we: - Obtained a detailed understanding of the entity, its environment, and its organisational structure, focusing particularly on the nature, scale and contractual arrangements of operations at Heathrow Airport. - Performed a site visit at Heathrow Airport to understand and observe the operations, including the data gathering and reporting processes related to the GHG emissions. These locations included the Energy Centre and Terminal 4, as well as the surrounding areas where HAL and associated external parties operate. - Performed a flux analysis over monthly and year on year energy consumption to identify any unusual trends and obtained supporting explanations from management. - Performed a limited substantive test by tracing a sample of buildings from the Fixed Asset Register to the underlying GHG emissions data and inspected the relevant contractual documentation for these buildings in order to check that the application of the organisational boundary was consistent with the Reporting Criteria. - Performed a scanning analytic over energy related purchases in the period to identify any unexpected energy related suppliers who had been paid during the reporting period but were omitted from the reported scope 1 and 2 GHG emissions data and obtained supporting explanations from management. Element(s) of the Subject Matter Information most significantly impacted - Total scope 1 greenhouse gas emissions (tonnes CO2e) - Total scope 2 location-based greenhouse gas emissions (tonnes CO2e) - Total scope 2 market-based greenhouse gas emissions (tonnes CO2e) 115
+
+[Chunk 4] page=94
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0094_c0001
+EM BEDDI NG SUS TA I N A BI L I T Y I N T HE BUSI N ESS (CO N T.) GOVERNING SUSTAINABILITY The Heathrow Airport Holdings Limited Board has overall accountability for setting and overseeing the implementation of Heathrow’s strategy, including environmental, social and governance (ESG) matters. The Chief Executive Officer has ultimate responsibility for delivering our sustainability agenda, with support from the Executive leadership team and its dedicated ESG Committee as well as other governance bodies (see organisation chart to the right). HEATHROW AIRPORT HOLDINGS LIMITED BOARD OF DIRECTORS Reviews progress against our sustainability strategy quarterly. SUSTAINABILITY AND OPERATIONAL RISK COMMITTEE Board sub-committee responsible for overseeing sustainability strategy. Meets quarterly. CHAIR OF THE AUDIT COMMITTEE Responsible for climate change risk and disclosure at Board level.1 EXECUTIVE TEAM CHIEF EXECUTIVE OFFICER AND EXECUTIVE LEADERSHIP TEAM: Provide strategic direction and high-level oversight of the delivery of our sustainability strategy through their functions. Updated regularly by the ESG Committee, an Executive sub-committee. The Chief Communications and Sustainability Officer is responsible for setting Heathrow’s strategic direction on sustainability issues. EXECUTIVE SUB-COMMITTEES ESG COMMITTEE Meets bi-monthly to support delivery of our sustainability strategy by defining material ESG risks and opportunities, integrating ESG into decision-making, monitoring progress, and overseeing data collection and disclosure on ESG-related matters. Includes members of our Executive Team and Senior Leadership Team, and stakeholders directly accountable for the development and implementation of our strategy. Chaired by the Chief Communications and Sustainability Officer. CHARITIES AND COMMUNITIES COMMITTEE Meets quarterly to support the delivery of Heathrow’s corporate objectives through activities with charities and communities to maximise Heathrow’s social impact through its investment in these activities. Includes members of our Executive Team and Senior Leadership Team. Chaired by the Chief Communications and Sustainability Officer. SENIOR LEADERSHIP TEAM THE CARBON AND SUSTAINABILITY PROGRAMME COMMITTEE Provides governance over the Carbon and Sustainability programme. Chaired by the Carbon Strategy Director. Reports into the
+
+[Chunk 5] page=107
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001
+REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 06 / 27
+##############################################################################################################
+case_id: Siemens_305-1_slot_e
+company: Siemens
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=34 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0002
+liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and Net-Zero/Department for Environment, Food and Rural Affairs (DESNZ/DEFRA) as available at the beginning of the reporting period. The emission factors are updated annually based on the frequency of source updates. For biogas and bioethanol, the emission factors used from DESNZ/DEFRA do not provide the breakdown of the constituent gases. - Emissions from biogenic commodities such as biogas, bioethanol and wood pellets are recorded separately from direct emissions (Scope 1), in accordance with the GHG-Protocol. DESNZ/DEFRA emission factors are used to calculate the biogenic emissions. - The percentage of Scope 1 GHG emissions regulated under emission trading schemes (ETS) is determined by dividing the emissions reported to the relevant governmental authority in the latest reporting period of the respective ETS by the total gross Scope 1 emissions for the current reporting period. Scope 2 - Gross location-based Scope 2 GHG emissions for Siemens are calculated using the most recent CO₂e emission factors from authoritative sources available at the beginning of the reporting year. These include the International Energy Agency (IEA), Statistics Canada (StatCan), and EGrid for GHG emissions related to electricity. For district heating and cooling, emission factors from DESNZ/DEFRA are applied. - Gross market-based Scope 2 GHG emissions are calculated in accordance with the data source hierarchy defined in the GHGProtocol. Where applicable, residual mix data from the Association of Issuing Bodies (AIB) is used to ensure accurate representation of energy sourcing. - In cases where real energy consumption data for a location is not metered, extrapolations, as described in the Scope 1 methodology, are applied to estimate energy consumption. Those estimations are then used to calculate emissions, as described in the Scope 1 methodology. - For BEVs and plug-in hybrid electric vehicles (PHEVs), average energy consumption is estimated using country-specific benchmarks derived from the driving patterns of fossil fuel vehicles. This approach ensures consistency in calculating electricity-related emissions from Siemens’ vehicle fleet. -
+
+[Chunk 2] page=33
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0002
+of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3,659 - - - 3.13 Downstream leased assets - 2,963 - - - 3.14 Franchises3 - n/a - - - 3.15 Investments - 6,911 - - - Total Gross indirect (Scope 3) GHG emissions 179,222 159,144 (30)% - (2.7)% 1 Already accounted for within Scope 1 & 2 emissions in accordance with the GHG-Protocol 2 Not material for Scope 3 emissions 3 Not applicable The market-based GHG intensity ratio for this fiscal is 2,021 tCO2e/million €, and the location-based GHG intensity ratio is 2,028 tCO2e/million €. The total GHG intensity ratio is calculated by dividing the total GHG emissions by the total revenue as disclosed in Note 29 of the Consolidated Financial Statements for fiscal 2025. Siemens reports gross biogenic Scope 1 CO2 emissions from the combustion or biodegradation of biomass within the consolidated group, amounting to 14.8 ktCO2e. The gross biogenic Scope 3 CO2 emissions from the combustion or biodegradation of biomass of the consolidated group amount to 44,713 ktCO2e. The gross biogenic Scope 2 CO2 emissions (location-based and market-based) from the combustion or biodegradation of biomass are not considered significant based on materiality analysis conducted with emission factors from ecoinvent. Siemens had no unconsolidated but operationally controlled investees or joint arrangements during the reporting period. Consequently, Scope 1 emissions as well as Scope 2 emissions, both market-based and location-based from such entities amount to 0 ktCO2e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions
+
+[Chunk 3] page=35
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0035_c0002
+types are calculated using spend-based approaches, supplier data or usage and km-related emission factors from sources such as DESNZ/DEFRA factors. 3.7 Employee Commuting - For category 3.7 Employee Commuting, Siemens uses activity data approximated for Germany and extrapolated globally. This includes approximations for emissions related to energy consumption while working from home, whereby electricity emissions are calculated based on emission factors by the IEA. The German grid mix is applied for German employees working from home and a world grid mix is applied for employees working in the rest of the world. This calculation method assumes that German Siemens employees reflect Siemens employee commuting behavior (average distance, modal split of public transport and days spent working from home) globally. Scope 3 - Downstream 3.9 Downstream Transportation and Distribution - Due to the complexity of Siemens’ supply chain, it is not possible to collect data to quantify the downstream transportation and distribution GHG emissions beyond tier-1 customers. Following the GHG-Protocol, the emissions for category 3.9 Downstream Transportation and Distribution are calculated only up to Siemens’ tier-1 customers and do not include any other downstream transportation beyond tier-2. Because Siemens cannot yet collect activity or spend data for this category, emissions are estimated as a proportion of category 3.4. Since category 3.4 includes inbound freight, this approach likely overestimates category 3.9 emissions, representing a conservative estimate. The extrapolation is based on sales order Incoterms data from Digital Industries and Smart Infrastructure and is assumed to be representative of other business units. 3.11 Use of Sold Products - For category 3.11 Use of Sold Products, GHG emissions are calculated based on assumptions about product use (for example operating hours per year), product specifications (for example power demand of a product) and the product’s use phase duration. Calculations are completed at a portfolio element (group of products with similar attributes) level, based on the numbers of sold products for all relevant category 3.11 offerings, defined as those physically handed over to customers. Use of Sold Product emissions does not include emissions from the use of sold software (where this is not already addressed in Scope 1, 2 or 3.1), due to the absence of standardized market
+
+[Chunk 4] page=34 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0001
+Sustainability Statement 34 Total gross Scope 2 GHG emissions Fiscal year 2025 (in ktCO₂e) Location-based Market-based Total gross Scope 2 GHG emissions 633.0 70.7 Electricity 594.4 47.0 District Heating 37.6 22.8 District Cooling 1.1 0.9 Share of contractual agreements used for the purchase of energy Fiscal year Type of instruments (in %) 2025 Total share of purchased energy bundled or unbundled with instruments in total energy consumption 83% Bundled with instruments 36% Guarantee of Origin 32% Renewable Energy Certificate 1% International Renewable Energy Certificate 0% others 3% Unbundled instruments 47% Guarantee of Origin 6% Renewable Energy Certificate 21% International Renewable Energy Certificate 21% others 0% Methodology for calculating GHG emissions: Scope 1 and 2 Scope Calculation method Scope 1 - The methodology for calculating Siemens’ Scope 1 GHG emissions is aligned with the GHG-Protocol. These emissions originate from Siemens’ locations and fleet operations and are categorized in stationary combustion (for example from natural gas or heating oil), mobile combustion (for example diesel and petrol), process emissions (for example from production processes) and fugitive emissions (for example from refrigerants). - For metered locations, emission factors respective to the media types are multiplied by the consumption at the locations. - For non-metered locations, emissions are estimated using proxy data from metered locations. Benchmarks are developed based on location type (office or industrial), regional conditions, rentable space, and utilization. Where country-specific data is unavailable, global benchmarks are applied. The consumption for non-metered locations is calculated by multiplying the benchmark by the total rentable space. Consumption data is then multiplied by the respective emission factors. - Fleet emissions are calculated using fuel consumption data (liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and
+
+[Chunk 5] page=35
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0035_c0003
+handed over to customers. Use of Sold Product emissions does not include emissions from the use of sold software (where this is not already addressed in Scope 1, 2 or 3.1), due to the absence of standardized market practices for software-related emissions. Electricity emissions calculation is based on the latest version of IEA emission factors, while emissions from other fuels are based on the latest version of the DESNZ/DEFRA source. 3.12 End-of-life Treatment of Sold Products - Category 3.12 End-of-life Treatment of Sold Products includes all products within the boundaries of category 3.11. Siemens uses two primary approaches to estimate emissions: The Material Composition Method and the EPDs Method. The Material Composition Method calculates emissions based on the material composition of a representative product from the portfolio element (considering a selection of key materials) and design features of the product that may influence end of life treatment. Expert assumptions may also be used to estimate end-of-life treatment of the product. Emission factors for this method are sourced from the ecoinvent dataset. Alternatively, calculations may be based on EPDs for representative products, using emission factors from the GaBi dataset. In both cases, it is assumed that the material composition and end-of-life treatment of the representative product reflect those of other products within the portfolio element. 3.13 Downstream Leased Assets - Emissions for category 3.13 Downstream Leased Assets are calculated using the average-data method. Siemens estimates the annual emissions for each group of leased assets based on asset type, quantity, average statistics and secondary data. Asset types that do not consume direct energy during their use phase (such as furniture) are excluded from the calculations. Where available, primary data sources such as technical specifications from manufacturers are used. Data relating to the energy consumption of assets during their use phase is obtained from various sources, such as Lectura and technical data sheets of similar assets, while emission factors are drawn from the latest IEA and DESNZ publications available at the start of the reporting period. Where technical data is not available, emissions are calculated using an extrapolation factor derived from the average of total emissions from previously calculated asset types (excluding any high energy consuming asset types that may skew the factor). We assume that the average energy consumption per asset type is close to the real energy consumption. For
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 07 / 27
+##############################################################################################################
+case_id: Siemens_305-1_slot_a
+company: Siemens
+slot: slot_a
+element: Total Scope 1 emissions in tCO2e
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 direct emissions.
+PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
+MISSING if: No numeric Scope 1 emissions value is present.
+NOTE: A percentage or reduction target is NOT a total emissions figure.
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=33
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0002
+of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3,659 - - - 3.13 Downstream leased assets - 2,963 - - - 3.14 Franchises3 - n/a - - - 3.15 Investments - 6,911 - - - Total Gross indirect (Scope 3) GHG emissions 179,222 159,144 (30)% - (2.7)% 1 Already accounted for within Scope 1 & 2 emissions in accordance with the GHG-Protocol 2 Not material for Scope 3 emissions 3 Not applicable The market-based GHG intensity ratio for this fiscal is 2,021 tCO2e/million €, and the location-based GHG intensity ratio is 2,028 tCO2e/million €. The total GHG intensity ratio is calculated by dividing the total GHG emissions by the total revenue as disclosed in Note 29 of the Consolidated Financial Statements for fiscal 2025. Siemens reports gross biogenic Scope 1 CO2 emissions from the combustion or biodegradation of biomass within the consolidated group, amounting to 14.8 ktCO2e. The gross biogenic Scope 3 CO2 emissions from the combustion or biodegradation of biomass of the consolidated group amount to 44,713 ktCO2e. The gross biogenic Scope 2 CO2 emissions (location-based and market-based) from the combustion or biodegradation of biomass are not considered significant based on materiality analysis conducted with emission factors from ecoinvent. Siemens had no unconsolidated but operationally controlled investees or joint arrangements during the reporting period. Consequently, Scope 1 emissions as well as Scope 2 emissions, both market-based and location-based from such entities amount to 0 ktCO2e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions
+
+[Chunk 2] page=34
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0001
+Sustainability Statement 34 Total gross Scope 2 GHG emissions Fiscal year 2025 (in ktCO₂e) Location-based Market-based Total gross Scope 2 GHG emissions 633.0 70.7 Electricity 594.4 47.0 District Heating 37.6 22.8 District Cooling 1.1 0.9 Share of contractual agreements used for the purchase of energy Fiscal year Type of instruments (in %) 2025 Total share of purchased energy bundled or unbundled with instruments in total energy consumption 83% Bundled with instruments 36% Guarantee of Origin 32% Renewable Energy Certificate 1% International Renewable Energy Certificate 0% others 3% Unbundled instruments 47% Guarantee of Origin 6% Renewable Energy Certificate 21% International Renewable Energy Certificate 21% others 0% Methodology for calculating GHG emissions: Scope 1 and 2 Scope Calculation method Scope 1 - The methodology for calculating Siemens’ Scope 1 GHG emissions is aligned with the GHG-Protocol. These emissions originate from Siemens’ locations and fleet operations and are categorized in stationary combustion (for example from natural gas or heating oil), mobile combustion (for example diesel and petrol), process emissions (for example from production processes) and fugitive emissions (for example from refrigerants). - For metered locations, emission factors respective to the media types are multiplied by the consumption at the locations. - For non-metered locations, emissions are estimated using proxy data from metered locations. Benchmarks are developed based on location type (office or industrial), regional conditions, rentable space, and utilization. Where country-specific data is unavailable, global benchmarks are applied. The consumption for non-metered locations is calculated by multiplying the benchmark by the total rentable space. Consumption data is then multiplied by the respective emission factors. - Fleet emissions are calculated using fuel consumption data (liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and
+
+[Chunk 3] page=33 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0003
+e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions Fiscal year 2025 ktCO₂e therein from CO₂ CH₄ N₂O SF₆ NF₃ HFC PFC Total gross Scope 1 GHG emissions 288.3 Stationary combustion 103.0 102.6 0.2 0.1 0 0 0 0 Mobile combustion 159.1 157.8 0.3 1.0 0 0 0 0 Fugitive emissions 16.4 0 0 0 4.4 0 12.0 0 Process emissions 9.8 0.2 0.0 0.3 9.3 0 0 0
+
+[Chunk 4] page=33 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0001
+Sustainability Statement 33 GHG emissions Retrospective Milestones and target years Fiscal year Fiscal year Annual % (in ktCO₂e) 2019 (base year) 2025 2030 2050 target/ base year Total GHG emissions Total GHG emissions (location-based) - 160,065 - - - Total GHG emissions (market-based) 180,160 159,503 - (90)% (2.9)% Scope 1 GHG emissions Gross Scope 1 GHG emissions - 288 - - - Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) - 2% - - - Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions - 633 - - - Gross market-based Scope 2 GHG emissions - 71 - - - Total Scope 1 and 2 GHG emissions (market-based) 938 359 (90)% - (8.2)% Scope 3 GHG emissions 3.1 Purchased goods and services - 9,425 - - - 3.2 Capital goods - 397 - - - 3.3 Fuel and energy-related Activities (not incl. in Scope 1 or 2) - 121 - - - 3.4 Upstream transportation and distribution - 1,101 - - - 3.5 Waste generated in operations - 21 - - - 3.6 Business traveling - 214 - - - 3.7 Employee commuting - 177 - - - 3.8 Upstream leased assets1 - n/a - - - 3.9 Downstream transportation - 24 - - - 3.10 Processing of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3
+
+[Chunk 5] page=28
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0028_c0003
+1% compared to the baseline 2019 value of 8,107 ktCO2e. If the increase in purchasing volume of around 21% compared to 2019 is included, CO2e emissions were however reduced in relation to purchasing volume. Siemens w/o SHS is committed to reducing its Scope 3 upstream emissions by 2030, acknowledging that the target achievement is dependent on factors, such as business growth, our suppliers’ decarbonization, and the overall market development. By closely working with our suppliers, innovating product design to dematerialize, and by changing to lower carbon materials, Siemens continues to drive reductions of Scope 3 upstream emissions, see  2.2.5. 2030 target Achieve >1,000 Mt cumulatively in Customer Avoided Emissions Scope: Siemens w/o SHS The impact that Siemens’ products, systems, solutions and services have on enabling emission reduction at our customers represents a positive contribution towards mitigating climate change. Siemens w/o SHS has established an entity-specific target for Customer Avoided Emissions (CAE) to transparently report this impact. CAE represent the positive impact of our offerings in terms of the emissions avoided during their use phase at our customers. We have set a target to achieve >1,000 million metric tons CO2e cumulatively in CAE between fiscal 2023 and fiscal 2030. In fiscal 2025, we helped our customers avoid 199 million metric tons of CO2e emissions, achieving a total of 694 million metric tons of CO2e cumulatively since 2023, showing progress toward our 2030 target. The Siemens technologies that contribute most significantly to these avoided emissions include solutions for rail bound passenger and freight transportation, frequency converters, building systems as well as electrification and automation offerings. An additional lever to support the increase in customer emissions avoided is the consistent focus on improving energy efficiency during the product design phase.
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 

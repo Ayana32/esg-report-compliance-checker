@@ -1,0 +1,358 @@
+==============================================================================================================
+VERIFIER GOLD REVIEW — BATCH 2
+==============================================================================================================
+
+IMPORTANT:
+- Assign gold_status ONLY from the frozen evidence packet below.
+- Use the current SLOT_RULES exactly.
+- Do not use prior verifier predictions.
+- reviewed retrieval gold is annotation aid only.
+- Supporting chunks must directly justify the selected status.
+
+
+##############################################################################################################
+CASE 08 / 27
+##############################################################################################################
+case_id: Siemens_305-1_slot_d
+company: Siemens
+slot: slot_d
+element: Base year for calculation
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific year is explicitly declared as the BASE YEAR for GHG calculations
+  - Korean patterns: 기준연도: YYYY, YYYY년을 기준연도로, 기준년도, 기준 년도
+  - A year marked as (기준) or (Base) in a data table
+  - Text says e.g. 2021 (기준연도) or 2021 (Base year)
+PARTIAL if: A year is mentioned in passing but not declared as base year.
+MISSING if: No base year declaration or pattern is present.
+NOTE: A table showing multiple years of data alone is NOT a base year declaration.
+      BUT if one year is labeled (기준) or (Base) in that table → COVERED.
+Korean equivalents: 기준연도, 기준 연도, 기준년도
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=27
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0027_c0003
+6. The Siemens Healthineers Scope 3 target covers the categories 3.1, 3.4, 3.6 and 3.11. Annual monitoring ensures the continuous alignment of GHG targets with inventory boundaries. Calculations follow the same methodology and assumptions applied to all Scope 1, 2, and 3 metrics, see  2.2.6. For Scope 2 emissions, the market-based methodology is applied. Fiscal 2019 serves as the baseline year, as it reflects representatively Siemens’ performance, and normal operations prior to the COVID 19 pandemic and ensures comparability. For Siemens w/o SHS, the baseline has been adjusted in fiscal 2025 to align with material structural changes in line with the GHG-Protocol guidance. For further information on the actions and their contribution towards achieving the decarbonization targets, see  2.2.5. The target period for the net-zero GHG targets is in line with the ten-to fifteen-year timeframe provided by a 1.5°C-compatible cross-sectoral decarbonization pathway.
+
+[Chunk 2] page=27 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0027_c0001
+Sustainability Statement 27 2.2.4 Targets To mitigate climate change and support the transition to a lower carbon economy, Siemens has defined ambitious measurable targets aligned with its policies´ objectives to reduce negative climate impacts. To achieve these targets, we integrate innovative technologies where applicable throughout the value chain, leveraging Siemens’ core technologies and innovations to enhance energy efficiency and electrification particularly in our own operations and in our product portfolio. Additionally, we closely monitor developments such as shifts in customer preferences or regulatory changes that may influence our emissions reduction ambition. All targets are informed by the latest IPCC decarbonization pathways and developed in consultation with relevant internal or external stakeholders. More information on our GHG emissions along the value chain can be found in  2.2.6. For further information regarding target setting and monitoring of the Siemens sustainability target frameworks, see  1.1. and for the EU Taxonomy target, see  2.1.1. Targets on GHG emissions reduction Target1 Scope GHG emission in base year 2019 (in ktCO₂e)2 Target year Target value (reduction to base year in %) Contribution per Scope in the target reduction ambition (in %) Share of total emission reduction (in %) Fiscal year 2025 (reduction to base year in %) SBTi: Achieve Net-Zero in Scope 1, 2 & 3 Siemens 180,160 2050 (90)% Scope 1 0.3% 100% (12)% Scope 2 0.2% Scope 3 99.5% SBTi: Reduce Scope 1 & 2 emissions by 90% 938 2030 (90)% Scope 1 59% 2% (62)% Scope 2 41% SBTi: Reduce Scope 3 emissions by 30% 179,222 2030 (30)% - - 98% (11)% Reduce Scope 1 & 2 emissions by 90% and compensate residual emissions Si
+
+[Chunk 3] page=26 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0026_c0001
+Sustainability Statement 26 Decarbonization levers Fiscal year Fiscal year Fiscal year Fiscal year 2019 2025 2030 2050 (base year) (target year) (target year) GHG emission (in ktCO₂e) Achieved GHG Emission Reduction (in %) SBTi target SBTi target Expected maximum GHG neutralization using carbon credits Siemens levers1, separated by compared to base year (in % of base year emissions) Scope 1 & 2 (market-based) 938 (62)% (90)% (90)% 10% Buildings & operations 664 (71)% Fleet 274 (39)% Scope 3 178,835 (11)% (30)% Upstream 11,081 0% Downstream 167,754 (12)% 1 The reported levers are valid for the whole Siemens Group and the sum might slightly diverge compared to other figures in this chapter due to consolidation and management effects. Building emissions, as part of our decarbonization levers, include Scope 1 emissions from stationary combustion for heating purposes and Scope 2 emissions related to buildings from electricity or from district heating and cooling. Emissions from operations consist of Scope 1 process emissions, stationary combustion, fugitive emissions, and mobile emissions from vehicles used on-site for production processes and Scope 2 emissions related to energy used during production processes. The emissions for the fleet include Scope 1 emissions related to mobile combustion and Scope 2 emissions from electric vehicles. Further details on our decarbonization levers and key actions can be found in chapter  2.2.5. Supporting our customers to reduce emissions In addition to reducing our footprint, we also leverage our offerings to enable emission reduction at our customers. Siemens w/o SHS has set a target to help customers avoid >1,000 million metric tons of CO2e cumulatively between fiscal 2023 and fiscal 2030 through its products, systems, solutions and services. Between the beginning of fiscal 2023 and the end of fiscal 2025, Siemens w/o SHS
+
+[Chunk 4] page=28
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0028_c0002
+by 90% and compensate residual emissions by fiscal 2030 Reduce Scope 3 emissions by 30% by fiscal 2030 and achieve net-zero by fiscal 2050 Pursue Scope 3 upstream emissions reduction by 20% by 2030 Scope: Siemens w/o SHS Reduce Scope 1 & 2 emissions by 90% by fiscal 2030 Reduce material Scope 3 emissions by 28% by fiscal 2030 Reduce Scope 1, 2 & 3 emissions by 90% by 2050 and neutralize residual emissions Scope: Siemens Healthineers To ensure that the emission reduction pathway meets our ambitions, Siemens w/o SHS and Siemens Healthineers have respectively defined supplementary targets. Decarbonization efforts are continuously implemented, managed and monitored within both target frameworks. For information on our decarbonization levers, see  2.2.2 and  2.2.5. Target setting, calculation methodology and assumptions are in line with our SBTi targets. In fiscal 2025, Siemens w/o SHS achieved an overall reduction of 66% for Scope 1 & 2 emissions compared to the base year 2019 (691 ktCO2e), while Siemens Healthineers demonstrated progress with a 49% reduction in emissions from their base year values (247 ktCO2e). For Scope 3, Siemens w/o SHS achieved a 11% reduction compared to the base year 2019 and Siemens Healthineers 4%. Siemens w/o SHS has further defined a target to pursue Scope 3 upstream emissions reduction by 20% by fiscal 2030 compared to fiscal 2019. This target covers the GHG-Protocol categories from purchased goods and services to business traveling (GHG-Protocol categories 3.1. to 3.6). The setting of the ambition involves assumptions about supplier data accuracy, emission factors, activity data, boundary definitions, lifecycle analysis, consistency, comparability, and engagement with suppliers. In fiscal 2025, Scope 3 upstream emissions slightly increased by 1% compared to the baseline 2019 value of 8,107 ktCO2e. If the increase in purchasing volume of around 21% compared to 2019 is included, CO2e emissions were however reduced in
+
+[Chunk 5] page=33
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0002
+of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3,659 - - - 3.13 Downstream leased assets - 2,963 - - - 3.14 Franchises3 - n/a - - - 3.15 Investments - 6,911 - - - Total Gross indirect (Scope 3) GHG emissions 179,222 159,144 (30)% - (2.7)% 1 Already accounted for within Scope 1 & 2 emissions in accordance with the GHG-Protocol 2 Not material for Scope 3 emissions 3 Not applicable The market-based GHG intensity ratio for this fiscal is 2,021 tCO2e/million €, and the location-based GHG intensity ratio is 2,028 tCO2e/million €. The total GHG intensity ratio is calculated by dividing the total GHG emissions by the total revenue as disclosed in Note 29 of the Consolidated Financial Statements for fiscal 2025. Siemens reports gross biogenic Scope 1 CO2 emissions from the combustion or biodegradation of biomass within the consolidated group, amounting to 14.8 ktCO2e. The gross biogenic Scope 3 CO2 emissions from the combustion or biodegradation of biomass of the consolidated group amount to 44,713 ktCO2e. The gross biogenic Scope 2 CO2 emissions (location-based and market-based) from the combustion or biodegradation of biomass are not considered significant based on materiality analysis conducted with emission factors from ecoinvent. Siemens had no unconsolidated but operationally controlled investees or joint arrangements during the reporting period. Consequently, Scope 1 emissions as well as Scope 2 emissions, both market-based and location-based from such entities amount to 0 ktCO2e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 09 / 27
+##############################################################################################################
+case_id: Schneider_305-1_slot_f
+company: Schneider
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=42 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005
+Scopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of
+
+[Chunk 2] page=124
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0124_c0002
+Annual CSR data is reported for the calendar year (CY) preceding the publication year, i.e. 2023 in this report, in line with the financial reporting calendar. Reporting perimeter As a general rule and subject to any particular exception described below: (i) Schneider Electric reports CSR data at Group level for all financially consolidated entities over which it has operational control. (ii) New acquisitions are included in the reporting scope within 2 years, meaning that data is consolidated into Group reporting at the latest from the third year post acquisition. (iii) Companies accounted for by the equity method are not included in the reporting. (iv) Within the above scope, small entities may exceptionally be excluded if their collective exclusion does not exceed 5% of consolidated revenues or total number of employees. Reporting coverage is provided together with indicators’ tables. Timing for inclusion may differ between indicators. Typically financial or HR data are deployed more rapidly as acquired companies usually have existing systems and teams in place, which is not necessarily the case for environmental systems. Progressive consolidation of new acquisitions into the Group CSR reporting All majority-owned, financially consolidated entities shall participate in all relevant Schneider Electric’s SSI, SSE, and other environmental, social and ethical programs and adopt the required policies and reporting practices as per each respective Trust Standard. Unless otherwise agreed with Schneider Electric’s Sustainability team for practical or cost-effectiveness reasons, the following calendar shall be respected: - - - Year +1: strategic alignment and material KPIs selection; Year +2: data cleaning and baseline and target setting; Year +3: start of consolidated reporting into Group public reporting. When an entity is not fully integrated into Schneider’s IT systems, the consolidation of CSR data is done manually and may take longer than the standard calendar above. For those entities, if the cost of reporting is deemed unreasonable compared to the size of the company, the entity may ask to opt-out from CSR reporting. This may be granted on a case-by-case basis. However these entities still need to follow applicable Trust Standards. S U S T A I N A B L E D E V E L O P M E N T R E P O R T 2 0
+
+[Chunk 3] page=44
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0001
+84 se.com 2 Sustainability statements Sustainable Development Report 2024 Downstream emissions are by far the largest category of emissions. They represent approximately 85% of Schneider Electric’s footprint, and largely come from the electricity consumption by the Group’s customers during the use phase of the products. Schneider’s strategy to decarbonize its downstream emissions is articulated around 4 main pillars: - - - - Innovating and ecodesigning in product development: ecodesign principles aim at reducing the environmental impact of products, including the product carbon footprint, for instance by increasing the energy efficiency of products in use phase. Substituting all relevant offers with SF6-free medium voltage technologies by 2025: since end-of-life emissions from sold products are predominantly due to their SF6 content, this substitution will result in a significant drop in the downstream carbon footprint. Using the Group’s voice for influencing the transition towards a more electric, digital, and decarbonized world. Supporting customers in their own decarbonization journey by providing products and services that drive significant decarbonization of their operations. The following Scope 3 GHG emissions categories have been excluded, since they are not relevant for the nature of the activity of Schneider Electric, or due to the accounting approach that is used (i.e., operational control approach): - - - - - Category 8. Upstream leased assets: Schneider Electric uses the operational approach to calculate its carbon footprint; emissions due to energy consumption in leased assets are therefore already included in Scope 1 and 2 emissions. Category 10. Processing of sold products: Schneider Electric does not sell intermediary products to third parties (manufacturers). This source of emissions is therefore not relevant. Category 13. Downstream leased assets: Schneider Electric does not lease assets to third parties (lessor’s point of view). This source of emissions is therefore not relevant. Category 14. Franchises: Schneider Electric does not operate with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric
+
+[Chunk 4] page=38
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0038_c0006
+there is no impediment to implement the transition plan. On the Scope 3 side, the locked-in GHG emissions from Schneider Electric’s activities are on the downstream side, with Scope 3 categories 11 and 12 in GHG Protocol framework, respectively use phase and end-of-life emissions of sold products. In conformance with GHG Protocol standards, these emissions are being estimated based on the sales happening in the reporting year, with a forward-looking perspective on what will be the GHG emissions in the future of the products, from a lifetime perspective. Hence, these Scope 3 categories encompass GHG emissions that will occur in the coming decades, since some of Schneider Electric products have lifetimes of 10, 20, or even 30 years. By design, the way the GHG inventory of the Company is done does not result in locked-in emissions that would jeopardize achievement of GHG emission reduction targets, and then would result in transition risks, since the reduction targets are based on a similar accounting approach for GHG inventories of future years. In other words, the Scope 3 GHG emissions that we will be reporting in 2030 will also be based on the sales of reporting year 2030, and factoring the carbon intensity of the electricity consumption of our customers in 2030, and after. Schneider Electric’s purpose is to create impact by empowering all to make the most of its energy and resources, bridging progress and sustainability for all. 90% of the Group’s revenue comes from economic activities supporting either climate change mitigation, the transition to a circular economy or the preservation of water resource, as defined in the European Union Taxonomy, and the EU commission delegated regulation 2021/2139. In 2024, Taxonomyeligible and -aligned revenues with at least one of the climate environmental objectives amounted to 90% and 28% respectively, representing EUR 34,328 million and EUR 10,737 million respectively out of EUR 38,153 million total 2024 consolidated revenue, as disclosed in the consolidated statement of income on page 504 of the 2024 Universal Registration Document. Schneider Electrics’ activities supporting those climate environmental objectives are described on page 120.
+
+[Chunk 5] page=31 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0031_c0002
+reporting system to collect, track and report adequately CRSD-related information by connecting all relevant ESG IT systems, including the Schneider Electric tool EcoStruxure Resource Advisor. Scope The standard ESRS 1 requires companies to align the scope of the sustainability statement to the scope of the financial statement (ESRS 1-62). It should also be noted that value chain information is required when necessary to allow readers to understand material impacts, risks, and opportunities (ESRS 1-63, ESRS 1-64). To rationalize the effort of reporting and to consider the current limits of the Group’s reporting processes (e.g., progressive deployment of IT tools to all entities), Schneider Electric is excluding specific entities from its sustainability statements even though these entities are part of the financial statements. Each excluded entity is selected based on its IT landscape and materiality for the Group and on its statements, so that the final coverage is representative of the Group’s activities and performance. The number of employees in an entity as well as the amount of gross value of property, plant and equipment are used as a proxy and compared to Group values to consider the materiality of the entity in the Group. This exclusion process ensures that the sustainability statement remains fair to the reader and provides an accurate understanding of Schneider Electric. Excluded entities represent a total of approximately 2,000 employees, hence less than 1.5% of the Group’s employees, and 0.6% of the Group’s assets. The resulting coverage is deemed representative. These exclusions do not affect the Group’s double materiality assessment process results. When disclosing information on greenhouse gas (GHG) emissions in ESRS E1, the scope of reporting must include joint ventures under operational control (ESRS E1 - 46, ESRS E1 - AR 40). All joint ventures are excluded from Schneider Electric sustainability statements and Scope 1 and 2 GHG reporting since Schneider Electric has no operational control on its joint ventures. Throughout the sustainability statements, actions and targets linked to Schneider Electric sustainability matters refer to Schneider Sustainability Impact (SSI) and Schneider Sustainability Essentials (SSE). SSI and SSE programs are part of the Group’s 2021-2025
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 10 / 27
+##############################################################################################################
+case_id: Kepco_305-1_slot_a
+company: Kepco
+slot: slot_a
+element: Total Scope 1 emissions in tCO2e
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 direct emissions.
+PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
+MISSING if: No numeric Scope 1 emissions value is present.
+NOTE: A percentage or reduction target is NOT a total emissions figure.
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=149 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0001
+회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �
+
+[Chunk 2] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0003
+1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원
+
+[Chunk 3] page=59 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0059_c0001
+한국전력 및 전력그룹사 온실가스 배출현황 한국전력과 전력그룹사는 기업 활동 전반의 온실가스 배출 정보를 면밀히 파악하고 직간접적으로 발생하는 온실가스를 체계적으로 관리하고자 Scope 1~3에 걸쳐 측정 중에 있습니다. 실효성 있는 탄소 중립 실현을 위해 한국전력과 전력그룹사는 국가 온실가스 감축목표(NDC), 전력수급기본계획 등 국가적 차원의 탄소중립 추진 계획에 따라 단계별 온실가스 감축 목표와 실행 전략을 적기에 수립·추진해 나가고 있습니다. 관련하여 혼소 발전, 재생에너지 발전량 증가, 신기술 개발 등을 통해 탄소중립 기반을 마련, 온실가스 배출량을 적극적으로 감축할 것입니다. 온실가스 배출현황 구분 내용 단위 2021년 2022년 2023년 한국전력 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq
+
+[Chunk 4] page=150
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0150_c0002
+�물질 배출량 질소산화물질(NOx) ton 5,632 4,264 3,331 황산화물질(SOx) ton 6,164 4,539 3,798 먼지 ton 369 342 188 * 과년도 데이터 오류 정정(환경정보공개시스템 공개 기준) 온실가스 ESG Data (환경) 회사명 구분 단위 2021 2022 2023 한국동서발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,711,636 29,091,757 27,103,040 Scope 2(간접배출) tCO2eq 96,685 63,859 72,467 Scope 3(기타배출) tCO2eq 10,759,573* 6,384,828 6,171,228 온실가스 배출 절감량 절감량(Scope 1+2) tCO2eq 2,097,439 3,652,705 1,980,109 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 682.0 416.0 482.1 Scope 2(간접배출) tCO2eq/억 원 2.0 0.9 1.3 Scope 3(기타배출) tCO2eq/억 원 224.3* 91.3 109.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,757 2,757 2,757 배출량 만tCO
+
+[Chunk 5] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0004
+�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 11 / 27
+##############################################################################################################
+case_id: Shinhan_305-1_slot_a
+company: Shinhan
+slot: slot_a
+element: Total Scope 1 emissions in tCO2e
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific numeric value is reported in tCO2e or tCO2eq for Scope 1 direct emissions.
+PARTIAL if: Scope 1 emissions are mentioned but the unit or number is unclear/truncated.
+MISSING if: No numeric Scope 1 emissions value is present.
+NOTE: A percentage or reduction target is NOT a total emissions figure.
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=107
+chunk_id: 2024_KR_Shinhan_Sustainability_KO_p0107_c0004
+�매된 제품의 폐기 140 15 투자 57,482,417 1) 총 배출량 57,510,180 (단위: ton CO2eq) 첨부. ‘PRJN-955640-01-AST-KOR’ 검증 성명서에 대한 부속서 신한금융그룹의 간접배출(Scope 3) 온실가스 배출량 1) 신한자산운용의 금융배출량(6,177,013 tCO2eq)을 포함한 신한금융그룹 전체의 카테고리 15 배출량을 산출하였음 ※ 상기의 온실가스 배출량은 정수로 보고하기 위한 반올림처리로 인해 ± 1 tCO2eq 미만의 차이가 발생할 수 있음 ※ PCAF(탄소회계금융협회)의 방법론을 기반으로 상장주식/회사채, 기업대출/비상장주식, PF, 상업용 부동산, 모기지, 자동차 대출 등 6개 자산군 을 산정하였으며, 현재 배출량 데이터 확보가 가능한 자산으로 범위를 한정하였음 연도 기타 간접배출(Scope 3) Upstream Downstream 총 배출량 2024 25,693 57,484,487 57,510,180 (단위: ton CO2eq) ※ 상기의 온실가스 배출량은 정수로 보고하기 위한 반올림처리로 인해 ± 1 tCO2eq 미만의 차이가 발생할 수 있음. ※ Upstream : 카테고리 1,
+
+[Chunk 2] page=22 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_KR_Shinhan_Sustainability_KO_p0022_c0003
+�지 <데이터센터 에너지 절감 주요 성과> TCFD 보고서 (단위: tCO2eq) <내부 탄소배출량 실적 및 감축 로드맵> 1) 시장 기반(Market-based): 2023년 신재생 에너지를 통해 생산된 전력(REC 및 녹색프리미엄)의 구매가 반영된 Scope 2 온실가스 배출량 포함 2030 Scope 1 실적 Scope 1 목표 Scope 2 실적 Scope 2 목표 9,001 47,207 2044 탄소중립 2021 15,175 86,013 101,188 2022 14,697 85,383 100,080 2023 14,967 54,790 69,757 1) 2024 13,575 53,934 67,502 1) 2020 15,419 96,811 81,392 2040 13,024 2,483 RE100 달성 2024년 목표 82,193 42% 감축 (2020년 대비) 아시아-태평양 지역의 지속가능금융 확산을 위한 협약 체결 - 아시아-태평양 금융시장 내 지속가능금융 활성화 선도 및 글로벌 금융기관과의 연대를 통한 ESG 금융 생태계 조성 아시아·태평양 지역 지속가능금융 활성화를 위한 후원 협약 체결 - 2023년 7월 협약을 체결하여 연간 10만 달러 규모를 지원하
+
+[Chunk 3] page=97
+chunk_id: 2024_KR_Shinhan_Sustainability_KO_p0097_c0001
+Topic Code 내용 측정 단위 보고 위치 금융배출량 FN-IN-410c.1 총 금융배출량 절대량 (1) Scope 1, (2) Scope 2, (3) Scope 3 tCO2eq 2024 SPECIAL REPORT p.29 FN-IN-410c.2 각 산업의 자산군별 총 익스포저 Reporting currency 2024 SPECIAL REPORT p.31 FN-IN-410c.3 금융배출량 계산에 포함된 총 익스포저 비율 백분율(%) 2024 SPECIAL REPORT p.31 FN-IN-410c.4 금융배출량 계산에 사용된 방법론 설명 - 2024 SPECIAL REPORT p.29, 31 환경 위험 노출 FN-IN-450a.1 기상 관련 자연재해로 인한 보험 상품의 최대가능손실(Probable Maximum Loss, PML) Reporting currency - FN-IN-450a.2 재해 사건별 및 지리적 부문별 (1) 모델링한 자연재해 및 (2) 모델링하지 않은 자연재해로 인한 보험금 지급으로 인한 총 금전적 손실 금액(재보험 고려 전/후) Reporting currency FN-IN-450a.3 환경 위험을 (1) 개별 보험계약 인수 프로세스에 적용하는 접근법 및 (2) 전사 수준의 위험 및 자본적정성 관리에 포함시키기 위한 접근법 설명 - 시스템 위험 관리 FN-IN
+
+[Chunk 4] page=21
+chunk_id: 2024_KR_Shinhan_Sustainability_KO_p0021_c0004
+. 2024년 전환금융 실적 2024년 신한금융그룹은 총 9,605억 원 규모의 전환금융을 실행하여, 환경 기준 충족을 위한 기업들의 저탄소 전환을 지원하고 있습니다. 이 중 5,805억 원은 대출, 3,800억 원은 투자 형태로 제공되었습니다. 이러한 금융 지원은 기업들로 하여금 급격한 환경 규제에 따른 산업 경쟁력 약화와 고용 불안을 완화하고, 각 산업의 특성과 기술 수준을 고려한 전환 목표 설정과 맞춤형 지원 방식을 통해 현실적인 탄소중립 이행을 돕는 효과를 기대할 수 있습니다. 이사회의 기후리스크 검토 21 2025 New Equation 기후변화 대응 환경경영 및 자원순환 ESG 리스크 관리 및 평가 생물다양성 보존 및 생태계 보호 Overview Highlight Report 지속가능 거버넌스 구축 Prosperity People Appendix Special Report ESG Data Pack Planet 신한금융그룹 2024 지속가능경영보고서
+
+[Chunk 5] page=18
+chunk_id: 2024_KR_Shinhan_Sustainability_KO_p0018_c0001
+기후변화 대응 친환경 금융 추진 목표 및 전략 신한금융그룹은 2050 탄소중립 실현을 위한 ‘Zero Carbon Drive’를 선언하고, 기후대응 전략을 본격적으로 추진하고 있습니다. 2030년까지 누적 30조 원 친환경 금융 목표를 설정하였으며, 2024년 말 기준 누적 18.7조 원으로 목표 대비 62.3%를 달성했습니다. Zero Carbon Drive 기반 친환경 금융 확대 <친환경 금융 목표 및 실적> (단위: 조 원) 친환경 금융 신규 실적 친환경 금융 누적 실적 2020 2.0 3.4 5.4 2021 2.8 8.2 2022 5.1 13.3 2023 5.4 18.7 2024 30.0 2030 2030년 목표 대비 달성률 62.3% <2024년 친환경 금융 주요 성과> 4,854억 원 3조 2,444억 원 1조 6,222억 원 친환경 PF 친환경 투자 친환경 대출 신한은행은 환경부 녹색정책금융 활성화 이차보전 대출을 통해 2024년 누적 1조 7,180억원을 공급하고 있습니다. 또한, 2024년에는 원전 생태계 금융지원 정책자
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 12 / 27
+##############################################################################################################
+case_id: Samsung_305-1_slot_e
+company: Samsung
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=24 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0024_c0003
+)를 2025 년부터 현장에 적용하고 있습니다. 앞으로도 사업장에 적용할 수 있는 대체가스 개발에 대한 연구를 이어갈 예정입니다. 1) Octafluorocyclobutane, IPCC AR6 기준 GWP = 10,200 2) Carbon Terafluoride, IPCC AR6 기준 GWP = 7,380 연료 절감 DS부문은 사업장 내 연료 사용량을 절감하기 위하여 운전 최적화, 폐열 회수, 비연료형 설비 개발을 적극 추진 중입니다. 특히, 신규 라인에서는 공업용 폐수를 방류하기 전 폐열을 추가로 회수하고, 냉각수의 폐열을 동절기뿐 아닌 연중 내내 사용하여 외조기 승온용 LNG 사용을 억제하도록 설계하였습니다. 신규 라인에 사업장 폐열 회수 시스템을 도입한 결과, 2024년 기흥·화성·평택사업장 폐열 사용률을 51%까지 높였습니다. DS부문은 LNG 기반 열원을 대체할 수 있는 설비를 지속 도입하는 것뿐만 아니라 폐열 회수를 기존 라인까지 확대하고, 신규 라인은 폐열 사용률을 70%에서 90% 이상까지 확대할 계획입니다. 무공해차 전환 DS부문은 온실가스 직접 배출량을 감축하기 위해 무공해차(전기차, 수소차)로 전환하고 있으며, 2024
+
+[Chunk 2] page=83
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0083_c0005
+�지 사용량, 재생에너지 사용량, 온실가스 원단위 배출량, 용수 사용량 등의 지표를 관리하고 있습니다. 또한 제품 측면에서는 재생원료 사용 비율, 폐전자제품 회수량, 제품 평균 소비 전력량 등의 지표 를 선정해 관리하고 있습니다. P.11, 22, 62-68, CDP: M.07 b) 직접(Scope 1), 간접(Scope 2), 그리고 기타(Scope 3) 온실가스 배출량 및 관련 리스크 삼성전자는 온실가스 배출량을 Scope 1, 2, 3로 구분하여 산출하고 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.68, 72, CDP: M.07 c) 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과 삼성전자는 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과를 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.11, 22, CDP: M.07 TCFD(기후변화 관련 재무정보공개 협의체) 대조표 Our Company Appendix Facts & Figures Principle Planet People
+
+[Chunk 3] page=72
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0072_c0001
+삼성전자 지속가능경영보고서 2025 72 사업부문별 환경성과 2022년 2023년 2024년 온실가스 관리(Scope 1, 2) 1), 2) DX부문 DS부문 DX부문 DS부문 DX부문 DS부문 (시장기반) 온실가스 배출량 천 톤CO₂e 366 14,687 313 12,978 342 14,546 직접 배출량(Scope 1) 천 톤CO₂e 254 5,718 211 3,522 236 4,489 간접 배출량(Scope 2) 천 톤CO₂e 112 8,969 102 9,456 106 10,058 온실가스 배출원별 배출량 3) 천 톤CO₂e 366 14,687 313 12,978 342 14,546 CO₂ 천 톤CO₂e 364 9,971 311 10,467 314 11,101 CH₄ 천 톤CO₂e 1 2 0.5 2 1 3 N₂O 천 톤CO₂e 1 529 1 539 1 264 HFCs 천 톤CO₂e - 679 - 314 26 538 PFCs 천 톤CO₂e - 3,333 0.2 1,532 0.3 912 SF₆ 천 톤CO₂e - 173 - 124 - 484 NF₃ 천 톤CO₂e - - - - -
+
+[Chunk 4] page=85
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0085_c0001
+삼성전자 지속가능경영보고서 2025 85 코드 공시 항목 참고 페이지 및 답변 온실가스 배출 TC-SC-110a.1 (1) Scope 1 총 배출량, (2) PFCs 배출량 P.68, P.72 TC-SC-110a.2 Scope 1 배출량 관리, 감축 목표, 성과 분석을 포함한 장∙단기 전략 또는 계획 P.21, P.68, P.72 에너지 관리 TC-SC-130a.1 (1) 전체 에너지 소비량, (2) 일반 그리드 전력 비율, (3) 재생에너지 비율 P.69, P.73 수자원 관리 TC-SC-140a.1 (1) 총 용수 공급량, (2) 총 용수 사용량 (각 지표 내의 물부족 국가 비율 포함) P.70-71 폐기물 관리 TC-SC-150a.1 제조 공정에서의 유해 폐기물 발생량과 재활용률 P.69-70, P.73 임직원 안전보건 TC-SC-320a.1 임직원 안전보건 관련 평가 및 모니터링, 위험 요소에 대한 임직원 노출 감소를 위한 활동 P.43-44 TC-SC-320a.2 임직원 안전보건 법규 위반에 따른 벌금 및 합의금 2024 사업보고서(XI. 그 밖에 투자자
+
+[Chunk 5] page=77
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0077_c0001
+삼성전자 지속가능경영보고서 2025 77 Scope 1, 2 온실가스 배출량 검증 의견서 Our Company Appendix Facts & Figures Principle Planet People
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 13 / 27
+##############################################################################################################
+case_id: Schneider_305-1_slot_c
+company: Schneider
+slot: slot_c
+element: Biogenic CO2 emissions (reported separately)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: Biogenic CO2 emissions are explicitly reported as a SEPARATE numeric figure (e.g. "X tCO2e biogenic").
+PARTIAL if: A specific biogenic source is quantified but not clearly labeled as biogenic CO2
+            OR biogenic CO2 is explicitly discussed as "outside of scope" with a value given.
+MISSING if ANY of the following:
+  - Only a general mention of biogenic sources (biofuels, biomass, SAF) without a numeric figure
+  - Only methodology notes about biogenic emissions without a figure
+  - SAF savings or avoided emissions mentioned (not the same as reporting biogenic CO2)
+  - The word "biogenic" appears only in passing without a separate disclosure
+  → IMPORTANT: A mention or methodology note alone is NOT enough for partial. A numeric value must be present.
+Korean equivalents: 바이오제닉, 생물성 탄소, 바이오매스
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=43 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007
+the combustion or bio-degradation of biomass not included in Scope 1 GHG emissions are then 0. Similarly and for the same reason, the biogenic emissions of CO2 from combustion or bio-degradation of biomass not included in Scope 2 GHG emissions are 0 and the biogenic emissions of CO2 from combustion or bio-degradation of biomass that occur in value chain not included in Scope 3 GHG emissions are also 0. To reduce GHG emissions from Scope 2, Schneider Electric is sourcing an increasing share of electricity from renewable sources. The approach is leveraging the multiple ways to get access to renewable electricity, based on local context and the availability of renewable opportunities. While a growing share of electricity is self-produced, the renewable sourcing also consists of getting renewable energy credits, either bundled or unbundled, because the space available on sites is not enough to cover the overall electricity consumption of Schneider Electric’s facilities, especially for some locations with intense manufacturing processes. Overall in 2024, the Group sourced 41.97% of its electricity consumption from contracted unbundled renewable energy credits, and 44.77% from contracted bundled renewable energy credits, hence, the overall percentage of contractual instruments, Scope 2 GHG emissions is 86.73%, which is a very significant increase as compared to 78% in 2023.
+
+[Chunk 2] page=44
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002
+with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562
+
+[Chunk 3] page=41
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0001
+78 se.com 2 Sustainability statements Sustainable Development Report 2024 By having multiple sourcing options in different geographical locations, Schneider Electric can better adapt to disruptions caused by extreme weather events or other unforeseen circumstances. Schneider Electric utilizes dynamic control towers to monitor traffic and events in real time across its logistics network and partners, allowing for proactive adjustments and responses to disruptions. By 2030, the Group aims to: - - Reduce Scopes 1 and 2 emissions by 76% as compared to 2021 (which is equivalent to reduce by 90% as compared to 2017, which is referenced as our commitment of being “Net-Zero ready” in operations); and Reduce Scope 3 emissions by 25% as compared to 2021. By 2050, the Group aims to reach Net-Zero CO2 emissions across the entire value chain, which implies to reduce Scopes 1 and 2 emissions by 90% on the one hand, and Scope 3 emissions by 90% on the other hand. The reference years for both these reductions targets are 2021. These targets are expressed in absolute terms (as opposed to intensity terms), in the absence of dedicated sectorial pathways that would be adapted to the broad portfolio of Schneider Electric, comprising products, equipment, services, and software. When developing its science-based targets, the Group has taken into consideration reasonable evolutions in sales volumes, and external factors such as regulatory factors and development of new technologies. The targets cover all types of GHGs and all the applicable emissions sources under their respective scopes (i.e., either under Scopes 1 and 2, or under Scope 3). In other words, they consist of the overall GHG inventory that is being reported by Schneider Electric. They do not include GHG removals, carbon credits, nor avoided emissions from sold offers. The targets on Scopes 1 and 2 are applicable with Scope 2 being calculated under a marketbased accounting approach. The corresponding absolute values for target years 2030 and 2050 are shown in below table: Schneider Electric | Sustainable Development Report 2024 Milestones and targets 2050 2021 (Base
+
+[Chunk 4] page=41
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0003
+mitigation. Schneider Electric’s climate targets for Scopes 1 and 2 in 2030 are validated by the Science Based Targets initiative (SBTi), with a “temperature alignment” (as per SBTi terminology) of global warming limited to 1.5°C. For the same time horizon (2030), the Scope 3 target is aligned with global warming limited to well-below 2°C level, also as per the SBTi framework. These targets have been developed by using the absolute contraction approach that SBTi is defining. Indeed, in the absence of sector-specific trajectory for Schneider Electric’s business, the SBTi is using a cross-sectorial trajectory to define compatibility of GHG emissions with different levels of temperature rises. For Scope 3, a target aligned with 1.5°C would have been a 42% reduction over the same time period. For a description of detailed decarbonization levers please refer to the section 2.2.1.3 “Decarbonization actions and resources” on page 72. In summary, Schneider Electric’s decarbonization levers for Scopes 1 and 2 emissions are: energy sufficiency and efficiency actions at sites, electrification projects at sites, renewable electricity sourcing, electrification of fleet, and reductions in SF6 leaks. For Scope 3 emissions, the levers cover: upstream supplier engagement, downstream SF6 phase-down, AirSeT circuit breakers, and eco-design. The quantitative contributions of these levers to achieve GHG emissions targets by 2030 are shown in the below graphs: E S R S E 1 S U S T A I N A B I L I T Y S T A T E M E N T S 79 se.com Life Is On | Schneider Electric STATEMENTS 2 - SUSTAINABILITY Decarbonization actions on Scopes 1 and 2 towards 2030 target 2024 emissions ca. 145 ktCO2 Fleet electriﬁcation Renewable electricity Others 2030 emissions ca. 70 ktCO2 Site electriﬁcation Decarbonization actions on Scope
+
+[Chunk 5] page=43
+chunk_id: 2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0006
+the target to save and avoid 800 Mt CO2 on our customers’ end thanks to our products cumulated on the 2018-2025 period. The annual performance of this indicator is audited by an independent third party. - End-of-life treatment of sold products: using our Product Environmental Profiles (PEP), based on Life Cycle Assessments (LCA), we know that the end-of-Life phase of our products is not significant as compared to their total carbon impact. One exception is products that contain SF6 gas. SF6 is a gas used as an insulator in medium voltage devices. It is a powerful GHG and therefore requires special treatment to prevent atmospheric emissions to occur. That is why this category of emissions, which includes the end-of-life treatment emissions for all products (either with or without SF6), is so significant in the overall carbon footprint. It must be noted that this figure is not derived from the volume of SF6 released in the reporting year due to the end of life of all products sold in the past, but the SF6 gas used by Schneider Electric in products annually that may be released at end of product life. For all products of the Company, either with or without SF6, the emissions from the end-of-life are calculated as for the emissions for use phase (using LCA in PEP). But more specifically for SF6, the emissions are derived from SF6 gas purchased by Schneider Electric and installed, as per the sales data of the Company and the specifications of the products. The Global Warming Potential of SF6 is an external data provided by the IPCC and has been recently updated in the 6th Assessment Report. An assumption is made on the release in the atmosphere of SF6 at product decommissioning, based on Schneider Electric’s research, considering that some SF6 in equipment is being recycled, while the majority is not recycled. Additionally, on Scope 1 and 2 GHG emissions, as Schneider Electric does not consume or combust biomass on sites, the biogenic emissions of CO2 from the combustion or bio-degradation of biomass not included in Scope 1 GHG emissions are then 0. Similarly and for the same reason, the biogenic emissions of CO2 from combustion or bio-degradation of biomass not included in
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 
+
+
+##############################################################################################################
+CASE 14 / 27
+##############################################################################################################
+case_id: Siemens_305-1_slot_c
+company: Siemens
+slot: slot_c
+element: Biogenic CO2 emissions (reported separately)
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: Biogenic CO2 emissions are explicitly reported as a SEPARATE numeric figure (e.g. "X tCO2e biogenic").
+PARTIAL if: A specific biogenic source is quantified but not clearly labeled as biogenic CO2
+            OR biogenic CO2 is explicitly discussed as "outside of scope" with a value given.
+MISSING if ANY of the following:
+  - Only a general mention of biogenic sources (biofuels, biomass, SAF) without a numeric figure
+  - Only methodology notes about biogenic emissions without a figure
+  - SAF savings or avoided emissions mentioned (not the same as reporting biogenic CO2)
+  - The word "biogenic" appears only in passing without a separate disclosure
+  → IMPORTANT: A mention or methodology note alone is NOT enough for partial. A numeric value must be present.
+Korean equivalents: 바이오제닉, 생물성 탄소, 바이오매스
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=33 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0002
+of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3,659 - - - 3.13 Downstream leased assets - 2,963 - - - 3.14 Franchises3 - n/a - - - 3.15 Investments - 6,911 - - - Total Gross indirect (Scope 3) GHG emissions 179,222 159,144 (30)% - (2.7)% 1 Already accounted for within Scope 1 & 2 emissions in accordance with the GHG-Protocol 2 Not material for Scope 3 emissions 3 Not applicable The market-based GHG intensity ratio for this fiscal is 2,021 tCO2e/million €, and the location-based GHG intensity ratio is 2,028 tCO2e/million €. The total GHG intensity ratio is calculated by dividing the total GHG emissions by the total revenue as disclosed in Note 29 of the Consolidated Financial Statements for fiscal 2025. Siemens reports gross biogenic Scope 1 CO2 emissions from the combustion or biodegradation of biomass within the consolidated group, amounting to 14.8 ktCO2e. The gross biogenic Scope 3 CO2 emissions from the combustion or biodegradation of biomass of the consolidated group amount to 44,713 ktCO2e. The gross biogenic Scope 2 CO2 emissions (location-based and market-based) from the combustion or biodegradation of biomass are not considered significant based on materiality analysis conducted with emission factors from ecoinvent. Siemens had no unconsolidated but operationally controlled investees or joint arrangements during the reporting period. Consequently, Scope 1 emissions as well as Scope 2 emissions, both market-based and location-based from such entities amount to 0 ktCO2e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions
+
+[Chunk 2] page=34 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0002
+liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and Net-Zero/Department for Environment, Food and Rural Affairs (DESNZ/DEFRA) as available at the beginning of the reporting period. The emission factors are updated annually based on the frequency of source updates. For biogas and bioethanol, the emission factors used from DESNZ/DEFRA do not provide the breakdown of the constituent gases. - Emissions from biogenic commodities such as biogas, bioethanol and wood pellets are recorded separately from direct emissions (Scope 1), in accordance with the GHG-Protocol. DESNZ/DEFRA emission factors are used to calculate the biogenic emissions. - The percentage of Scope 1 GHG emissions regulated under emission trading schemes (ETS) is determined by dividing the emissions reported to the relevant governmental authority in the latest reporting period of the respective ETS by the total gross Scope 1 emissions for the current reporting period. Scope 2 - Gross location-based Scope 2 GHG emissions for Siemens are calculated using the most recent CO₂e emission factors from authoritative sources available at the beginning of the reporting year. These include the International Energy Agency (IEA), Statistics Canada (StatCan), and EGrid for GHG emissions related to electricity. For district heating and cooling, emission factors from DESNZ/DEFRA are applied. - Gross market-based Scope 2 GHG emissions are calculated in accordance with the data source hierarchy defined in the GHGProtocol. Where applicable, residual mix data from the Association of Issuing Bodies (AIB) is used to ensure accurate representation of energy sourcing. - In cases where real energy consumption data for a location is not metered, extrapolations, as described in the Scope 1 methodology, are applied to estimate energy consumption. Those estimations are then used to calculate emissions, as described in the Scope 1 methodology. - For BEVs and plug-in hybrid electric vehicles (PHEVs), average energy consumption is estimated using country-specific benchmarks derived from the driving patterns of fossil fuel vehicles. This approach ensures consistency in calculating electricity-related emissions from Siemens’ vehicle fleet. -
+
+[Chunk 3] page=33 | REVIEWED_RETRIEVAL_GOLD
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0003
+e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions Fiscal year 2025 ktCO₂e therein from CO₂ CH₄ N₂O SF₆ NF₃ HFC PFC Total gross Scope 1 GHG emissions 288.3 Stationary combustion 103.0 102.6 0.2 0.1 0 0 0 0 Mobile combustion 159.1 157.8 0.3 1.0 0 0 0 0 Fugitive emissions 16.4 0 0 0 4.4 0 12.0 0 Process emissions 9.8 0.2 0.0 0.3 9.3 0 0 0
+
+[Chunk 4] page=34
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0001
+Sustainability Statement 34 Total gross Scope 2 GHG emissions Fiscal year 2025 (in ktCO₂e) Location-based Market-based Total gross Scope 2 GHG emissions 633.0 70.7 Electricity 594.4 47.0 District Heating 37.6 22.8 District Cooling 1.1 0.9 Share of contractual agreements used for the purchase of energy Fiscal year Type of instruments (in %) 2025 Total share of purchased energy bundled or unbundled with instruments in total energy consumption 83% Bundled with instruments 36% Guarantee of Origin 32% Renewable Energy Certificate 1% International Renewable Energy Certificate 0% others 3% Unbundled instruments 47% Guarantee of Origin 6% Renewable Energy Certificate 21% International Renewable Energy Certificate 21% others 0% Methodology for calculating GHG emissions: Scope 1 and 2 Scope Calculation method Scope 1 - The methodology for calculating Siemens’ Scope 1 GHG emissions is aligned with the GHG-Protocol. These emissions originate from Siemens’ locations and fleet operations and are categorized in stationary combustion (for example from natural gas or heating oil), mobile combustion (for example diesel and petrol), process emissions (for example from production processes) and fugitive emissions (for example from refrigerants). - For metered locations, emission factors respective to the media types are multiplied by the consumption at the locations. - For non-metered locations, emissions are estimated using proxy data from metered locations. Benchmarks are developed based on location type (office or industrial), regional conditions, rentable space, and utilization. Where country-specific data is unavailable, global benchmarks are applied. The consumption for non-metered locations is calculated by multiplying the benchmark by the total rentable space. Consumption data is then multiplied by the respective emission factors. - Fleet emissions are calculated using fuel consumption data (liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and
+
+[Chunk 5] page=27
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0027_c0002
+30% 179,222 2030 (30)% - - 98% (11)% Reduce Scope 1 & 2 emissions by 90% and compensate residual emissions Siemens w/o SHS 691 2030 (90)% Scope 1 58% 1% (66)% Scope 2 42% Reduce Scope 3 emissions by 30% by fiscal 2030 and achieve net-zero by 2050 174,558 2030 (30)% - - 99% (11)% Pursue Scope 3 upstream emissions reduction by 20% 8,107 2030 (20)% - - 3% 1% Reduce Scope 1, 2 & 3 emissions by 90% and neutralize residual emissions Siemens Healthineers 4,524 2050 (90)% Scope 1 3% 100% (7)% Scope 2 2% Scope 3 95% Reduce Scope 1 & 2 emissions by 90% 247 2030 (90)% Scope 1 63% 16% (49)% Scope 2 37% Reduce material Scope 3 emissions by 28% 4,277 2030 (28)% - - 84% (4)% 1 Scope 2 emissions are calculated using the market-based approach. 2 Target measured against comparative baseline Methodology: The target setting involved the use of climate scenarios consistent with SBTi target pathway and included internal assumptions such as business forecasts and greenhouse gas budgets and allocation approaches. Together, our decarbonization targets cover the complete value chain including all own sites worldwide and all GHGs under the GHG-Protocol. Biogenic CO2 emissions are excluded. The base year emissions inventory covers 100% of the specified scope and all Scope 3 categories as reported in  2.2.6. The Siemens Healthineers Scope 3 target covers the categories 3.1, 3.4, 3.6 and 3.11. Annual monitoring ensures the continuous alignment of GHG targets with inventory boundaries
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale: 

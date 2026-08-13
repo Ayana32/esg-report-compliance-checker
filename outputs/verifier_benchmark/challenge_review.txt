@@ -1,0 +1,638 @@
+==============================================================================================================
+VERIFIER CHALLENGE GOLD REVIEW
+==============================================================================================================
+
+IMPORTANT:
+- Use frozen evidence only.
+- Apply current SLOT_RULES.
+- Ignore the pre-existing document label when assigning packet gold.
+- Do not inspect verifier predictions.
+
+
+##############################################################################################################
+CASE 01 / 12
+##############################################################################################################
+case_id: IBK_305-1_slot_b_challenge
+company: IBK
+slot: slot_b
+element: Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: At least 3 specific gas types are explicitly named (e.g. CO2, CH4, N2O, SF6, HFCs).
+PARTIAL if ANY of the following:
+  - Fuel types or combustion sources are listed (e.g. LNG, diesel, gasoline, petrol, 휘발유, 경유, LPG)
+  - Korean combustion terms appear: 고정연소, 이동연소
+  - Only CO2 is mentioned without other gases
+  → IMPORTANT: If you see LNG, diesel, gasoline, 휘발유, 경유, LPG, 고정연소, or 이동연소 → always return "partial", never "missing"
+MISSING if: No gas types AND no fuel types AND no combustion sources are mentioned at all.
+Korean equivalents: 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O), 육불화황(SF6)
+Korean fuel terms that indicate PARTIAL: 휘발유, 경유, LPG, LNG, 고정연소, 이동연소
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=134
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0134_c0001
+구분 IFRS 기후 관련 공시(S2) 보고 페이지 지표 및 목표 1. 유의적인 기후 관련 위험 및 기회의 측정, 감독, 관리 및 기업이 설정한 목표에 대한 진척을 포함하여 기업이 성과를 평가하는 방법 a) 산업전반 지표 범주와 관련된 정보 60-62, 64-65, 138-139 b) 산업기반 지표 c) 기후 관련 위험을 완화 또는 적응하거나 기후 관련 기회를 극대화하기 위해 기업이 설정한 목표 d) c)에서 식별한 목표 달성을 위한 진척을 측정하기 위해 이사회 또는 경영진이 사용하는 그 밖의 지표 2. 산업전반 지표 범주와 관련된 정보 a) 온실가스 배출량 - 온실가스 프로토콜 기업 기준(Greenhouse Gas Protocol Corporate Standard)에 따라 측정한 보고기간에 발생한 Scope 1, Scope 2, Scope 3에 대한 온실가스 절대 총배출량과 온실가스 배출량 집약도 (톤(t), 물리적 또는 경제적 산출물 단위당 CO2_e) 64 b) Scope 1 및 Scope 2 배출량에 대해 (1) 연결기업(지배기업 및 그 종속기업)과 (2) (1)에 포함되지 않은 관계기업, 공동기업,
+
+[Chunk 2] page=146
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0004
+(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표
+
+[Chunk 3] page=64
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0064_c0002
+tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81 246.24 출장 tCO2eq 4,220.92 3,073.67 3,232.08 3,485.34 직원통근 tCO2eq 4,318.36 12,385.86 12,048.62 11,774.25 합계 tCO2eq 10,039.43 16,972.14 16,759.73 16,720.08 * 전년도까지는 Scope 1, 2를 기준으로 소수점 절사로 인한 합계 차이를 보정하였으나, 올해부터는 개별 검증서를 기준으로 수치를 명기하여 Scope 1, 2의 합계와 Scope 1 & 2 수치에 일부 차이가 발생합니다. (참고: 온실가스 배출량 검증 의견서의 온실가스 배출량은 사업장별로 소수점 단위 이하 절사 후 합산 기준을 적용한 값으로 차이 발생) ** 산정 경계 및 방식 변경에 따른 Scope 3 과거 산출 수치 조정 온실가스 배출 (전행 기준) 온실가스 배출 목표 및 실제 배출량 (단위: tCO2eq, 전행 기준) Scope 1(직접 배출량) Scope 2(간접 배출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지�
+
+[Chunk 4] page=141
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0141_c0003
+. 또한, 탄소중립 달성을 위해 내부 탄소배출량 외에도 금융자산 배출량을 측정하여, 기후변화 관련 위험과 기회를 관리하고 있습니다. 64, 67 b) Scope 1, Scope 2 및 Scope 3 온실가스 배출량 및 관련 위험 매년 온실가스 배출량 데이터를 지속가능경영보고서와 CDP보고서를 통해 공개하고 있습니다. 64, 67 c) 기후변화와 관련된 위험과 기회를 관리하기 위해 조직에서 사용하는 목표 및 목표 대비 성과 국책은행이자 기업시민으로서의 모범적 실천을 위해 IBK 2040 탄소중립이라는 진취적인 목표를 정하고, 온실가스 배출량을 지표로 활용하여 모니터링을 실시하고 있습니다. IBK 2040 탄소중립은 기준연도를 2020년으로 하여, 2040년까지의 탄소중립 달성을 목표로 하고 있으며, 환경〮에너지경영시스템 도입 및 전기차 보급 확대 등의 노력을 기울이고 있습니다. 또한, 자체 배출량뿐만 아니라 금융자산에 대해 탄소중립 달성 목표를 2050년으로 설정하였습니다. 금융배출량 감축 목표 설정의 객�
+
+[Chunk 5] page=147
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0147_c0001
+온실가스 배출량 검증 의견서 2/2 5. 검증 한계 온실가스 배출량은 검증 범위의 데이터 한계, 불확실성 등 요인에 따라 영향을 받을 수 있으며 이에 따른 고유 한계가 존재할 수 있습니다. 6. 검증 결론 검증범위에 한하여 ISO 14064-3 검증절차를 통해 검증한 중소기업은행 9개 자회사의 온실가스 배출량에 오류 및 허위사실이 발견되지 않았습니다. l 부록. 온실가스 배출량 및 에너지 소비량 구분 온실가스 배출량(tCO2eq) 에너지 소비량 (TJ) Scope1 Scope2 합 계 중소기업은행 9개 자회사 740.435 1,712.492 2,452 47 ※ 참고 : 최종 온실가스 배출량은 소수점 이하 절사하여 정수단위로 표기하였음. 2024년 05월 17일 본 외부 검증인의 검증의견서는 의견서 발행일 현재로 유효한 것입니다. 의견서 발행일 이후 본 의견서를 열람하는 시점 사이에, 온실가스 배출량 산정에 중요한 영향을 미칠 수 있는 사건이나 상황이 발생할 수 있으며, 이로 인하여 본 검증의견서가 수정될 수도 있습니다. AO_PRJ
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 02 / 12
+##############################################################################################################
+case_id: Kepco_305-1_slot_d_challenge
+company: Kepco
+slot: slot_d
+element: Base year for calculation
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific year is explicitly declared as the BASE YEAR for GHG calculations
+  - Korean patterns: 기준연도: YYYY, YYYY년을 기준연도로, 기준년도, 기준 년도
+  - A year marked as (기준) or (Base) in a data table
+  - Text says e.g. 2021 (기준연도) or 2021 (Base year)
+PARTIAL if: A year is mentioned in passing but not declared as base year.
+MISSING if: No base year declaration or pattern is present.
+NOTE: A table showing multiple years of data alone is NOT a base year declaration.
+      BUT if one year is labeled (기준) or (Base) in that table → COVERED.
+Korean equivalents: 기준연도, 기준 연도, 기준년도
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=59
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0059_c0001
+한국전력 및 전력그룹사 온실가스 배출현황 한국전력과 전력그룹사는 기업 활동 전반의 온실가스 배출 정보를 면밀히 파악하고 직간접적으로 발생하는 온실가스를 체계적으로 관리하고자 Scope 1~3에 걸쳐 측정 중에 있습니다. 실효성 있는 탄소 중립 실현을 위해 한국전력과 전력그룹사는 국가 온실가스 감축목표(NDC), 전력수급기본계획 등 국가적 차원의 탄소중립 추진 계획에 따라 단계별 온실가스 감축 목표와 실행 전략을 적기에 수립·추진해 나가고 있습니다. 관련하여 혼소 발전, 재생에너지 발전량 증가, 신기술 개발 등을 통해 탄소중립 기반을 마련, 온실가스 배출량을 적극적으로 감축할 것입니다. 온실가스 배출현황 구분 내용 단위 2021년 2022년 2023년 한국전력 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq
+
+[Chunk 2] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0001
+회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �
+
+[Chunk 3] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0003
+1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원
+
+[Chunk 4] page=150
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0150_c0002
+�물질 배출량 질소산화물질(NOx) ton 5,632 4,264 3,331 황산화물질(SOx) ton 6,164 4,539 3,798 먼지 ton 369 342 188 * 과년도 데이터 오류 정정(환경정보공개시스템 공개 기준) 온실가스 ESG Data (환경) 회사명 구분 단위 2021 2022 2023 한국동서발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,711,636 29,091,757 27,103,040 Scope 2(간접배출) tCO2eq 96,685 63,859 72,467 Scope 3(기타배출) tCO2eq 10,759,573* 6,384,828 6,171,228 온실가스 배출 절감량 절감량(Scope 1+2) tCO2eq 2,097,439 3,652,705 1,980,109 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 682.0 416.0 482.1 Scope 2(간접배출) tCO2eq/억 원 2.0 0.9 1.3 Scope 3(기타배출) tCO2eq/억 원 224.3* 91.3 109.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,757 2,757 2,757 배출량 만tCO
+
+[Chunk 5] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0005
+제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 03 / 12
+##############################################################################################################
+case_id: Heathrow_305-1_slot_e_challenge
+company: Heathrow
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=107
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001
+REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.
+
+[Chunk 2] page=108
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002
+isation across the whole industry, including flights. Well-to-tank and Transmission & Distribution Well-to-tank (‘WTT’) emissions are “upstream” emissions related to the production and transportation of fuel to where it will be combusted. Transmission and Distribution (‘T&D’) are emissions from the transmission and distribution of energy to site. Although we track WTT and T&D emissions of our scope 3, we do not currently include these within our reporting. The industry standards we follow are still developing regarding the inclusion of WTT emissions, determining which aviation stakeholders should report them, and how they relate to attributing the benefits of SAF. Net Zero Plan Emission source Greenhouse gas emissions (tonnes CO2e) Objective Goal Greenhouse Gas Protocol Category Emissions Source Description 2019 2022 2023 2024 Net zero on the ground Total scope 1 greenhouse gas emissions1 (tonnes CO2e) 26,998 29,806 32,116 28,054 8 Stationary sources Fuel consumption utilities - Market-based - Location based 21,942 24,335 21,867 21,867 22,588 25,326 24,612 24,612 LPG for fire training 35 - 1 - 7 Mobile sources Operational vehicles and equipment 1,668 791 622 523 8 Process emissions Refrigerant losses 2,871 6,671 8,695 2,586 6 De-icer 482 477 210 333 Total scope 2 greenhouse gas emissions1 (tonnes CO2e) - - - - 8 Electricity Grid electricity consumption - Total Scope 2 market-based greenhouse gas emissions (tonnes CO2e) - Total Scope 2 location-based greenhouse gas emissions (tonnes CO2e) - 71,163 - 52,717 - 56,134 - 56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1:
+
+[Chunk 3] page=115
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0001
+We also agreed to report to the Directors misstatements (“reportable misstatements”) identified during our work at a level below overall materiality, as well as misstatements below that lower level that in our view warranted reporting for qualitative reasons. The Directors are responsible for deciding whether adjustments should be made to the Subject Matter Information in respect of those items. AREAS OF ASSURANCE FOCUS The Areas of Assurance Focus are those areas of our work that, in our professional judgement, require additional procedures. In the case of limited assurance, that means our procedures may be towards the upper end of those that might be expected for limited assurance. These areas were identified as part of our risk assessment and result of the assurance procedures performed, and include those areas of significant risk, areas that involved significant judgement or other areas where significant assurance effort was needed. This approach provides transparency about where we deemed it necessary to perform extra work. However, this does not imply - for limited assurance - the same level of assurance as would have been obtained under a reasonable assurance engagement. We considered the following areas to be Areas of Assurance Focus and discussed these with HAL’s management. Completeness of HAL’s organisational boundary for reported scope 1 and scope 2 greenhouse gas (‘GHG’) emissions Nature of the issue HAL applies an ‘operational control’ approach in determining its organisational boundary in line with the GHG Protocol guidance as set out in the Reporting Criteria, in order to report its GHG emissions for in scope operations. There is an increased risk that emission sources under HAL’s operational control may be omitted from reported scope 1 and scope 2 GHG emissions due to the scale of operations at Heathrow Airport and the number of external parties with operations at the site, for example airlines, handling companies and concessions, meaning there are a number of complexities involved in order for HAL to completely determine the organisational boundary for reporting purposes. As a result, we have determined this to be an Area of Assurance Focus. How our work addressed the areas of assurance focus In order to check whether the organisational boundary for reported scope 1 and scope 2 GHG emissions is complete, we: - Obtained a detailed understanding of the entity, its environment, and its organisational structure, focusing particularly on the nature, scale and
+
+[Chunk 4] page=107
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0002
+GP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table. We are committed to continuous improvement in our reporting and, for the first time in 2024, we have included WTT and transmission and distribution (‘T&D’) losses associated with our scopes 1 and 2 energy use. These energy losses are now reported as scope 3, under category 3 of our footprint. In 2024, we included a new data source that was previously not reported. This emission data is associated with the decommissioning of a testing facility for Heathrow’s business parking pod test track in Cardiff, 'Cardiff Test Track' which are now reported as part of our ‘On the Ground’ scope 3 emissions. Since the beginning of 2022, SAF has been regularly uplifted at Heathrow and forms part of our aeronautical charges incentive scheme. For the years 2022 and 2023, we have restated our 'Savings from SAF' on lifecycle aircraft GHG emissions due to updated processes for monitoring and improving our reporting. In 2024, SAF delivered lifecycle carbon savings of 92% on average. Guidance from professional bodies and standard setters on how to account for SAF is emerging and we are reviewing our reporting methods. We continue to report the savings from using SAF compared to regular jet fuel in our ‘Separately from the scopes’ table until further guidance is available. We are continuously improving the quality of our carbon footprint data to provide more frequent, accurate and accessible carbon reporting. Previously, Bureau Veritas UK Limited provided limited assurance for our GHG emissions data, covering January 1 2020 to December 31, 2023. PricewaterhouseCoopers LLP ('PwC') has performed independent limited assurance procedures over over selected sustainability performance metrics for the year ended 31 December 2024. For the results of that assurance process, see PwC's assurance report on page 113 alongside
+
+[Chunk 5] page=115
+chunk_id: 2024_UK_HeathrowAirport_Sustainablity_EN_p0115_c0002
+for reported scope 1 and scope 2 GHG emissions is complete, we: - Obtained a detailed understanding of the entity, its environment, and its organisational structure, focusing particularly on the nature, scale and contractual arrangements of operations at Heathrow Airport. - Performed a site visit at Heathrow Airport to understand and observe the operations, including the data gathering and reporting processes related to the GHG emissions. These locations included the Energy Centre and Terminal 4, as well as the surrounding areas where HAL and associated external parties operate. - Performed a flux analysis over monthly and year on year energy consumption to identify any unusual trends and obtained supporting explanations from management. - Performed a limited substantive test by tracing a sample of buildings from the Fixed Asset Register to the underlying GHG emissions data and inspected the relevant contractual documentation for these buildings in order to check that the application of the organisational boundary was consistent with the Reporting Criteria. - Performed a scanning analytic over energy related purchases in the period to identify any unexpected energy related suppliers who had been paid during the reporting period but were omitted from the reported scope 1 and 2 GHG emissions data and obtained supporting explanations from management. Element(s) of the Subject Matter Information most significantly impacted - Total scope 1 greenhouse gas emissions (tonnes CO2e) - Total scope 2 location-based greenhouse gas emissions (tonnes CO2e) - Total scope 2 market-based greenhouse gas emissions (tonnes CO2e) 115
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 04 / 12
+##############################################################################################################
+case_id: Siemens_305-1_slot_f_challenge
+company: Siemens
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=33
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0033_c0002
+of sold products2 - n/a - - - 3.11 Use of sold products - 134,133 - - - 3.12 End-of-life treatment of sold products - 3,659 - - - 3.13 Downstream leased assets - 2,963 - - - 3.14 Franchises3 - n/a - - - 3.15 Investments - 6,911 - - - Total Gross indirect (Scope 3) GHG emissions 179,222 159,144 (30)% - (2.7)% 1 Already accounted for within Scope 1 & 2 emissions in accordance with the GHG-Protocol 2 Not material for Scope 3 emissions 3 Not applicable The market-based GHG intensity ratio for this fiscal is 2,021 tCO2e/million €, and the location-based GHG intensity ratio is 2,028 tCO2e/million €. The total GHG intensity ratio is calculated by dividing the total GHG emissions by the total revenue as disclosed in Note 29 of the Consolidated Financial Statements for fiscal 2025. Siemens reports gross biogenic Scope 1 CO2 emissions from the combustion or biodegradation of biomass within the consolidated group, amounting to 14.8 ktCO2e. The gross biogenic Scope 3 CO2 emissions from the combustion or biodegradation of biomass of the consolidated group amount to 44,713 ktCO2e. The gross biogenic Scope 2 CO2 emissions (location-based and market-based) from the combustion or biodegradation of biomass are not considered significant based on materiality analysis conducted with emission factors from ecoinvent. Siemens had no unconsolidated but operationally controlled investees or joint arrangements during the reporting period. Consequently, Scope 1 emissions as well as Scope 2 emissions, both market-based and location-based from such entities amount to 0 ktCO2e. Scope 1 emissions and Scope 2 biogenic emissions from the combustion or biodegradation of biomass from unconsolidated companies also amount to 0 ktCO2e. Total gross Scope 1 GHG emissions
+
+[Chunk 2] page=34
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0034_c0001
+Sustainability Statement 34 Total gross Scope 2 GHG emissions Fiscal year 2025 (in ktCO₂e) Location-based Market-based Total gross Scope 2 GHG emissions 633.0 70.7 Electricity 594.4 47.0 District Heating 37.6 22.8 District Cooling 1.1 0.9 Share of contractual agreements used for the purchase of energy Fiscal year Type of instruments (in %) 2025 Total share of purchased energy bundled or unbundled with instruments in total energy consumption 83% Bundled with instruments 36% Guarantee of Origin 32% Renewable Energy Certificate 1% International Renewable Energy Certificate 0% others 3% Unbundled instruments 47% Guarantee of Origin 6% Renewable Energy Certificate 21% International Renewable Energy Certificate 21% others 0% Methodology for calculating GHG emissions: Scope 1 and 2 Scope Calculation method Scope 1 - The methodology for calculating Siemens’ Scope 1 GHG emissions is aligned with the GHG-Protocol. These emissions originate from Siemens’ locations and fleet operations and are categorized in stationary combustion (for example from natural gas or heating oil), mobile combustion (for example diesel and petrol), process emissions (for example from production processes) and fugitive emissions (for example from refrigerants). - For metered locations, emission factors respective to the media types are multiplied by the consumption at the locations. - For non-metered locations, emissions are estimated using proxy data from metered locations. Benchmarks are developed based on location type (office or industrial), regional conditions, rentable space, and utilization. Where country-specific data is unavailable, global benchmarks are applied. The consumption for non-metered locations is calculated by multiplying the benchmark by the total rentable space. Consumption data is then multiplied by the respective emission factors. - Fleet emissions are calculated using fuel consumption data (liters of petrol, diesel, liquid gas, bioethanol) multiplied by the relevant emission factors, in accordance with the GHG-Protocol. - Siemens uses the latest emission factors published by the IPCC or Department for Energy Security and
+
+[Chunk 3] page=26
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0026_c0001
+Sustainability Statement 26 Decarbonization levers Fiscal year Fiscal year Fiscal year Fiscal year 2019 2025 2030 2050 (base year) (target year) (target year) GHG emission (in ktCO₂e) Achieved GHG Emission Reduction (in %) SBTi target SBTi target Expected maximum GHG neutralization using carbon credits Siemens levers1, separated by compared to base year (in % of base year emissions) Scope 1 & 2 (market-based) 938 (62)% (90)% (90)% 10% Buildings & operations 664 (71)% Fleet 274 (39)% Scope 3 178,835 (11)% (30)% Upstream 11,081 0% Downstream 167,754 (12)% 1 The reported levers are valid for the whole Siemens Group and the sum might slightly diverge compared to other figures in this chapter due to consolidation and management effects. Building emissions, as part of our decarbonization levers, include Scope 1 emissions from stationary combustion for heating purposes and Scope 2 emissions related to buildings from electricity or from district heating and cooling. Emissions from operations consist of Scope 1 process emissions, stationary combustion, fugitive emissions, and mobile emissions from vehicles used on-site for production processes and Scope 2 emissions related to energy used during production processes. The emissions for the fleet include Scope 1 emissions related to mobile combustion and Scope 2 emissions from electric vehicles. Further details on our decarbonization levers and key actions can be found in chapter  2.2.5. Supporting our customers to reduce emissions In addition to reducing our footprint, we also leverage our offerings to enable emission reduction at our customers. Siemens w/o SHS has set a target to help customers avoid >1,000 million metric tons of CO2e cumulatively between fiscal 2023 and fiscal 2030 through its products, systems, solutions and services. Between the beginning of fiscal 2023 and the end of fiscal 2025, Siemens w/o SHS
+
+[Chunk 4] page=35
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0035_c0004
+ation factor derived from the average of total emissions from previously calculated asset types (excluding any high energy consuming asset types that may skew the factor). We assume that the average energy consumption per asset type is close to the real energy consumption. For leased buildings, the emissions are calculated using the same methodology as for Scope 1 and 2 location-based emissions. 3.15 Investments - Emissions for category 3.15 from SFS Project Investments are calculated in accordance with the GHG-Protocol and the Partnership for Carbon Accounting Financials (PCAF) Global GHG Standard, addressing annual emissions of existing financings in the reporting year. Siemens focuses on relevant projects in “GHG-intensive sectors” specifically coal and gas-fired power plants. Where possible, the project specific method is applied, using the Scope 1 & 2 emissions collected from the investee company directly and allocating them based on Siemens’ proportional share of total project costs (equity plus debt). If project-specific data is unavailable, Siemens applies the average data method as outlined in the GHG-Protocol Technical Guidance for Calculating Scope 3 Emissions. - For equity investments, the emissions are calculated in accordance with the GHG-Protocol using either a) publicly disclosed Scope 1 and 2 emissions from the investee, or b) estimated based on investee turnover and relevant sector emission factors (tCO2e/$ million turnover) from the South Pole database, or estimated averages based on investee emissions from a) and b). Emissions are reported based on the proportional share of investment. Primary data was used to calculate 0% of the calculated Scope 3 GHG emissions across all categories. The emissions factors used to calculate or measure GHG emissions were chosen as these represent market practice.
+
+[Chunk 5] page=27
+chunk_id: 2025_DE_Siemens_Sustainability_EN_p0027_c0002
+30% 179,222 2030 (30)% - - 98% (11)% Reduce Scope 1 & 2 emissions by 90% and compensate residual emissions Siemens w/o SHS 691 2030 (90)% Scope 1 58% 1% (66)% Scope 2 42% Reduce Scope 3 emissions by 30% by fiscal 2030 and achieve net-zero by 2050 174,558 2030 (30)% - - 99% (11)% Pursue Scope 3 upstream emissions reduction by 20% 8,107 2030 (20)% - - 3% 1% Reduce Scope 1, 2 & 3 emissions by 90% and neutralize residual emissions Siemens Healthineers 4,524 2050 (90)% Scope 1 3% 100% (7)% Scope 2 2% Scope 3 95% Reduce Scope 1 & 2 emissions by 90% 247 2030 (90)% Scope 1 63% 16% (49)% Scope 2 37% Reduce material Scope 3 emissions by 28% 4,277 2030 (28)% - - 84% (4)% 1 Scope 2 emissions are calculated using the market-based approach. 2 Target measured against comparative baseline Methodology: The target setting involved the use of climate scenarios consistent with SBTi target pathway and included internal assumptions such as business forecasts and greenhouse gas budgets and allocation approaches. Together, our decarbonization targets cover the complete value chain including all own sites worldwide and all GHGs under the GHG-Protocol. Biogenic CO2 emissions are excluded. The base year emissions inventory covers 100% of the specified scope and all Scope 3 categories as reported in  2.2.6. The Siemens Healthineers Scope 3 target covers the categories 3.1, 3.4, 3.6 and 3.11. Annual monitoring ensures the continuous alignment of GHG targets with inventory boundaries
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 05 / 12
+##############################################################################################################
+case_id: Samsung_305-1_slot_f_challenge
+company: Samsung
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=83
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0083_c0005
+�지 사용량, 재생에너지 사용량, 온실가스 원단위 배출량, 용수 사용량 등의 지표를 관리하고 있습니다. 또한 제품 측면에서는 재생원료 사용 비율, 폐전자제품 회수량, 제품 평균 소비 전력량 등의 지표 를 선정해 관리하고 있습니다. P.11, 22, 62-68, CDP: M.07 b) 직접(Scope 1), 간접(Scope 2), 그리고 기타(Scope 3) 온실가스 배출량 및 관련 리스크 삼성전자는 온실가스 배출량을 Scope 1, 2, 3로 구분하여 산출하고 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.68, 72, CDP: M.07 c) 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과 삼성전자는 기후변화 관련 리스크와 기회 관리를 위한 기업의 목표와 목표 대비 성과를 지속가능경영보고서, CDP 등을 통해 공개하고 있습니다. P.11, 22, CDP: M.07 TCFD(기후변화 관련 재무정보공개 협의체) 대조표 Our Company Appendix Facts & Figures Principle Planet People
+
+[Chunk 2] page=26
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0026_c0001
+삼성전자 지속가능경영보고서 2025 26 밸류체인 탄소 감축 DS부문은 Scope 3 간접 배출량 관리 강화를 위해 사내 협의체를 운영하며, 구체적인 감축 목표를 수립하고 실행 계획을 마련하여 체계적인 Scope 3 배출량 감축을 추진하고 있습니다. 업스트림 감축 활동 Scope 3 배출량을 감축하기 위해 업스트림 항목별 중장기 감축 로드맵을 수립하여 Scope 3 감축 이행 전략을 구체화하고, 단계적으로 협력회사의 역량을 강화하고 있습니다. 협력회사의 온실가스 관리 역량을 높이기 위해 실무자 교육과 경영진 대상 세미나를 정기적으로 실시하고, 협력회사가 직접 배출량을 산정하고 관리할 수 있도록 전용 툴을 지원하고 있습니다. 또한 한국반도체산업협회 (KSIA)와 함께 반도체 업계 내 Scope 3 배출량 조사를 위한 표준화된 업계 공통 양식을 개발하였고, 배출 비중이 높은 주요 협력회사는 일대일 컨설팅을 통해 맞춤형 감축 목표 수립을 독려하고 있습니다. 이러한 노력의 결과, 협력회사의 감축 목표 수립률은 2023
+
+[Chunk 3] page=21
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0021_c0002
+�에 대해 관리하고, 환경보전위원회는 자원순환과 오염물질, 재이용확대위원회는 수자원 영역에 대한 세부적인 활동 목표를 수립하고 이행 성과를 관리하고 있습니다. 온실가스 감축, 재생에너지 전환, 전력 절감 등 환경 성과를 DS부문 임원 및 조직 평가에 필수적으로 반영하고 있습니다. 환경경영 시스템 환경 리스크 관리 환경경영 거버넌스 2024년 실적 및 2025년 목표 환경 목표 기후변화 · DS부문 탄소중립(Scope 1, 2) 달성 2050년 2024년 실적 · Scope 1, 2 배출량 1,455만 톤CO₂e 1) · 재생에너지 전환율 24.8% · 고효율 RCS 2) 촉매(처리효율 97%) 개발 · Scope 1, 2 배출량 1,450만 톤CO₂e · 재생에너지 전환율 26% · 고효율 RCS 촉매(처리효율 97%) 적용 2025년 목표 오염물질 · DS부문 사업장 대기·수질오염물질 자연상태 수준으로 처리 할 수 있는 신기술 개발 2040년 · (대기) 국내 제조사업장 NOx 감축량 7) 508톤 · (
+
+[Chunk 4] page=72
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0072_c0004
+�목별(14개) 내부 산정 기준을 수립하였고, 전 항목에 대한 제3자 검증을 완료함. 일부 Scope 3 배출 항목의 온실가스 배출량(구매한 제품 및 서비스, 자본재)은 협력회사의 데이터 확보가 가능한 Y-1년 기준으로 산정되었음 2) Scope 3 일부 카테고리(제품사용 등)에 대해 산정방법/기준(산정 자동화, 최신 배출계수 적용 등) 및 데이터 정합성 개선하여 기존 2022년, 2023년 데이터를 수정 공시함 Our Company Appendix Facts & Figures Principle Planet People
+
+[Chunk 5] page=68
+chunk_id: 2025_KR_Samsung_Sustainability_KO_p0068_c0001
+삼성전자 지속가능경영보고서 2025 68 환경성과 온실가스 관리(Scope 1, 2) 1),2) 2022년 2023년 2024년 (시장기반) 온실가스 배출량 천 톤CO₂e 15,053 13,291 14,889 직접 배출량(Scope 1) 천 톤CO₂e 5,972 3,733 4,725 간접 배출량(Scope 2) 천 톤CO₂e 9,081 9,558 10,164 (지역기반) 온실가스 배출량 천 톤CO₂e 19,892 18,303 19,736 직접 배출량(Scope 1) 천 톤CO₂e 5,972 3,733 4,725 간접 배출량(Scope 2) 천 톤CO₂e 13,920 14,570 15,011 온실가스 배출량 집약도 3), 4) 톤CO₂e/억 원 5 6 5 온실가스 배출원별 배출량 4) 천 톤CO₂e 15,053 13,291 14,889 CO₂ 천 톤CO₂e 10,336 10,778 11,415 CH₄ 천 톤CO₂e 3 3 4 N₂O 천 톤CO₂e 530 540 265 HFCs 천 톤CO₂e 679 314 564 PFCs 천 톤CO₂e 3,333 1,533 913 SF₆ 천 톤
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 06 / 12
+##############################################################################################################
+case_id: Kepco_305-1_slot_g_challenge
+company: Kepco
+slot: slot_g
+element: Standards and methodologies used (e.g. GHG Protocol, third-party verification)
+selection label (DO NOT COPY AS GOLD): partial
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: A specific standard or methodology is explicitly named (e.g. GHG Protocol, ISO 14064, WRI).
+PARTIAL if ANY of the following:
+  - Third-party verification is mentioned (e.g. DNV, SGS, Bureau Veritas) without naming the standard
+  - internationally recognised methodology or similar vague reference
+  - Assurance or verification report is referenced without specifying the standard
+  → IMPORTANT: Any mention of third-party verification or assurance → at minimum partial
+MISSING if: No mention of any standard, methodology, or verification at all.
+Korean equivalents: GHG 프로토콜, 온실가스 프로토콜, 검증, 인증, 제3자 검증, ISO 14064
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=59
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0059_c0003
+Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 한국동서발전 Scope 1(직접배출) tCO2eq 32,711,636 29,091,757 27,103,040 Scope 2(간접배출) tCO2eq 96,685 63,859 72,467 Scope 3(기타배출) tCO2eq 10,759,573 6,384,828 6,171,228 대기오염 물질 관리 강화 한국전력 및 전력그룹사는 황산화물(SOx), 질소산화물(NOx), 먼지(TSP) 등 대기오염물질 배출량 저감 및 대기환경 개선을 위해 발전설비에 배연탈황설비, 전기집진기, 탈질설비 등의 환경오염 방지시설을 구축하여 운영하고 있습니다. 또한, 발전시설에 황산화물(SOx), 질소산화물(NOx), 먼지(TSP) 등 대기오염 물질을 측정 할 수 있는 굴뚝자동측정기(TMS)를 부착하여 배출량을 실시간으로 측정 및 점검하고 있으며, 한국환경공단에서 운영하는 굴뚝원격감시체계(Clean SYS)를 통해 �
+
+[Chunk 2] page=181
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0181_c0001
+주제 코드 지표 페이지 온실가스 배출 및 에너지 계획 IF-EU-110a.1 (1) 글로벌 총 Scope 1 총량 (2) ‌배출량 중 제한 규정상 적용되는 비율 (3) ‌배출량 보고 규정상 적용되는 비율 149 (1) 14,619만 tCO₂eq (2) 100% (3) 100% * Scope 1 배출량은 한국전력 및 발전자회사 6곳을 기준으로 산정하였습니다. IF-EU-110a.2 전력공급과 관련된 온실가스(GHG) 배출량 149 IF-EU-110a.3 Scope 1 배출량 관리를 위한 장단기 전략과 배출량 감축 목표, 배출량 감축 목표 대비 성과 분석에 대한 논의 55-64 IF-EU-110a.4 신재생에너지 공급의무화제도(RPS) 목표 달성률 65-69 대기질 관리 IF-EU-120a.1 (1) NOx 배출량 (2) SOx 배출량 (3) 먼지 배출량 59 물 관리 IF-EU-140a.1 순 용수 소비량 151 IF-EU-140a.2 수량 및/또는 수질 허가, 기준, 규정과 관련된 위반 건수 - F-EU-140a.3 물 관리 위험의 설명 및 이러한 위험 경감
+
+[Chunk 3] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0004
+�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3
+
+[Chunk 4] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0003
+1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원
+
+[Chunk 5] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0005
+제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 07 / 12
+##############################################################################################################
+case_id: Incheon_305-1_slot_b_challenge
+company: Incheon
+slot: slot_b
+element: Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: At least 3 specific gas types are explicitly named (e.g. CO2, CH4, N2O, SF6, HFCs).
+PARTIAL if ANY of the following:
+  - Fuel types or combustion sources are listed (e.g. LNG, diesel, gasoline, petrol, 휘발유, 경유, LPG)
+  - Korean combustion terms appear: 고정연소, 이동연소
+  - Only CO2 is mentioned without other gases
+  → IMPORTANT: If you see LNG, diesel, gasoline, 휘발유, 경유, LPG, 고정연소, or 이동연소 → always return "partial", never "missing"
+MISSING if: No gas types AND no fuel types AND no combustion sources are mentioned at all.
+Korean equivalents: 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O), 육불화황(SF6)
+Korean fuel terms that indicate PARTIAL: 휘발유, 경유, LPG, LNG, 고정연소, 이동연소
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=128
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0128_c0004
+1.65 1.68 황산화물(SO₂) (법적기준 18) ppm 0 0 0.19 질소산화물(NO₂) (법적기준 50) ppm 4.27 3.00 2.09 일산화탄소(CO) (법적기준 50) ppm 2.71 3.27 4.00 염화수소(HCI) (법적기준 15) ppm 1.56 1.60 0.89 1) 실시간 대기 모니터링 3개소 측정결과 평균
+
+[Chunk 2] page=128
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0128_c0003
+2.5) ㎍/m 3 19 18 16 아황산가스(SO₂) ppm 0.004 0.004 0.004 이산화질소(NO₂) ppm 0.012 0.013 0.011 일산화탄소(CO) ppm 0.60 0.60 0.6 오존(O₃) ppm 0.037 0.037 0.034 수질 총 수질오염물질 배출량 ton 10.45 24.36 39.86 화학적 산소요구량(COD) (법적기준 20) ppm 4.30 6.47 7.15 생물화학적 산소요구량(BOD) (법적기준 10) ppm 0.40 0.68 1.15 총 유기탄소(TOC) ppm - 4.48 4.05 부유물질량(SS) (법적기준 10) ppm 0.10 0.24 1.15 총질소(T-N) (법적기준 20) ppm 5.02 4.50 5.13 총인(T-P) (법적기준 2) ppm 0.23 0.13 0.15 자원회수시설 배출가스 측정결과 (소각로 2기 평균값) 먼지(PM) (법적기준 26) ㎍/m 3 1.84 1.65 1.68 황산화물(SO₂) (법적기준 18) ppm 0 0 0.19 질소산화�
+
+[Chunk 3] page=127
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0127_c0004
+인해 2023년은 취수량보다 사용량이 많게 측정(수백개의 계량값 합산과정 중 계량기 오차는 필연적으로 발생) 5) 2023년도 용수사용량 기재 오류로 수정 (기존) 978,748 → (변경) 928,748 6) 사용량, 매출액 모두 증가하였으나, 매출액 증가율이 사용량 증가율보다 높아 용수집약도(사용량/매출액)는 감소 7) 폐수량 일부에 대한 합계(소방대분소, 모형항공기, 동절기장비고)이며, 2024년부터 위탁처리량(Scope 3)에 포함하여 통합 관리
+
+[Chunk 4] page=38
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0038_c0002
+�, 중수도시설 등 부대 건물까지 모두 국가 공인 녹색건축 인증을 획득함으로써, 공항 단지 전체가 지속가능한 인프라 구축에 앞장서고 있음을 대외적으로 인정받았습니다. 녹색건축 기준 내재화 국제표준에 부합하는 탄소관리체계 구축을 위해, 직·간접(Scope 1, 2) 및 가치사슬(Scope 3) 전반의 탄소배출원을 포괄하는 감축 전략과 실행계획을 수립하고, 이해관계자와의 파트너십 기반 이행체계를 체계적으로 정립 하였습니다. 이러한 노력의 결과, 2023년 국내 공항 최초로 국제공항협의회(ACI) 공항탄소인증(ACA) Level 4를 획득하며 공항 전 과정에 걸친 온실가스 통합관리 역량을 국제적으로 입증했습니다. 특히 아시아 공항 최초 RE100 가입, 대규모 태양광 발전단지 조성, 수소항공기 인프라 구축 등은 글로벌 벤치마크 사례로 평가받고 있습니다. 공사는 이에 안주하지 않고, 국제표준을 기반으로 한 탄소관리체계를 더욱 고도화하고 이해관계자와의 �
+
+[Chunk 5] page=40
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002
+할 계획입니다. 연도별 온실가스 배출량을 Scope별로 관리하고 있으며, 탄소중립 목표 달성을 위해 주요 배출원을 체계적으로 모니터링하고 있습니다. 2040 RE100 달성 지표 및 목표 온실가스 배출 관리 지표 2040 RE100 이행 목표 중장기(~2030) 추진 계획 구분 2024 2025 2030 2035 2040 RE100 달성률 10% 15% 60% 80% 100% 전력사용량 470 501 490 596 599 재생에너지 공급량 47 75 294 477 599 단위 : GWh 2030년까지 재생에너지 발전 및 외부구매 확대로 RE60 달성 목표 2024 예상전력 사용량 지역 발전량 태양광 발전량 외부구매 2026 2029 2025 2028 2027 2030 RE60 단위 : 천tCO2eq 인천국제공항공사 온실가스 배출 관리 지표 구분 2022 2023 2024 합계(Scope 1+Scope 2+Scope 3) 11,401,821 15,609,988 17,692,201 Scope 1(소계) 22,351 38,725 22,672 이동배출 차량 3,288 2,827 2,817 고정배출 보일러 2,253 3
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 08 / 12
+##############################################################################################################
+case_id: IBK_305-1_slot_c_challenge
+company: IBK
+slot: slot_c
+element: Biogenic CO2 emissions (reported separately)
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if: Biogenic CO2 emissions are explicitly reported as a SEPARATE numeric figure (e.g. "X tCO2e biogenic").
+PARTIAL if: A specific biogenic source is quantified but not clearly labeled as biogenic CO2
+            OR biogenic CO2 is explicitly discussed as "outside of scope" with a value given.
+MISSING if ANY of the following:
+  - Only a general mention of biogenic sources (biofuels, biomass, SAF) without a numeric figure
+  - Only methodology notes about biogenic emissions without a figure
+  - SAF savings or avoided emissions mentioned (not the same as reporting biogenic CO2)
+  - The word "biogenic" appears only in passing without a separate disclosure
+  → IMPORTANT: A mention or methodology note alone is NOT enough for partial. A numeric value must be present.
+Korean equivalents: 바이오제닉, 생물성 탄소, 바이오매스
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=146
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0146_c0004
+(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표
+
+[Chunk 2] page=64
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0064_c0002
+tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81 246.24 출장 tCO2eq 4,220.92 3,073.67 3,232.08 3,485.34 직원통근 tCO2eq 4,318.36 12,385.86 12,048.62 11,774.25 합계 tCO2eq 10,039.43 16,972.14 16,759.73 16,720.08 * 전년도까지는 Scope 1, 2를 기준으로 소수점 절사로 인한 합계 차이를 보정하였으나, 올해부터는 개별 검증서를 기준으로 수치를 명기하여 Scope 1, 2의 합계와 Scope 1 & 2 수치에 일부 차이가 발생합니다. (참고: 온실가스 배출량 검증 의견서의 온실가스 배출량은 사업장별로 소수점 단위 이하 절사 후 합산 기준을 적용한 값으로 차이 발생) ** 산정 경계 및 방식 변경에 따른 Scope 3 과거 산출 수치 조정 온실가스 배출 (전행 기준) 온실가스 배출 목표 및 실제 배출량 (단위: tCO2eq, 전행 기준) Scope 1(직접 배출량) Scope 2(간접 배출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지�
+
+[Chunk 3] page=147
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0147_c0001
+온실가스 배출량 검증 의견서 2/2 5. 검증 한계 온실가스 배출량은 검증 범위의 데이터 한계, 불확실성 등 요인에 따라 영향을 받을 수 있으며 이에 따른 고유 한계가 존재할 수 있습니다. 6. 검증 결론 검증범위에 한하여 ISO 14064-3 검증절차를 통해 검증한 중소기업은행 9개 자회사의 온실가스 배출량에 오류 및 허위사실이 발견되지 않았습니다. l 부록. 온실가스 배출량 및 에너지 소비량 구분 온실가스 배출량(tCO2eq) 에너지 소비량 (TJ) Scope1 Scope2 합 계 중소기업은행 9개 자회사 740.435 1,712.492 2,452 47 ※ 참고 : 최종 온실가스 배출량은 소수점 이하 절사하여 정수단위로 표기하였음. 2024년 05월 17일 본 외부 검증인의 검증의견서는 의견서 발행일 현재로 유효한 것입니다. 의견서 발행일 이후 본 의견서를 열람하는 시점 사이에, 온실가스 배출량 산정에 중요한 영향을 미칠 수 있는 사건이나 상황이 발생할 수 있으며, 이로 인하여 본 검증의견서가 수정될 수도 있습니다. AO_PRJ
+
+[Chunk 4] page=141
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0141_c0003
+. 또한, 탄소중립 달성을 위해 내부 탄소배출량 외에도 금융자산 배출량을 측정하여, 기후변화 관련 위험과 기회를 관리하고 있습니다. 64, 67 b) Scope 1, Scope 2 및 Scope 3 온실가스 배출량 및 관련 위험 매년 온실가스 배출량 데이터를 지속가능경영보고서와 CDP보고서를 통해 공개하고 있습니다. 64, 67 c) 기후변화와 관련된 위험과 기회를 관리하기 위해 조직에서 사용하는 목표 및 목표 대비 성과 국책은행이자 기업시민으로서의 모범적 실천을 위해 IBK 2040 탄소중립이라는 진취적인 목표를 정하고, 온실가스 배출량을 지표로 활용하여 모니터링을 실시하고 있습니다. IBK 2040 탄소중립은 기준연도를 2020년으로 하여, 2040년까지의 탄소중립 달성을 목표로 하고 있으며, 환경〮에너지경영시스템 도입 및 전기차 보급 확대 등의 노력을 기울이고 있습니다. 또한, 자체 배출량뿐만 아니라 금융자산에 대해 탄소중립 달성 목표를 2050년으로 설정하였습니다. 금융배출량 감축 목표 설정의 객�
+
+[Chunk 5] page=137
+chunk_id: 2024_KR_IBKBank_Sustainability_KO_p0137_c0001
+GRI Index GRI Standards Disclosure Indicators Page 비고 GRI 305: Emissions 305-1 직접 온실가스 배출량(Scope 1) 64 305-2 간접 온실가스 배출량(Scope 2) 64 305-3 기타 간접 온실가스 배출량(Scope 3) 64 305-4 온실가스 배출 집약도 64 305-5 온실가스 배출 감축 65 GRI 306: Waste 306-3 폐기물 발생 66 306-4 폐기물 재활용 66 GRI 401: Employment 401-1 신규채용 및 이직 95-96 401-3 육아휴직 102 GRI 403: Occupational Health and Safety 403-1 산업안전보건경영시스템 104, 106 403-2 유해요인 식별, 위험성 평가 및 사고 조사 105 403-3 작업장 보건 서비스 106 403-4 작업장 보건 및 안전 관련 노동자 참여, 자문 및 커뮤니케이션 106 403-6 근로자 건강증진 91, 103, 107-108 403-7 작업장 보건 및 안전 영향의 예방 및 완화 105-106 안전보건관리규정 제5장 사고 조사 및 대책 수립 제6장 위험성 평가 403-9 업무상 재해 105 GRI 404: Training and Education 404-2 임직원
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 09 / 12
+##############################################################################################################
+case_id: Kepco_305-1_slot_e_challenge
+company: Kepco
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=59
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0059_c0001
+한국전력 및 전력그룹사 온실가스 배출현황 한국전력과 전력그룹사는 기업 활동 전반의 온실가스 배출 정보를 면밀히 파악하고 직간접적으로 발생하는 온실가스를 체계적으로 관리하고자 Scope 1~3에 걸쳐 측정 중에 있습니다. 실효성 있는 탄소 중립 실현을 위해 한국전력과 전력그룹사는 국가 온실가스 감축목표(NDC), 전력수급기본계획 등 국가적 차원의 탄소중립 추진 계획에 따라 단계별 온실가스 감축 목표와 실행 전략을 적기에 수립·추진해 나가고 있습니다. 관련하여 혼소 발전, 재생에너지 발전량 증가, 신기술 개발 등을 통해 탄소중립 기반을 마련, 온실가스 배출량을 적극적으로 감축할 것입니다. 온실가스 배출현황 구분 내용 단위 2021년 2022년 2023년 한국전력 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq
+
+[Chunk 2] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0004
+�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3
+
+[Chunk 3] page=59
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0059_c0003
+Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 한국동서발전 Scope 1(직접배출) tCO2eq 32,711,636 29,091,757 27,103,040 Scope 2(간접배출) tCO2eq 96,685 63,859 72,467 Scope 3(기타배출) tCO2eq 10,759,573 6,384,828 6,171,228 대기오염 물질 관리 강화 한국전력 및 전력그룹사는 황산화물(SOx), 질소산화물(NOx), 먼지(TSP) 등 대기오염물질 배출량 저감 및 대기환경 개선을 위해 발전설비에 배연탈황설비, 전기집진기, 탈질설비 등의 환경오염 방지시설을 구축하여 운영하고 있습니다. 또한, 발전시설에 황산화물(SOx), 질소산화물(NOx), 먼지(TSP) 등 대기오염 물질을 측정 할 수 있는 굴뚝자동측정기(TMS)를 부착하여 배출량을 실시간으로 측정 및 점검하고 있으며, 한국환경공단에서 운영하는 굴뚝원격감시체계(Clean SYS)를 통해 �
+
+[Chunk 4] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0005
+제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량
+
+[Chunk 5] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0001
+회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 10 / 12
+##############################################################################################################
+case_id: Kepco_305-1_slot_f_challenge
+company: Kepco
+slot: slot_f
+element: Consolidation approach (equity share, financial control, operational control)
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - equity share, financial control, or operational control is explicitly stated
+  - Ownership percentage (e.g. 20% 이상 지분) is used as the basis for including entities → equity share approach
+  - Korean patterns: 운영통제, 재무적 통제, 지분율, 지분법, 지배력, 소유지분
+  - Statement that emissions are calculated based on equity ownership percentage
+PARTIAL if: Reporting boundary is described (which entities included) but approach name not stated.
+MISSING if: No consolidation approach or boundary information present at all.
+NOTE: Describing WHAT is included is not the same as stating the APPROACH.
+      BUT ownership percentage basis → equity share → COVERED.
+Korean equivalents: 운영통제, 재무적 통제, 지분율, 지분법, 보고경계, 연결범위
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0003
+1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원
+
+[Chunk 2] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0005
+제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량
+
+[Chunk 3] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0004
+�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3
+
+[Chunk 4] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0002
+,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) 만tCO2eq -195,484 57,843 4,524 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 0.7 0.7 0.7 Scope 2(간접배출) tCO2eq/억 원 32.7 28.7 27.5 Scope 3(기타배출) tCO2eq/억 원 - - 2.2 배출권거래제 이행 실적 할당량 만tCO2eq 294 294 294 배출량 만tCO2eq 311 305 305 한국남동발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 6,292,987 1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원
+
+[Chunk 5] page=149
+chunk_id: 2024_KR_Kepco_Sustainability_KO_p0149_c0001
+회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 11 / 12
+##############################################################################################################
+case_id: Incheon_305-1_slot_d_challenge
+company: Incheon
+slot: slot_d
+element: Base year for calculation
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific year is explicitly declared as the BASE YEAR for GHG calculations
+  - Korean patterns: 기준연도: YYYY, YYYY년을 기준연도로, 기준년도, 기준 년도
+  - A year marked as (기준) or (Base) in a data table
+  - Text says e.g. 2021 (기준연도) or 2021 (Base year)
+PARTIAL if: A year is mentioned in passing but not declared as base year.
+MISSING if: No base year declaration or pattern is present.
+NOTE: A table showing multiple years of data alone is NOT a base year declaration.
+      BUT if one year is labeled (기준) or (Base) in that table → COVERED.
+Korean equivalents: 기준연도, 기준 연도, 기준년도
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=40
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002
+할 계획입니다. 연도별 온실가스 배출량을 Scope별로 관리하고 있으며, 탄소중립 목표 달성을 위해 주요 배출원을 체계적으로 모니터링하고 있습니다. 2040 RE100 달성 지표 및 목표 온실가스 배출 관리 지표 2040 RE100 이행 목표 중장기(~2030) 추진 계획 구분 2024 2025 2030 2035 2040 RE100 달성률 10% 15% 60% 80% 100% 전력사용량 470 501 490 596 599 재생에너지 공급량 47 75 294 477 599 단위 : GWh 2030년까지 재생에너지 발전 및 외부구매 확대로 RE60 달성 목표 2024 예상전력 사용량 지역 발전량 태양광 발전량 외부구매 2026 2029 2025 2028 2027 2030 RE60 단위 : 천tCO2eq 인천국제공항공사 온실가스 배출 관리 지표 구분 2022 2023 2024 합계(Scope 1+Scope 2+Scope 3) 11,401,821 15,609,988 17,692,201 Scope 1(소계) 22,351 38,725 22,672 이동배출 차량 3,288 2,827 2,817 고정배출 보일러 2,253 3
+
+[Chunk 2] page=38
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0038_c0002
+�, 중수도시설 등 부대 건물까지 모두 국가 공인 녹색건축 인증을 획득함으로써, 공항 단지 전체가 지속가능한 인프라 구축에 앞장서고 있음을 대외적으로 인정받았습니다. 녹색건축 기준 내재화 국제표준에 부합하는 탄소관리체계 구축을 위해, 직·간접(Scope 1, 2) 및 가치사슬(Scope 3) 전반의 탄소배출원을 포괄하는 감축 전략과 실행계획을 수립하고, 이해관계자와의 파트너십 기반 이행체계를 체계적으로 정립 하였습니다. 이러한 노력의 결과, 2023년 국내 공항 최초로 국제공항협의회(ACI) 공항탄소인증(ACA) Level 4를 획득하며 공항 전 과정에 걸친 온실가스 통합관리 역량을 국제적으로 입증했습니다. 특히 아시아 공항 최초 RE100 가입, 대규모 태양광 발전단지 조성, 수소항공기 인프라 구축 등은 글로벌 벤치마크 사례로 평가받고 있습니다. 공사는 이에 안주하지 않고, 국제표준을 기반으로 한 탄소관리체계를 더욱 고도화하고 이해관계자와의 �
+
+[Chunk 3] page=126
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001
+125 Appendix Introduction ESG Report Appendix 2024/2025 인천국제공항공사 지속가능경영보고서 Sustainability Management Fact Book 수상 및 단체 가입 현황 재무데이터 공시 기준 및 이니셔티브 ISO 26000 제3자 검증의견서 Fact Book 환경 구분 단위 2022 2023 2024 온실가스 합계(Scope 1+Scope 2+Scope 3) tCO2eq 11,401,821 15,609,988 17,692,201 Scope 1(소계) tCO2eq 22,351 38,725 22,672 고정배출 차량 tCO2eq 3,288 2,827 2,817 보일러 tCO2eq 2,253 3,728 207 버너 tCO2eq 76 55 63 소방훈련 tCO2eq 61 23 25 프로세스 배출 비상발전기 tCO2eq 11 25 12 폐기물처리(소각) tCO2eq 15,385 19,172 17,291 하·폐수처리 tCO2eq 644 1,530 1,813 냉매손실 tCO2eq 634 11,365 446 Scope 2(소계) tCO2eq 183,098 184,464 183,678 전력 tCO2eq 159,049 165,169 179,962 열(스팀) tCO2eq 24,049 19,295 3,716 Scope 3(소계)
+
+[Chunk 4] page=127
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0127_c0004
+인해 2023년은 취수량보다 사용량이 많게 측정(수백개의 계량값 합산과정 중 계량기 오차는 필연적으로 발생) 5) 2023년도 용수사용량 기재 오류로 수정 (기존) 978,748 → (변경) 928,748 6) 사용량, 매출액 모두 증가하였으나, 매출액 증가율이 사용량 증가율보다 높아 용수집약도(사용량/매출액)는 감소 7) 폐수량 일부에 대한 합계(소방대분소, 모형항공기, 동절기장비고)이며, 2024년부터 위탁처리량(Scope 3)에 포함하여 통합 관리
+
+[Chunk 5] page=34
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0034_c0003
+� 탄소중립 이행 추진 시나리오 가치사슬 탄소배출 감축 주요사업 및 목표 단위 : 천tCO2eq 분야 주요 사업 감축목표 항공기 - 지속가능항공유 사용 확대 (SAF), 수소항공기 도입 - 지상전원(AC-GPS) - 지상이동 최적경로(A-SMGCS) 9,410,000 승객접근 - 그린모빌리티 및 충전인프라 확대 359,000 지상조업 - 전기조업장비 충전인프라 구축 20,000 기타 (도시가스 직원이동 등) - 입주사 조리시설 전환 - 국외출장 SAF항공기 이용, 승용차 요일제 등 6,500 감축수단 항공기 승객접근 96% 3.67% 지상조업0.20% 기타 0.07% 1. 공사 직접 감축 (scope 1,2) 2. 이해관계자 감축 지원(scope 3) 28 26 24 22 20 18 16 14 12 10 400 350 300 250 200 150 100 50 0 ‘22년 ‘22년 ‘35년 ‘35년 ‘30년 ‘30년 ‘40년 ‘40년 ‘45년 ‘45년 182 316 262 323 367 21.1 18.3 23.8 26.7 82 151 65 0 17.5 17.3 17.4 16.5 11.
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:
+
+
+##############################################################################################################
+CASE 12 / 12
+##############################################################################################################
+case_id: Incheon_305-1_slot_e_challenge
+company: Incheon
+slot: slot_e
+element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+selection label (DO NOT COPY AS GOLD): missing
+
+CURRENT SLOT RULE
+--------------------------------------------------------------------------------------------------------------
+COVERED if ANY of the following:
+  - A specific GWP source is cited (e.g. IPCC AR5, IPCC AR6, AR6, AR5)
+  - IPCC 가이드라인 or IPCC guidelines mentioned as calculation basis
+  - ISO 14064 mentioned as calculation standard
+  - 국가별 배출계수 or country-specific emission factors explicitly referenced
+  - Footnote or methodology note cites IPCC, ISO 14064, or national emission factor database
+PARTIAL if ANY of the following:
+  - Emission factors are mentioned but the GWP version is not specified
+  - A general reference to internationally recognised standards without naming IPCC version
+  - Emission factors are used but only the source organisation is named (e.g. ADEME, IEA, DEFRA)
+  → IMPORTANT: If any emission factor source is named at all → at minimum partial, never missing
+MISSING if: No mention of emission factors, GWP values, or calculation methodology sources at all.
+Korean equivalents: 지구온난화지수, GWP, 배출계수, IPCC
+
+FROZEN TOP-5 EVIDENCE
+--------------------------------------------------------------------------------------------------------------
+
+[Chunk 1] page=38
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0038_c0002
+�, 중수도시설 등 부대 건물까지 모두 국가 공인 녹색건축 인증을 획득함으로써, 공항 단지 전체가 지속가능한 인프라 구축에 앞장서고 있음을 대외적으로 인정받았습니다. 녹색건축 기준 내재화 국제표준에 부합하는 탄소관리체계 구축을 위해, 직·간접(Scope 1, 2) 및 가치사슬(Scope 3) 전반의 탄소배출원을 포괄하는 감축 전략과 실행계획을 수립하고, 이해관계자와의 파트너십 기반 이행체계를 체계적으로 정립 하였습니다. 이러한 노력의 결과, 2023년 국내 공항 최초로 국제공항협의회(ACI) 공항탄소인증(ACA) Level 4를 획득하며 공항 전 과정에 걸친 온실가스 통합관리 역량을 국제적으로 입증했습니다. 특히 아시아 공항 최초 RE100 가입, 대규모 태양광 발전단지 조성, 수소항공기 인프라 구축 등은 글로벌 벤치마크 사례로 평가받고 있습니다. 공사는 이에 안주하지 않고, 국제표준을 기반으로 한 탄소관리체계를 더욱 고도화하고 이해관계자와의 �
+
+[Chunk 2] page=40
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0040_c0002
+할 계획입니다. 연도별 온실가스 배출량을 Scope별로 관리하고 있으며, 탄소중립 목표 달성을 위해 주요 배출원을 체계적으로 모니터링하고 있습니다. 2040 RE100 달성 지표 및 목표 온실가스 배출 관리 지표 2040 RE100 이행 목표 중장기(~2030) 추진 계획 구분 2024 2025 2030 2035 2040 RE100 달성률 10% 15% 60% 80% 100% 전력사용량 470 501 490 596 599 재생에너지 공급량 47 75 294 477 599 단위 : GWh 2030년까지 재생에너지 발전 및 외부구매 확대로 RE60 달성 목표 2024 예상전력 사용량 지역 발전량 태양광 발전량 외부구매 2026 2029 2025 2028 2027 2030 RE60 단위 : 천tCO2eq 인천국제공항공사 온실가스 배출 관리 지표 구분 2022 2023 2024 합계(Scope 1+Scope 2+Scope 3) 11,401,821 15,609,988 17,692,201 Scope 1(소계) 22,351 38,725 22,672 이동배출 차량 3,288 2,827 2,817 고정배출 보일러 2,253 3
+
+[Chunk 3] page=59
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0059_c0002
+이 큰 사안에 대해 우선순위를 도출했습니다. 분석 결과를 바탕으로 비전과 실천목표를 수립하고, 각 부문별로 실행 가능한 세부계획을 마련해 실제 운영에 적용하고 있습니다. 과거 기후변화 분석과 함께 앞으로 기후변화로 발생할 수 있는 피해와 심각성을 분석하기 위해 미래 기후를 전망했습니다. 미래 기후 전망은 기상청 기후정보 포털에서 제공하는 미래기후 시나리오를 토대로 2100년까지 인천국제공항이 위치하고 있는 인천광역시의 기온변화 경향을 알아보기 위해 RCP** 4.5, RCP 8.5 시나리오를 구분하여 예측했습니다. 예측 결과, 인천광역시는 2100년까지 지역의 기온, 폭염일수, 강수는 증가추세로, 한파일수 및 결빙일수는 감소추세로 나타났습니다. * IPCC(Intergovernmental Panel on Climate Change) : 유엔 산하 기후변화에 관한 정부간 협의체 **RCP(Representative Concentration Pathways) : IPCC 온실가스 배출경로 시나리오 일반현황 파악 기후변화 현황 및 전망과 영향분석 기후변화 위험도 평가 적응목표 달성을 위한 적응대�
+
+[Chunk 4] page=126
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0126_c0001
+125 Appendix Introduction ESG Report Appendix 2024/2025 인천국제공항공사 지속가능경영보고서 Sustainability Management Fact Book 수상 및 단체 가입 현황 재무데이터 공시 기준 및 이니셔티브 ISO 26000 제3자 검증의견서 Fact Book 환경 구분 단위 2022 2023 2024 온실가스 합계(Scope 1+Scope 2+Scope 3) tCO2eq 11,401,821 15,609,988 17,692,201 Scope 1(소계) tCO2eq 22,351 38,725 22,672 고정배출 차량 tCO2eq 3,288 2,827 2,817 보일러 tCO2eq 2,253 3,728 207 버너 tCO2eq 76 55 63 소방훈련 tCO2eq 61 23 25 프로세스 배출 비상발전기 tCO2eq 11 25 12 폐기물처리(소각) tCO2eq 15,385 19,172 17,291 하·폐수처리 tCO2eq 644 1,530 1,813 냉매손실 tCO2eq 634 11,365 446 Scope 2(소계) tCO2eq 183,098 184,464 183,678 전력 tCO2eq 159,049 165,169 179,962 열(스팀) tCO2eq 24,049 19,295 3,716 Scope 3(소계)
+
+[Chunk 5] page=128
+chunk_id: 2025_KR_IncheonAirport_Sustainability_KO_p0128_c0003
+2.5) ㎍/m 3 19 18 16 아황산가스(SO₂) ppm 0.004 0.004 0.004 이산화질소(NO₂) ppm 0.012 0.013 0.011 일산화탄소(CO) ppm 0.60 0.60 0.6 오존(O₃) ppm 0.037 0.037 0.034 수질 총 수질오염물질 배출량 ton 10.45 24.36 39.86 화학적 산소요구량(COD) (법적기준 20) ppm 4.30 6.47 7.15 생물화학적 산소요구량(BOD) (법적기준 10) ppm 0.40 0.68 1.15 총 유기탄소(TOC) ppm - 4.48 4.05 부유물질량(SS) (법적기준 10) ppm 0.10 0.24 1.15 총질소(T-N) (법적기준 20) ppm 5.02 4.50 5.13 총인(T-P) (법적기준 2) ppm 0.23 0.13 0.15 자원회수시설 배출가스 측정결과 (소각로 2기 평균값) 먼지(PM) (법적기준 26) ㎍/m 3 1.84 1.65 1.68 황산화물(SO₂) (법적기준 18) ppm 0 0 0.19 질소산화�
+
+HUMAN REVIEW
+--------------------------------------------------------------------------------------------------------------
+gold_status: [covered / partial / missing]
+gold_supporting_chunk_ids: [...]
+review_rationale:

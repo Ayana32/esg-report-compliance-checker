@@ -1,59 +1,114 @@
-version: "2016"
-standard_id: "GRI_305_Emissions_2016_EN"
-last_verified: "2026-03-10"
-source_url: "https://www.globalreporting.org/standards/media/1012/gri-305-emissions-2016.pdf"
-
+version: '2016'
+standard_id: GRI_305_Emissions_2016_EN
+last_verified: '2026-03-10'
+source_url: https://www.globalreporting.org/standards/media/1012/gri-305-emissions-2016.pdf
 requirements:
   305-1:
-    name: "Direct (Scope 1) GHG emissions"
-    description: "Report total direct GHG emissions in metric tons of CO2 equivalent"
+    name: Direct (Scope 1) GHG emissions
+    description: Report total direct GHG emissions in metric tons of CO2 equivalent
     source_chunks:
-      - "GRI_305_Emissions_2016_EN_p0009_c0001"
-      - "GRI_305_Emissions_2016_EN_p0010_c0001"
-    source_pages: [9, 10, 11]
-
+    - GRI_305_Emissions_2016_EN_p0009_c0001
+    - GRI_305_Emissions_2016_EN_p0010_c0001
+    source_pages:
+    - 9
+    - 10
+    - 11
     required_elements:
-      - element: "Total Scope 1 emissions in tCO2e"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
-        verification_status: "verified"
-        critical: true
-
-      - element: "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0002"
-        verification_status: "verified"
-        critical: true
-
-      - element: "Base year for calculation"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
-        verification_status: "verified"
-        critical: false
-
-      - element: "Consolidation approach (equity share, financial control, operational control)"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
-        verification_status: "verified"
-        critical: true
-
-      - element: "Biogenic CO2 emissions (reported separately)"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0010_c0001"
-        verification_status: "verified"
-        critical: false
-
-      - element: "Emission factors and GWP source (e.g. IPCC AR5/AR6)"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0001"
-        verification_status: "verified"
-        critical: false
-
-      - element: "Standards and methodologies used (e.g. GHG Protocol, third-party verification)"
-        source_chunk: "GRI_305_Emissions_2016_EN_p0009_c0002"
-        verification_status: "verified"
-        critical: false
-
+    - element: Total Scope 1 emissions in tCO2e
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0001
+      verification_status: verified
+      critical: true
+    - element: Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0002
+      verification_status: verified
+      critical: true
+    - element: Base year for calculation
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0001
+      verification_status: verified
+      critical: false
+    - element: Consolidation approach (equity share, financial control, operational
+        control)
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0001
+      verification_status: verified
+      critical: true
+    - element: Biogenic CO2 emissions (reported separately)
+      source_chunk: GRI_305_Emissions_2016_EN_p0010_c0001
+      verification_status: verified
+      critical: false
+    - element: Emission factors and GWP source (e.g. IPCC AR5/AR6)
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0001
+      verification_status: verified
+      critical: false
+    - element: Standards and methodologies used (e.g. GHG Protocol, third-party verification)
+      source_chunk: GRI_305_Emissions_2016_EN_p0009_c0002
+      verification_status: verified
+      critical: false
     keywords:
-      - "scope 1"
-      - "direct emissions"
-      - "ghg"
-      - "greenhouse gas"
-      - "co2"
-      - "emissions"
-      - "tco2e"
-      - "tco2eq"
+    - scope 1
+    - direct emissions
+    - ghg
+    - greenhouse gas
+    - co2
+    - emissions
+    - tco2e
+    - tco2eq
+  305-2:
+    name: Energy indirect (Scope 2) GHG emissions
+    description: GRI 305-2 disclosure requirements for energy indirect (Scope 2) GHG
+      emissions.
+    required_elements:
+    - element: Gross location-based Scope 2 emissions in tCO2e
+      conditional: false
+    - element: Gross market-based Scope 2 emissions in tCO2e if applicable
+      conditional: true
+    - element: Gases included in Scope 2 calculation if available
+      conditional: true
+    - element: Scope 2 base year and base-year emissions if applicable
+      conditional: true
+    - element: Scope 2 emission factors and GWP source
+      conditional: false
+    - element: Scope 2 consolidation approach
+      conditional: false
+    - element: Scope 2 standards methodologies assumptions and calculation tools
+      conditional: false
+    keywords:
+    - scope 2
+    - energy indirect emissions
+    - location based
+    - market based
+    - greenhouse gas
+    - emission factor
+    - GWP
+    - consolidation approach
+    - GHG Protocol Scope 2
+  305-3:
+    name: Other indirect (Scope 3) GHG emissions
+    description: GRI 305-3 disclosure requirements for other indirect (Scope 3) GHG
+      emissions.
+    required_elements:
+    - element: Gross Scope 3 emissions in tCO2e
+      conditional: false
+    - element: Gases included in Scope 3 calculation if available
+      conditional: true
+    - element: Scope 3 biogenic CO2 emissions reported separately
+      conditional: false
+    - element: Scope 3 categories and activities included
+      conditional: false
+    - element: Scope 3 base year and base-year emissions if applicable
+      conditional: true
+    - element: Scope 3 emission factors and GWP source
+      conditional: false
+    - element: Scope 3 standards methodologies assumptions and calculation tools
+      conditional: false
+    keywords:
+    - scope 3
+    - other indirect emissions
+    - value chain
+    - upstream
+    - downstream
+    - category
+    - biogenic CO2
+    - emission factor
+    - GWP
+    - GHG Protocol Corporate Value Chain
+    - PCAF

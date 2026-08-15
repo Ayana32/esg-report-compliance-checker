@@ -1,0 +1,1202 @@
+[
+  {
+    "company": "Schneider",
+    "req_id": "305-2",
+    "result": {
+      "company_id": "Schneider",
+      "requirement_id": "305-2",
+      "requirement_name": "Energy indirect (Scope 2) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross location-based Scope 2 emissions in tCO2e",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002"
+          ],
+          "evidence_text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+          "page_numbers": [
+            44
+          ],
+          "confidence": 1.0,
+          "reasoning": "Chunk 2 explicitly reports the gross location-based Scope 2 GHG emissions as 433,505 tCO2e for the reporting entity, which satisfies the requirement for a specific numeric value.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002",
+              "text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+              "page_number": 44
+            }
+          ]
+        },
+        {
+          "element": "Gross market-based Scope 2 emissions in tCO2e if applicable",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002"
+          ],
+          "evidence_text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+          "page_numbers": [
+            44
+          ],
+          "confidence": 0.9,
+          "reasoning": "Chunk 2 explicitly reports a specific numeric value for gross market-based Scope 2 emissions as 37,348 tCO2e, satisfying the requirement for 'covered'.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002",
+              "text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+              "page_number": 44
+            }
+          ]
+        },
+        {
+          "element": "Gases included in Scope 2 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 2 calculation.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 base year and base-year emissions if applicable",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0004"
+          ],
+          "evidence_text": "based accounting approach. The corresponding absolute values for target years 2030 and 2050 are shown in below table: Schneider Electric | Sustainable Development Report 2024 Milestones and targets 2050 2021 (Base year) 2030 2030: Annual % target/Base year 29,383 293,832 70,520 8.44% Total Scope 1 + Scope 2 6,873,748 68,737,485 51,553,114 2.78% Total Scope 3 Within the Group, AVEVA has specific targets which were developed prior to the full acquisition by the Schneider Electric Group. These targets are: - - Near-Term Targets: − − Reduce absolute scope 1 and 2 GHG emissions 90% by 2030. Reduce absolute scope 3 GHG emissions 50% by 2030 from a 2020 base year. Long-Term Net-Zero Targets: − − − Net-zero GHG emissions across the value chain by 2050. Maintain at least 90% absolute scope 1 and 2 GHG emission reductions from FY2030 through 2050. Commits to reduce absolute scope 3 GHG emissions 90% by 2050 from a 2020 base year. Similarly to the Group’s targets AVEVA’s targets cover all types of GHGs and all the applicable emissions sources under their respective scopes (i.e., either under Scopes 1 and 2, or under Scope 3). In other words, they consist of the overall GHG inventory that is being reported by AVEVA. They do not include GHG removals, carbon credits, nor avoided emissions from sold offers. The targets on Scopes 1 and 2 are applicable with Scope 2 being calculated under a market-based accounting approach. Schneider Electric has made progress in meeting the targets before the current base year, as indicated above for climate change mitigation. Schneider Electric’s climate targets for Scopes 1 and 2 in 2030 are validated by the Science Based Targets initiative (SBTi), with a “temperature alignment” (as per SBTi terminology)\n\nleet electriﬁcation Renewable electricity Others 2030 emissions ca. 70 ktCO2 Site electriﬁcation Decarbonization actions on Scope 3 towards 2030 target 2024 emissions ca. 56 million tCO2 Eco-design of products for lower carbon footprints Growth and external factors Gap to target 2030 target ca. 52 million tCO2 Others Scope 3 decarbonization SF6 phasedown Schneider Electric’s climate targets were approved by the SBTi in 2022, hence they are based on the latest available reporting year, which was 2021, as per the SBTi’s recommendations. 2021 is a representative base year, as compared to 2020 which was the year of the COVID pandemic. Since the development of the SBTi-approved targets in 2022, there has been no change in the baseline value. To deliver its “Net-Zero ready” target on the emissions from Scopes 1 and 2 by 2030, the Group’s approach has four pillars: - - - - Save: foster energy conservation and avoid SF6 leakages. Electrify: switch from gas or car fuel to electricity. Decarbonize electricity: use renewable energy, either from on-site generation, or through external procurement of renewable power. Balance residual emissions with high-quality and high-durability carbon removal. To make progress on these 4 pillars, specific targets for 2025 and associated programs have been set as part of the Schneider Sustainability Essentials (SSE) programs. SSE ambitions and programs are: - - - Increase energy efficiency in its sites by 15% by 2025 (SSE #5), and double energy productivity by 2030 compared to 2005 (EP100); and - Reach 150 Zero-CO2 sites by 2025 (SSE #1); Source 90% of electricity from renewables by 2025 (SSE #3), and 100% by 2030 (RE100); Shift one",
+          "page_numbers": [
+            41,
+            41
+          ],
+          "confidence": 0.7,
+          "reasoning": "Chunk 2 identifies 2021 as the base year for Scope 2 emissions, but does not provide explicit base-year emissions data or the rationale/context required for the base-year disclosure.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002",
+              "text": "based accounting approach. The corresponding absolute values for target years 2030 and 2050 are shown in below table: Schneider Electric | Sustainable Development Report 2024 Milestones and targets 2050 2021 (Base year) 2030 2030: Annual % target/Base year 29,383 293,832 70,520 8.44% Total Scope 1 + Scope 2 6,873,748 68,737,485 51,553,114 2.78% Total Scope 3 Within the Group, AVEVA has specific targets which were developed prior to the full acquisition by the Schneider Electric Group. These targets are: - - Near-Term Targets: − − Reduce absolute scope 1 and 2 GHG emissions 90% by 2030. Reduce absolute scope 3 GHG emissions 50% by 2030 from a 2020 base year. Long-Term Net-Zero Targets: − − − Net-zero GHG emissions across the value chain by 2050. Maintain at least 90% absolute scope 1 and 2 GHG emission reductions from FY2030 through 2050. Commits to reduce absolute scope 3 GHG emissions 90% by 2050 from a 2020 base year. Similarly to the Group’s targets AVEVA’s targets cover all types of GHGs and all the applicable emissions sources under their respective scopes (i.e., either under Scopes 1 and 2, or under Scope 3). In other words, they consist of the overall GHG inventory that is being reported by AVEVA. They do not include GHG removals, carbon credits, nor avoided emissions from sold offers. The targets on Scopes 1 and 2 are applicable with Scope 2 being calculated under a market-based accounting approach. Schneider Electric has made progress in meeting the targets before the current base year, as indicated above for climate change mitigation. Schneider Electric’s climate targets for Scopes 1 and 2 in 2030 are validated by the Science Based Targets initiative (SBTi), with a “temperature alignment” (as per SBTi terminology)",
+              "page_number": 41
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0004",
+              "text": "leet electriﬁcation Renewable electricity Others 2030 emissions ca. 70 ktCO2 Site electriﬁcation Decarbonization actions on Scope 3 towards 2030 target 2024 emissions ca. 56 million tCO2 Eco-design of products for lower carbon footprints Growth and external factors Gap to target 2030 target ca. 52 million tCO2 Others Scope 3 decarbonization SF6 phasedown Schneider Electric’s climate targets were approved by the SBTi in 2022, hence they are based on the latest available reporting year, which was 2021, as per the SBTi’s recommendations. 2021 is a representative base year, as compared to 2020 which was the year of the COVID pandemic. Since the development of the SBTi-approved targets in 2022, there has been no change in the baseline value. To deliver its “Net-Zero ready” target on the emissions from Scopes 1 and 2 by 2030, the Group’s approach has four pillars: - - - - Save: foster energy conservation and avoid SF6 leakages. Electrify: switch from gas or car fuel to electricity. Decarbonize electricity: use renewable energy, either from on-site generation, or through external procurement of renewable power. Balance residual emissions with high-quality and high-durability carbon removal. To make progress on these 4 pillars, specific targets for 2025 and associated programs have been set as part of the Schneider Sustainability Essentials (SSE) programs. SSE ambitions and programs are: - - - Increase energy efficiency in its sites by 15% by 2025 (SSE #5), and double energy productivity by 2030 compared to 2005 (EP100); and - Reach 150 Zero-CO2 sites by 2025 (SSE #1); Source 90% of electricity from renewables by 2025 (SSE #3), and 100% by 2030 (RE100); Shift one",
+              "page_number": 41
+            }
+          ]
+        },
+        {
+          "element": "Scope 2 emission factors and GWP source",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
+          ],
+          "evidence_text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (\n\nScopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of",
+          "page_numbers": [
+            142,
+            42
+          ],
+          "confidence": 0.7,
+          "reasoning": "Chunk 1 mentions the use of subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries, but does not specify the exact sources of these emission factors. Chunk 2 lists various sources of emission factors such as IPCC, IEA, ADEME, RE-DISS, and EPA, but does not explicitly link them to Scope 2 emissions. The GWP source is mentioned in Chunk 1 as the IPCC 6th Assessment Report, but it is not clear if this applies to Scope 2 emissions.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006",
+              "text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+              "page_number": 142
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+              "text": "Scopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of",
+              "page_number": 42
+            }
+          ]
+        },
+        {
+          "element": "Scope 2 consolidation approach",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002"
+          ],
+          "evidence_text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+          "page_numbers": [
+            44
+          ],
+          "confidence": 0.9,
+          "reasoning": "The consolidation approach for Scope 2 emissions is explicitly stated as operational control in Chunk 2.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002",
+              "text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+              "page_number": 44
+            }
+          ]
+        },
+        {
+          "element": "Scope 2 standards methodologies assumptions and calculation tools",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006"
+          ],
+          "evidence_text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+          "page_numbers": [
+            142
+          ],
+          "confidence": 0.9,
+          "reasoning": "Chunk 1 explicitly identifies the methodologies used for Scope 2 emissions, including both market-based and location-based methodologies, following GHG Protocol scope 2 guidance. It also details the calculation tools and assumptions used for different regions.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006",
+              "text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+              "page_number": 142
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006",
+          "text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+          "metadata": {
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "token_count": 500,
+            "chunk_num": 6,
+            "page_num": 142,
+            "sector": "Manufacturing",
+            "char_count": 2245,
+            "language": "EN",
+            "company_id": "Schneider"
+          },
+          "distance": 0.6656475067138672,
+          "rrf_score": 0.03252247488101534,
+          "reranker_score": 8.400654792785645
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0003",
+          "text": "2 305-1 Direct (Scope 1) GHG emissions TCO2e 106,360 112,792 119,447 140,718 of which petroleum products TCO2e 2,412 3,116 4,414 4,520 of which natural gas TCO2e 37,060 38,968 47,271 56,776 of which coal TCO2e 0 0 0 0 of which vehicle fleet TCO2e 54,398 61,492 55,598 62,683 of which SF6 emissions(3) TCO2e 4,951 4,054 4,606 5,886 SF6 leakage rate % 0.08% 0.08% 0.08% 0.10% Target SF6 leakage rate % 0.11% 0.11% 0.11% 0.19% of which estimated Scope 1 GHG emissions of sites out of energy reporting perimeter(4) TCO2e 7,539 5,162 7,557 10,853 305-2 Energy indirect (Scope 2) GHG emissions (market-based) (2) TCO2e 37,348 89,440 109,730 153,115 of which grid electricity (market-based)(2) TCO2e 13,892 39,476 49,674 66,692 of which renewable electricity (market-based)(5) TCO2e 0 0 703 701 of which district heating TCO2e 2,040 4,853 8,358 14,714 of which estimated Scope 2 GHG emissions of sites out of energy reporting perimeter (market-based)(2)(4) TCO2e 21,423 42,961 50,995 71,008 S U S T A I N A B L E D E V E L O P M E N T R E P O R T 2 0 2 4 4 - METHODOLOGY, EXTERNAL ASSURANCE AND INDICATORS 281 se.com",
+          "metadata": {
+            "sector": "Manufacturing",
+            "language": "EN",
+            "chunk_num": 3,
+            "char_count": 1109,
+            "token_count": 500,
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "page_num": 142,
+            "company_id": "Schneider"
+          },
+          "distance": 0.7390929460525513,
+          "rrf_score": 0.03252247488101534,
+          "reranker_score": 7.7397589683532715
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0003",
+          "text": "37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562,746 2. Capital goods 161,033 3. Fueland energy-related activities (not included in Scope 1 or Scope 2) 100,126 4. Upstream transportation and distribution 816,302 5. Waste generated in operations 38,747 6. Business traveling 161,046 7. Employee commuting 177,665 8. Upstream leased assets 0 9. Downstream transportation 570,959 10. Processing of sold products 0 11. Use of sold products 42,598,039 12. End-of-life treatment of sold products 4,462,523 13. Downstream leased assets 0 14. Franchises 0 15. Investments 0 Total GHG emissions Total GHG emissions (location-based) (tCO2eq) 56,189,052 Total GHG emissions (market-based) (tCO2eq) 55,792,894 E S R S E 1 S U S T A I N A B I L I T Y S T A T E M E N T S 85 se.com Life Is On | Schneider Electric STATEMENTS 2 - SUSTAINABILITY considerations on GHG emissions Further Please refer to the “Basis for preparation” section for more details about the scope of reporting. Scope 1 and Scope 2 emissions cannot be separated between the consolidated account group and investees that fall outside this group, as the latter are not included in the scope of the sustainability statements (CSRD). Further details on this rationale can be found in section 2.1.3 Basis for preparation on investees such as associates, joint ventures, or unconsolidated subsidiaries that are not fully consolidated in the financial statements of the consolidated accounting group, as well as contractual arrangements that are joint arrangements not structured through an entity (i.e., jointly controlled operations and assets), for which it has operational control. There has been no differences between reporting dates of the entities within",
+          "metadata": {
+            "language": "EN",
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "company_id": "Schneider",
+            "page_num": 44,
+            "sector": "Manufacturing",
+            "char_count": 1807,
+            "token_count": 500,
+            "chunk_num": 3
+          },
+          "distance": 0.8310685157775879,
+          "rrf_score": 0.030798389007344232,
+          "reranker_score": 6.60798978805542
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  },
+  {
+    "company": "IBK",
+    "req_id": "305-2",
+    "result": {
+      "company_id": "IBK",
+      "requirement_id": "305-2",
+      "requirement_name": "Energy indirect (Scope 2) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross location-based Scope 2 emissions in tCO2e",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0001"
+          ],
+          "evidence_text": "기후변화 대응 지속적인 온실가스 감축 7년 연속 온실가스 감축 목표 초과 달성 정책금융기관인 기업은행은 「기후위기 대응을 위한 탄소중립·녹색성장 기본법」 제27조 1항에 따라 2017년부터 온실가스 목표관리제 관리 대상으로 편입되어 온실가스 배출량을 관리하고 있습니다. 배출량은 제3자 검증 이후 정부에 보고하고 있으며, 꾸준한 관리 및 감축 노력을 통해 제도 편입 이후 7년 연속 온실가스 배출량 감축 목표를 초과 달성하였습니다. Performance 단위 2020 2021 2022 2023 직접 온실가스 배출량(Scope 1) tCO2eq 9,532 8,120 6,596 6,242 간접 온실가스 배출량(Scope 2) tCO2eq 50,333 48,957 49,242 48,991 Scope 1 & 2 tCO2eq 59,554 56,795 55,536 54,923 온실가스 배출 집약도(인당 원단위) tCO2eq 4.3325 4.0848 4.0322 4.0026 Scope 3 구매한 제품 & 서비스 tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81",
+          "page_numbers": [
+            64
+          ],
+          "confidence": 0.9,
+          "reasoning": "Chunk 2 explicitly reports the gross location-based Scope 2 emissions for the reporting entity in tCO2eq for the years 2020 to 2023.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
+              "text": "기후변화 대응 지속적인 온실가스 감축 7년 연속 온실가스 감축 목표 초과 달성 정책금융기관인 기업은행은 「기후위기 대응을 위한 탄소중립·녹색성장 기본법」 제27조 1항에 따라 2017년부터 온실가스 목표관리제 관리 대상으로 편입되어 온실가스 배출량을 관리하고 있습니다. 배출량은 제3자 검증 이후 정부에 보고하고 있으며, 꾸준한 관리 및 감축 노력을 통해 제도 편입 이후 7년 연속 온실가스 배출량 감축 목표를 초과 달성하였습니다. Performance 단위 2020 2021 2022 2023 직접 온실가스 배출량(Scope 1) tCO2eq 9,532 8,120 6,596 6,242 간접 온실가스 배출량(Scope 2) tCO2eq 50,333 48,957 49,242 48,991 Scope 1 & 2 tCO2eq 59,554 56,795 55,536 54,923 온실가스 배출 집약도(인당 원단위) tCO2eq 4.3325 4.0848 4.0322 4.0026 Scope 3 구매한 제품 & 서비스 tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81",
+              "page_number": 64
+            }
+          ]
+        },
+        {
+          "element": "Gross market-based Scope 2 emissions in tCO2e if applicable",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "There is no specific numeric gross market-based Scope 2 emissions value reported, nor is there explicit information stating that market-based reporting is not applicable.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Gases included in Scope 2 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 2 calculation.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 base year and base-year emissions if applicable",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+            "2024_KR_IBKBank_Sustainability_KO_p0064_c0001"
+          ],
+          "evidence_text": ". 또한, 탄소중립 달성을 위해 내부 탄소배출량 외에도 금융자산 배출량을 측정하여, 기후변화 관련 위험과 기회를 관리하고 있습니다. 64, 67 b) \u0007Scope 1, Scope 2 및 Scope 3 온실가스 배출량 및 관련 위험 매년 온실가스 배출량 데이터를 지속가능경영보고서와 CDP보고서를 통해 공개하고 있습니다. 64, 67 c) \u0007기후변화와 관련된 위험과 기회를 관리하기 위해 조직에서 사용하는 목표 및 목표 대비 성과 국책은행이자 기업시민으로서의 모범적 실천을 위해 IBK 2040 탄소중립이라는 진취적인 목표를 정하고, 온실가스 배출량을 지표로 활용하여 모니터링을 실시하고 있습니다. IBK 2040 탄소중립은 기준연도를 2020년으로 하여, 2040년까지의 탄소중립 달성을 목표로 하고 있으며, 환경〮에너지경영시스템 도입 및 전기차 보급 확대 등의 노력을 기울이고 있습니다. 또한, 자체 배출량뿐만 아니라 금융자산에 대해 탄소중립 달성 목표를 2050년으로 설정하였습니다. 금융배출량 감축 목표 설정의 객�\n\n기후변화 대응 지속적인 온실가스 감축 7년 연속 온실가스 감축 목표 초과 달성 정책금융기관인 기업은행은 「기후위기 대응을 위한 탄소중립·녹색성장 기본법」 제27조 1항에 따라 2017년부터 온실가스 목표관리제 관리 대상으로 편입되어 온실가스 배출량을 관리하고 있습니다. 배출량은 제3자 검증 이후 정부에 보고하고 있으며, 꾸준한 관리 및 감축 노력을 통해 제도 편입 이후 7년 연속 온실가스 배출량 감축 목표를 초과 달성하였습니다. Performance 단위 2020 2021 2022 2023 직접 온실가스 배출량(Scope 1) tCO2eq 9,532 8,120 6,596 6,242 간접 온실가스 배출량(Scope 2) tCO2eq 50,333 48,957 49,242 48,991 Scope 1 & 2 tCO2eq 59,554 56,795 55,536 54,923 온실가스 배출 집약도(인당 원단위) tCO2eq 4.3325 4.0848 4.0322 4.0026 Scope 3 구매한 제품 & 서비스 tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81",
+          "page_numbers": [
+            141,
+            64
+          ],
+          "confidence": 0.7,
+          "reasoning": "Chunk 1 mentions a base year of 2020 for carbon neutrality goals, but it does not explicitly provide the base-year emissions for Scope 2. Chunk 3 provides emissions data for multiple years, including 2020, but does not explicitly state it as the base year for Scope 2 emissions.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0141_c0003",
+              "text": ". 또한, 탄소중립 달성을 위해 내부 탄소배출량 외에도 금융자산 배출량을 측정하여, 기후변화 관련 위험과 기회를 관리하고 있습니다. 64, 67 b) \u0007Scope 1, Scope 2 및 Scope 3 온실가스 배출량 및 관련 위험 매년 온실가스 배출량 데이터를 지속가능경영보고서와 CDP보고서를 통해 공개하고 있습니다. 64, 67 c) \u0007기후변화와 관련된 위험과 기회를 관리하기 위해 조직에서 사용하는 목표 및 목표 대비 성과 국책은행이자 기업시민으로서의 모범적 실천을 위해 IBK 2040 탄소중립이라는 진취적인 목표를 정하고, 온실가스 배출량을 지표로 활용하여 모니터링을 실시하고 있습니다. IBK 2040 탄소중립은 기준연도를 2020년으로 하여, 2040년까지의 탄소중립 달성을 목표로 하고 있으며, 환경〮에너지경영시스템 도입 및 전기차 보급 확대 등의 노력을 기울이고 있습니다. 또한, 자체 배출량뿐만 아니라 금융자산에 대해 탄소중립 달성 목표를 2050년으로 설정하였습니다. 금융배출량 감축 목표 설정의 객�",
+              "page_number": 141
+            },
+            {
+              "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
+              "text": "기후변화 대응 지속적인 온실가스 감축 7년 연속 온실가스 감축 목표 초과 달성 정책금융기관인 기업은행은 「기후위기 대응을 위한 탄소중립·녹색성장 기본법」 제27조 1항에 따라 2017년부터 온실가스 목표관리제 관리 대상으로 편입되어 온실가스 배출량을 관리하고 있습니다. 배출량은 제3자 검증 이후 정부에 보고하고 있으며, 꾸준한 관리 및 감축 노력을 통해 제도 편입 이후 7년 연속 온실가스 배출량 감축 목표를 초과 달성하였습니다. Performance 단위 2020 2021 2022 2023 직접 온실가스 배출량(Scope 1) tCO2eq 9,532 8,120 6,596 6,242 간접 온실가스 배출량(Scope 2) tCO2eq 50,333 48,957 49,242 48,991 Scope 1 & 2 tCO2eq 59,554 56,795 55,536 54,923 온실가스 배출 집약도(인당 원단위) tCO2eq 4.3325 4.0848 4.0322 4.0026 Scope 3 구매한 제품 & 서비스 tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81",
+              "page_number": 64
+            }
+          ]
+        },
+        {
+          "element": "Scope 2 emission factors and GWP source",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "There is no explicit mention of the source of Scope 2 emission factors or the GWP source/rates used in any of the provided chunks.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 consolidation approach",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly state the consolidation approach as equity share, financial control, or operational control. There is no mention of the consolidation approach or relevant boundary information.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 standards methodologies assumptions and calculation tools",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_KR_IBKBank_Sustainability_KO_p0146_c0004"
+          ],
+          "evidence_text": "(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표",
+          "page_numbers": [
+            146
+          ],
+          "confidence": 0.9,
+          "reasoning": "Chunk 1 explicitly identifies the standards and methodologies used for Scope 2 emissions, including KS I ISO 14064-1:2018, KS I ISO 14064-3:2019, and the WRI Greenhouse Gas Protocol.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0146_c0004",
+              "text": "(본사, 강남센터, 강남영금융센터), IBK시스템(본사), IBK저축은행(서면지점, 부산 중앙지점, 동래지점, 울산지점, 서울영업부), IBK연금보험(본점), IBK자산운용(본점), IBK벤처투자(본점) - 보고경계 : 직접배출(Scope1), 간접배출(Scope2) - Scope1 : 고정연소(LNG), 이동연소(휘발유, 경유, LPG) - Scope2 : 외부 구매 전력 - 보고년도 : 2023년 1월 1일 ~ 2023년 12월 31일 3. 검증 기준 및 지침 한국표준협회는 국제표준 및 국내 지침에 따라 검증을 수행하였습니다. - KS I ISO 14064-1:2018, KS I ISO 14064-3:2019 - 온실가스 배출권거래제 운영을 위한 검증지침(최근호, 환경부) - 온실가스 배출권거래제의 배출량 보고 및 인증에 관한 지침(최근호, 환경부) - 공공부문 온실가스 목표관리 운영 등에 관한 지침(최근호, 환경부) - 2006 IPCC Guidelines for National Greenhouse Gas Inventories - WRI(World Resources Institute) Greenhouse Gas Protocol 4. 보증 수준 및 책임 한국표",
+              "page_number": 146
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0147_c0002",
+          "text": "� 수 있는 사건이나 상황이 발생할 수 있으며, 이로 인하여 본 검증의견서가 수정될 수도 있습니다. AO_PRJN-756208-AST-KOR 서문 ㈜디엔브이비즈니스어슈어런스코리아(이하, DNV)는 중소기업은행(IBK)과 9 개 자회사(이하, 회사)의 온실가스 배출량에 대해 제3 자 검증을 수행하였습니다. 회사는 ‘WRI/WBCSD GHG Protocol:2004’, ‘Corporate Value Chain (Scope 3) Accounting Standard Accounting and Reporting Standard’ 및 ‘IPCC Guidelines:2006’에 근거한 온실가스 배출량 자료를 준비할 책임이 있으며, 인벤토리 보고서 내용에 모든 책임을 가지고 있습니다. DNV 는 본 검증의견서와 관련하여 계약 조건에 따라 검증 계약당사자를 제외한 제3 자에 대하여 어떠한 책임도 지지 않습니다. 검증 목적 및 범위 본 검증의 목적은 회사의 온실가스 배출량에 대해 독립된 검증의견을 제시하는데 있으며, 검증 범위는 아래와 같습니다. - 조직경계 : 중소기업은행과 9 개 자회사 - 운영경계 : Scope3(기타 간접배출), (중소기업은행- 8 개 카테고리 (1,2,3,5,6,7,11,12), 자회사-2 개 카테고리(6,7))",
+          "metadata": {
+            "report_id": "2024_KR_IBKBank_Sustainability_KO",
+            "company_id": "IBK",
+            "sector": "Finance",
+            "language": "KO",
+            "page_num": 147,
+            "chunk_num": 2,
+            "token_count": 500,
+            "char_count": 635
+          },
+          "score": 10.014591034245797,
+          "rrf_score": 0.015151515151515152,
+          "reranker_score": 1.47371506690979
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0134_c0001",
+          "text": "구분 IFRS 기후 관련 공시(S2) 보고 페이지 지표 및 목표 1. 유의적인 기후 관련 위험 및 기회의 측정, 감독, 관리 및 기업이 설정한 목표에 대한 진척을 포함하여 기업이 성과를 평가하는 방법 a) 산업전반 지표 범주와 관련된 정보 60-62, 64-65, 138-139 b) 산업기반 지표 c) 기후 관련 위험을 완화 또는 적응하거나 기후 관련 기회를 극대화하기 위해 기업이 설정한 목표 d) c)에서 식별한 목표 달성을 위한 진척을 측정하기 위해 이사회 또는 경영진이 사용하는 그 밖의 지표 2. 산업전반 지표 범주와 관련된 정보 a) \u0007온실가스 배출량 - 온실가스 프로토콜 기업 기준(Greenhouse Gas Protocol Corporate Standard)에 따라 측정한 보고기간에 발생한 Scope 1, Scope 2, Scope 3에 대한 온실가스 절대 총배출량과 온실가스 배출량 집약도 (톤(t), 물리적 또는 경제적 산출물 단위당 CO2_e) 64 b) \u0007Scope 1 및 Scope 2 배출량에 대해 (1) 연결기업(지배기업 및 그 종속기업)과 (2) (1)에 포함되지 않은 관계기업, 공동기업,",
+          "metadata": {
+            "token_count": 500,
+            "sector": "Finance",
+            "char_count": 572,
+            "report_id": "2024_KR_IBKBank_Sustainability_KO",
+            "company_id": "IBK",
+            "chunk_num": 1,
+            "page_num": 134,
+            "language": "KO"
+          },
+          "distance": 1.2426750659942627,
+          "rrf_score": 0.030309988518943745,
+          "reranker_score": 0.7190296053886414
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0002",
+          "text": "tCO2eq 1,369.13 1,229.56 1,165.22 1,214.25 자본재 tCO2eq 131.02 283.05 313.81 246.24 출장 tCO2eq 4,220.92 3,073.67 3,232.08 3,485.34 직원통근 tCO2eq 4,318.36 12,385.86 12,048.62 11,774.25 합계 tCO2eq 10,039.43 16,972.14 16,759.73 16,720.08 * \u0007전년도까지는 Scope 1, 2를 기준으로 소수점 절사로 인한 합계 차이를 보정하였으나, 올해부터는 개별 검증서를 기준으로 수치를 명기하여 Scope 1, 2의 합계와 Scope 1 & 2 수치에 일부 차이가 발생합니다. (참고: 온실가스 배출량 검증 의견서의 온실가스 배출량은 사업장별로 소수점 단위 이하 절사 후 합산 기준을 적용한 값으로 차이 발생) ** 산정 경계 및 방식 변경에 따른 Scope 3 과거 산출 수치 조정 온실가스 배출 (전행 기준) 온실가스 배출 목표 및 실제 배출량 (단위: tCO2eq, 전행 기준) Scope 1(직접 배출량) Scope 2(간접 배출량) 4.0026 tCO2eq/인 2023년 온실가스 배출 집약도 * 총직원 수 기준 국제지�",
+          "metadata": {
+            "company_id": "IBK",
+            "report_id": "2024_KR_IBKBank_Sustainability_KO",
+            "chunk_num": 2,
+            "page_num": 64,
+            "token_count": 500,
+            "sector": "Finance",
+            "language": "KO",
+            "char_count": 609
+          },
+          "distance": 1.1918437480926514,
+          "rrf_score": 0.03200204813108039,
+          "reranker_score": 0.5911226868629456
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  },
+  {
+    "company": "Kepco",
+    "req_id": "305-2",
+    "result": {
+      "company_id": "Kepco",
+      "requirement_id": "305-2",
+      "requirement_name": "Energy indirect (Scope 2) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross location-based Scope 2 emissions in tCO2e",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0002",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0001"
+          ],
+          "evidence_text": "출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 한국남동발전 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 한국중부발전 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 한국서부발전 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 한국남부발전 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2\n\n회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �",
+          "page_numbers": [
+            59,
+            149
+          ],
+          "confidence": 0.7,
+          "reasoning": "The evidence provides numeric Scope 2 emissions values for various subsidiaries, but it is unclear whether these are location-based or gross, and there is no explicit aggregate value for the reporting entity.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0059_c0002",
+              "text": "출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 한국남동발전 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 한국중부발전 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 한국서부발전 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 한국남부발전 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2",
+              "page_number": 59
+            },
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0001",
+              "text": "회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �",
+              "page_number": 149
+            }
+          ]
+        },
+        {
+          "element": "Gross market-based Scope 2 emissions in tCO2e if applicable",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "The evidence provided does not include any specific numeric gross market-based Scope 2 emissions value, nor does it explicitly state that market-based reporting is not applicable.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Gases included in Scope 2 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 2 calculation.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 base year and base-year emissions if applicable",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "No explicit identification of a Scope 2 base year or base-year emissions is present in the provided chunks. The data includes multi-year emissions but lacks a specific base-year declaration.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 emission factors and GWP source",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "No chunks provide explicit information about the source of Scope 2 emission factors or the GWP source/rates used.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 consolidation approach",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly state the consolidation approach for Scope 2 emissions as equity share, financial control, or operational control. There is no relevant boundary information provided either.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 2 standards methodologies assumptions and calculation tools",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks provide specific standards, methodologies, assumptions, or calculation tools used for Scope 2 emissions. The chunks only provide emission data without detailing the methodologies or tools used.",
+          "verification_method": "llm",
+          "evidence": []
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0001",
+          "text": "회사명 구분 단위 2021 2022 2023 한국전력 온실가스 배출량 Scope 1(직접배출) tCO2eq 799,047 706,644 649,356 Scope 2(간접배출) tCO2eq 210,820 221,251 221,275 Scope 3(기타배출) tCO2eq 220,002,720 214,273,227 194,127,327 온실가스 배출 절감량(전년도-당해년도)1) 절감량(Scope 1+2) tCO2eq 40,116 81,973 57,263 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 1.3 1.0 0.7 Scope 2(간접배출) tCO2eq/억 원 0.4 0.3 0.3 Scope 3(기타배출) tCO2eq/억 원 368.8 310.8 220.1 배출권거래제 이행 실적2) 할당량 만tCO2eq 102 102 102 배출량 만tCO2eq 101 93 87 한국수력원자력 온실가스 배출량 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 �",
+          "metadata": {
+            "report_id": "2024_KR_Kepco_Sustainability_KO",
+            "company_id": "Kepco",
+            "sector": "Energy",
+            "language": "KO",
+            "page_num": 149,
+            "chunk_num": 1,
+            "token_count": 500,
+            "char_count": 595
+          },
+          "score": 11.444438801022361,
+          "rrf_score": 0.015151515151515152,
+          "reranker_score": 2.891361951828003
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0002",
+          "text": ",136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) 만tCO2eq -195,484 57,843 4,524 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 0.7 0.7 0.7 Scope 2(간접배출) tCO2eq/억 원 32.7 28.7 27.5 Scope 3(기타배출) tCO2eq/억 원 - - 2.2 배출권거래제 이행 실적 할당량 만tCO2eq 294 294 294 배출량 만tCO2eq 311 305 305 한국남동발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 6,292,987 1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원",
+          "metadata": {
+            "company_id": "Kepco",
+            "page_num": 149,
+            "language": "KO",
+            "char_count": 584,
+            "chunk_num": 2,
+            "sector": "Energy",
+            "token_count": 500,
+            "report_id": "2024_KR_Kepco_Sustainability_KO"
+          },
+          "distance": 1.1992868185043335,
+          "rrf_score": 0.030330882352941176,
+          "reranker_score": 2.8802378177642822
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0004",
+          "text": "�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3",
+          "metadata": {
+            "sector": "Energy",
+            "char_count": 575,
+            "token_count": 500,
+            "language": "KO",
+            "page_num": 149,
+            "report_id": "2024_KR_Kepco_Sustainability_KO",
+            "chunk_num": 4,
+            "company_id": "Kepco"
+          },
+          "distance": 1.1857380867004395,
+          "rrf_score": 0.030309988518943745,
+          "reranker_score": 2.86598801612854
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  },
+  {
+    "company": "Schneider",
+    "req_id": "305-3",
+    "result": {
+      "company_id": "Schneider",
+      "requirement_id": "305-3",
+      "requirement_name": "Other indirect (Scope 3) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross Scope 3 emissions in tCO2e",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0003"
+          ],
+          "evidence_text": "D E V E L O P M E N T R E P O R T 2 0 2 4 4 - METHODOLOGY, EXTERNAL ASSURANCE AND INDICATORS 281 se.com Life Is On | Schneider Electric Greenhouse gas (GHG) (continued) GRI Indicators Units 2024 2023 2022 2021 305-3 Other relevant indirect (Scope 3) GHG emissions(3) TCO2e 55,649,186 56,777,964 60,788,549 68,737,485 305-5 Absolute variation vs base year (2021)(3) % -19.0% -17.4% -11.6% 0.0% 305-4 Total Scope 3 per euro turnover(3) TCO2e/ million € 1,459 1,581 1,779 2,378 305-3 Other relevant indirect (Scope 3 upstream) GHG emissions TCO2e 8,017,665 7,766,994 8,613,192 8,237,192 1. Purchased goods and services TCO2e 6,562,746 6,829,733 7,572,974 7,278,733 2. Capital goods(6) TCO2e 161,033 55,361 57,986 62,876 3. Fueland energy-related activities (not included in Scope 1 or Scope 2)(6) TCO2e 100,126 40,652 43,544 53,167 4. Transportation of goods paid by the Group(7) TCO2e 816,302 563,643 670,840 616,519 5. Waste generated in operations TCO2e 38,747 34,927 37,415 42,760 6. Business travel(7) TCO2e 161,046 60,702 56,501 30,778 7. Employee commuting TCO2e 177,665 181,977 173,932 152,359 305-3\n\n37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562,746 2. Capital goods 161,033 3. Fueland energy-related activities (not included in Scope 1 or Scope 2) 100,126 4. Upstream transportation and distribution 816,302 5. Waste generated in operations 38,747 6. Business traveling 161,046 7. Employee commuting 177,665 8. Upstream leased assets 0 9. Downstream transportation 570,959 10. Processing of sold products 0 11. Use of sold products 42,598,039 12. End-of-life treatment of sold products 4,462,523 13. Downstream leased assets 0 14. Franchises 0 15. Investments 0 Total GHG emissions Total GHG emissions (location-based) (tCO2eq) 56,189,052 Total GHG emissions (market-based) (tCO2eq) 55,792,894 E S R S E 1 S U S T A I N A B I L I T Y S T A T E M E N T S 85 se.com Life Is On | Schneider Electric STATEMENTS 2 - SUSTAINABILITY considerations on GHG emissions Further Please refer to the “Basis for preparation” section for more details about the scope of reporting. Scope 1 and Scope 2 emissions cannot be separated between the consolidated account group and investees that fall outside this group, as the latter are not included in the scope of the sustainability statements (CSRD). Further details on this rationale can be found in section 2.1.3 Basis for preparation on investees such as associates, joint ventures, or unconsolidated subsidiaries that are not fully consolidated in the financial statements of the consolidated accounting group, as well as contractual arrangements that are joint arrangements not structured through an entity (i.e., jointly controlled operations and assets), for which it has operational control. There has been no differences between reporting dates of the entities within",
+          "page_numbers": [
+            142,
+            44
+          ],
+          "confidence": 0.9,
+          "reasoning": "A specific numeric gross Scope 3 emissions value is explicitly reported for the reporting entity in tCO2e.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004",
+              "text": "D E V E L O P M E N T R E P O R T 2 0 2 4 4 - METHODOLOGY, EXTERNAL ASSURANCE AND INDICATORS 281 se.com Life Is On | Schneider Electric Greenhouse gas (GHG) (continued) GRI Indicators Units 2024 2023 2022 2021 305-3 Other relevant indirect (Scope 3) GHG emissions(3) TCO2e 55,649,186 56,777,964 60,788,549 68,737,485 305-5 Absolute variation vs base year (2021)(3) % -19.0% -17.4% -11.6% 0.0% 305-4 Total Scope 3 per euro turnover(3) TCO2e/ million € 1,459 1,581 1,779 2,378 305-3 Other relevant indirect (Scope 3 upstream) GHG emissions TCO2e 8,017,665 7,766,994 8,613,192 8,237,192 1. Purchased goods and services TCO2e 6,562,746 6,829,733 7,572,974 7,278,733 2. Capital goods(6) TCO2e 161,033 55,361 57,986 62,876 3. Fueland energy-related activities (not included in Scope 1 or Scope 2)(6) TCO2e 100,126 40,652 43,544 53,167 4. Transportation of goods paid by the Group(7) TCO2e 816,302 563,643 670,840 616,519 5. Waste generated in operations TCO2e 38,747 34,927 37,415 42,760 6. Business travel(7) TCO2e 161,046 60,702 56,501 30,778 7. Employee commuting TCO2e 177,665 181,977 173,932 152,359 305-3",
+              "page_number": 142
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0003",
+              "text": "37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562,746 2. Capital goods 161,033 3. Fueland energy-related activities (not included in Scope 1 or Scope 2) 100,126 4. Upstream transportation and distribution 816,302 5. Waste generated in operations 38,747 6. Business traveling 161,046 7. Employee commuting 177,665 8. Upstream leased assets 0 9. Downstream transportation 570,959 10. Processing of sold products 0 11. Use of sold products 42,598,039 12. End-of-life treatment of sold products 4,462,523 13. Downstream leased assets 0 14. Franchises 0 15. Investments 0 Total GHG emissions Total GHG emissions (location-based) (tCO2eq) 56,189,052 Total GHG emissions (market-based) (tCO2eq) 55,792,894 E S R S E 1 S U S T A I N A B I L I T Y S T A T E M E N T S 85 se.com Life Is On | Schneider Electric STATEMENTS 2 - SUSTAINABILITY considerations on GHG emissions Further Please refer to the “Basis for preparation” section for more details about the scope of reporting. Scope 1 and Scope 2 emissions cannot be separated between the consolidated account group and investees that fall outside this group, as the latter are not included in the scope of the sustainability statements (CSRD). Further details on this rationale can be found in section 2.1.3 Basis for preparation on investees such as associates, joint ventures, or unconsolidated subsidiaries that are not fully consolidated in the financial statements of the consolidated accounting group, as well as contractual arrangements that are joint arrangements not structured through an entity (i.e., jointly controlled operations and assets), for which it has operational control. There has been no differences between reporting dates of the entities within",
+              "page_number": 44
+            }
+          ]
+        },
+        {
+          "element": "Gases included in Scope 3 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 3 calculation. The chunks discuss methodologies and categories but do not specify the gases involved.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 biogenic CO2 emissions reported separately",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007"
+          ],
+          "evidence_text": "the combustion or bio-degradation of biomass not included in Scope 1 GHG emissions are then 0. Similarly and for the same reason, the biogenic emissions of CO2 from combustion or bio-degradation of biomass not included in Scope 2 GHG emissions are 0 and the biogenic emissions of CO2 from combustion or bio-degradation of biomass that occur in value chain not included in Scope 3 GHG emissions are also 0. To reduce GHG emissions from Scope 2, Schneider Electric is sourcing an increasing share of electricity from renewable sources. The approach is leveraging the multiple ways to get access to renewable electricity, based on local context and the availability of renewable opportunities. While a growing share of electricity is self-produced, the renewable sourcing also consists of getting renewable energy credits, either bundled or unbundled, because the space available on sites is not enough to cover the overall electricity consumption of Schneider Electric’s facilities, especially for some locations with intense manufacturing processes. Overall in 2024, the Group sourced 41.97% of its electricity consumption from contracted unbundled renewable energy credits, and 44.77% from contracted bundled renewable energy credits, hence, the overall percentage of contractual instruments, Scope 2 GHG emissions is 86.73%, which is a very significant increase as compared to 78% in 2023.",
+          "page_numbers": [
+            43
+          ],
+          "confidence": 0.9,
+          "reasoning": "Chunk 1 explicitly states that the biogenic emissions of CO2 from combustion or bio-degradation of biomass that occur in the value chain not included in Scope 3 GHG emissions are 0. This satisfies the requirement for a separate numeric disclosure or an explicit zero statement.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0007",
+              "text": "the combustion or bio-degradation of biomass not included in Scope 1 GHG emissions are then 0. Similarly and for the same reason, the biogenic emissions of CO2 from combustion or bio-degradation of biomass not included in Scope 2 GHG emissions are 0 and the biogenic emissions of CO2 from combustion or bio-degradation of biomass that occur in value chain not included in Scope 3 GHG emissions are also 0. To reduce GHG emissions from Scope 2, Schneider Electric is sourcing an increasing share of electricity from renewable sources. The approach is leveraging the multiple ways to get access to renewable electricity, based on local context and the availability of renewable opportunities. While a growing share of electricity is self-produced, the renewable sourcing also consists of getting renewable energy credits, either bundled or unbundled, because the space available on sites is not enough to cover the overall electricity consumption of Schneider Electric’s facilities, especially for some locations with intense manufacturing processes. Overall in 2024, the Group sourced 41.97% of its electricity consumption from contracted unbundled renewable energy credits, and 44.77% from contracted bundled renewable energy credits, hence, the overall percentage of contractual instruments, Scope 2 GHG emissions is 86.73%, which is a very significant increase as compared to 78% in 2023.",
+              "page_number": 43
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 categories and activities included",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002"
+          ],
+          "evidence_text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+          "page_numbers": [
+            44
+          ],
+          "confidence": 0.9,
+          "reasoning": "The evidence explicitly identifies the Scope 3 categories and activities included in the calculation, such as purchased goods and services, capital goods, upstream transportation and distribution, waste, business travel, employee commuting, downstream transportation and distribution, use of sold products, and end-of-life treatment of sold products.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0002",
+              "text": "with a franchisor business model (no licenses are granted to other entities to sell Schneider Electric’s products in exchange for payments such as royalties). This source of emissions is therefore not relevant. Category 15. Investments: Schneider Electric uses the operational approach to calculate its carbon footprint; therefore emissions due to equity investments in subsidiaries where Schneider Electric has the operational control are included in Scopes 1, 2, and 3 emissions, depending on emission sources. The percentage of GHG Scope 3 calculated using primary data is 1.37 and this arises predominantly from GHG emissions of paid freight, for which shipment-per-shipment data is collected from the main freight suppliers, and also from GHG emissions of aluminum procurement, when some supplier-specific data is collected through the efforts of the Green Materials program. The list of Scope 3 GHG emissions categories included in inventory is as follows: - - - - - - - - Scope 3 category 1 - Purchased goods and services Scope 3 category 2 - capital goods Scope 3 category 3 - fueland energyrelated activities Scope 3 category 4 - upstream transportation and distribution Scope 3 category 5 - waste Scope 3 category 6 - business travel Scope 3 category 7 - employee commuting Scope 3 category 9 - downstream transportation and distribution - - Scope 3 category 11 - use of sold products Scope 3 category 12 - end-of-life treatment of sold products Schneider Electric | Sustainable Development Report 2024 2024 Scope 1 GHG emissions Gross Scope 1 GHG emissions (tCO2eq) 106,360 Percentage of Scope 1 GHG emissions from regulated emission trading schemes (%) 0 Scope 2 GHG emissions Gross location-based Scope 2 GHG emissions (tCO2eq) 433,505 Gross market-based Scope 2 GHG emissions (tCO2eq) 37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562",
+              "page_number": 44
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 base year and base-year emissions if applicable",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002"
+          ],
+          "evidence_text": "based accounting approach. The corresponding absolute values for target years 2030 and 2050 are shown in below table: Schneider Electric | Sustainable Development Report 2024 Milestones and targets 2050 2021 (Base year) 2030 2030: Annual % target/Base year 29,383 293,832 70,520 8.44% Total Scope 1 + Scope 2 6,873,748 68,737,485 51,553,114 2.78% Total Scope 3 Within the Group, AVEVA has specific targets which were developed prior to the full acquisition by the Schneider Electric Group. These targets are: - - Near-Term Targets: − − Reduce absolute scope 1 and 2 GHG emissions 90% by 2030. Reduce absolute scope 3 GHG emissions 50% by 2030 from a 2020 base year. Long-Term Net-Zero Targets: − − − Net-zero GHG emissions across the value chain by 2050. Maintain at least 90% absolute scope 1 and 2 GHG emission reductions from FY2030 through 2050. Commits to reduce absolute scope 3 GHG emissions 90% by 2050 from a 2020 base year. Similarly to the Group’s targets AVEVA’s targets cover all types of GHGs and all the applicable emissions sources under their respective scopes (i.e., either under Scopes 1 and 2, or under Scope 3). In other words, they consist of the overall GHG inventory that is being reported by AVEVA. They do not include GHG removals, carbon credits, nor avoided emissions from sold offers. The targets on Scopes 1 and 2 are applicable with Scope 2 being calculated under a market-based accounting approach. Schneider Electric has made progress in meeting the targets before the current base year, as indicated above for climate change mitigation. Schneider Electric’s climate targets for Scopes 1 and 2 in 2030 are validated by the Science Based Targets initiative (SBTi), with a “temperature alignment” (as per SBTi terminology)",
+          "page_numbers": [
+            41
+          ],
+          "confidence": 0.7,
+          "reasoning": "Chunk 2 identifies a 2020 base year for Scope 3 emissions and mentions a reduction target, but does not provide explicit base-year emissions data or complete supporting information.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0041_c0002",
+              "text": "based accounting approach. The corresponding absolute values for target years 2030 and 2050 are shown in below table: Schneider Electric | Sustainable Development Report 2024 Milestones and targets 2050 2021 (Base year) 2030 2030: Annual % target/Base year 29,383 293,832 70,520 8.44% Total Scope 1 + Scope 2 6,873,748 68,737,485 51,553,114 2.78% Total Scope 3 Within the Group, AVEVA has specific targets which were developed prior to the full acquisition by the Schneider Electric Group. These targets are: - - Near-Term Targets: − − Reduce absolute scope 1 and 2 GHG emissions 90% by 2030. Reduce absolute scope 3 GHG emissions 50% by 2030 from a 2020 base year. Long-Term Net-Zero Targets: − − − Net-zero GHG emissions across the value chain by 2050. Maintain at least 90% absolute scope 1 and 2 GHG emission reductions from FY2030 through 2050. Commits to reduce absolute scope 3 GHG emissions 90% by 2050 from a 2020 base year. Similarly to the Group’s targets AVEVA’s targets cover all types of GHGs and all the applicable emissions sources under their respective scopes (i.e., either under Scopes 1 and 2, or under Scope 3). In other words, they consist of the overall GHG inventory that is being reported by AVEVA. They do not include GHG removals, carbon credits, nor avoided emissions from sold offers. The targets on Scopes 1 and 2 are applicable with Scope 2 being calculated under a market-based accounting approach. Schneider Electric has made progress in meeting the targets before the current base year, as indicated above for climate change mitigation. Schneider Electric’s climate targets for Scopes 1 and 2 in 2030 are validated by the Science Based Targets initiative (SBTi), with a “temperature alignment” (as per SBTi terminology)",
+              "page_number": 41
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 emission factors and GWP source",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0001",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006"
+          ],
+          "evidence_text": "Scopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of\n\n82 se.com 2 Sustainability statements Sustainable Development Report 2024 - For fleet, most of the GHG emissions are calculated based on the reports from leasing companies, which either provide the fuel consumption, or the driven distance and the carbon intensity of driving over 1 kilometer. This allows to derive energy consumption and GHG emissions, using emission factors from ADEME for fuels, and IEA for electricity. In the absence of complete data from leasing companies, the GHG emissions are estimated based on default values for distances, carbon intensities, or using extrapolations based on fleet size and the type of powertrains. For Scope 3, the methodology that is used is specific to each Scope 3 category: - - - - Purchased goods and services: the methodology is compliant with ISO 14069 principles and takes into account the wide heterogeneity of our procurement portfolio: raw materials, electronic and electrical products, printed circuit board assembly, fabricated components, along with non-production purchases (e.g., services such as insurance and banking services). As per the principles of carbon accounting, calculations are based on physical quantities as much as possible, using the tonnes of metals and plastics we purchased. For the remaining part of procurement, calculations are based on the spend, to make sure all procurement activity is captured. Emission factors from various sources are being used, mainly from EIME (Life Cycle Analysis tool), EPA, Ecoinvent, and ADEME Base Carbone®. Capital goods: in the industrial context of Schneider Electric, these emissions correspond to the embodied CO2 emissions in equipment and assets that have an extended life and are used for manufacturing processes, logistics purposes and hosting the operations of the Company. In practice, capital expenditures on construction , production and industrial suppliers are taken into account, and converted into GHG emissions by using spend-based emissions factors from EPA. Fueland energy-related activities: these emissions are derived from energy consumption data that are used for Scope 1 and 2 emissions; the upstream emissions methodology is dependent on the type of energy: for all energy types, a constant share of Scope 1 or Scope 2 emissions is taken into account (for instance approximately 20% for natural gas or\n\n100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+          "page_numbers": [
+            42,
+            43,
+            142
+          ],
+          "confidence": 0.7,
+          "reasoning": "The evidence mentions various sources of emission factors for Scope 3, such as EIME, EPA, Ecoinvent, and ADEME Base Carbone®, but does not explicitly identify the GWP source or rates used for Scope 3 emissions. The GWP source is mentioned for SF6 in Scope 1 and 2 emissions, but not for Scope 3.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+              "text": "Scopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of",
+              "page_number": 42
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0001",
+              "text": "82 se.com 2 Sustainability statements Sustainable Development Report 2024 - For fleet, most of the GHG emissions are calculated based on the reports from leasing companies, which either provide the fuel consumption, or the driven distance and the carbon intensity of driving over 1 kilometer. This allows to derive energy consumption and GHG emissions, using emission factors from ADEME for fuels, and IEA for electricity. In the absence of complete data from leasing companies, the GHG emissions are estimated based on default values for distances, carbon intensities, or using extrapolations based on fleet size and the type of powertrains. For Scope 3, the methodology that is used is specific to each Scope 3 category: - - - - Purchased goods and services: the methodology is compliant with ISO 14069 principles and takes into account the wide heterogeneity of our procurement portfolio: raw materials, electronic and electrical products, printed circuit board assembly, fabricated components, along with non-production purchases (e.g., services such as insurance and banking services). As per the principles of carbon accounting, calculations are based on physical quantities as much as possible, using the tonnes of metals and plastics we purchased. For the remaining part of procurement, calculations are based on the spend, to make sure all procurement activity is captured. Emission factors from various sources are being used, mainly from EIME (Life Cycle Analysis tool), EPA, Ecoinvent, and ADEME Base Carbone®. Capital goods: in the industrial context of Schneider Electric, these emissions correspond to the embodied CO2 emissions in equipment and assets that have an extended life and are used for manufacturing processes, logistics purposes and hosting the operations of the Company. In practice, capital expenditures on construction , production and industrial suppliers are taken into account, and converted into GHG emissions by using spend-based emissions factors from EPA. Fueland energy-related activities: these emissions are derived from energy consumption data that are used for Scope 1 and 2 emissions; the upstream emissions methodology is dependent on the type of energy: for all energy types, a constant share of Scope 1 or Scope 2 emissions is taken into account (for instance approximately 20% for natural gas or",
+              "page_number": 43
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0006",
+              "text": "100% site coverage. In prior years, major non-integrated entites were excluded from Group results in this table (2) Scope 2 emissions are quantified with the market-based methodology and the location-based methodology, following GHG Protocol scope 2 guidance, and the results from both approaches are disclosed. Values calculated with market-based and location-based methodologies should not be added. Market-based electricity emissions are calculated using subnational factors for the US and Canada, residual electricity emissions factors for European countries, and average country emission factors for other countries. Location-based scope 2 electricity emissions on energy reporting perimeter are equal to 256,213 TCO2e (audited value), and 430,773 TCO2e on total Group perimeter (audited value). Total Scope 2 (location-based) emissions is 433,505 TCO2e (audited value). Total scope 1 and 2 (locationbased) CO2 emissions (energy, vehicles, and SF6 emissions in TCO2e) on full perimeter are equal to 539,865 TCO2e (audited value). (3) The historical values of this indicator have been updated to be in line with the latest Global Warming Potential (GWP) value of SF6, as published by the IPCC in its 6th Assessment Report available in January 2024. Previous GWP value of 23,500 (AR5) has been updated to 24,300 (AR6) for 2023 and historical emissions. This change impacts scope 1 and scope 3 CO2 equivalent emissions. (4) The CO2 emissions linked to energy consumption for sites outside the energy reporting perimeter are considered estimates for two reasons: on the one hand, energy consumption and corresponding CO2 emissions of these sites are estimated (instead of being collected from meters and invoices, energy consumption are based on site surface and average energy intensity of sites per region from the energy reporting perimeter); on the other hand, the indirect emissions are calculated on the conversion factors per country and not with supplier-specific data. (5) Prior to 2023, this category was meant to capture greenhouse gas emissions (CH4 and N2O emissions) generated from renewable electricity produced with biomass. (6) In 2024 the methodology has changed, leading to significant changes as compared to previous year. (",
+              "page_number": 142
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 standards methodologies assumptions and calculation tools",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0001",
+            "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005"
+          ],
+          "evidence_text": "82 se.com 2 Sustainability statements Sustainable Development Report 2024 - For fleet, most of the GHG emissions are calculated based on the reports from leasing companies, which either provide the fuel consumption, or the driven distance and the carbon intensity of driving over 1 kilometer. This allows to derive energy consumption and GHG emissions, using emission factors from ADEME for fuels, and IEA for electricity. In the absence of complete data from leasing companies, the GHG emissions are estimated based on default values for distances, carbon intensities, or using extrapolations based on fleet size and the type of powertrains. For Scope 3, the methodology that is used is specific to each Scope 3 category: - - - - Purchased goods and services: the methodology is compliant with ISO 14069 principles and takes into account the wide heterogeneity of our procurement portfolio: raw materials, electronic and electrical products, printed circuit board assembly, fabricated components, along with non-production purchases (e.g., services such as insurance and banking services). As per the principles of carbon accounting, calculations are based on physical quantities as much as possible, using the tonnes of metals and plastics we purchased. For the remaining part of procurement, calculations are based on the spend, to make sure all procurement activity is captured. Emission factors from various sources are being used, mainly from EIME (Life Cycle Analysis tool), EPA, Ecoinvent, and ADEME Base Carbone®. Capital goods: in the industrial context of Schneider Electric, these emissions correspond to the embodied CO2 emissions in equipment and assets that have an extended life and are used for manufacturing processes, logistics purposes and hosting the operations of the Company. In practice, capital expenditures on construction , production and industrial suppliers are taken into account, and converted into GHG emissions by using spend-based emissions factors from EPA. Fueland energy-related activities: these emissions are derived from energy consumption data that are used for Scope 1 and 2 emissions; the upstream emissions methodology is dependent on the type of energy: for all energy types, a constant share of Scope 1 or Scope 2 emissions is taken into account (for instance approximately 20% for natural gas or\n\nScopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of",
+          "page_numbers": [
+            43,
+            42
+          ],
+          "confidence": 0.9,
+          "reasoning": "The evidence explicitly identifies specific standards, methodologies, assumptions, and calculation tools used for Scope 3 emissions. Chunk 1 details the methodologies for different Scope 3 categories, including compliance with ISO 14069 and the use of emission factors from EIME, EPA, Ecoinvent, and ADEME Base Carbone®. Chunk 3 confirms the use of the GHG Protocol Corporate Value Chain (Scope 3) Standard.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0043_c0001",
+              "text": "82 se.com 2 Sustainability statements Sustainable Development Report 2024 - For fleet, most of the GHG emissions are calculated based on the reports from leasing companies, which either provide the fuel consumption, or the driven distance and the carbon intensity of driving over 1 kilometer. This allows to derive energy consumption and GHG emissions, using emission factors from ADEME for fuels, and IEA for electricity. In the absence of complete data from leasing companies, the GHG emissions are estimated based on default values for distances, carbon intensities, or using extrapolations based on fleet size and the type of powertrains. For Scope 3, the methodology that is used is specific to each Scope 3 category: - - - - Purchased goods and services: the methodology is compliant with ISO 14069 principles and takes into account the wide heterogeneity of our procurement portfolio: raw materials, electronic and electrical products, printed circuit board assembly, fabricated components, along with non-production purchases (e.g., services such as insurance and banking services). As per the principles of carbon accounting, calculations are based on physical quantities as much as possible, using the tonnes of metals and plastics we purchased. For the remaining part of procurement, calculations are based on the spend, to make sure all procurement activity is captured. Emission factors from various sources are being used, mainly from EIME (Life Cycle Analysis tool), EPA, Ecoinvent, and ADEME Base Carbone®. Capital goods: in the industrial context of Schneider Electric, these emissions correspond to the embodied CO2 emissions in equipment and assets that have an extended life and are used for manufacturing processes, logistics purposes and hosting the operations of the Company. In practice, capital expenditures on construction , production and industrial suppliers are taken into account, and converted into GHG emissions by using spend-based emissions factors from EPA. Fueland energy-related activities: these emissions are derived from energy consumption data that are used for Scope 1 and 2 emissions; the upstream emissions methodology is dependent on the type of energy: for all energy types, a constant share of Scope 1 or Scope 2 emissions is taken into account (for instance approximately 20% for natural gas or",
+              "page_number": 43
+            },
+            {
+              "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0042_c0005",
+              "text": "Scopes 1 and 2 Customers Scope 3 downstream 14% <1% 85% The Group calculates its carbon footprint across the three scopes, in conformance with the Standards from the GHG Protocol: the Corporate Accounting Standard and the Corporate Value Chain (Scope 3) Standard. employees), global, regional, and site SF6 and energy reporting are delivered with the EcoStruxure™ Resource Advisor software suite. EcoStruxure™ Resource Advisor provides a data visualization and analysis application that aggregates volumes of raw energy data into actionable information. The energy consumption that is measured for the largest sites is then extrapolated to the whole portfolio of sites that Schneider Electric occupies, based on their square meters and the type of building. The energy consumption, or SF6 leakages, are then converted into GHG emissions, by using various sources of emission factors, such as IPCC (Intergovernmental Panel on Climate Change), IEA (International Energy Agency), ADEME (French Agency of Environment and Energy), RE-DISS (Reliable Disclosure Systems for Europe), and EPA (Environmental Protection Agency). For Scopes 1 and 2, the GHG emissions are coming from two types of sources: either stationary sources (i.e., sites) or mobile sources (i.e., the Company fleet). Under the accounting approach of the operational control, the Group considers all assets (i.e., sites or Company vehicles), that are operated, regardless of being owned or leased. - For sites, the GHG emissions are derived from SF6 leakages that are measured, and energy consumption that is either measured or estimated. Indeed, for the most material sites of the Group (ca. 250 sites that are meeting specific thresholds in terms of",
+              "page_number": 42
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0142_c0004",
+          "text": "D E V E L O P M E N T R E P O R T 2 0 2 4 4 - METHODOLOGY, EXTERNAL ASSURANCE AND INDICATORS 281 se.com Life Is On | Schneider Electric Greenhouse gas (GHG) (continued) GRI Indicators Units 2024 2023 2022 2021 305-3 Other relevant indirect (Scope 3) GHG emissions(3) TCO2e 55,649,186 56,777,964 60,788,549 68,737,485 305-5 Absolute variation vs base year (2021)(3) % -19.0% -17.4% -11.6% 0.0% 305-4 Total Scope 3 per euro turnover(3) TCO2e/ million € 1,459 1,581 1,779 2,378 305-3 Other relevant indirect (Scope 3 upstream) GHG emissions TCO2e 8,017,665 7,766,994 8,613,192 8,237,192 1. Purchased goods and services TCO2e 6,562,746 6,829,733 7,572,974 7,278,733 2. Capital goods(6) TCO2e 161,033 55,361 57,986 62,876 3. Fueland energy-related activities (not included in Scope 1 or Scope 2)(6) TCO2e 100,126 40,652 43,544 53,167 4. Transportation of goods paid by the Group(7) TCO2e 816,302 563,643 670,840 616,519 5. Waste generated in operations TCO2e 38,747 34,927 37,415 42,760 6. Business travel(7) TCO2e 161,046 60,702 56,501 30,778 7. Employee commuting TCO2e 177,665 181,977 173,932 152,359 305-3",
+          "metadata": {
+            "page_num": 142,
+            "sector": "Manufacturing",
+            "language": "EN",
+            "char_count": 1104,
+            "company_id": "Schneider",
+            "token_count": 500,
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "chunk_num": 4
+          },
+          "distance": 0.7657866477966309,
+          "rrf_score": 0.032266458495966696,
+          "reranker_score": 9.011950492858887
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0040_c0003",
+          "text": "Residual emissions from Scope 1 and 2: - As of 2025, contribution to high-quality carbon removal for an amount corresponding to yearly residual emissions in Scope 1 and 2 Scope 3 Decarbonizing our upstream value chain in: - - - Engaging and supporting suppliers to decarbonize Eco-designing safe and highquality products with lower lifecycle CO2 footprint Sourcing of low-carbon materials Decarbonizing our downstream value chain by: - - Influencing for global decarbonization Innovating with more efficient products and SF6-free medium voltage equipment Carbon credits Progressively balance residual emissions with high-quality carbon removals The more GHG emissions are reduced, the less residual emissions there are. Residual emissions must be balanced with high-quality and high-durability removals. In 2050, high-durability carbon removal credits shall equal residual value chain emissions. Scopes 1 and 2 emissions Scope 3 emissions Carbon removals Supply chain resilience and flexibility Recognizing the vulnerability of supply chains to business disruptions, due to multiple factors including extreme weather events, Schneider Electric has launched strategies to adapt to climate change, and enhance resilience and flexibility. These strategies include: - Qualifying alternate suppliers for critical parts and components, setting the objective of having 100% of purchasing components with high supplier risk and business impact covered by a mitigation plan within three years after threat being qualified. - - - Qualifying alternate factories for the same products manufacturing, with an objective of 90% of critical offers covered by at least a dual manufacturing set up by 2025. Qualifying alternate supply chain flows, aiming at 100% of critical distribution centers able to redirect more than 80% of their flow in less than five days by 2025. Regionalization of manufacturing activities to mitigate disruption risks over the supply chain, moving towards up to 90% sourcing and manufacturing within regional hubs.",
+          "metadata": {
+            "sector": "Manufacturing",
+            "chunk_num": 3,
+            "language": "EN",
+            "token_count": 463,
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "company_id": "Schneider",
+            "char_count": 2024,
+            "page_num": 40
+          },
+          "distance": 0.8409263491630554,
+          "rrf_score": 0.029418126757516764,
+          "reranker_score": 6.373885631561279
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_FR_SchneiderElectric_Sustainability_EN_p0044_c0003",
+          "text": "37,348 Significant Scope 3 GHG emissions Total Gross indirect (Scope 3) GHG emissions (tCO2eq) 55,649,186 1. Purchased goods and services 6,562,746 2. Capital goods 161,033 3. Fueland energy-related activities (not included in Scope 1 or Scope 2) 100,126 4. Upstream transportation and distribution 816,302 5. Waste generated in operations 38,747 6. Business traveling 161,046 7. Employee commuting 177,665 8. Upstream leased assets 0 9. Downstream transportation 570,959 10. Processing of sold products 0 11. Use of sold products 42,598,039 12. End-of-life treatment of sold products 4,462,523 13. Downstream leased assets 0 14. Franchises 0 15. Investments 0 Total GHG emissions Total GHG emissions (location-based) (tCO2eq) 56,189,052 Total GHG emissions (market-based) (tCO2eq) 55,792,894 E S R S E 1 S U S T A I N A B I L I T Y S T A T E M E N T S 85 se.com Life Is On | Schneider Electric STATEMENTS 2 - SUSTAINABILITY considerations on GHG emissions Further Please refer to the “Basis for preparation” section for more details about the scope of reporting. Scope 1 and Scope 2 emissions cannot be separated between the consolidated account group and investees that fall outside this group, as the latter are not included in the scope of the sustainability statements (CSRD). Further details on this rationale can be found in section 2.1.3 Basis for preparation on investees such as associates, joint ventures, or unconsolidated subsidiaries that are not fully consolidated in the financial statements of the consolidated accounting group, as well as contractual arrangements that are joint arrangements not structured through an entity (i.e., jointly controlled operations and assets), for which it has operational control. There has been no differences between reporting dates of the entities within",
+          "metadata": {
+            "report_id": "2024_FR_SchneiderElectric_Sustainability_EN",
+            "token_count": 500,
+            "company_id": "Schneider",
+            "sector": "Manufacturing",
+            "chunk_num": 3,
+            "page_num": 44,
+            "language": "EN",
+            "char_count": 1807
+          },
+          "distance": 0.7354079484939575,
+          "rrf_score": 0.03225806451612903,
+          "reranker_score": 6.039475440979004
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  },
+  {
+    "company": "Heathrow",
+    "req_id": "305-3",
+    "result": {
+      "company_id": "Heathrow",
+      "requirement_id": "305-3",
+      "requirement_name": "Other indirect (Scope 3) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross Scope 3 emissions in tCO2e",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002"
+          ],
+          "evidence_text": "56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1: Purchased goods and services and Category 2: Capital goods Supply chain 229,606 174,145 198,440 262,892 Category 1: Purchased goods and services Water consumption 739 220 378 383 Non-road construction vehicles2 1,362 1,122 1,763 3,105 7 to 8 Category 3: Fueland energyrelated activities (not in scope 1 or 2) WTT/T&D of scope 1 and 2 - Market-based - Location based Not reported Not reported Not reported Not reported Not reported Not reported 13,131 25,621 6 Category 5: Waste generated in operations Waste 563 385 502 167 Wastewater 1,329 262 270 286 Category 6: Business travel Business travel 1,070 420 1,133 1,346 5 Category 7: Employee commuting and home office Colleague surface access 115,531 89,034 125,133 134,085 5 Category 11: Use of sold products Passenger surface access 632,348 361,856 436,100 429,043 7 Operational vehicles and equipment 33,015 15,768 26,808 17,642 Net zero in the air 1 De-icing - aircraft3 4,584 3,473 3,167 1,789 1 to 4 Aircraft in the LTO cycle 1,250,648 985,506 1,267,909 1,291,089 Cruise emissions from all departure flights 18,742,505 13,276,039 16,680,512 17,219,805 Net zero on the ground 6 Category 12: End-of-life treatment of sold products Decommissioning of Cardiff Pod test Track N/A N/A N/A 10 8\n\nconsideration of these matters and, accordingly, we accept no responsibility for any changes that may have occurred to the reported Subject Matter Information or Reporting Criteria when presented on HAL’s website. A-C refer to our assessment of materiality discussed in the Materiality section of this report. Subject Matter Information For the year-ended 31 December 2024 Location in the Report 2024 Reporting Criteria Total scope 1 greenhouse gas emissions (tonnes CO2e)A 28,054 Page 108 HAL - Greenhouse Gas (GHG) Emissions Principles and Methodologies 2024, pages 1 - 27. Available on HAL’s website at: https://www.heathrow.com/ content/dam/heathrow/web/ common/documents/company/ heathrow-2-0-sustainability/ reports/2024-methodologies.pdf1 Total scope 2 location-based greenhouse gas emissions (tonnes CO2e)A 56,339 Total scope 2 market-based greenhouse gas emissions (tonnes CO2e)A 0 Total scope 3 greenhouse gas emissions (tonnes CO2e)B 19,374,834 % of female colleagues at senior levels (Exec - Band C)C 38.6% Page 106 HAL - Equality, Diversity & Inclusion of Senior Levels Principles and Methodologies 2024. Available on HAL’s website at: https://www.heathrow.com/ content/dam/heathrow/web/ common/documents/company/ heathrow-2-0-sustainability/ reports/2024-equality-diversityinclusion-methodologies.pdf1 % of Black, Asian and Minority Ethnic colleagues at senior levels (Exec - Band C)C 21.7% 113",
+          "page_numbers": [
+            108,
+            113
+          ],
+          "confidence": 0.9,
+          "reasoning": "A specific numeric gross Scope 3 emissions value is explicitly reported for the reporting entity in tCO2e in chunks 1 and 4.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003",
+              "text": "56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1: Purchased goods and services and Category 2: Capital goods Supply chain 229,606 174,145 198,440 262,892 Category 1: Purchased goods and services Water consumption 739 220 378 383 Non-road construction vehicles2 1,362 1,122 1,763 3,105 7 to 8 Category 3: Fueland energyrelated activities (not in scope 1 or 2) WTT/T&D of scope 1 and 2 - Market-based - Location based Not reported Not reported Not reported Not reported Not reported Not reported 13,131 25,621 6 Category 5: Waste generated in operations Waste 563 385 502 167 Wastewater 1,329 262 270 286 Category 6: Business travel Business travel 1,070 420 1,133 1,346 5 Category 7: Employee commuting and home office Colleague surface access 115,531 89,034 125,133 134,085 5 Category 11: Use of sold products Passenger surface access 632,348 361,856 436,100 429,043 7 Operational vehicles and equipment 33,015 15,768 26,808 17,642 Net zero in the air 1 De-icing - aircraft3 4,584 3,473 3,167 1,789 1 to 4 Aircraft in the LTO cycle 1,250,648 985,506 1,267,909 1,291,089 Cruise emissions from all departure flights 18,742,505 13,276,039 16,680,512 17,219,805 Net zero on the ground 6 Category 12: End-of-life treatment of sold products Decommissioning of Cardiff Pod test Track N/A N/A N/A 10 8",
+              "page_number": 108
+            },
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0113_c0002",
+              "text": "consideration of these matters and, accordingly, we accept no responsibility for any changes that may have occurred to the reported Subject Matter Information or Reporting Criteria when presented on HAL’s website. A-C refer to our assessment of materiality discussed in the Materiality section of this report. Subject Matter Information For the year-ended 31 December 2024 Location in the Report 2024 Reporting Criteria Total scope 1 greenhouse gas emissions (tonnes CO2e)A 28,054 Page 108 HAL - Greenhouse Gas (GHG) Emissions Principles and Methodologies 2024, pages 1 - 27. Available on HAL’s website at: https://www.heathrow.com/ content/dam/heathrow/web/ common/documents/company/ heathrow-2-0-sustainability/ reports/2024-methodologies.pdf1 Total scope 2 location-based greenhouse gas emissions (tonnes CO2e)A 56,339 Total scope 2 market-based greenhouse gas emissions (tonnes CO2e)A 0 Total scope 3 greenhouse gas emissions (tonnes CO2e)B 19,374,834 % of female colleagues at senior levels (Exec - Band C)C 38.6% Page 106 HAL - Equality, Diversity & Inclusion of Senior Levels Principles and Methodologies 2024. Available on HAL’s website at: https://www.heathrow.com/ content/dam/heathrow/web/ common/documents/company/ heathrow-2-0-sustainability/ reports/2024-equality-diversityinclusion-methodologies.pdf1 % of Black, Asian and Minority Ethnic colleagues at senior levels (Exec - Band C)C 21.7% 113",
+              "page_number": 113
+            }
+          ]
+        },
+        {
+          "element": "Gases included in Scope 3 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 3 calculation.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 biogenic CO2 emissions reported separately",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0110_c0001",
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0110_c0002"
+          ],
+          "evidence_text": "REP ORT I NG O N PERFORM A N CE (CO N T.) Separately from the scopes Greenhouse gas emissions (tonnes CO2e) 2019 2022 2023 2024 Sustainable Aviation Fuel (‘SAF’) Savings from SAF on lifecycle aircraft emissions 0 (94,064) (260,203) (634,962) WTT and T&D of scope 3 Colleague surface access 182,957 118,275 146,205 35,584 Passenger surface access 110,417 Non-road construction vehicles 8,200 4,389 7,453 887 Business travel 125 Third party operational vehicles and equipment 6,710 Aircraft LTO and cruise emissions 4,139,566 2,952,203 3,733,589 3,854,312 Third party grid electricity (Market-based) WTT 27,426 20,276 20,414 541 Third party grid electricity (Location based) WTT 27,426 20,276 20,414 6,794 Third party grid electricity (Market-based) T&D Not reported Not reported Not reported 2,493 Third party grid electricity (Location based) T&D Not reported Not reported Not reported 2,493 Fuel consumption utilities 3,950 8,040 5,577 10 Total WTT and T&D of scope 3 - Market-Based 4,362,099 3,103,183 3,913,238 4,011,079 Outside of scope (biofuels)1 Fuel consumption utilities Not reported Not reported Not reported 33,681 Operational vehicles and equipment Not reported Not reported Not reported 671 Grid electricity consumption (Location based only) Not reported Not reported Not reported 31,311 Non-road construction vehicles Not reported Not reported Not reported 769 Third party operational vehicles and equipment Not reported Not reported Not reported 11,551 Third party grid electricity (Location based only) Not reported Not reported Not reported 15,676 Total outside of scope (biofuels) - Market-Based Not reported Not reported Not reported 46,672 Total Footprint\n\nparty grid electricity (Location based only) Not reported Not reported Not reported 15,676 Total outside of scope (biofuels) - Market-Based Not reported Not reported Not reported 46,672 Total Footprint including SAF, WTT, T&D and outside of scopes (tonnes CO2e) - Market-Based 25,402,815 17,947,310 22,427,335 22,825,677 Energy Energy (MWh) 2019 2022 2023 2024 Scope 1 Fuel consumption utilities 134,289 268,499 176,633 230,790 Operational vehicles and equipment 6,732 4,867 4,988 4,806 LPG for fire training 5 - 3 - Scope 2 Grid electricity consumption 283,229 272,610 271,080 272,103 Carbon Intensity Metrics Carbon Intensity (kg CO2e/passenger) 2019 2022 2023 2024 Greenhouse Gas Protocol Scope 1 and 2 carbon intensity 0.3 0.5 0.4 0.3 Scope 3 carbon intensity (excludes WTT and T&D from category 3) 259.7 242.0 236.6 230.9 All scopes carbon intensity 260.0 242.5 237.0 231.2 Net Zero Plan ‘On the Ground’ carbon intensity (scope 1, 2 and 3 excluding aircraft emissions) (excludes WTT and T&D from category 3) 12.9 11.0 10.4 10.5 ‘In the Air’ carbon intensity (scope 3 aircraft emissions only) 247.1 231.5 226.6 220.8 1 \u0007From 2024, full reporting of any fuel from a biogenic source has included the ‘outside of scope’ CO2 value, documented to ensure complete accounting for the emissions created when burning biofuels. The emissions are labelled ‘outside of scope’ because the scope 1 impact of these fuels has been determined to be a net ‘0’ (since the fuel source itself absorbs an equivalent amount of CO2 during the growth phase as the amount of CO",
+          "page_numbers": [
+            110,
+            110
+          ],
+          "confidence": 0.6,
+          "reasoning": "The evidence mentions biofuels and emissions labeled 'outside of scope' due to biogenic sources, but it does not explicitly report Scope 3 biogenic CO2 emissions separately with a numeric value. There is also no explicit statement that no Scope 3 biogenic CO2 emissions occurred or that this disclosure is not applicable.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0110_c0001",
+              "text": "REP ORT I NG O N PERFORM A N CE (CO N T.) Separately from the scopes Greenhouse gas emissions (tonnes CO2e) 2019 2022 2023 2024 Sustainable Aviation Fuel (‘SAF’) Savings from SAF on lifecycle aircraft emissions 0 (94,064) (260,203) (634,962) WTT and T&D of scope 3 Colleague surface access 182,957 118,275 146,205 35,584 Passenger surface access 110,417 Non-road construction vehicles 8,200 4,389 7,453 887 Business travel 125 Third party operational vehicles and equipment 6,710 Aircraft LTO and cruise emissions 4,139,566 2,952,203 3,733,589 3,854,312 Third party grid electricity (Market-based) WTT 27,426 20,276 20,414 541 Third party grid electricity (Location based) WTT 27,426 20,276 20,414 6,794 Third party grid electricity (Market-based) T&D Not reported Not reported Not reported 2,493 Third party grid electricity (Location based) T&D Not reported Not reported Not reported 2,493 Fuel consumption utilities 3,950 8,040 5,577 10 Total WTT and T&D of scope 3 - Market-Based 4,362,099 3,103,183 3,913,238 4,011,079 Outside of scope (biofuels)1 Fuel consumption utilities Not reported Not reported Not reported 33,681 Operational vehicles and equipment Not reported Not reported Not reported 671 Grid electricity consumption (Location based only) Not reported Not reported Not reported 31,311 Non-road construction vehicles Not reported Not reported Not reported 769 Third party operational vehicles and equipment Not reported Not reported Not reported 11,551 Third party grid electricity (Location based only) Not reported Not reported Not reported 15,676 Total outside of scope (biofuels) - Market-Based Not reported Not reported Not reported 46,672 Total Footprint",
+              "page_number": 110
+            },
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0110_c0002",
+              "text": "party grid electricity (Location based only) Not reported Not reported Not reported 15,676 Total outside of scope (biofuels) - Market-Based Not reported Not reported Not reported 46,672 Total Footprint including SAF, WTT, T&D and outside of scopes (tonnes CO2e) - Market-Based 25,402,815 17,947,310 22,427,335 22,825,677 Energy Energy (MWh) 2019 2022 2023 2024 Scope 1 Fuel consumption utilities 134,289 268,499 176,633 230,790 Operational vehicles and equipment 6,732 4,867 4,988 4,806 LPG for fire training 5 - 3 - Scope 2 Grid electricity consumption 283,229 272,610 271,080 272,103 Carbon Intensity Metrics Carbon Intensity (kg CO2e/passenger) 2019 2022 2023 2024 Greenhouse Gas Protocol Scope 1 and 2 carbon intensity 0.3 0.5 0.4 0.3 Scope 3 carbon intensity (excludes WTT and T&D from category 3) 259.7 242.0 236.6 230.9 All scopes carbon intensity 260.0 242.5 237.0 231.2 Net Zero Plan ‘On the Ground’ carbon intensity (scope 1, 2 and 3 excluding aircraft emissions) (excludes WTT and T&D from category 3) 12.9 11.0 10.4 10.5 ‘In the Air’ carbon intensity (scope 3 aircraft emissions only) 247.1 231.5 226.6 220.8 1 \u0007From 2024, full reporting of any fuel from a biogenic source has included the ‘outside of scope’ CO2 value, documented to ensure complete accounting for the emissions created when burning biofuels. The emissions are labelled ‘outside of scope’ because the scope 1 impact of these fuels has been determined to be a net ‘0’ (since the fuel source itself absorbs an equivalent amount of CO2 during the growth phase as the amount of CO",
+              "page_number": 110
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 categories and activities included",
+          "status": "covered",
+          "evidence_chunks": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003"
+          ],
+          "evidence_text": "56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1: Purchased goods and services and Category 2: Capital goods Supply chain 229,606 174,145 198,440 262,892 Category 1: Purchased goods and services Water consumption 739 220 378 383 Non-road construction vehicles2 1,362 1,122 1,763 3,105 7 to 8 Category 3: Fueland energyrelated activities (not in scope 1 or 2) WTT/T&D of scope 1 and 2 - Market-based - Location based Not reported Not reported Not reported Not reported Not reported Not reported 13,131 25,621 6 Category 5: Waste generated in operations Waste 563 385 502 167 Wastewater 1,329 262 270 286 Category 6: Business travel Business travel 1,070 420 1,133 1,346 5 Category 7: Employee commuting and home office Colleague surface access 115,531 89,034 125,133 134,085 5 Category 11: Use of sold products Passenger surface access 632,348 361,856 436,100 429,043 7 Operational vehicles and equipment 33,015 15,768 26,808 17,642 Net zero in the air 1 De-icing - aircraft3 4,584 3,473 3,167 1,789 1 to 4 Aircraft in the LTO cycle 1,250,648 985,506 1,267,909 1,291,089 Cruise emissions from all departure flights 18,742,505 13,276,039 16,680,512 17,219,805 Net zero on the ground 6 Category 12: End-of-life treatment of sold products Decommissioning of Cardiff Pod test Track N/A N/A N/A 10 8",
+          "page_numbers": [
+            108
+          ],
+          "confidence": 0.9,
+          "reasoning": "The evidence explicitly identifies several Scope 3 categories and activities, including purchased goods and services, capital goods, fuel and energy-related activities, waste generated in operations, business travel, employee commuting, use of sold products, and end-of-life treatment of sold products.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0003",
+              "text": "56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1: Purchased goods and services and Category 2: Capital goods Supply chain 229,606 174,145 198,440 262,892 Category 1: Purchased goods and services Water consumption 739 220 378 383 Non-road construction vehicles2 1,362 1,122 1,763 3,105 7 to 8 Category 3: Fueland energyrelated activities (not in scope 1 or 2) WTT/T&D of scope 1 and 2 - Market-based - Location based Not reported Not reported Not reported Not reported Not reported Not reported 13,131 25,621 6 Category 5: Waste generated in operations Waste 563 385 502 167 Wastewater 1,329 262 270 286 Category 6: Business travel Business travel 1,070 420 1,133 1,346 5 Category 7: Employee commuting and home office Colleague surface access 115,531 89,034 125,133 134,085 5 Category 11: Use of sold products Passenger surface access 632,348 361,856 436,100 429,043 7 Operational vehicles and equipment 33,015 15,768 26,808 17,642 Net zero in the air 1 De-icing - aircraft3 4,584 3,473 3,167 1,789 1 to 4 Aircraft in the LTO cycle 1,250,648 985,506 1,267,909 1,291,089 Cruise emissions from all departure flights 18,742,505 13,276,039 16,680,512 17,219,805 Net zero on the ground 6 Category 12: End-of-life treatment of sold products Decommissioning of Cardiff Pod test Track N/A N/A N/A 10 8",
+              "page_number": 108
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 base year and base-year emissions if applicable",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001"
+          ],
+          "evidence_text": "REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.",
+          "page_numbers": [
+            107
+          ],
+          "confidence": 0.7,
+          "reasoning": "Chunk 2 mentions 2019 as the baseline year for carbon footprint reporting, which includes scope 3 emissions. However, it does not explicitly provide the base-year emissions for scope 3, nor does it provide complete supporting information for the base year.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
+              "text": "REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.",
+              "page_number": 107
+            }
+          ]
+        },
+        {
+          "element": "Scope 3 emission factors and GWP source",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly mention the source of Scope 3 emission factors or the GWP source/rates used. The evidence provided discusses methodologies and standards but does not specify the sources for emission factors or GWP.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 standards methodologies assumptions and calculation tools",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001"
+          ],
+          "evidence_text": "REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.",
+          "page_numbers": [
+            107
+          ],
+          "confidence": 0.7,
+          "reasoning": "The evidence mentions the use of the Greenhouse Gas Protocol and Airport Carbon Accreditation Level 4+ standards for carbon reporting, which includes Scope 3 emissions. However, the specific methodologies, assumptions, or calculation tools used for Scope 3 are not detailed explicitly.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
+              "text": "REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.",
+              "page_number": 107
+            }
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0108_c0002",
+          "text": "isation across the whole industry, including flights. Well-to-tank and Transmission & Distribution Well-to-tank (‘WTT’) emissions are “upstream” emissions related to the production and transportation of fuel to where it will be combusted. Transmission and Distribution (‘T&D’) are emissions from the transmission and distribution of energy to site. Although we track WTT and T&D emissions of our scope 3, we do not currently include these within our reporting. The industry standards we follow are still developing regarding the inclusion of WTT emissions, determining which aviation stakeholders should report them, and how they relate to attributing the benefits of SAF. Net Zero Plan Emission source Greenhouse gas emissions (tonnes CO2e) Objective Goal Greenhouse Gas Protocol Category Emissions Source Description 2019 2022 2023 2024 Net zero on the ground Total scope 1 greenhouse gas emissions1 (tonnes CO2e) 26,998 29,806 32,116 28,054 8 Stationary sources Fuel consumption utilities - Market-based - Location based 21,942 24,335 21,867 21,867 22,588 25,326 24,612 24,612 LPG for fire training 35 - 1 - 7 Mobile sources Operational vehicles and equipment 1,668 791 622 523 8 Process emissions Refrigerant losses 2,871 6,671 8,695 2,586 6 De-icer 482 477 210 333 Total scope 2 greenhouse gas emissions1 (tonnes CO2e) - - - - 8 Electricity Grid electricity consumption - \u0007Total Scope 2 market-based greenhouse gas emissions (tonnes CO2e) - \u0007Total Scope 2 location-based greenhouse gas emissions (tonnes CO2e) - 71,163 - 52,717 - 56,134 - 56,339 Total scope 3 greenhouse gas emissions1 (tonnes CO2e) 21,013,718 14,908,385 18,742,184 19,374,834 6 Category 1:",
+          "metadata": {
+            "page_num": 108,
+            "company_id": "Heathrow",
+            "language": "EN",
+            "sector": "Infrastructure",
+            "char_count": 1662,
+            "chunk_num": 2,
+            "token_count": 500,
+            "report_id": "2024_UK_HeathrowAirport_Sustainablity_EN"
+          },
+          "distance": 0.842423677444458,
+          "rrf_score": 0.03177805800756621,
+          "reranker_score": 3.823249101638794
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0001",
+          "text": "REP ORT I NG O N PERFORM A N CE (CO N T.) CALCULATING OUR CARBON FOOTPRINT We monitor our carbon footprint and report on our greenhouse gas (‘GHG’) emissions annually. This helps us to identify opportunities to reduce our emissions and assess our progress in delivering our carbon reduction goals. Our methodology for carbon reporting is informed by the Greenhouse Gas Protocol (‘GHGP’) and the Airport Carbon Accreditation (‘ACA’) Level 4+ standards. Our carbon and energy disclosure is in line with the reporting requirements of the Streamlined Energy and Carbon Reporting (‘SECR’). It includes emissions from fuel consumption and operational vehicles in scope 1, electricity consumption in scope 2, and indirect emissions in scope 3. The latter includes, but is not limited to, emissions from aircraft, business travel, travel to and from the airport, and infrastructure projects. Each annual carbon footprint includes our baseline year 2019, the current reporting year, and two previous years for comparison. Following the publication of our Net Zero Plan in February 2022, we have mapped its eight goals to cut carbon ‘In the Air’ and ‘On the Ground’ to the GHGP scopes. Scopes 1 and 2: Accounts for only 0.1% of Heathrow’s footprint, including buildings and infrastructure and Heathrow owned vehicles. Scope 3: Accounts for over 99% of Heathrow’s total emissions, including aircraft, surface access, supply chain and Team Heathrow vehicles, with aircraft accounting for 95% of total emissions. The ACA requirements were updated in December 2023 to include an expanded scope 3 inventory in line with the GHGP. Heathrow is reviewing data availability and calculation methodologies for those select scope 3 emissions sources that are not currently reported. Additionally, this update clarified how sources correspond to the specified GHGP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table.",
+          "metadata": {
+            "report_id": "2024_UK_HeathrowAirport_Sustainablity_EN",
+            "company_id": "Heathrow",
+            "sector": "Infrastructure",
+            "language": "EN",
+            "page_num": 107,
+            "chunk_num": 1,
+            "token_count": 500,
+            "char_count": 2000
+          },
+          "score": 31.325920849647783,
+          "rrf_score": 0.016129032258064516,
+          "reranker_score": 2.951172351837158
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_UK_HeathrowAirport_Sustainablity_EN_p0107_c0002",
+          "text": "GP categories, reflected in our 2024 reporting. From 2019 to 2023, all well-to-tank (‘WTT’) emissions were reported under the 'Separately from the Scopes' table. We are committed to continuous improvement in our reporting and, for the first time in 2024, we have included WTT and transmission and distribution (‘T&D’) losses associated with our scopes 1 and 2 energy use. These energy losses are now reported as scope 3, under category 3 of our footprint. In 2024, we included a new data source that was previously not reported. This emission data is associated with the decommissioning of a testing facility for Heathrow’s business parking pod test track in Cardiff, 'Cardiff Test Track' which are now reported as part of our ‘On the Ground’ scope 3 emissions. Since the beginning of 2022, SAF has been regularly uplifted at Heathrow and forms part of our aeronautical charges incentive scheme. For the years 2022 and 2023, we have restated our 'Savings from SAF' on lifecycle aircraft GHG emissions due to updated processes for monitoring and improving our reporting. In 2024, SAF delivered lifecycle carbon savings of 92% on average. Guidance from professional bodies and standard setters on how to account for SAF is emerging and we are reviewing our reporting methods. We continue to report the savings from using SAF compared to regular jet fuel in our ‘Separately from the scopes’ table until further guidance is available. We are continuously improving the quality of our carbon footprint data to provide more frequent, accurate and accessible carbon reporting. Previously, Bureau Veritas UK Limited provided limited assurance for our GHG emissions data, covering January 1 2020 to December 31, 2023. PricewaterhouseCoopers LLP ('PwC') has performed independent limited assurance procedures over over selected sustainability performance metrics for the year ended 31 December 2024. For the results of that assurance process, see PwC's assurance report on page 113 alongside",
+          "metadata": {
+            "sector": "Infrastructure",
+            "token_count": 500,
+            "page_num": 107,
+            "language": "EN",
+            "company_id": "Heathrow",
+            "report_id": "2024_UK_HeathrowAirport_Sustainablity_EN",
+            "char_count": 1981,
+            "chunk_num": 2
+          },
+          "distance": 1.0397199392318726,
+          "rrf_score": 0.014492753623188406,
+          "reranker_score": 2.8684401512145996
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  },
+  {
+    "company": "Kepco",
+    "req_id": "305-3",
+    "result": {
+      "company_id": "Kepco",
+      "requirement_id": "305-3",
+      "requirement_name": "Other indirect (Scope 3) GHG emissions",
+      "overall_status": "partial",
+      "element_coverage": [
+        {
+          "element": "Gross Scope 3 emissions in tCO2e",
+          "status": "partial",
+          "evidence_chunks": [
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0004",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0005",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0002",
+            "2024_KR_Kepco_Sustainability_KO_p0149_c0003",
+            "2024_KR_Kepco_Sustainability_KO_p0059_c0002"
+          ],
+          "evidence_text": "�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3\n\n제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량\n\n,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) 만tCO2eq -195,484 57,843 4,524 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 0.7 0.7 0.7 Scope 2(간접배출) tCO2eq/억 원 32.7 28.7 27.5 Scope 3(기타배출) tCO2eq/억 원 - - 2.2 배출권거래제 이행 실적 할당량 만tCO2eq 294 294 294 배출량 만tCO2eq 311 305 305 한국남동발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 6,292,987 1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원\n\n1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원\n\n출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 한국남동발전 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 한국중부발전 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 한국서부발전 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 한국남부발전 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2",
+          "page_numbers": [
+            149,
+            149,
+            149,
+            149,
+            59
+          ],
+          "confidence": 0.7,
+          "reasoning": "Scope 3 emissions are reported for multiple entities, but there is no clear aggregate total for the reporting entity. Each entity's Scope 3 emissions are listed separately, which does not satisfy the requirement for a gross total for the reporting entity.",
+          "verification_method": "llm",
+          "evidence": [
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0004",
+              "text": "�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3",
+              "page_number": 149
+            },
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0005",
+              "text": "제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3,015 2,930 한국남부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2eq 103,968 113,942 162,145 Scope 3(기타배출) tCO2eq 7,501,483 7,816,371 6,709,112 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -5,450,462 -872,623 8,580,495 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 606 378 364 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 132 84 91 배출권거래제 이행 실적 할당량 만tCO2eq 2,842 2,842 2,842 배출량 만tCO2eq 3,446 3,533 2,675 온실가스 1) 온실가스 배출 절감량 산출 기준: [전년도 배출량(Scope 1+2) - 당해년도 배출량(Scope 1+2)] 2) 배출권 거래제(할당량",
+              "page_number": 149
+            },
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0002",
+              "text": ",136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) 만tCO2eq -195,484 57,843 4,524 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 0.7 0.7 0.7 Scope 2(간접배출) tCO2eq/억 원 32.7 28.7 27.5 Scope 3(기타배출) tCO2eq/억 원 - - 2.2 배출권거래제 이행 실적 할당량 만tCO2eq 294 294 294 배출량 만tCO2eq 311 305 305 한국남동발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 6,292,987 1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원",
+              "page_number": 149
+            },
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0003",
+              "text": "1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원",
+              "page_number": 149
+            },
+            {
+              "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0059_c0002",
+              "text": "출) tCO2eq 220,002,720 214,273,227 194,127,327 한국수력원자력 Scope 1(직접배출) tCO2eq 67,459 74,691 79,085 Scope 2(간접배출) tCO2eq 3,046,136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 한국남동발전 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 한국중부발전 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 한국서부발전 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 한국남부발전 Scope 1(직접배출) tCO2eq 34,353,892 35,216,541 26,587,843 Scope 2(간접배출) tCO2",
+              "page_number": 59
+            }
+          ]
+        },
+        {
+          "element": "Gases included in Scope 3 calculation if available",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the gases included in the Scope 3 calculation.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 biogenic CO2 emissions reported separately",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "There is no explicit mention of Scope 3 biogenic CO2 emissions being reported separately, nor is there a statement indicating that no such emissions occurred or that the disclosure is not applicable.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 categories and activities included",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "None of the chunks explicitly identify the Scope 3 categories and activities included in the calculation. The chunks provide data on emissions but do not specify the categories or activities for Scope 3.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 base year and base-year emissions if applicable",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "No explicit identification of a Scope 3 base year or base-year emissions is present in the provided chunks.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 emission factors and GWP source",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "There is no explicit mention of the source of Scope 3 emission factors or the GWP source/rates used in any of the provided chunks.",
+          "verification_method": "llm",
+          "evidence": []
+        },
+        {
+          "element": "Scope 3 standards methodologies assumptions and calculation tools",
+          "status": "missing",
+          "evidence_chunks": [],
+          "evidence_text": "",
+          "page_numbers": [],
+          "confidence": 0.1,
+          "reasoning": "No specific standards, methodologies, assumptions, or calculation tools for Scope 3 emissions are identified in the provided chunks.",
+          "verification_method": "llm",
+          "evidence": []
+        }
+      ],
+      "evidence": [
+        {
+          "rank": 1,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0004",
+          "text": "�출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원 173.5 78.7 86.9 배출권거래제 이행 실적 할당량 만tCO2eq 2,982 2,982 2,982 배출량 만tCO2eq 3,306 3,184 3,130 한국서부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 33,198,352 29,970,540 29,059,648 Scope 2(간접배출) tCO2eq 159,888 188,693 237,994 Scope 3(기타배출) tCO2eq 6,668,715 6,232,383 3,446,586 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq -2,935,648 3,199,007 861,592 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 668.0 369.4 420.2 Scope 2(간접배출) tCO2eq/억 원 3.2 2.3 3.4 Scope 3(기타배출) tCO2eq/억 원 134.2 76.8 49.8 배출권거래제 이행 실적 할당량 만tCO2eq 2,723 2,723 2,723 배출량 만tCO2eq 3,336 3",
+          "metadata": {
+            "company_id": "Kepco",
+            "page_num": 149,
+            "chunk_num": 4,
+            "token_count": 500,
+            "char_count": 575,
+            "sector": "Energy",
+            "report_id": "2024_KR_Kepco_Sustainability_KO",
+            "language": "KO"
+          },
+          "distance": 1.1411097049713135,
+          "rrf_score": 0.03007688828584351,
+          "reranker_score": 3.9722821712493896
+        },
+        {
+          "rank": 2,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0002",
+          "text": ",136 2,981,060 2,972,142 Scope 3(기타배출) tCO2eq - - 239,215 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) 만tCO2eq -195,484 57,843 4,524 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 0.7 0.7 0.7 Scope 2(간접배출) tCO2eq/억 원 32.7 28.7 27.5 Scope 3(기타배출) tCO2eq/억 원 - - 2.2 배출권거래제 이행 실적 할당량 만tCO2eq 294 294 294 배출량 만tCO2eq 311 305 305 한국남동발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 37,142,060 35,297,912 31,543,137 Scope 2(간접배출) tCO2eq 86,171 87,020 99,645 Scope 3(기타배출) tCO2eq 12,409,214 13,036,146 12,380,010 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 6,292,987 1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원",
+          "metadata": {
+            "token_count": 500,
+            "chunk_num": 2,
+            "page_num": 149,
+            "company_id": "Kepco",
+            "sector": "Energy",
+            "report_id": "2024_KR_Kepco_Sustainability_KO",
+            "char_count": 584,
+            "language": "KO"
+          },
+          "distance": 1.0983529090881348,
+          "rrf_score": 0.03149801587301587,
+          "reranker_score": 3.498826742172241
+        },
+        {
+          "rank": 3,
+          "chunk_id": "2024_KR_Kepco_Sustainability_KO_p0149_c0003",
+          "text": "1,843,299 3,742,150 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 716 393 608 Scope 2(간접배출) tCO2eq/억 원 2 1 2 Scope 3(기타배출) tCO2eq/억 원 138 145 239 배출권거래제 이행 실적 할당량 만tCO2eq 3,977 3,977 3,977 배출량 만tCO2eq 3,722 3,538 3,164 회사명 구분 단위 2021 2022 2023 한국중부발전 온실가스 배출량 Scope 1(직접배출) tCO2eq 32,979,587 31,747,702 31,170,642 Scope 2(간접배출) tCO2eq 113,546 127,504 139,411 Scope 3(기타배출) tCO2eq 9,287,047 6,789,841 6,601,366 온실가스 배출 절감량(전년도-당해년도) 절감량(Scope 1+2) tCO2eq 1,681,754 1,217,928 565,152 온실가스 배출 집약도 Scope 1(직접배출) tCO2eq/억 원 616.0 367.9 409.5 Scope 2(간접배출) tCO2eq/억 원 2.1 1.5 1.8 Scope 3(기타배출) tCO2eq/억 원",
+          "metadata": {
+            "chunk_num": 3,
+            "page_num": 149,
+            "sector": "Energy",
+            "company_id": "Kepco",
+            "language": "KO",
+            "report_id": "2024_KR_Kepco_Sustainability_KO",
+            "token_count": 500,
+            "char_count": 589
+          },
+          "distance": 1.1183178424835205,
+          "rrf_score": 0.030776515151515152,
+          "reranker_score": 2.8056728839874268
+        }
+      ],
+      "verification_mode": "llm"
+    },
+    "error": null
+  }
+]

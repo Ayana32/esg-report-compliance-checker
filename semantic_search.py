@@ -15,10 +15,20 @@ openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 class SemanticRetriever:
     """Simple semantic search retriever"""
     
-    def __init__(self, collection_name: str = "standards"):
-        """Initialize retriever with ChromaDB collection"""
-        self.client = chromadb.PersistentClient(path="data/chromadb")
-        self.collection = self.client.get_collection(collection_name)
+    def __init__(
+        self,
+        collection_name: str = "standards",
+        *,
+        persist_directory: str = "data/chromadb",
+    ):
+        """Initialize retriever with ChromaDB collection."""
+        self.persist_directory = persist_directory
+        self.client = chromadb.PersistentClient(
+            path=persist_directory
+        )
+        self.collection = self.client.get_collection(
+            collection_name
+        )
         self.collection_name = collection_name
     
     def get_embedding(self, text: str) -> List[float]:

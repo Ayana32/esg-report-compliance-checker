@@ -99,6 +99,90 @@ PARTIAL if: Intensity is referenced but no actual ratio or denominator is given.
 MISSING if: No intensity ratio is present.
 NOTE: Reporting absolute emissions is NOT an intensity ratio.
       Consolidation approach text is NOT an intensity ratio.""",
+
+    "Gross location-based Scope 2 emissions in tCO2e": """
+COVERED if: A specific numeric gross location-based Scope 2 emissions value is explicitly reported for the reporting entity in tCO2e/tCO2eq.
+PARTIAL if ANY of the following:
+  - A numeric Scope 2 value is present but it is unclear whether it is location-based or gross.
+  - Only subsidiary, business-unit, site, or facility-level Scope 2 values are shown without a clearly reported aggregate for the reporting entity.
+MISSING if: No numeric location-based Scope 2 emissions value is present.
+IMPORTANT:
+  - Do not treat a subsidiary or business-unit value as the reporting entity's gross total.
+  - Do not sum multiple subsidiary values yourself unless the report explicitly presents that sum as the reporting entity total.""",
+
+    "Gross market-based Scope 2 emissions in tCO2e if applicable": """
+COVERED if: A specific numeric gross market-based Scope 2 emissions value is reported, OR the evidence explicitly establishes that market-based reporting is not applicable.
+PARTIAL if: Market-based accounting is mentioned but the value or applicability is unclear.
+MISSING if: No market-based value and no explicit not-applicable information is present.""",
+
+    "Gases included in Scope 2 calculation if available": """
+COVERED if: The gases included in the Scope 2 calculation are explicitly identified, including an explicit statement that all relevant GHGs are included.
+PARTIAL if: Only one or an incomplete subset of gases is identified.
+MISSING if: No gases included in the Scope 2 calculation are identified.""",
+
+    "Scope 2 base year and base-year emissions if applicable": """
+COVERED if: A Scope 2 base year is explicitly identified together with base-year emissions and the rationale/context required for the base-year disclosure.
+PARTIAL if: A base year or baseline is identified but supporting base-year information is incomplete.
+MISSING if: No Scope 2 base-year disclosure is present.
+NOTE: A multi-year table alone is not a base-year declaration.""",
+
+    "Scope 2 emission factors and GWP source": """
+COVERED if: The source of Scope 2 emission factors and the GWP source/rates used are explicitly identified or referenced.
+PARTIAL if: Emission factors or GWP methodology are mentioned but the source is incomplete or vague.
+MISSING if: No emission-factor or GWP source information is present.""",
+
+    "Scope 2 consolidation approach": """
+COVERED if: The consolidation approach is explicitly stated as equity share, financial control, or operational control.
+PARTIAL if: The reporting boundary is described but the consolidation approach is not explicit.
+MISSING if: No consolidation approach or relevant boundary information is present.""",
+
+    "Scope 2 standards methodologies assumptions and calculation tools": """
+COVERED if: Specific standards, methodologies, assumptions, and/or calculation tools used for Scope 2 are explicitly identified.
+PARTIAL if: A methodology or standard is referenced only vaguely or incompletely.
+MISSING if: No relevant Scope 2 methodology, standard, assumption, or calculation tool is identified.""",
+
+    "Gross Scope 3 emissions in tCO2e": """
+COVERED if: A specific numeric gross Scope 3 emissions value is explicitly reported for the reporting entity in tCO2e/tCO2eq.
+PARTIAL if ANY of the following:
+  - Scope 3 emissions are quantified but a clear gross reporting-entity total is unavailable.
+  - Only subsidiary, business-unit, category, site, or facility-level Scope 3 values are shown without a clearly reported aggregate for the reporting entity.
+MISSING if: No numeric Scope 3 emissions disclosure is present.
+IMPORTANT:
+  - Do not treat an individual subsidiary, category, or business-unit value as the reporting entity's gross Scope 3 total.
+  - Do not sum multiple values yourself unless the report explicitly presents that sum as the reporting entity total.""",
+
+    "Gases included in Scope 3 calculation if available": """
+COVERED if: The gases included in the Scope 3 calculation are explicitly identified, including an explicit statement that all relevant GHGs are included.
+PARTIAL if: Only one or an incomplete subset of gases is identified.
+MISSING if: No gases included in the Scope 3 calculation are identified.""",
+
+    "Scope 3 biogenic CO2 emissions reported separately": """
+COVERED if ANY of the following:
+  - Biogenic CO2 arising in the value chain is reported separately with a numeric value.
+  - The report explicitly states that no Scope 3 biogenic CO2 emissions occurred or that this disclosure is not applicable.
+PARTIAL if: A relevant biogenic source is quantified but the separate biogenic CO2 disclosure is incomplete or ambiguous.
+MISSING if: No separate numeric disclosure and no explicit zero/not-applicable statement is present.""",
+
+    "Scope 3 categories and activities included": """
+COVERED if: Scope 3 categories and activities included in the calculation are explicitly identified.
+PARTIAL if: Some upstream/downstream activities are identified but the included categories/activities are incomplete or ambiguous.
+MISSING if: No Scope 3 categories or included activities are identified.""",
+
+    "Scope 3 base year and base-year emissions if applicable": """
+COVERED if: A Scope 3 base year is explicitly identified together with base-year emissions and the supporting base-year information.
+PARTIAL if: A Scope 3 base year or baseline is identified but required supporting information is incomplete.
+MISSING if: No Scope 3 base-year disclosure is present.
+NOTE: A multi-year table alone is not a base-year declaration.""",
+
+    "Scope 3 emission factors and GWP source": """
+COVERED if: The source of Scope 3 emission factors and the GWP source/rates used are explicitly identified or referenced.
+PARTIAL if: Emission factors or GWP methodology are mentioned but the source is incomplete or vague.
+MISSING if: No emission-factor or GWP source information is present.""",
+
+    "Scope 3 standards methodologies assumptions and calculation tools": """
+COVERED if: Specific standards, methodologies, assumptions, and/or calculation tools used for Scope 3 are explicitly identified.
+PARTIAL if: A methodology, assumption, or standard is referenced only vaguely or incompletely.
+MISSING if: No relevant Scope 3 methodology, standard, assumption, or calculation tool is identified.""",
 }
 
 # Default rules for any slot not in the above dict
@@ -122,7 +206,7 @@ class LLMVerifier:
         max_chunks: int = 10
     ) -> Dict:
         """
-        Verify if evidence chunks cover a specific GRI 305-1 slot.
+        Verify if evidence chunks cover a specific GRI 305 disclosure element.
 
         Args:
             element: Slot description (must match a key in SLOT_RULES for best results)
@@ -159,7 +243,7 @@ class LLMVerifier:
         slot_rules = SLOT_RULES.get(element, DEFAULT_SLOT_RULES)
 
         # ── System prompt ──────────────────────────────────────────────────────
-        system_prompt = """You are a strict ESG compliance auditor verifying GRI 305-1 disclosures.
+        system_prompt = """You are a strict ESG compliance auditor verifying GRI 305 emissions disclosures.
 
 IMPORTANT PRINCIPLES:
 1. Be conservative. When in doubt, return "partial" — never "covered".

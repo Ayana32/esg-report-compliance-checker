@@ -7,7 +7,7 @@ Changes from v2:
 - partial from LLM verifier is no longer collapsed into missing
 """
 
-from hybrid_search import HybridRetriever
+from retrieval_modes import AblationRetriever
 from requirements_loader import RequirementLoader
 from llm_verifier import LLMVerifier
 from typing import Dict, List
@@ -18,7 +18,12 @@ class ComplianceCheckerV2:
 
     def __init__(self):
         self.requirements = RequirementLoader()
-        self.retriever    = HybridRetriever(collection_name="reports")
+        self.retriever = AblationRetriever(
+            collection_name="reports",
+            candidate_k=10,
+            persist_directory="data/chromadb_ablation/500_50",
+            chunk_directory="data/chunks/ablation/500_50/reports",
+        )
         self.llm_verifier = LLMVerifier()
 
     def check_requirement(
@@ -47,8 +52,9 @@ class ComplianceCheckerV2:
         global_query    = f"{req['name']} {' '.join(keywords[:4])}"
         global_evidence = self.retriever.search(
             global_query,
+            mode="hybrid_rerank",
             n_results=n_results,
-            where={"company_id": company_id}
+            where={"company_id": company_id},
         )
 
         from element_query_generator import ElementQueryGenerator
@@ -62,23 +68,39 @@ class ComplianceCheckerV2:
             # Per-element evidence retrieval
             elem_queries = query_gen.generate_queries(element)
             if elem_queries:
-                elem_evidence = []
+                # Use multilingual queries for candidate recall, then perform
+                # one final cross-encoder rerank over the merged candidate pool.
+                elem_candidates = []
                 seen_ids = set()
+
                 for eq in elem_queries[:3]:
                     results = self.retriever.search(
-                        eq, n_results=10, where={"company_id": company_id}
+                        eq,
+                        mode="hybrid",
+                        n_results=10,
+                        where={"company_id": company_id},
                     )
+
                     for r in results:
-                        if r.get('chunk_id') not in seen_ids:
-                            elem_evidence.append(r)
-                            seen_ids.add(r.get('chunk_id'))
+                        chunk_id = r.get('chunk_id')
+                        if chunk_id and chunk_id not in seen_ids:
+                            elem_candidates.append(r)
+                            seen_ids.add(chunk_id)
+
+                # Add requirement-level evidence as fallback candidates.
                 for r in global_evidence:
-                    if r.get('chunk_id') not in seen_ids:
-                        elem_evidence.append(r)
-                        seen_ids.add(r.get('chunk_id'))
-                evidence = elem_evidence[:n_results]
+                    chunk_id = r.get('chunk_id')
+                    if chunk_id and chunk_id not in seen_ids:
+                        elem_candidates.append(r)
+                        seen_ids.add(chunk_id)
+
+                evidence = self.retriever.reranker.rerank(
+                    element,
+                    elem_candidates,
+                    top_k=5,
+                )
             else:
-                evidence = global_evidence
+                evidence = global_evidence[:5]
 
             if verification_mode == "keyword":
                 covered = self._check_element_with_keywords(element, evidence, keywords)
@@ -124,7 +146,10 @@ class ComplianceCheckerV2:
                 'evidence'           : structured_evidence
             })
 
-        overall_status = self._determine_overall_status(element_coverage)
+        overall_status = self._determine_overall_status(
+            element_coverage,
+            req_id,
+        )
 
         return {
             'company_id'        : company_id,
@@ -257,7 +282,7 @@ class ComplianceCheckerV2:
             element=element,
             evidence_chunks=evidence,
             requirement_name=requirement_name,
-            max_chunks=10
+            max_chunks=5
         )
 
         # Read status directly from v3 verifier (covered / partial / missing)
@@ -314,37 +339,149 @@ class ComplianceCheckerV2:
             'confidence': confidence
         }
 
-    def _determine_overall_status(self, element_coverage: List[Dict]) -> str:
+    def _determine_overall_status(
+        self,
+        element_coverage: List[Dict],
+        req_id: str,
+    ) -> str:
         """
-        Determine overall requirement coverage using ground_truth.py rules:
-        - covered : no missing + at least 4 covered + all critical slots covered
-        - partial : some evidence but at least one critical slot partial/missing
-        - missing : majority of slots missing
+        Determine requirement-level evidence completeness.
+
+        GRI defines the disclosure elements themselves.
+        covered/partial/missing aggregation is a project-specific
+        conservative policy and is not an official GRI scoring rule.
         """
-        from ground_truth import CRITICAL_SLOTS, SLOTS
+        if req_id == "305-1":
+            from ground_truth import determine_coverage
 
-        slot_keys = list(SLOTS.keys())
-        total     = len(element_coverage)
+            element_to_slot = {
+                "Total Scope 1 emissions in tCO2e": "slot_a",
+                "Gases included in calculation (CO2, CH4, N2O, HFCs, PFCs, SF6, NF3)": "slot_b",
+                "Biogenic CO2 emissions (reported separately)": "slot_c",
+                "Base year for calculation": "slot_d",
+                "Emission factors and GWP source (e.g. IPCC AR5/AR6)": "slot_e",
+                "Consolidation approach (equity share, financial control, operational control)": "slot_f",
+                "Standards and methodologies used (e.g. GHG Protocol, third-party verification)": "slot_g",
+            }
 
-        # Build slot_key → status map by position
-        slot_status = {}
-        for i, elem in enumerate(element_coverage):
-            if i < len(slot_keys):
-                slot_status[slot_keys[i]] = elem['status']
+            slot_status = {}
 
-        covered_count = sum(1 for s in slot_status.values() if s == 'covered')
-        missing_count = sum(1 for s in slot_status.values() if s == 'missing')
+            for elem in element_coverage:
+                slot = element_to_slot.get(
+                    elem.get("element")
+                )
+                if slot:
+                    slot_status[slot] = elem.get(
+                        "status",
+                        "missing",
+                    )
 
-        # missing: majority missing
-        if missing_count > total / 2:
+            return determine_coverage(slot_status)
+
+        if req_id in {"305-2", "305-3"}:
+            req = self.requirements.get_requirement(
+                "gri_305",
+                req_id,
+            )
+
+            metadata = {
+                elem["element"]: elem
+                for elem in req["required_elements"]
+            }
+
+            status_by_element = {
+                elem["element"]: elem.get(
+                    "status",
+                    "missing",
+                )
+                for elem in element_coverage
+            }
+
+            required_elements = req[
+                "required_elements"
+            ]
+
+            if not required_elements:
+                return "missing"
+
+            # The first disclosure element is the gross emissions
+            # anchor for both 305-2 and 305-3.
+            anchor = required_elements[0]["element"]
+
+            if (
+                status_by_element.get(
+                    anchor,
+                    "missing",
+                )
+                == "missing"
+            ):
+                return "missing"
+
+            mandatory = [
+                elem["element"]
+                for elem in required_elements
+                if not elem.get(
+                    "conditional",
+                    False,
+                )
+            ]
+
+            all_mandatory_covered = all(
+                status_by_element.get(name)
+                == "covered"
+                for name in mandatory
+            )
+
+            # A conditional disclosure that is absent does not,
+            # by itself, prevent full coverage because GRI marks
+            # these as "if applicable" or "if available".
+            #
+            # However, if evidence exists but is incomplete
+            # (partial), retain the conservative partial status.
+            conditional_partial = any(
+                status_by_element.get(
+                    elem["element"]
+                )
+                == "partial"
+                for elem in required_elements
+                if elem.get(
+                    "conditional",
+                    False,
+                )
+            )
+
+            if (
+                all_mandatory_covered
+                and not conditional_partial
+            ):
+                return "covered"
+
+            return "partial"
+
+        # Generic conservative fallback for requirements that
+        # do not yet have an explicit aggregation policy.
+        statuses = [
+            elem.get(
+                "status",
+                "missing",
+            )
+            for elem in element_coverage
+        ]
+
+        if not statuses:
             return "missing"
 
-        # covered: no missing + 4+ covered + all critical covered
-        all_critical_covered = all(
-            slot_status.get(s) == 'covered' for s in CRITICAL_SLOTS
-        )
-        if missing_count == 0 and covered_count >= 4 and all_critical_covered:
+        if all(
+            status == "covered"
+            for status in statuses
+        ):
             return "covered"
+
+        if all(
+            status == "missing"
+            for status in statuses
+        ):
+            return "missing"
 
         return "partial"
 

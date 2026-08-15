@@ -37,18 +37,16 @@ class ElementQueryGenerator:
         },
         'base_year': {
             'en': [
-                "base year 2020 calculation",  # ← 연도 추가!
-                "baseline year 2020 emissions",  # ← 연도 추가!
-                "reference year 2019 2020 2021",  # ← 여러 연도
+                "base year emissions",
+                "baseline year greenhouse gas emissions",
+                "reference year emissions inventory",
                 "base year GHG inventory"
             ],
             'ko': [
-                "기준연도 2020",  # ← 핵심 개선!
-                "2020 기준연도",  # ← 순서 바꿈
-                "2020년 기준 배출량",  # ← 자연스러운 표현
-                "기준 연도 배출량",
+                "기준연도 배출량",
+                "기준 연도 온실가스 배출량",
                 "배출량 기준년도",
-                "기준연도 설정"  # ← 추가
+                "기준연도 설정"
             ]
         },
         'emission_factors': {
@@ -103,6 +101,110 @@ class ElementQueryGenerator:
                 "생물 기원 이산화탄소",
                 "바이오제닉 배출량 별도"
             ]
+        },
+
+        'scope2_total': {
+            'en': [
+                "Scope 2 location-based emissions tCO2e",
+                "energy indirect greenhouse gas emissions",
+                "location based Scope 2 emissions"
+            ],
+            'ko': [
+                "Scope 2 지역기반 배출량",
+                "간접 온실가스 배출량",
+                "지역기반 Scope 2 온실가스"
+            ]
+        },
+
+        'scope2_market': {
+            'en': [
+                "Scope 2 market-based emissions tCO2e",
+                "market based electricity emissions",
+                "market-based Scope 2"
+            ],
+            'ko': [
+                "Scope 2 시장기반 배출량",
+                "시장기반 온실가스 배출량",
+                "시장기반 Scope 2"
+            ]
+        },
+
+        'scope2_factors': {
+            'en': [
+                "Scope 2 emission factors GWP source",
+                "electricity grid emission factor source",
+                "Scope 2 GWP methodology"
+            ],
+            'ko': [
+                "Scope 2 배출계수 출처",
+                "전력 배출계수 출처",
+                "Scope 2 GWP 산정 기준"
+            ]
+        },
+
+        'scope2_methodology': {
+            'en': [
+                "GHG Protocol Scope 2 methodology",
+                "Scope 2 standards calculation methodology",
+                "Scope 2 calculation tools assumptions"
+            ],
+            'ko': [
+                "Scope 2 산정 방법론",
+                "Scope 2 온실가스 산정 기준",
+                "Scope 2 계산 도구 가정"
+            ]
+        },
+
+        'scope3_total': {
+            'en': [
+                "total Scope 3 emissions tCO2e",
+                "gross Scope 3 greenhouse gas emissions",
+                "value chain emissions total"
+            ],
+            'ko': [
+                "Scope 3 배출량 총량",
+                "Scope 3 온실가스 총배출량",
+                "가치사슬 배출량 총계"
+            ]
+        },
+
+        'scope3_categories': {
+            'en': [
+                "Scope 3 categories upstream downstream",
+                "Scope 3 categories activities included",
+                "value chain emission categories"
+            ],
+            'ko': [
+                "Scope 3 카테고리",
+                "Scope 3 활동 범주",
+                "가치사슬 배출 카테고리"
+            ]
+        },
+
+        'scope3_factors': {
+            'en': [
+                "Scope 3 emission factors GWP source",
+                "Scope 3 calculation emission factor",
+                "Scope 3 GWP methodology"
+            ],
+            'ko': [
+                "Scope 3 배출계수 출처",
+                "Scope 3 산정 배출계수",
+                "Scope 3 GWP 산정 기준"
+            ]
+        },
+
+        'scope3_methodology': {
+            'en': [
+                "GHG Protocol Scope 3 methodology",
+                "Corporate Value Chain Scope 3 standard",
+                "PCAF Scope 3 methodology"
+            ],
+            'ko': [
+                "Scope 3 산정 방법론",
+                "가치사슬 온실가스 산정 기준",
+                "Scope 3 PCAF 방법론"
+            ]
         }
     }
     
@@ -116,10 +218,30 @@ class ElementQueryGenerator:
             return 'total_scope1'
         elif 'base year' in element_lower:
             return 'base_year'
+        elif 'scope 2 emission factors' in element_lower:
+            return 'scope2_factors'
+        elif 'scope 3 emission factors' in element_lower:
+            return 'scope3_factors'
         elif 'emission factors' in element_lower:
             return 'emission_factors'
         elif 'consolidation' in element_lower:
             return 'consolidation_approach'
+        elif 'gross location-based scope 2' in element_lower:
+            return 'scope2_total'
+        elif 'gross market-based scope 2' in element_lower:
+            return 'scope2_market'
+        elif 'scope 2 emission factors' in element_lower:
+            return 'scope2_factors'
+        elif 'scope 2 standards' in element_lower:
+            return 'scope2_methodology'
+        elif 'gross scope 3 emissions' in element_lower:
+            return 'scope3_total'
+        elif 'scope 3 categories' in element_lower:
+            return 'scope3_categories'
+        elif 'scope 3 emission factors' in element_lower:
+            return 'scope3_factors'
+        elif 'scope 3 standards' in element_lower:
+            return 'scope3_methodology'
         elif 'biogenic' in element_lower:
             return 'biogenic_co2'
         elif 'standards' in element_lower or 'methodolog' in element_lower or 'verification' in element_lower:
@@ -142,8 +264,22 @@ class ElementQueryGenerator:
         
         if category and category in self.ELEMENT_QUERIES:
             queries = self.ELEMENT_QUERIES[category]
-            # Combine EN and KO queries
-            return queries['en'] + queries['ko']
+
+            # Interleave English and Korean queries so that
+            # downstream query caps preserve multilingual coverage.
+            combined = []
+            max_len = max(
+                len(queries['en']),
+                len(queries['ko']),
+            )
+
+            for i in range(max_len):
+                if i < len(queries['en']):
+                    combined.append(queries['en'][i])
+                if i < len(queries['ko']):
+                    combined.append(queries['ko'][i])
+
+            return combined
         else:
             # Fallback: simple keyword extraction
             keywords = self._extract_keywords(element)

@@ -18,10 +18,16 @@ from nltk.corpus import stopwords
 class KeywordRetriever:
     """BM25-based keyword search"""
     
-    def __init__(self, collection_name: str = "standards"):
-        """Load chunks and build BM25 index"""
+    def __init__(
+        self,
+        collection_name: str = "standards",
+        *,
+        chunk_directory: str | None = None,
+    ):
+        """Load chunks and build BM25 index."""
         
         self.collection_name = collection_name
+        self.chunk_directory = chunk_directory
         self.chunks = self._load_chunks()
         
         # Tokenize all documents
@@ -39,7 +45,9 @@ class KeywordRetriever:
         """Load all chunks from JSONL files"""
         chunks = []
         
-        if self.collection_name == "reports":
+        if self.chunk_directory is not None:
+            chunk_dir = Path(self.chunk_directory)
+        elif self.collection_name == "reports":
             chunk_dir = Path("data/chunks/reports")
         else:
             chunk_dir = Path("data/chunks/standards")

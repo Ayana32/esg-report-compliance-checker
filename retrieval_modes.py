@@ -24,6 +24,8 @@ class AblationRetriever:
         collection_name: str = "reports",
         *,
         candidate_k: int = 20,
+        persist_directory: str = "data/chromadb",
+        chunk_directory: str | None = None,
     ) -> None:
         if candidate_k < 1:
             raise ValueError("candidate_k must be at least 1.")
@@ -31,8 +33,14 @@ class AblationRetriever:
         self.collection_name = collection_name
         self.candidate_k = candidate_k
 
-        self.keyword = KeywordRetriever(collection_name)
-        self.semantic = SemanticRetriever(collection_name)
+        self.keyword = KeywordRetriever(
+            collection_name,
+            chunk_directory=chunk_directory,
+        )
+        self.semantic = SemanticRetriever(
+            collection_name,
+            persist_directory=persist_directory,
+        )
         self.reranker = CrossEncoderReranker()
 
     def _hybrid_candidates(

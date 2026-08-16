@@ -32,3 +32,11 @@ test_stack.py
 data/evaluation/backups/
 outputs/retrieval_ablation/gold_records_before_review.txt
 outputs/retrieval_ablation/gold_review_12.txt
+
+# Generated chunking-ablation databases
+data/chromadb_ablation/
+
+# Local chunking-ablation review artifacts
+outputs/chunking_ablation/gold_remap_audit.txt
+outputs/chunking_ablation/gold_remap_candidates.json
+outputs/chunking_ablation/reviewed_keep.json

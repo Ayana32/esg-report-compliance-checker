@@ -1,103 +1,322 @@
 # ESG Report Compliance Checker
 
-**Evidence-grounded ESG disclosure verification using hybrid retrieval, rule-based checks, and LLM verification**
+**Evidence-grounded ESG disclosure verification using hybrid retrieval, cross-encoder reranking, and LLM-assisted verification.**
 
-A production-oriented NLP system that evaluates corporate ESG reports against GRI emissions disclosure requirements.
+An applied NLP system for evaluating corporate sustainability reports against **GRI 305 emissions disclosure requirements**.
 
-The application retrieves relevant passages from sustainability reports, evaluates individual disclosure elements as **covered**, **partial**, or **missing**, and returns structured reasoning with page-level evidence.
+The system retrieves relevant passages from ESG reports, evaluates individual disclosure elements as `covered`, `partial`, or `missing`, and returns structured decisions with page-level supporting evidence.
 
-The system exposes a typed FastAPI backend, a decoupled Streamlit frontend, automated tests, and a Docker-based runtime.
+---
 
-## Key Features
+## Highlights
 
-- Hybrid retrieval combining ChromaDB semantic search and BM25
-- Reciprocal Rank Fusion for merging retrieval results
+- Hybrid dense + BM25 retrieval with Reciprocal Rank Fusion
 - Multilingual cross-encoder reranking
-- Element-specific queries and verification rules
-- LLM-assisted compliance classification
-- Three-way classification: covered, partial, and missing
-- Evidence attribution with chunk IDs, excerpts, and page numbers
-- Typed request and response models with Pydantic
-- REST API built with FastAPI
-- Streamlit frontend communicating with the backend over HTTP
-- Automated API and service-layer tests with mocked dependencies
-- Dockerised backend for reproducible execution
-- Manual ground-truth evaluation across 11 ESG reports
-- Retrieval ablation with Hit@k and Mean Reciprocal Rank
+- Element-specific English/Korean retrieval queries
+- Evidence-grounded LLM verification with explicit disclosure rules
+- Three-way classification: `covered`, `partial`, `missing`
+- Support for GRI 305-1, 305-2, and 305-3
+- Retrieval, chunking, reranker-depth, and verifier evaluation
+- Separation of retrieval quality from verifier quality
+- FastAPI backend with typed Pydantic contracts
+- Decoupled Streamlit frontend
+- Docker-based runtime
+- **22 automated API, service, and system-regression tests**
+
+---
 
 ## System Architecture
 
 ```mermaid
 flowchart LR
-    U[User] --> S[Streamlit Frontend]
-    S -->|POST /query| A[FastAPI Backend]
-    A --> P[Pydantic Validation]
-    P --> SV[Compliance Service]
+    U[User] --> S[Streamlit]
+    S -->|POST /query| A[FastAPI]
+    A --> V[Pydantic Validation]
+    V --> SV[Compliance Service]
 
-    SV --> R[Hybrid Retrieval]
-    R --> C[(ChromaDB)]
-    R --> B[BM25]
-    C --> F[Reciprocal Rank Fusion]
-    B --> F
+    SV --> Q[Requirement and Element Queries]
 
-    F --> RR[Cross-Encoder Reranker]
-    RR --> Q[Element-specific Retrieval]
-    Q --> K[Keyword Verifier]
-    Q --> L[LLM Verifier]
+    Q --> BM[BM25]
+    Q --> D[Dense Retrieval<br/>ChromaDB + OpenAI Embeddings]
+
+    BM --> RRF[Reciprocal Rank Fusion]
+    D --> RRF
+
+    RRF --> CE[Cross-Encoder Reranker]
+    CE --> E[Top Evidence]
+
+    E --> K[Keyword Verification]
+    E --> L[LLM Verification]
 
     K --> H[Hybrid Decision Logic]
     L --> H
 
-    H --> O[Structured Compliance Response]
+    H --> G[GRI-aware Aggregation]
+    G --> O[Structured Response<br/>Status + Reasoning + Evidence]
     O --> S
 ```
 
-### Request Flow
+The retrieval and verification components are deliberately separated so that retrieval failures, evidence-quality problems, and classification errors can be analysed independently.
 
-```text
-Streamlit frontend
-        │
-        │ HTTP POST /query
-        ▼
-FastAPI backend
-        │
-        ├── request validation
-        ├── service-layer error handling
-        ├── hybrid retrieval and reranking
-        ├── keyword and LLM verification
-        └── structured response mapping
-        ▼
-Evidence-grounded compliance result
+---
+
+## Evaluation and Validation Workflow
+
+A central design choice in this project is to **evaluate retrieval and verification separately before exercising the complete system**.
+
+```mermaid
+flowchart TD
+    A[Raw Corporate Reports] --> B[Chunking Ablation]
+    B --> C[Selected Chunking<br/>500 / 50]
+    C --> D[Index Construction<br/>BM25 + ChromaDB]
+
+    E[Manual Gold Evidence] --> F[Retrieval Benchmark<br/>Hit@5 / MRR]
+    D --> F
+
+    F --> G[Selected Retrieval Configuration<br/>candidate_k=10 + Cross-Encoder]
+    G --> H[Fixed Evidence Packets]
+
+    H --> I[Verifier Benchmark<br/>Accuracy / Macro-F1]
+    I --> J[Evidence Grounding Audit]
+
+    G --> K[Final System]
+    K --> L[End-to-End Smoke Tests<br/>GRI 305-1 / 305-2 / 305-3]
 ```
 
-## Tech Stack
+This prevents three different questions from being collapsed into a single score:
 
-| Layer | Technology |
-|---|---|
-| API | FastAPI |
-| Validation | Pydantic |
-| Frontend | Streamlit |
-| PDF extraction | PyMuPDF |
-| Vector store | ChromaDB |
-| Embeddings | OpenAI `text-embedding-3-small` |
-| Keyword retrieval | BM25 using `rank-bm25` |
-| Retrieval fusion | Reciprocal Rank Fusion |
-| Reranking | Multilingual cross-encoder |
-| LLM verification | OpenAI API |
-| Testing | pytest, FastAPI TestClient, unittest mocks |
-| Containerisation | Docker |
-| Language | Python 3.11 |
+1. **Did retrieval find the relevant evidence?**
+2. **Given fixed evidence, did the verifier classify it correctly?**
+3. **Does the complete system execute coherently across supported requirements?**
+
+---
+
+## Final System Configuration
+
+The final retrieval configuration was selected through controlled ablations rather than chosen heuristically.
+
+- **Chunking:** 500-token target / 50-token overlap
+- **Indexed report chunks:** 7,703
+- **Candidate depth:** `candidate_k=10`
+- **Candidate generation:** BM25 + dense retrieval + Reciprocal Rank Fusion
+- **Requirement-level retrieval:** hybrid retrieval followed by cross-encoder reranking
+- **Element retrieval:** element-specific multilingual queries with deduplication
+- **Final evidence:** Top-5 reranked chunks
+- **Dense embeddings:** `text-embedding-3-small`
+- **Cross-encoder:** `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1`
+
+Generated ChromaDB stores are intentionally excluded from Git because they are reproducible build artifacts.
+
+---
+
+## GRI Coverage
+
+The current structured requirement schema supports three GRI 305 disclosures.
+
+### GRI 305-1 — Direct (Scope 1) GHG emissions
+
+Seven disclosure elements covering:
+
+- gross Scope 1 emissions
+- gases included
+- biogenic CO2
+- base-year information
+- emission factors / GWP sources
+- consolidation approach
+- standards and methodologies
+
+### GRI 305-2 — Energy indirect (Scope 2) GHG emissions
+
+Seven disclosure elements covering:
+
+- location-based Scope 2 emissions
+- market-based Scope 2 emissions, where applicable
+- gases included, where available
+- base-year information, where applicable
+- emission factors / GWP sources
+- consolidation approach
+- standards, methodologies, assumptions, and calculation tools
+
+### GRI 305-3 — Other indirect (Scope 3) GHG emissions
+
+Seven disclosure elements covering:
+
+- gross Scope 3 emissions
+- gases included, where available
+- biogenic CO2 reported separately
+- Scope 3 categories and activities
+- base-year information, where applicable
+- emission factors / GWP sources
+- standards, methodologies, assumptions, and calculation tools
+
+> The final `covered / partial / missing` requirement-level decision is a **project-specific aggregation policy** built on top of the disclosure elements. It should not be interpreted as an official GRI compliance determination.
+
+---
+
+## Evaluation
+
+Evaluation is reported at three distinct levels:
+
+1. **Retrieval benchmark**
+2. **Fixed-evidence verifier benchmark**
+3. **End-to-end smoke testing**
+
+Metrics from one layer are not presented as performance estimates for another.
+
+### 1. Retrieval Benchmark
+
+The retrieval benchmark contains **27 manually reviewed GRI 305-1 evidence queries across 11 corporate reports**.
+
+Gold evidence was manually annotated and kept separate from retrieval predictions.
+
+Because this benchmark is relatively small, the reported retrieval metrics should be interpreted as **small-sample estimates rather than population-level performance**, and may have non-trivial variance across a broader report set.
+
+#### Chunking Ablation
+
+All chunking configurations were constructed from the same source pages using deterministic preprocessing.
+
+| Chunk target / overlap | Chunks | Hit@5 | MRR |
+|---|---:|---:|---:|
+| 250 / 25 | 14,249 | 0.815 | 0.698 |
+| **500 / 50** | **7,703** | **0.963** | **0.779** |
+| 750 / 75 | 5,494 | 0.852 | 0.665 |
+| 1000 / 100 | 4,434 | 0.852 | 0.639 |
+
+The **500 / 50** configuration was selected for the final system.
+
+Gold-evidence integrity checks confirmed that this configuration preserved sufficient single-chunk evidence for all benchmark queries.
+
+#### Reranker Candidate-Depth Ablation
+
+With chunking fixed at 500 / 50:
+
+| Candidate depth | Hybrid Hit@5 | Hybrid MRR | + Reranker Hit@5 | + Reranker MRR | Approx. E2E latency |
+|---:|---:|---:|---:|---:|---:|
+| **10** | 0.926 | 0.636 | **0.963** | **0.798** | **~1.0 s** |
+| 20 | 0.926 | 0.649 | 0.963 | 0.779 | ~2.0 s |
+| 40 | 0.926 | 0.679 | 0.926 | 0.772 | ~3.4 s |
+
+`candidate_k=10` was selected because it matched the best Hit@5, produced the highest reranked MRR, and required substantially less retrieval/reranking time than deeper candidate pools.
+
+#### Selected Retrieval Result
+
+The final retrieval configuration achieved:
+
+- **Hit@5: 0.963**
+- **MRR: 0.798**
+- **26 / 27 queries** with at least one gold evidence chunk in the Top-5
+
+These metrics evaluate **retrieval only**. They are not end-to-end compliance-classification accuracy.
+
+### 2. Fixed-Evidence LLM Verifier Benchmark
+
+The verifier was evaluated separately from retrieval using **39 frozen evidence packets**.
+
+Evidence packets were constructed from retrieved passages, manually reviewed, and frozen before verifier predictions were generated. This design reduces the risk of attributing retrieval failures to the verifier itself.
+
+#### Label Distribution
+
+- `covered`: 28
+- `partial`: 4
+- `missing`: 7
+
+#### Classification Results
+
+| Metric | Result |
+|---|---:|
+| Accuracy | **84.6%** |
+| Macro-F1 | **0.730** |
+| False-covered predictions | **0** |
+| Missing → covered errors | **0** |
+
+Per-class performance:
+
+| Class | Precision | Recall | F1 | N |
+|---|---:|---:|---:|---:|
+| covered | 1.000 | 0.857 | 0.923 | 28 |
+| partial | 0.400 | 0.500 | **0.444** | 4 |
+| missing | 0.700 | 1.000 | 0.824 | 7 |
+
+The weakest class was **`partial` (F1 = 0.444)**. However, this estimate is based on only four examples and is therefore highly unstable; more labelled borderline cases are required before drawing strong conclusions about partial-disclosure performance.
+
+Within this benchmark, errors tended to be conservative: the verifier produced **no false-covered predictions** and no `missing → covered` errors.
+
+#### Evidence Grounding
+
+For correctly classified non-missing predictions:
+
+- **26 / 26** contained at least one human-annotated supporting evidence chunk
+- grounding overlap: **100%**
+
+Predicted `missing` elements return an empty selected-evidence list.
+
+> **84.6% accuracy refers only to the verifier operating on frozen evidence packets.** It is not an accuracy estimate for the complete retrieval + verification system.
+
+### 3. End-to-End Smoke Testing
+
+GRI 305-2 and GRI 305-3 were exercised using the final system across multiple corporate reports.
+
+The smoke set contains:
+
+- **6 report–requirement runs**
+- **42 element-level verification checks**
+- **0 execution failures**
+
+The runs include examples from Schneider Electric, IBK Bank, KEPCO, and Heathrow Airport.
+
+Manual inspection during smoke testing identified an entity-aggregation false positive: subsidiary-level Scope 3 values were initially capable of being interpreted as a reporting-entity gross total.
+
+The verifier rules were subsequently tightened so that subsidiary, business-unit, or site-level values cannot satisfy a reporting-entity gross emissions element unless the report explicitly presents an appropriate aggregate.
+
+> This is an **execution and qualitative smoke test, not an accuracy benchmark**.
+> A fresh human-labelled benchmark for the full seven-element GRI 305-2 and GRI 305-3 schemas has not yet been constructed.
+
+---
+
+## Verification Logic
+
+Each disclosure element receives one of three labels:
+
+- **covered** — evidence sufficiently supports the disclosure element
+- **partial** — relevant evidence exists, but support is incomplete or ambiguous
+- **missing** — sufficient supporting evidence was not identified
+
+This three-way design avoids forcing borderline ESG disclosures into binary decisions.
+
+### Evidence Grounding
+
+Non-missing decisions can return:
+
+- source chunk ID
+- report excerpt
+- PDF page number
+- verifier reasoning
+- confidence
+- verification method
+
+The verifier validates model-selected evidence indices before mapping them back to source chunks.
+
+Invalid, duplicated, non-integer, or out-of-range evidence references are discarded.
+
+`missing` decisions return an empty selected-evidence list.
+
+### Conditional Disclosures
+
+Elements marked *if applicable* or *if available* are handled separately from unconditional elements.
+
+Under the project's aggregation policy, a missing conditional element alone does not automatically prevent an overall `covered` result.
+
+### Entity-Level Guarding
+
+For gross Scope 2 and Scope 3 emissions, evidence must correspond to the reporting entity.
+
+Subsidiary, site, or business-unit values are not independently summed by the verifier unless the report itself explicitly presents an aggregate appropriate to the reporting entity.
+
+---
 
 ## API
 
-Interactive API documentation:
-
-- Swagger UI: `http://localhost:8000/docs`
-- OpenAPI schema: `http://localhost:8000/openapi.json`
-
 ### `GET /health`
-
-Checks whether the API service is running.
 
 ```json
 {
@@ -107,17 +326,15 @@ Checks whether the API service is running.
 
 ### `POST /query`
 
-Runs the ESG compliance-checking pipeline.
-
 Example request:
 
 ```json
 {
-  "company_id": "IBK",
+  "company_id": "Schneider",
   "standard": "gri_305",
   "requirement_id": "305-1",
   "verification_mode": "hybrid",
-  "n_results": 25
+  "n_results": 10
 }
 ```
 
@@ -127,36 +344,16 @@ Supported verification modes:
 - `llm`
 - `keyword`
 
-Example response:
+Interactive Swagger documentation:
 
-```json
-{
-  "company_id": "IBK",
-  "requirement_id": "305-1",
-  "requirement_name": "Direct (Scope 1) GHG emissions",
-  "overall_status": "partial",
-  "verification_mode": "hybrid",
-  "element_coverage": [
-    {
-      "element": "Total Scope 1 emissions in tCO2e",
-      "status": "covered",
-      "confidence": 0.9,
-      "reasoning": "A numeric Scope 1 emissions value was explicitly reported.",
-      "verification_method": "hybrid-agree",
-      "evidence": [
-        {
-          "chunk_id": "2024_KR_IBKBank_Sustainability_KO_p0064_c0001",
-          "text": "Direct Scope 1 emissions were reported in tCO2eq.",
-          "page_number": 64
-        }
-      ]
-    }
-  ],
-  "metadata": {
-    "n_results": 25,
-    "element_count": 7
-  }
-}
+```text
+http://localhost:8000/docs
+```
+
+OpenAPI schema:
+
+```text
+http://localhost:8000/openapi.json
 ```
 
 ### Error Handling
@@ -165,139 +362,159 @@ Example response:
 |---:|---|
 | 200 | Compliance check completed |
 | 400 | Request could not be processed |
-| 404 | Company, standard, requirement, or evidence not found |
+| 404 | Company, requirement, or evidence not found |
 | 422 | Request validation failed |
 | 503 | External dependency unavailable |
 | 500 | Unexpected server error |
 
-## Dataset
+---
 
-The indexed dataset contains:
+## Automated Tests
 
-- 11 corporate ESG reports
-- 7,713 document chunks
-- Finance, manufacturing, and infrastructure companies
-- Reports from South Korea, the United Kingdom, France, and Germany
-- Korean and English documents
-- Manual element-level ground-truth labels based on GRI requirements
+The automated suite currently contains **22 tests** across three layers.
 
-Companies include:
+### API Tests
 
-- IBK Bank
-- Shinhan Bank
-- HSBC
-- Standard Chartered
-- Hyundai Motor
-- Samsung Electronics
-- Siemens
-- Schneider Electric
-- KEPCO
-- Incheon International Airport
-- Heathrow Airport
+Coverage includes:
 
-## Evaluation Results
+- health endpoint
+- successful mocked compliance response
+- blank company validation
+- invalid verification mode
+- retrieval-result limits
+- company/evidence not found
+- unknown requirements
+- external-service timeout handling
 
-### Compliance Evaluation
+### Service-Layer Tests
 
-The system was evaluated using manually constructed element-level ground truth.
+Coverage includes:
 
-| Standard | Companies | Elements | Element Accuracy | False Negative Rate | False Covered Rate | Company Accuracy |
-|---|---:|---:|---:|---:|---:|---:|
-| GRI 305-1 | 11 | 7 | 74.0% | 23.4% | 2.6% | 36.4% |
-| GRI 305-2 | 11 | 5 | 81.8% | 14.5% | 3.6% | 72.7% |
-| GRI 305-3 | 11 | 5 | 83.6% | 10.9% | 5.5% | 72.7% |
+- valid checker result
+- company-not-found conversion
+- key-error conversion
+- timeout conversion
+- connection-error conversion
 
-False Covered is treated as the more serious error because it incorrectly claims that a mandatory disclosure has been satisfied. The current system keeps this error comparatively low while producing more conservative false negatives.
+### System Regression Tests
 
-### Retrieval Ablation
+Regression tests protect behaviours identified during system review, including:
 
-The retrieval pipeline was evaluated on a manually verified gold set of 12 GRI 305-1 evidence queries. The evaluation set was expanded and audited using documented annotation guidelines, including review of ambiguous and missing evidence labels.
+- GRI 305-1 element-to-slot mapping
+- conditional GRI 305-2 aggregation
+- missing mandatory GRI 305-2 elements
+- missing gross Scope 3 emissions
+- Scope 2 / Scope 3 emission-factor query routing
+- removal of hard-coded base years
+- selected `500_50` corpus paths
+- `candidate_k=10`
+- hybrid-rerank requirement retrieval
+- final Top-5 evidence configuration
 
-| Retrieval Mode                 |      Hit@5 |       MRR |
-| ------------------------------ | ---------: | --------: |
-| BM25                           |      83.3% |     0.628 |
-| Semantic                       |      83.3% |     0.528 |
-| Hybrid RRF                     |      91.7% |     0.792 |
-| Hybrid + multilingual reranker | **100.0%** | **0.819** |
+Run:
 
-Hybrid retrieval improved both recall and ranking quality over individual retrieval methods, while multilingual cross-encoder reranking achieved the strongest overall performance.
+```bash
+pytest -q
+```
 
-The gold set is still relatively small and these results should therefore be treated as preliminary. Ongoing evaluation focuses on expanding the benchmark, analysing retrieval failures, and testing retrieval-design trade-offs.
+Current result:
 
-Detailed annotation guidance, review decisions, ablation outputs, and error analysis are included in the repository documentation.
+```text
+22 passed
+```
 
-## Evaluation Design
+Expensive dependencies are mocked where appropriate so API and unit tests do not make unnecessary LLM or retrieval calls.
 
-### Three-Way Classification
+---
 
-Each disclosure element is assigned one of three labels:
+## Tech Stack
 
-- **covered**: sufficient evidence satisfies the element
-- **partial**: related evidence exists, but the requirement is not fully satisfied
-- **missing**: no sufficient supporting disclosure was found
+| Layer | Technology |
+|---|---|
+| Language | Python |
+| API | FastAPI |
+| Validation | Pydantic |
+| Frontend | Streamlit |
+| PDF extraction | PyMuPDF |
+| Dense embeddings | OpenAI `text-embedding-3-small` |
+| Vector store | ChromaDB |
+| Lexical retrieval | BM25 (`rank-bm25`) |
+| Fusion | Reciprocal Rank Fusion |
+| Reranking | `cross-encoder/mmarco-mMiniLMv2-L12-H384-v1` |
+| Verification | OpenAI API + deterministic validation guards |
+| Testing | pytest · FastAPI TestClient · mocks |
+| Runtime | Docker |
 
-This avoids forcing ambiguous or incomplete ESG disclosures into a binary decision.
+Exact Python dependency versions are maintained in `requirements.txt` rather than duplicated in this README.
 
-### Critical Elements
-
-Some elements correspond directly to mandatory GRI disclosure requirements. A requirement cannot receive an overall covered decision when a critical element is missing, even if non-critical elements are satisfied.
-
-### Evidence Grounding
-
-Every positive decision is expected to include:
-
-- source chunk ID
-- report excerpt
-- PDF page number
-- decision reasoning
-- verification method
-
-Missing elements return an empty evidence list.
+---
 
 ## Quick Start
 
-### 1. Clone the Repository
+### 1. Clone
 
 ```bash
 git clone https://github.com/Ayana32/esg-report-compliance-checker.git
 cd esg-report-compliance-checker
 ```
 
-### 2. Configure Environment Variables
-
-```bash
-cp .env.example .env
-```
-
-Add the required API key:
-
-```env
-OPENAI_API_KEY=your_openai_api_key
-```
-
-### 3. Run the FastAPI Backend Locally
+### 2. Create and Activate a Virtual Environment
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+```bash
+cp .env.example .env
+```
+
+Add:
+
+```text
+OPENAI_API_KEY=your_openai_api_key
+```
+
+### 4. Run the FastAPI Backend
+
+```bash
 python -m uvicorn app.main:app --reload
 ```
 
-Backend URLs:
+Backend endpoints:
 
-- Health check: `http://localhost:8000/health`
-- Swagger UI: `http://localhost:8000/docs`
+```text
+Health:  http://localhost:8000/health
+Swagger: http://localhost:8000/docs
+```
 
-### 4. Run with Docker
+### 5. Run the Streamlit Frontend
 
-Build the backend image:
+In a second terminal:
+
+```bash
+source .venv/bin/activate
+streamlit run streamlit_app.py
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+### Docker
+
+Build:
 
 ```bash
 docker build -t esg-compliance-checker-api .
 ```
 
-Run the container:
+Run:
 
 ```bash
 docker run --rm \
@@ -306,166 +523,109 @@ docker run --rm \
   esg-compliance-checker-api
 ```
 
-Verify the service:
+---
 
-```bash
-curl http://localhost:8000/health
-```
+## Reproducibility
 
-Expected result:
+Raw corporate reports, extracted corpora, generated embeddings, and ChromaDB stores are not committed to Git.
 
-```json
-{
-  "status": "healthy"
-}
-```
+Experiment and validation scripts are retained under `scripts/`, including tooling for:
 
-### 5. Run the Streamlit Frontend
+- unified chunking construction
+- chunking ablations
+- embedding construction
+- retrieval evaluation
+- reranker candidate-depth ablation
+- retrieval latency evaluation
+- gold-evidence integrity validation
+- fixed-evidence verifier evaluation
+- evidence-grounding evaluation
 
-The FastAPI backend must be running before starting Streamlit.
+Supporting experiment outputs are retained under `outputs/` where practical.
 
-```bash
-source .venv/bin/activate
-streamlit run streamlit_app.py
-```
+Human gold labels are kept separate from model predictions, and benchmark annotations are not modified in response to model performance.
 
-Open `http://localhost:8501`.
+---
 
-The frontend sends requests to `http://localhost:8000/query`. A different backend URL can be configured with:
+## Known Limitations
 
-```bash
-export API_BASE_URL=http://your-api-host:8000
-```
+- The retrieval benchmark contains only **27 GRI 305-1 queries across 11 reports**, so reported retrieval metrics may have substantial small-sample variance.
+- The fixed-evidence verifier benchmark contains **39 cases**.
+- The `partial` verifier class contains only **four examples**, making its F1 estimate unstable.
+- GRI 305-2 and GRI 305-3 currently have end-to-end smoke coverage but not fresh human-labelled benchmarks for their full seven-element schemas.
+- ESG methodology disclosures are often distributed across sustainability reports, annual reports, indexes, and data packs; not all multi-document combinations are currently indexed.
+- Korean and European reports can use substantially different disclosure structures and terminology.
+- Presence of an IPCC, ISO, or GHG Protocol reference does not necessarily identify the precise emission-factor or GWP version required for a disclosure.
+- LLM verification remains sensitive to incomplete and semantically ambiguous evidence.
+- Overall `covered / partial / missing` aggregation is a project-specific decision policy rather than an official GRI compliance score.
+- The system is portfolio-scale and has not been evaluated under sustained real-world traffic.
 
-## Automated Tests
+---
 
-The test suite covers:
+## Future Work
 
-- API health checks
-- successful compliance responses
-- request validation
-- invalid verification modes
-- retrieval-result limits
-- unknown companies
-- unknown requirements
-- external-service timeouts
-- connection failures
-- service-layer exception conversion
-- mocked checker execution
+- Construct manually labelled seven-element GRI 305-2 and GRI 305-3 benchmarks
+- Expand the retrieval benchmark across more companies and report structures
+- Add uncertainty estimates or repeated-sampling analysis for retrieval metrics
+- Increase representation of ambiguous `partial` disclosures
+- Multi-document retrieval per reporting entity
+- Cross-lingual retrieval and disclosure-consistency evaluation
+- Additional sustainability frameworks such as ISSB
+- Calibration analysis for verifier confidence
+- CI/CD and automated deployment checks
+- Structured monitoring and observability
 
-Run all tests:
-
-```bash
-python -m pytest -v
-```
-
-Current result:
-
-```text
-13 passed
-```
-
-The tests mock the compliance checker where appropriate, preventing unnecessary retrieval and external LLM calls.
+---
 
 ## Project Structure
 
 ```text
 esg_compliance_checker/
-├── app/
-│   ├── main.py
-│   ├── schemas.py
-│   ├── services.py
-│   ├── exceptions.py
-│   ├── mappers.py
-│   └── api/
-│       └── routes.py
+├── app/                         # FastAPI application and service layer
+├── data/
+│   ├── evaluation/              # Human-reviewed evaluation data
+│   └── requirements/            # Structured GRI requirements
+├── docs/                        # Annotation and evaluation documentation
+├── outputs/                     # Retained experiment outputs
+├── scripts/                     # Ablation and evaluation tooling
 ├── tests/
 │   ├── test_api.py
-│   └── test_services.py
-├── data/
-│   ├── reports/
-│   ├── chunks/
-│   ├── checklists/
-│   └── evaluation/
-├── outputs/
-│   └── retrieval_ablation/
-├── streamlit_app.py
+│   ├── test_services.py
+│   └── test_production_regressions.py
 ├── compliance_checker_v2_hybrid.py
-├── hybrid_search.py
+├── element_query_generator.py
+├── keyword_search.py
+├── semantic_search.py
 ├── retrieval_modes.py
 ├── reranker.py
-├── evaluate_retrieval.py
 ├── llm_verifier.py
-├── element_query_generator.py
-├── ground_truth.py
-├── evaluate.py
-├── generate_embeddings.py
+├── streamlit_app.py
 ├── Dockerfile
-├── pytest.ini
+├── docker-compose.yml
 └── requirements.txt
 ```
 
-## Known Limitations
+---
 
-* The retrieval evaluation currently contains 12 manually verified queries and should still be treated as preliminary; a larger evaluation set is needed for more reliable comparison.
-* Some companies distribute emissions methodology across multiple ESG data packs or annual reports that are not yet included in the same retrieval collection.
-* Korean financial and public-sector reports use disclosure structures that differ from many European reports, contributing to retrieval gaps.
-* Tables and disclosure values may span adjacent chunks.
-* Presence of an IPCC or ISO reference does not always guarantee that the precise GWP version required by an element is stated.
-* LLM verification can still vary for borderline or semantically ambiguous evidence.
-* The current system evaluates a limited set of GRI emissions requirements.
-* The current deployment is portfolio-scale and has not been tested under production traffic.
-
-## Planned Improvements
-
-### Evaluation
-
-* Expand the manually verified retrieval gold set from 12 to 25–30+ queries
-* Conduct systematic retrieval failure and error analysis on the expanded benchmark
-* Compare chunking strategies and adjacent-chunk expansion
-* Measure reranker latency and candidate-pool trade-offs
-* Add oracle-evidence evaluation to separate retrieval errors from verifier errors
-* Extend end-to-end compliance evaluation across retrieval and verification stages
-
-### Engineering
-
-* Add CI checks for pytest and Docker builds
-* Add request IDs for improved request-level tracing
-* Add model lazy loading and caching
-* Deploy the FastAPI backend and Streamlit frontend
-* Add public demo links and automated deployment checks
-* Extend structured logging toward production monitoring and observability
-
-### Longer-Term Extensions
-
-* Multi-document retrieval per company
-* Cross-lingual report consistency analysis
-* TCFD and ISSB framework support
-* Cross-company comparison dashboard
-* Production monitoring and structured observability
-
-## Engineering Highlights
+## Engineering Takeaways
 
 This project demonstrates:
 
-- end-to-end RAG application development
-- hybrid information retrieval
-- multilingual reranking
-- evidence-grounded LLM verification
-- REST API design
-- typed data contracts
-- frontend/backend separation
-- automated testing and mocking
-- Docker containerisation
-- domain-specific NLP evaluation
-- translation of ESG requirements into structured AI workflows
+- controlled retrieval experimentation and ablation-driven configuration
+- separation of retrieval, verifier, and end-to-end evaluation
+- evidence-grounded LLM verification with domain-specific safeguards
+- failure analysis translated into regression tests
+- typed API design with frontend/backend separation
+- reproducible experiment tracking and Docker-based packaging
+
+---
 
 ## Author
 
 **Misun Kim**
-
 MSc Speech and Natural Language Processing
-
 University of Sheffield
+
+GitHub: **Ayana32**
 
 Built as an applied NLP portfolio project for evidence-grounded ESG disclosure verification.

@@ -506,6 +506,61 @@ Open:
 http://localhost:8501
 ```
 
+### Read-only MCP evidence search
+
+From the repository root, start the MCP server with an existing report chunk
+directory. It reuses the BM25 retriever and needs no OpenAI key or ChromaDB
+index. The generated JSONL files should contain `chunk_id`, `text`, and
+`metadata` with `company_id` and, when available, `page_num`.
+
+```bash
+python -m pip install 'mcp>=1.28,<2' rank-bm25==0.2.2 nltk==3.9.4
+python -m nltk.downloader punkt_tab stopwords
+python -m app.mcp_server --chunk-directory data/chunks/reports
+```
+
+For a fresh clone without a generated index, create a page-level demo from
+the checked-in IBK PDF. This demo corpus is separate from the retrieval
+benchmark.
+
+```bash
+python -m pip install PyMuPDF==1.27.1
+mkdir -p data/chunks/mcp-demo
+python - <<'PYTHON'
+import json
+from pathlib import Path
+
+import fitz
+
+report = Path("data/raw/reports/2024_KR_IBKBank_Sustainability_KO.pdf")
+with fitz.open(report) as pdf, Path("data/chunks/mcp-demo/IBK.jsonl").open("w", encoding="utf-8") as out:
+    for page in pdf:
+        text = page.get_text().strip()
+        if text:
+            row = {
+                "chunk_id": f"{report.stem}_p{page.number + 1:04d}",
+                "text": text,
+                "metadata": {"company_id": "IBK", "page_num": page.number + 1},
+            }
+            out.write(json.dumps(row, ensure_ascii=False) + "\n")
+PYTHON
+python -m app.mcp_server --chunk-directory data/chunks/mcp-demo
+```
+
+Connect a Streamable HTTP MCP client to `http://127.0.0.1:8001/mcp`
+and call `search_esg_evidence` with arguments such as:
+
+```json
+{"company_id": "IBK", "disclosure_item": "Scope 1 direct GHG emissions", "limit": 3}
+```
+
+The result contains candidate passages, chunk IDs, and page numbers when
+available. No positive-scoring lexical match returns an empty evidence list.
+The tool does not produce a compliance decision. For private remote use, run
+the same command on the host and reach its loopback port through an SSH
+tunnel (`ssh -N -L 8001:127.0.0.1:8001 user@host`).
+Only serve report chunks you are authorized to share with the client.
+
 ### Docker
 
 Build:

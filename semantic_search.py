@@ -3,6 +3,8 @@ semantic_search.py
 Clean semantic search implementation
 """
 
+from functools import lru_cache
+
 import chromadb
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -10,7 +12,11 @@ import os
 from typing import List, Dict, Any, Optional
 
 load_dotenv()
-openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+@lru_cache(maxsize=1)
+def _get_openai_client() -> OpenAI:
+    return OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 class SemanticRetriever:
     """Simple semantic search retriever"""
@@ -33,7 +39,7 @@ class SemanticRetriever:
     
     def get_embedding(self, text: str) -> List[float]:
         """Get embedding for query text"""
-        response = openai_client.embeddings.create(
+        response = _get_openai_client().embeddings.create(
             input=text,
             model="text-embedding-3-small"
         )

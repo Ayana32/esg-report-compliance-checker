@@ -21,7 +21,8 @@ The system retrieves relevant passages from ESG reports, evaluates individual di
 - FastAPI backend with typed Pydantic contracts
 - Decoupled Streamlit frontend
 - Docker-based runtime
-- **22 automated API, service, and system-regression tests**
+- [Read-only MCP tool](#read-only-mcp-evidence-search) for company-filtered BM25 search and page-level evidence
+- **23 automated tests** covering the API, services, system regressions, and the MCP protocol
 
 ---
 
@@ -173,7 +174,7 @@ Because this benchmark is relatively small, the reported retrieval metrics shoul
 
 #### Chunking Ablation
 
-All chunking configurations were constructed from the same source pages using deterministic preprocessing.
+All chunking configurations were constructed from the same source pages using deterministic preprocessing. The chunking ablation held `candidate_k=20` fixed.
 
 | Chunk target / overlap | Chunks | Hit@5 | MRR |
 |---|---:|---:|---:|
@@ -200,7 +201,7 @@ With chunking fixed at 500 / 50:
 
 #### Selected Retrieval Result
 
-The final retrieval configuration achieved:
+With 500-token chunks, 50-token overlap, and `candidate_k=10`, the final retrieval configuration achieved:
 
 - **Hit@5: 0.963**
 - **MRR: 0.798**
@@ -224,7 +225,7 @@ Evidence packets were constructed from retrieved passages, manually reviewed, an
 
 | Metric | Result |
 |---|---:|
-| Accuracy | **84.6%** |
+| Accuracy | **84.6% (33/39)** |
 | Macro-F1 | **0.730** |
 | False-covered predictions | **0** |
 | Missing → covered errors | **0** |

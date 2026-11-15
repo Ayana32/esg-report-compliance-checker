@@ -411,16 +411,12 @@ Regression tests protect behaviours identified during system review, including:
 - hybrid-rerank requirement retrieval
 - final Top-5 evidence configuration
 
-Run:
+Run from the repository root in a fresh Python 3.12 environment. The tests
+use local fixtures and do not require an OpenAI API key or generated indexes.
 
 ```bash
-pytest -q
-```
-
-Current result:
-
-```text
-22 passed
+python -m pip install -r requirements.txt pytest
+python -m pytest -q
 ```
 
 Expensive dependencies are mocked where appropriate so API and unit tests do not make unnecessary LLM or retrieval calls.

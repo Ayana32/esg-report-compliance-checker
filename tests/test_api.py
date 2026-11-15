@@ -1,14 +1,20 @@
 """API endpoint tests for the ESG Compliance Checker."""
 
-from unittest.mock import MagicMock
+from unittest.mock import MagicMock, patch
 
+import pytest
 from fastapi.testclient import TestClient
 
-from app.api import routes
-from app.main import app
 
+@pytest.fixture(scope="module")
+def api():
+    # Route tests replace the checker and can run without an index or a model.
+    with patch("compliance_checker_v2_hybrid.ComplianceCheckerV2"):
+        from app.api import routes
+        from app.main import app
 
-client = TestClient(app)
+    with TestClient(app) as client:
+        yield client, routes
 
 
 MOCK_COMPLIANCE_RESULT = {
@@ -47,14 +53,16 @@ MOCK_COMPLIANCE_RESULT = {
 }
 
 
-def test_health_endpoint_returns_200():
+def test_health_endpoint_returns_200(api):
+    client, _ = api
     response = client.get("/health")
 
     assert response.status_code == 200
     assert response.json() == {"status": "healthy"}
 
 
-def test_query_returns_200_with_mocked_checker(monkeypatch):
+def test_query_returns_200_with_mocked_checker(api, monkeypatch):
+    client, routes = api
     mock_checker = MagicMock()
     mock_checker.check_requirement.return_value = MOCK_COMPLIANCE_RESULT
 
@@ -89,7 +97,8 @@ def test_query_returns_200_with_mocked_checker(monkeypatch):
     )
 
 
-def test_query_rejects_blank_company_id():
+def test_query_rejects_blank_company_id(api):
+    client, _ = api
     response = client.post(
         "/query",
         json={
@@ -104,7 +113,8 @@ def test_query_rejects_blank_company_id():
     assert response.status_code == 422
 
 
-def test_query_rejects_invalid_verification_mode():
+def test_query_rejects_invalid_verification_mode(api):
+    client, _ = api
     response = client.post(
         "/query",
         json={
@@ -119,7 +129,8 @@ def test_query_rejects_invalid_verification_mode():
     assert response.status_code == 422
 
 
-def test_query_rejects_n_results_above_limit():
+def test_query_rejects_n_results_above_limit(api):
+    client, _ = api
     response = client.post(
         "/query",
         json={
@@ -134,7 +145,8 @@ def test_query_rejects_n_results_above_limit():
     assert response.status_code == 422
 
 
-def test_query_returns_404_when_company_has_no_evidence(monkeypatch):
+def test_query_returns_404_when_company_has_no_evidence(api, monkeypatch):
+    client, routes = api
     mock_checker = MagicMock()
     mock_checker.check_requirement.return_value = {
         "company_id": "NOT_A_REAL_COMPANY",
@@ -180,7 +192,8 @@ def test_query_returns_404_when_company_has_no_evidence(monkeypatch):
     assert "NOT_A_REAL_COMPANY" in body["detail"]["detail"]
 
 
-def test_query_returns_404_for_unknown_requirement(monkeypatch):
+def test_query_returns_404_for_unknown_requirement(api, monkeypatch):
+    client, routes = api
     mock_checker = MagicMock()
     mock_checker.check_requirement.side_effect = KeyError("999-9")
 
@@ -204,7 +217,8 @@ def test_query_returns_404_for_unknown_requirement(monkeypatch):
     assert body["detail"]["error"] == "requirement_not_found"
 
 
-def test_query_returns_503_when_external_service_times_out(monkeypatch):
+def test_query_returns_503_when_external_service_times_out(api, monkeypatch):
+    client, routes = api
     mock_checker = MagicMock()
     mock_checker.check_requirement.side_effect = TimeoutError(
         "External service timed out"

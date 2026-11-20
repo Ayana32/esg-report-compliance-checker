@@ -372,7 +372,7 @@ http://localhost:8000/openapi.json
 
 ## Automated Tests
 
-The automated suite currently contains **22 tests** across three layers.
+The automated suite contains **23 tests** across the API, service layer, system regressions, and MCP protocol.
 
 ### API Tests
 
@@ -411,6 +411,10 @@ Regression tests protect behaviours identified during system review, including:
 - `candidate_k=10`
 - hybrid-rerank requirement retrieval
 - final Top-5 evidence configuration
+
+### MCP Protocol Test
+
+- Evidence search through the MCP protocol
 
 Run from the repository root in a fresh Python 3.12 environment. The tests
 use local fixtures and do not require an OpenAI API key or generated indexes.
